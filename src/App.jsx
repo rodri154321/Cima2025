@@ -7,7 +7,7 @@ function App() {
     <>
       <div className='fondo1'>
         <div>
-          <img className='image1' src="src\images\Logo2025.png" alt="Logo1" />
+          <img className='image1' src="https://i.postimg.cc/m2dJjFN9/Logo2025.png" alt="Logo1" />
         </div>
         <h1>6 paises - 1 mision</h1>
         <div className='banderas'>
