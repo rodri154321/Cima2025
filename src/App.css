@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.fondo1 {
+  background-color: #2282A7;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image1 {
+  max-width: 100%;
+  width: 600px;
+  animation: bounce;
+  animation-duration: 2s;
+}
+.fondo2 {
+  background-color: #D75B38;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family:'GothamBlack';
+  font-weight:900;
+  color: white;
+  font-size: calc(1rem + 1vw);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2{
+  font-family:'GothamMedium';
+  font-weight: 300;
+  color: white;
+  font-size: calc(1rem + 1vw);
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banderas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bandera{
+  width: 18%;
+  max-width: 80%;
+  padding: 1vw;
 }
 
-.card {
-  padding: 2em;
+
+
+/*-------------------------------------------------------- FUENTES ------------------------------------------------------------*/
+
+@font-face{
+  font-family:'GothamBlack';
+  src: url(src\fuentes\Gotham-Black.otf);
+  font-weight: bolder;
+  font-style: black;
 }
 
-.read-the-docs {
-  color: #888;
+@font-face{
+  font-family:'GothamMedium';
+  src: url(src\fuentes\GothamMedium.ttf);
+  font-weight:medium;
+  font-style: medium;
+}
+
+@font-face{
+  font-family:'GothamLight';
+  src: url(src\fuentes\GothamLight.ttf);
+  font-weight: lighter;
+  font-style: lighter;
 }
