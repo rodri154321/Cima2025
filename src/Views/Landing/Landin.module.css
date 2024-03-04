@@ -1,0 +1,57 @@
+.fondo1 {
+    background-color: #2282A7;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image1 {
+    max-width: 100%;
+    width: 600px;
+    animation: bounce;
+    animation-duration: 2s;
+  }
+  .fondo2 {
+    background-color: #D75B38;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    font-family: 'Gotham Black';
+    font-weight:900;
+    color: white;
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+  }
+  
+  h2{
+    font-family:'Gotham Medium';
+    font-weight: 300;
+    color: white;
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+  }
+  
+  .banderas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .bandera{
+    width: 18%;
+    max-width: 80%;
+    padding: 1vw;
+  }
+  
+  
+  

@@ -1,79 +1,22 @@
-.fondo1 {
-  background-color: #2282A7;
-  width: 100%;
-  margin: auto;
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.image1 {
-  max-width: 100%;
-  width: 600px;
-  animation: bounce;
-  animation-duration: 2s;
-}
-.fondo2 {
-  background-color: #D75B38;
-  width: 100%;
-  margin: auto;
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1{
-  font-family:'GothamBlack';
-  font-weight:900;
-  color: white;
-  font-size: calc(1rem + 1vw);
-  text-align: center;
-}
-
-h2{
-  font-family:'GothamMedium';
-  font-weight: 300;
-  color: white;
-  font-size: calc(1rem + 1vw);
-  text-align: center;
-}
-
-.banderas{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.bandera{
-  width: 18%;
-  max-width: 80%;
-  padding: 1vw;
-}
-
-
-
 /*-------------------------------------------------------- FUENTES ------------------------------------------------------------*/
 
 @font-face{
   font-family:'GothamBlack';
-  src: url(src\fuentes\Gotham-Black.otf);
+  src: local("Gotham Black"),  url(src\fuentes\Gotham-Black.otf);
   font-weight: bolder;
   font-style: black;
 }
 
 @font-face{
   font-family:'GothamMedium';
-  src: url(src\fuentes\GothamMedium.ttf);
+  src: local("Gotham Medium"), url(src\fuentes\GothamMedium.ttf);
   font-weight:medium;
   font-style: medium;
 }
 
 @font-face{
   font-family:'GothamLight';
-  src: url(src\fuentes\GothamLight.ttf);
+  src: local("Gotham Light"), url(src\fuentes\GothamLight.ttf);
   font-weight: lighter;
   font-style: lighter;
 }
