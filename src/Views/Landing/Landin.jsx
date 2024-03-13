@@ -1,38 +1,89 @@
-import React from "react";
-import style from './Landin.module.css'
+import React, { useState, useEffect } from 'react';
+import ReactPlayer from 'react-player';
+import style from './Landin.module.css';
+import { motion, useScroll, useTransform } from 'framer-motion'
 
-const Landing = () => {
+// https://i.postimg.cc/m2dJjFN9/Logo2025.png
 
-return(
+const Landin = () => {
+
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 2], ["0%", "-200%"]);
+
+
+  return (
     <>
-    <div className={style.fondo1}>
-        <div>
-          <img className={style.image1} src="https://i.postimg.cc/m2dJjFN9/Logo2025.png" alt="Logo1" />
+
+      <div className={style.fondo1}>
+
+        <motion.div className={style.fondoplx}
+          style={{ y }}>
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>
+            <img className={style.logo} src="svgs\Logo.svg" alt="Logo" />
+          </motion.div>
+
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.9 }}>
+            <img className={style.sublogo} src="svgs\6p1m.svg" alt="6 paises 1 mision" />
+          </motion.div>
+
+          <div className={style.banderas}>
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/pTPwCN24/argentina.png" alt="Argentina" />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/3R9PbLNR/bolivia.png" alt="Bolivia" />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/J0n9wbHQ/chile.png" alt="Chile" />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/hv5NKf9R/paraguay.png" alt="Paraguay" />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/1RCkGYb7/peru.png" alt="Peru" />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.bandera} src="https://i.postimg.cc/qMN9jxTJ/uruguay.png" alt="Uruguay" />
+          </div>
+        </motion.div>
+      </div>
+
+      <div className={style.contenedorvideo}>
+        <ReactPlayer
+          className={style.reactPlayer}
+          url='https://www.youtube.com/watch?v=9PL_NJXXOIg'
+          height="100vh"
+          width="100%"
+          controls
+          origin="https://www.youtube.com"
+        />
+      </div>
+      <div className={style.Descubrediv}>
+        <div className={style.Descubretext}>
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className={style.des} src="svgs\des.svg" alt="Descubre" />
+
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className={style.exp} src="svgs\Recurso 1exp.svg" alt="Experimenta" />
+
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className={style.cima} src="svgs\cima.svg" alt="Cima" />
         </div>
-        <h1>6 paises - 1 mision</h1>
-        <div className={style.banderas}>
-          <img className={style.bandera} src="https://i.postimg.cc/pTPwCN24/argentina.png" alt="Argentina" />
-          <img className={style.bandera} src="https://i.postimg.cc/3R9PbLNR/bolivia.png" alt="Bolivia" />
-          <img className={style.bandera} src="https://i.postimg.cc/J0n9wbHQ/chile.png" alt="Chile" />
-          <img className={style.bandera} src="https://i.postimg.cc/hv5NKf9R/paraguay.png" alt="Paraguay" />
-          <img className={style.bandera} src="https://i.postimg.cc/1RCkGYb7/peru.png" alt="Peru" />
-          <img className={style.bandera} src="https://i.postimg.cc/qMN9jxTJ/uruguay.png" alt="Uruguay" />
-        </div>
-        <div>
-          <h2>CIMA es un congreso de movilización y capacitación
-            misionera juvenil que se realiza hace 35 años
-            Consta de dos partes:
-            </h2>
-            <h1>
-            DESCUBRE + EXPERIMENTA = CIMA</h1>
+        <div className={style.conteinerexp}>
+          <p className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
+            oradores, talleristas y misioneros con<br />experiencia local y global.</p>
+          <img className={style.descubreimg} src="svgs\1descubre.svg" alt="Descubre" />
         </div>
       </div>
 
-      <div className={style.fondo2}>
-        <h1>este fondo dos</h1>
-      </div>
     </>
-)
+  );
+};
 
-}
-export default Landing;
+export default Landin;

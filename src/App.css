@@ -20,3 +20,10 @@
   font-weight: lighter;
   font-style: lighter;
 }
+
+@font-face{
+  font-family:'TelorBistik';
+  src: local("Telor Bistik"), url(src\fuentes\TelorBistik.ttf);
+  font-weight: bolder;
+  font-style: black;
+}
