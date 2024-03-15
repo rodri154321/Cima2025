@@ -27,3 +27,10 @@
   font-weight: bolder;
   font-style: black;
 }
+
+@font-face{
+  font-family:'MADEDillan';
+  src: local("MADE Dillan"), url(src\fuentes\MADE-Dillan.otf);
+  font-weight: bolder;
+  font-style: black;
+}

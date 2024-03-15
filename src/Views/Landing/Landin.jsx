@@ -55,31 +55,90 @@ const Landin = () => {
           origin="https://www.youtube.com"
         />
       </div>
-      <div className={style.Descubrediv}>
-        <div className={style.Descubretext}>
-          <motion.img
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            className={style.des} src="svgs\des.svg" alt="Descubre" />
 
-          <motion.img
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            className={style.exp} src="svgs\Recurso 1exp.svg" alt="Experimenta" />
+      <div className={style.fondolin}>
 
-          <motion.img
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            className={style.cima} src="svgs\cima.svg" alt="Cima" />
+        <div className={style.descubrediv}>
+
+          <div className={style.Descubretext}>
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.des} src="svgs\des.svg" alt="Descubre" />
+
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.exp} src="svgs\Recurso 1exp.svg" alt="Experimenta" />
+
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.cima} src="svgs\cima.svg" alt="Cima" />
+          </div>
+          <div className={style.conteinerelative}>
+            <p className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
+              oradores, talleristas y misioneros con<br />experiencia local y global.</p>
+            <img className={style.descubreimg} src="svgs\1descubre.svg" alt="Descubre" />
+          </div>
+
         </div>
-        <div className={style.conteinerexp}>
-          <p className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
-            oradores, talleristas y misioneros con<br />experiencia local y global.</p>
-          <img className={style.descubreimg} src="svgs\1descubre.svg" alt="Descubre" />
+
+        <div className={style.oradoresdiv}>
+
+          <div className={style.divTextoOradores}>
+            <img className={style.oradoresimg} src="svgs\Oradores.svg" alt="Oradores" />
+
+            <p className={style.textoOra}>
+              La mayoria de los oradores que<br />
+              tendremos son parte activa de la<br />
+              mision global, esto hace que no<br />
+              solo cuenten con experiencias desde<br />
+              la teoría, sino que cada uno de ellos<br />
+              ha vivenciado lo que transmite y ha<br />
+              visto lo que Dios esta haciendo en el<br />
+              campo misionero no alcanzado.</p>
+          </div>
+
+          <div className={style.imagenesOradores}>
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              exit={{ opacity: 0, y:-50}}
+              className={style.imageneOradores} src="svgs\oradores\Thomas.svg" alt="Thomas" />
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.imageneOradores} src="svgs\oradores\Helder.svg" alt="Thomas" />
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.imageneOradores} src="svgs\oradores\Mika.svg" alt="Thomas" />
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.imageneOradores} src="svgs\oradores\Soon.svg" alt="Thomas" />
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.imageneOradores} src="svgs\oradores\Rafael.svg" alt="Thomas" />
+            <motion.img
+              initial={{opacity: 0, y:50 }}
+              whileInView={{opacity: 1, y:0 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.imageneOradores} src="svgs\oradores\Hebert.svg" alt="Thomas" />
+          </div>
+
         </div>
+
       </div>
 
     </>
