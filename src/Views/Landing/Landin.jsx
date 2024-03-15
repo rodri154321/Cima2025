@@ -23,7 +23,7 @@ const Landin = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
-            <img className={style.logo} src="svgs\Logo.svg" alt="Logo" />
+            <img className={style.logo} src="https://i.postimg.cc/63Lcpms0/Recurso-1-Logo2025.png" alt="Logo" />
           </motion.div>
 
           <motion.div
@@ -31,7 +31,7 @@ const Landin = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.5 }}
             whileTap={{ scale: 0.9 }}>
-            <img className={style.sublogo} src="svgs\6p1m.svg" alt="6 paises 1 mision" />
+            <img className={style.sublogo} src="https://i.postimg.cc/KzyQFyWj/Recurso-26-P1-M.png" alt="6 paises 1 mision" />
           </motion.div>
 
           <div className={style.banderas}>
@@ -65,24 +65,24 @@ const Landin = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
-              className={style.des} src="svgs\des.svg" alt="Descubre" />
+              className={style.des} src="https://i.postimg.cc/hPfSVFCf/Recurso-5-Descubre.png" alt="Descubre" />
 
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
-              className={style.exp} src="svgs\Recurso 1exp.svg" alt="Experimenta" />
+              className={style.exp} src="https://i.postimg.cc/J4vRqTgK/Recurso-4-Experimenta.png" alt="Experimenta" />
 
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
-              className={style.cima} src="svgs\cima.svg" alt="Cima" />
+              className={style.cima} src="https://i.postimg.cc/Vs7fSsWx/Recurso-3-Cima.png" alt="Cima" />
           </div>
           <div className={style.conteinerelative}>
             <p className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
               oradores, talleristas y misioneros con<br />experiencia local y global.</p>
-            <img className={style.descubreimg} src="svgs\1descubre.svg" alt="Descubre" />
+            <img className={style.descubreimg} src="https://i.postimg.cc/Z5Wxkqw4/Recurso-6-Descubreflecha.png" alt="Descubre" />
           </div>
 
         </div>
@@ -90,7 +90,7 @@ const Landin = () => {
         <div className={style.oradoresdiv}>
 
           <div className={style.divTextoOradores}>
-            <img className={style.oradoresimg} src="svgs\Oradores.svg" alt="Oradores" />
+            <img className={style.oradoresimg} src="https://i.postimg.cc/vZpSHmHL/Recurso-1-Oradores.png" alt="Oradores" />
 
             <p className={style.textoOra}>
               La mayoria de los oradores que<br />
@@ -108,33 +108,33 @@ const Landin = () => {
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              exit={{ opacity: 0, y:-50}}
-              className={style.imageneOradores} src="svgs\oradores\Thomas.svg" alt="Thomas" />
+              exit={{ opacity: 0, y:50}}
+              className={style.imageneOradores} src="https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png" alt="Thomas" />
             <motion.img
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              className={style.imageneOradores} src="svgs\oradores\Helder.svg" alt="Thomas" />
+              className={style.imageneOradores} src="https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png" alt="Helder" />
             <motion.img
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              className={style.imageneOradores} src="svgs\oradores\Mika.svg" alt="Thomas" />
+              className={style.imageneOradores} src="https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png" alt="Mika" />
             <motion.img
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              className={style.imageneOradores} src="svgs\oradores\Soon.svg" alt="Thomas" />
+              className={style.imageneOradores} src="https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png" alt="Soon" />
             <motion.img
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              className={style.imageneOradores} src="svgs\oradores\Rafael.svg" alt="Thomas" />
+              className={style.imageneOradores} src="https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png" alt="Rafael" />
             <motion.img
               initial={{opacity: 0, y:50 }}
               whileInView={{opacity: 1, y:0 }}
               whileHover={{ scale: 1.1 }}
-              className={style.imageneOradores} src="svgs\oradores\Hebert.svg" alt="Thomas" />
+              className={style.imageneOradores} src="https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png" alt="Hebert" />
           </div>
 
         </div>
