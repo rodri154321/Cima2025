@@ -1,6 +1,5 @@
-
 .fondo1 {
-  background-image: url("https://i.postimg.cc/NFzXz8FJ/SITIO-web-fondo.jpg");
+  background-image: url("https://i.postimg.cc/FsF2CnZV/collage-2025.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,17 +47,17 @@
 }
 
 .bandera {
-  width: 18%;
+  width: 17%;
   max-width: 80%;
   padding: 1vw;
 }
 
 .contenedorvideo {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: center;
   width: 100%;
   height: 100%;
-  
+
 }
 
 .reactPlayer {
@@ -75,59 +74,59 @@
 
 /*-------------------------------------------------------------secciones----------------------------------------------------------*/
 
-.fondolin{
+.fondolin {
   background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
   background-size: contain;
 }
 
 
 
-.conteinerelative{
+.conteinerelative {
   position: relative;
 }
 
 
 /*-------------------------------------------------------------DESCUBRE----------------------------------------------------------*/
 
-.descubrediv{
+.descubrediv {
   width: 100%;
 }
 
-.Descubretext{
+.Descubretext {
   width: 80%;
   margin-left: 10%;
-  
+
 }
 
-.descubreimg{
+.descubreimg {
   width: 70%;
   margin-top: 40px;
   margin-left: -27px;
 }
 
-.des{
+.des {
   width: 40%;
   margin-left: 15%;
   margin-top: 40px;
 }
 
-.exp{
+.exp {
   width: 51%;
   margin-left: 20%;
 }
 
-.cima{
+.cima {
   width: 20%;
   margin-left: 10px;
 }
 
 
 
-.textoexp{
+.textoexp {
   position: absolute;
-  top: 30%; 
+  top: 30%;
   left: 60%;
-  font-family: 'Gotham Medium' ;
+  font-family: 'Gotham Medium';
   font-size: 24px;
   text-align: right;
 }
@@ -137,75 +136,210 @@
     width: 70%;
     margin-left: -9px;
   }
-  .Descubretext{
+
+  .Descubretext {
     width: 100%;
     margin-left: 0%;
   }
-  .des{
+
+  .des {
     margin-left: 10%;
   }
-  .exp{
+
+  .exp {
     margin-left: 15%;
   }
-  .textoexp{
+
+  .textoexp {
     font-size: 10px;
-    top: 39%; 
+    top: 39%;
     left: 50%;
   }
 }
 
 /*-------------------------------------------------------------ORADORES----------------------------------------------------------*/
 
-.oradoresdiv{
+.oradoresdiv {
   background-size: cover;
   width: 100%;
 }
 
-.oradoresimg{
+.oradoresimg {
   width: 100%;
 }
 
 
-.divTextoOradores{
+.divTextoOradores {
   position: relative;
 }
 
-.textoOra{
+.textoOra {
   position: absolute;
-  top: 45%; 
+  top: 45%;
   left: 10%;
-  font-family: 'Gotham Medium' ;
+  font-family: 'Gotham Medium';
   font-size: 30px;
   text-align: left;
 }
 
-.imagenesOradores{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-width: 100%;
-margin-top: 30px;
+.imagenesOradores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.imageneOradores{
-width: 25%;
-margin: 30px;
+.imageneOradores {
+  width: 25%;
+  margin: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .oradoresimg{
+  .oradoresimg {
     width: 90%;
     margin-left: 30px;
   }
-  .textoOra{
-    top: 45%; 
+
+  .textoOra {
+    top: 45%;
     left: 8%;
-    font-family: 'Gotham Medium' ;
+    font-family: 'Gotham Medium';
     font-size: 10px;
     text-align: left;
   }
-  .imageneOradores{
+
+  .imageneOradores {
     width: 35%;
     margin: 20px;
-    }
+  }
+}
+
+/*---------------------------------------------------------TALLERES Y PLENARIAS----------------------------------------------------------*/
+
+.talleresDiv {
+  margin-top: 40px;
+}
+
+.talleresImg {
+  width: 60%;
+  margin-left: 30px;
+}
+
+.divTextoTalleres {
+  position: relative;
+}
+
+.textoTalleres {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  font-family: 'Gotham Medium';
+  font-size: 35px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+
+  .talleresDiv {
+    margin-top: 10px;
+  }
+
+  .talleresImg {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .textoTalleres {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    font-family: 'Gotham Medium';
+    font-size: 10px;
+    text-align: left;
+  }
+}
+
+.carouselSlide {
+  margin-top: 30px;
+}
+
+
+.divSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.textoSlide {
+  font-family: 'Gotham Medium';
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .textoSlide {
+    font-family: 'Gotham Medium';
+    font-size: 8px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.divOper {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.imgOper {
+  width: 90%;
+}
+
+
+.textoOper {
+  align-self: flex-start;
+  margin-left: 10%;
+  font-family: 'Gotham Medium';
+  font-size: 35px;
+  text-align: left;
+}
+
+.divProg {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.imgProg {
+  width: 90%;
+}
+
+
+.textoProg {
+  align-self: flex-end;
+  margin-right: 10%;
+  font-family: 'Gotham Medium';
+  font-size: 35px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+  .textoOper {
+    font-size: 10px;
+  }
+
+
+  .textoProg {
+    font-size: 10px;
+  }
+
 }

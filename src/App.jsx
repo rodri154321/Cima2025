@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {pathname !== '/' ? <NavBar/> : ""}
-     <Routes>
+      <Routes>
             <Route path='/' element={<Landing/>}/>
          </Routes>
     </div>

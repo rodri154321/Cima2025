@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
-import style from './Landin.module.css';
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-// https://i.postimg.cc/m2dJjFN9/Logo2025.png
+
+import style from './Landin.module.css';
+
+
 
 const Landin = () => {
 
+
   let { scrollYProgress } = useScroll();
-  let y = useTransform(scrollYProgress, [0, 2], ["0%", "-200%"]);
+  let y = useTransform(scrollYProgress, [0, 3], ["0%", "-200%"]);
+
 
 
   return (
@@ -80,9 +84,17 @@ const Landin = () => {
               className={style.cima} src="https://i.postimg.cc/Vs7fSsWx/Recurso-3-Cima.png" alt="Cima" />
           </div>
           <div className={style.conteinerelative}>
-            <p className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
-              oradores, talleristas y misioneros con<br />experiencia local y global.</p>
-            <img className={style.descubreimg} src="https://i.postimg.cc/Z5Wxkqw4/Recurso-6-Descubreflecha.png" alt="Descubre" />
+            <motion.p
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+              exit={{ opacity: 0, x: 100 }} className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
+              oradores, talleristas y misioneros con<br />experiencia local y global.</motion.p>
+            <motion.img
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+              exit={{ opacity: 0, x: -100 }}
+
+              className={style.descubreimg} src="https://i.postimg.cc/Z5Wxkqw4/Recurso-6-Descubreflecha.png" alt="Descubre" />
           </div>
 
         </div>
@@ -90,9 +102,14 @@ const Landin = () => {
         <div className={style.oradoresdiv}>
 
           <div className={style.divTextoOradores}>
-            <img className={style.oradoresimg} src="https://i.postimg.cc/vZpSHmHL/Recurso-1-Oradores.png" alt="Oradores" />
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+              exit={{ opacity: 0, x: 100 }} className={style.oradoresimg} src="https://i.postimg.cc/vZpSHmHL/Recurso-1-Oradores.png" alt="Oradores" />
 
-            <p className={style.textoOra}>
+            <motion.p initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+              exit={{ opacity: 0, x: -100 }} className={style.textoOra}>
               La mayoria de los oradores que<br />
               tendremos son parte activa de la<br />
               mision global, esto hace que no<br />
@@ -100,47 +117,128 @@ const Landin = () => {
               la teoría, sino que cada uno de ellos<br />
               ha vivenciado lo que transmite y ha<br />
               visto lo que Dios esta haciendo en el<br />
-              campo misionero no alcanzado.</p>
+              campo misionero no alcanzado.</motion.p>
           </div>
 
           <div className={style.imagenesOradores}>
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
-              exit={{ opacity: 0, y:50}}
+              exit={{ opacity: 0, y: 50 }}
               className={style.imageneOradores} src="https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png" alt="Thomas" />
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
               className={style.imageneOradores} src="https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png" alt="Helder" />
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
               className={style.imageneOradores} src="https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png" alt="Mika" />
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
               className={style.imageneOradores} src="https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png" alt="Soon" />
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
               className={style.imageneOradores} src="https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png" alt="Rafael" />
             <motion.img
-              initial={{opacity: 0, y:50 }}
-              whileInView={{opacity: 1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.1 }}
               className={style.imageneOradores} src="https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png" alt="Hebert" />
           </div>
 
         </div>
 
-      </div>
+        <div className={style.talleresDiv}>
 
+          <div className={style.divTextoTalleres}>
+
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }} className={style.talleresImg} src="https://i.postimg.cc/y6t8Hm5Z/Plenarias-y-Talleres.png" alt="Plenarias  y Talleres" />
+
+            <motion.p
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }} className={style.textoTalleres}>
+              Cada día habrá múltiples <br />
+              temáticas que podrás<br />
+              elegir para capacitarte.<br />
+              Te compartimos solo<br />
+              algunos temas que<br />
+              tocaremos.<br />
+            </motion.p>
+          </div>
+
+          <div className={style.divSlide}>
+            <p className={style.textoSlide}>
+              Cada día habrá múltiples <br />
+              temáticas que podrás<br />
+              elegir para capacitarte.<br />
+              Te compartimos solo<br />
+              algunos temas que<br />
+              tocaremos.<br />
+            </p>
+            <p className={style.textoSlide}>
+              Cada día habrá múltiples <br />
+              temáticas que podrás<br />
+              elegir para capacitarte.<br />
+              Te compartimos solo<br />
+              algunos temas que<br />
+              tocaremos.<br />
+            </p>
+            <p className={style.textoSlide}>
+              Cada día habrá múltiples <br />
+              temáticas que podrás<br />
+              elegir para capacitarte.<br />
+              Te compartimos solo<br />
+              algunos temas que<br />
+              tocaremos.<br />
+            </p>
+          </div>
+        </div>
+
+        <div className={style.divOper}>
+
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} className={style.imgOper} src="https://i.postimg.cc/PqQd2KnF/operacion-Cima.png" alt="Operacion Cima" />
+
+          <motion.p
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} className={style.textoOper}>
+            El quinto día todos los cimeños<br />
+            saldremos a las calles a realizar<br />
+            una gran diversidad de actividades,<br />
+            con el fin de compartir las buenas<br />
+            nuevas de Jesús.</motion.p>
+
+        </div>
+
+        <div className={style.divProg}>
+
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} className={style.imgProg} src="https://i.postimg.cc/KY2ZPwwM/Recurso-2programa-Pastores.png" alt="Programa de Pastores" />
+
+          <motion.p
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} className={style.textoProg}>
+            El quinto día todos los cimeños<br />
+            saldremos a las calles a realizar<br />
+            una gran diversidad de actividades,<br />
+            con el fin de compartir las buenas<br />
+            nuevas de Jesús.</motion.p>
+
+        </div>
+
+      </div>
     </>
   );
 };
