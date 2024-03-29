@@ -3,7 +3,7 @@
 @font-face{
   font-family:'GothamBlack';
   src: local("Gotham Black"),  url(src\fuentes\Gotham-Black.otf);
-  font-weight: bolder;
+  font-weight: bold;
   font-style: black;
 }
 
@@ -24,13 +24,13 @@
 @font-face{
   font-family:'TelorBistik';
   src: local("Telor Bistik"), url(src\fuentes\TelorBistik.ttf);
-  font-weight: bolder;
+  font-weight: bold;
   font-style: black;
 }
 
 @font-face{
   font-family:'MADEDillan';
-  src: local("MADE Dillan"), url(src\fuentes\MADE-Dillan.otf);
-  font-weight: bolder;
+  src: local("MADE-Dillan"), url(src\fuentes\MADE-Dillan.otf);
+  font-weight: bold;
   font-style: black;
 }
