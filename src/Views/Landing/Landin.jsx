@@ -337,11 +337,15 @@ const Landin = () => {
               <motion.p
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }} className={style.textoProg}>
-                El quinto día todos los cimeños<br />
-                saldremos a las calles a realizar<br />
-                una gran diversidad de actividades,<br />
-                con el fin de compartir las buenas<br />
-                nuevas de Jesús.</motion.p>
+                Durante CIMA, se desarrolla <br/>
+                un programa paralelo <br />
+                donde invitamos a los <br /> 
+                Pastores y Líderes <br />
+                a vivir parte del evento <br />
+                junto a sus jóvenes,<br />
+                y otras instancias con testimonios, <br />
+                oradores y temáticas pensadas <br />
+                especialmente para el liderazgo. </motion.p>
             </div>
           </div>
         </div>
