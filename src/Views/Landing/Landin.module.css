@@ -208,6 +208,15 @@
   color: #fff;
 }
 
+.textoTarjetaThomas{
+  font-family: 'Gotham Medium';
+  font-size: 1vw;
+  text-align: center;
+  height: 90%;
+  width: 90%;
+  color: #fff;
+}
+
 .imageneOradores {
   width: 80%;
   margin: 30px;
@@ -286,8 +295,12 @@
   }
 
   .textoTarjeta {
-    font-size: 27%;
+    font-size: 30%;
 
+  }
+
+  .textoTarjetaThomas{
+    font-size: 22%;
   }
 
   .textoOr {

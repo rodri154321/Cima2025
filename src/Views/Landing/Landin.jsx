@@ -131,7 +131,7 @@ const Landin = () => {
                       className={style.imageneOradores} src="https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png" alt="Thomas" />
                   </div>
                   <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>Tienen 4 hijos adultos y 9 nietos. Ellos son los fundadores y directores internacionales de MOVIDA. Desde hace más de 35 años viven todos los dias para cumplir lo que Dios puso en sus corazones y se resume en la visión del ministerio: “Jóvenes latinos comprometidos con Dios y su misión que sirvan interculturalmente para impactar el mundo”. Junto a su familia vivieron en Chile, Argentina y Alemania; y desde hace 7 años están instalados en Walzenhausen, Suiza a dónde están levantando el trabajo de MOVIDA en Europa.</p>
+                    <p className={style.textoTarjetaThomas}>Tienen 4 hijos adultos y 9 nietos. Ellos son los fundadores y directores internacionales de MOVIDA. Desde hace más de 35 años viven todos los dias para cumplir lo que Dios puso en sus corazones y se resume en la visión del ministerio: “Jóvenes latinos comprometidos con Dios y su misión que sirvan interculturalmente para impactar el mundo”. Junto a su familia vivieron en Chile, Argentina y Alemania; y desde hace 7 años están instalados en Walzenhausen, Suiza a dónde están levantando el trabajo de MOVIDA en Europa.</p>
                   </div>
                 </div>
               </div>
@@ -195,7 +195,7 @@ const Landin = () => {
                       className={style.imageneOradores} src="https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png" alt="Rafael" />
                   </div>
                   <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>Rafael es casado con su esposa Xochitl desde 1987, y siempre han servido juntos en el minis-terio. Rafael y Xochitl tienen una sola hija, Nayeli, quien terminó su maestría en misiones en el Seminario Fuller, en Pasadena, CA, y ella, junto a su esposo e hijos han servido como misioneros en el Sudeste de Asia.</p>
+                    <p className={style.textoTarjeta}>Rafael es casado con su esposa Xochitl desde 1987, y siempre han servido juntos en el ministerio. Rafael y Xochitl tienen una sola hija, Nayeli, quien terminó su maestría en misiones en el Seminario Fuller, en Pasadena, CA, y ella, junto a su esposo e hijos han servido como misioneros en el Sudeste de Asia.</p>
                   </div>
                 </div>
               </div>

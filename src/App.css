@@ -2,35 +2,35 @@
 
 @font-face{
   font-family:'GothamBlack';
-  src: local("Gotham Black"),  url(src\fuentes\Gotham-Black.otf);
+  src: local("Gotham Black"),  url(public\fuentes\Gotham-Black.otf);
   font-weight: bold;
   font-style: black;
 }
 
 @font-face{
   font-family:'GothamMedium';
-  src: local("Gotham Medium"), url(src\fuentes\GothamMedium.ttf);
+  src: local("Gotham Medium"), url(public\fuentes\GothamMedium.ttf);
   font-weight:medium;
   font-style: medium;
 }
 
 @font-face{
   font-family:'GothamLight';
-  src: local("Gotham Light"), url(src\fuentes\GothamLight.ttf);
+  src: local("Gotham Light"), url(public\fuentes\GothamLight.ttf);
   font-weight: lighter;
   font-style: lighter;
 }
 
 @font-face{
   font-family:'TelorBistik';
-  src: local("Telor Bistik"), url(src\fuentes\TelorBistik.ttf);
+  src: local("Telor Bistik"), url(public\fuentes\TelorBistik.ttf);
   font-weight: bold;
   font-style: black;
 }
 
 @font-face{
   font-family:'MADEDillan';
-  src: local("MADE-Dillan"), url(src\fuentes\MADE-Dillan.otf);
+  src: local("MADE-Dillan"), url(public\fuentes\MADE-Dillan.otf);
   font-weight: bold;
   font-style: black;
 }
