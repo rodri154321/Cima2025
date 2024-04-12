@@ -82,12 +82,14 @@ const Landin = () => {
               whileHover={{ scale: 1.1 }}
               className={style.cima} src="https://i.postimg.cc/Vs7fSsWx/Recurso-3-Cima.png" alt="Cima" />
           </div>
+          {/* Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
+              oradores, talleristas y misioneros con<br />experiencia local y global. */}
           <div className={style.conteinerelative}>
-            <motion.p
+            <motion.img
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-              exit={{ opacity: 0, x: -100 }} className={style.textoexp}>Tendrás la posibilidad de capacitarte <br /> en diferentes temáticas junto a<br />
-              oradores, talleristas y misioneros con<br />experiencia local y global.</motion.p>
+              exit={{ opacity: 0, x: -100 }} className={style.textoexp} src="https://i.postimg.cc/QxYh7pqt/Recurso-1texto-Descubre.png" alt="Cima"></motion.img>
+
             <motion.img
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
@@ -106,17 +108,10 @@ const Landin = () => {
               whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
               exit={{ opacity: 0, x: -100 }} className={style.oradoresimg} src="https://i.postimg.cc/CxQgHYYL/Recurso-1-Oradores.png" alt="Oradores" />
 
-            <motion.p initial={{ opacity: 0, x: 100 }}
+            <motion.img initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-              exit={{ opacity: 0, x: 100 }} className={style.textoOra}>
-              La mayoria de los oradores que<br />
-              tendremos son parte activa de la<br />
-              mision global, esto hace que no<br />
-              solo cuenten con experiencias desde<br />
-              la teoría, sino que cada uno de ellos<br />
-              ha vivenciado lo que transmite y ha<br />
-              visto lo que Dios esta haciendo en el<br />
-              campo misionero no alcanzado.</motion.p>
+              exit={{ opacity: 0, x: 100 }} className={style.textoOra}
+              src="https://i.postimg.cc/B6Yqw1YW/Recurso-1texto-Oradores.png" />
           </div>
 
           <div className={style.imagenesOradores}>
@@ -229,16 +224,11 @@ const Landin = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.talleresImg} src="https://i.postimg.cc/y6t8Hm5Z/Plenarias-y-Talleres.png" alt="Plenarias  y Talleres" />
 
-            <motion.p
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }} className={style.textoTalleres}>
-              Cada día habrá múltiples <br />
-              temáticas que podrás<br />
-              elegir para capacitarte.<br />
-              Te compartimos solo<br />
-              algunos temas que<br />
-              tocaremos.<br />
-            </motion.p>
+              whileInView={{ scale: 1, opacity: 1 }} className={style.textoTalleres}
+              src='https://i.postimg.cc/fRP5ZDbG/Recurso-1texto-Ple-Tall.png'
+            />
           </div>
 
           <div className={style.divSlide}>
@@ -255,14 +245,10 @@ const Landin = () => {
 
           <div className={style.ubiCarusel}>
             <div className={style.divoptexto}>
-              <motion.p
+              <motion.img
                 initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }} className={style.textoOper}>
-                El quinto día todos los cimeños<br />
-                saldremos a las calles a realizar<br />
-                una gran diversidad de actividades,<br />
-                con el fin de compartir las buenas<br />
-                nuevas de Jesús.</motion.p>
+                whileInView={{ scale: 1, opacity: 1 }} className={style.textoOper}
+                src="https://i.postimg.cc/0y112Ch5/Recurso-1texto-Op-Cima.png" />
             </div>
 
             <div className={style.divopfotos}>
@@ -334,18 +320,10 @@ const Landin = () => {
               </Carousel>
             </div>
             <div className={style.divPpPtexto}>
-              <motion.p
+              <motion.img
                 initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }} className={style.textoProg}>
-                Durante CIMA, se desarrolla <br/>
-                un programa paralelo <br />
-                donde invitamos a los <br /> 
-                Pastores y Líderes <br />
-                a vivir parte del evento <br />
-                junto a sus jóvenes,<br />
-                y otras instancias con testimonios, <br />
-                oradores y temáticas pensadas <br />
-                especialmente para el liderazgo. </motion.p>
+                whileInView={{ scale: 1, opacity: 1 }} className={style.textoProg}
+                src='https://i.postimg.cc/t4bS1vkT/Recurso-2texto-Prog-Pastores.png' />
             </div>
           </div>
         </div>
@@ -355,8 +333,7 @@ const Landin = () => {
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }} className={style.imgFooter} src="https://i.postimg.cc/bJthWFst/Recurso-1footer.png" alt="Programa de Pastores" />
 
-          <p className={style.primertexto}>Somos una organización orientada a la movilización misionera juvenil. <br />
-            Nuestro ministerio es cristiano, internacional e interdenominacional.</p>
+          <img className={style.primertexto} src='https://i.postimg.cc/SswLBVxC/Recurso-1texto-Fin1.png' />
 
           <div className={style.mediofooter}>
             <img className={style.imgMedioFoot} src="https://i.postimg.cc/ncgjGGj8/Recurso-2mediofooter.png" alt="" />
@@ -366,13 +343,80 @@ const Landin = () => {
             <img className={style.imgMedioFoot} src="https://i.postimg.cc/zXFDVwCS/Recurso-3mediotextofooter.png" alt="" />
           </div>
 
-        <div className={style.contactanos}>
-          <img className={style.contaImg} src="https://i.postimg.cc/FFfDrDQ8/Recurso-4contactanos.png" alt="" />
-        </div>
+          <div className={style.contactanos}>
+            <img className={style.contaImg} src="https://i.postimg.cc/FFfDrDQ8/Recurso-4contactanos.png" alt="" />
+          </div>
 
-        <div className={style.finalFooter}>
-          <img className={style.finalImg} src="https://i.postimg.cc/j2kp75jT/Recurso-5final-Footer.png" alt="" />
-        </div>
+          <div className={style.finalFooter}>
+            <div className={style.mundoLineas}>
+              <img className={style.finalImg} src="https://i.postimg.cc/QxRZdKfb/Recurso-5mundo.png" alt="" />
+
+              {/* info Argentina */}
+              <img className={style.infoArg} src="https://i.postimg.cc/zX6hKMMf/Recurso-8info-Arg.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igArg} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcArg} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+              {/* info Bolivia */}
+
+              <img className={style.infoBol} src="https://i.postimg.cc/W1xLPqP0/Recurso-11info-Bolivia.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igBol} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcBol} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+              {/* info Paraguay */}
+
+              <img className={style.infoPar} src="https://i.postimg.cc/sgrHPPy6/Recurso-12info-Paraguay.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igPar} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcPar} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+              {/* info Uruguay */}
+
+              <img className={style.infoUru} src="https://i.postimg.cc/VvG827RF/Recurso-13info-Uruguay.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igUru} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcUru} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+              {/* info Perú */}
+
+              <img className={style.infoPer} src="https://i.postimg.cc/zD78Lkhj/Recurso-14info-Peru.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igPer} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcPer} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+              {/* info Chile */}
+
+              <img className={style.infoChi} src="https://i.postimg.cc/7Pn0fjXW/Recurso-15info-Chile.png" alt="infoArg" />
+              <a href="https://www.movida-net.com">
+                <img className={style.igChi} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+              </a>
+              <a href="https://www.movida-net.com">
+                <img className={style.fcChi} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+              </a>
+
+            </div>
+          </div>
+          <div className={style.linkmovidaNet}>
+            <a href="https://www.movida-net.com">
+              <img className={style.movidaNet} src="https://i.postimg.cc/j55tZb4x/Recurso-7movida-Net.png" alt="" />
+            </a>
+          </div>
 
 
         </div>

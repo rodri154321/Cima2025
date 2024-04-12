@@ -131,10 +131,8 @@
 .textoexp {
   position: absolute;
   top: 30%;
-  left: 60%;
-  font-family: 'Gotham Medium';
-  font-size: 24px;
-  text-align: right;
+  left: 55%;
+  width: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +157,8 @@
   .textoexp {
     font-size: 10px;
     top: 39%;
-    left: 50%;
+    left: 55%;
+    width: 40%;
   }
 }
 
@@ -182,11 +181,9 @@
 
 .textoOra {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 10%;
-  font-family: 'Gotham Medium';
-  font-size: 30px;
-  text-align: left;
+  width: 40%;
 }
 
 .imagenesOradores {
@@ -208,7 +205,7 @@
   color: #fff;
 }
 
-.textoTarjetaThomas{
+.textoTarjetaThomas {
   font-family: 'Gotham Medium';
   font-size: 1vw;
   text-align: center;
@@ -287,11 +284,8 @@
   }
 
   .textoOra {
-    top: 45%;
     left: 8%;
-    font-family: 'Gotham Medium';
-    font-size: 10px;
-    text-align: left;
+    width: 45%;
   }
 
   .textoTarjeta {
@@ -299,7 +293,7 @@
 
   }
 
-  .textoTarjetaThomas{
+  .textoTarjetaThomas {
     font-size: 22%;
   }
 
@@ -337,9 +331,7 @@
   position: absolute;
   top: 25%;
   left: 65%;
-  font-family: 'Gotham Medium';
-  font-size: 35px;
-  text-align: left;
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
@@ -357,9 +349,6 @@
     position: absolute;
     top: 5%;
     left: 60%;
-    font-family: 'Gotham Medium';
-    font-size: 10px;
-    text-align: left;
   }
 }
 
@@ -398,7 +387,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .imgOper {
@@ -427,10 +416,7 @@
 
 .textoOper {
   margin-left: 2%;
-  font-family: 'Gotham Medium';
-  font-size: 35px;
-  text-align: left;
-  width: 100%;
+  width: 90%;
 }
 
 .imgCarucel {
@@ -456,16 +442,13 @@
 }
 
 .divPpPtexto {
-  width: 60%;
-
+  width: 50%;
+  margin-left: 5%;
 }
 
 .textoProg {
-  align-self: flex-end;
-  margin-right: 10%;
-  font-family: 'Gotham Medium';
-  font-size: 35px;
-  text-align: right;
+  margin-left: 2%;
+  width: 90%;
 }
 
 .CaruselPpP {
@@ -476,19 +459,47 @@
 
 @media screen and (max-width: 768px) {
 
+  .ubiCarusel {
+    flex-direction: column;
+  }
+
+  .divopfotos {
+    margin-top: 5%;
+    width: 90%;
+    height: auto;
+    margin-right: 0%;
+  }
+
   .divProg {
     margin-bottom: 30px;
   }
 
   .textoOper {
-    font-size: 10px;
+    margin-top: 10%;
+    width: 100%;
   }
 
 
   .textoProg {
-    font-size: 10px;
+    margin-left: 0%;
+    margin-top: 5%;
   }
 
+  .CaruselPpP {
+    margin-top: 10%;
+    width: 90%;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  .divoptexto {
+    width: 80%;
+    margin-left: 0%;
+  }
+
+  .divPpPtexto {
+    width: 80%;
+  }
 }
 
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/
@@ -510,9 +521,7 @@
 }
 
 .primertexto {
-  font-family: 'Gotham Medium';
-  font-size: 30px;
-  text-align: center;
+  width: 90%;
 }
 
 .mediofooter {
@@ -542,22 +551,170 @@
   margin-left: -10%;
 }
 
-.finalFooter{
+.finalFooter {
   width: 100%;
   height: 100%;
+  justify-content: center;
+
 }
 
-.finalImg{
+.finalImg {
   width: 100%;
-  height: 100%;
   margin-top: 5%;
-  margin-left: -10%;
+  margin-left: -20%;
+}
+
+.mundoLineas {
+  width: 80%;
+}
+
+.movidaNet {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.linkmovidaNet {
+  width: 30%;
+  margin-top: 2%;
+}
+
+.infoArg {
+  width: 28%;
+  position: absolute;
+  left: 20%;
+  margin-top: 10%;
+}
+
+.igArg {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 15%;
+}
+
+.fcArg {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 15%;
+}
+
+.infoBol {
+  width: 26%;
+  position: absolute;
+  left: 20%;
+  margin-top: 25%;
+}
+
+.igBol {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 30.6%;
+}
+
+.fcBol {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 30.6%;
+}
+
+.infoPar {
+  width: 26%;
+  position: absolute;
+  left: 20%;
+  margin-top: 40%;
+}
+
+.igPar {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 45%;
+}
+
+.fcPar {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 45%;
+}
+
+.infoUru {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 10%;
+}
+
+.igUru {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 15%;
+}
+
+.fcUru {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 15%;
+}
+
+.infoPer {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 25%;
+}
+
+.igPer {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 30.6%;
+}
+
+.fcPer {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 30.6%;
+}
+
+.infoChi {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 40%;
+}
+
+.igChi {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 45.5%;
+}
+
+.fcChi {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 45.5%;
 }
 
 @media screen and (max-width: 768px) {
 
-  .primertexto {
-    font-size: 10px;
+  .mundoLineas {
+    width: 100%;
+    margin-left: -10%;
+  }
+
+  .finalImg {
+    width: 75%;
+    margin-top: 5%;
+    margin-left: -10%;
   }
 
 }
