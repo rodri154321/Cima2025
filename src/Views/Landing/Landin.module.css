@@ -334,6 +334,26 @@
   width: 30%;
 }
 
+.divSlide {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Oculta el contenido que se desborde */
+  word-wrap: break-word; /* Rompe palabras largas para que se ajusten */
+  white-space: normal;
+}
+
+.tyPSlide {
+  text-align: center;
+}
+
+.imgTyP {
+  height: 4vw;
+  padding: 10px 10px 10px 0;
+}
+
+
 @media screen and (max-width: 768px) {
 
   .talleresDiv {
@@ -347,36 +367,17 @@
 
   .textoTalleres {
     position: absolute;
-    top: 5%;
+    top: 9%;
     left: 60%;
   }
-}
 
-
-.divSlide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.textoSlide {
-  font-family: 'Gotham Medium';
-  font-size: 20px;
-  text-align: left;
-  padding: 20px;
-}
-
-
-@media screen and (max-width: 768px) {
-
-  .textoSlide {
-    font-family: 'Gotham Medium';
-    font-size: 7px;
-    text-align: center;
-    padding: 10px;
+  .imgTyP {
+    height: 5vw;
+    padding: 5px 5px 0px 0;
   }
+
 }
+
 
 /*---------------------------------------------------------OPERACION CIMA----------------------------------------------------------*/
 
@@ -577,6 +578,9 @@
   width: 30%;
   margin-top: 2%;
 }
+
+/*---------------------------------------------------------INFO PAISES----------------------------------------------------------*/
+
 
 .infoArg {
   width: 28%;

@@ -4,7 +4,9 @@ import ReactPlayer from 'react-player';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
 import style from './Landin.module.css';
+
 
 
 
@@ -115,100 +117,48 @@ const Landin = () => {
           </div>
 
           <div className={style.imagenesOradores}>
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 50 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png" alt="Thomas" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjetaThomas}>Tienen 4 hijos adultos y 9 nietos. Ellos son los fundadores y directores internacionales de MOVIDA. Desde hace más de 35 años viven todos los dias para cumplir lo que Dios puso en sus corazones y se resume en la visión del ministerio: “Jóvenes latinos comprometidos con Dios y su misión que sirvan interculturalmente para impactar el mundo”. Junto a su familia vivieron en Chile, Argentina y Alemania; y desde hace 7 años están instalados en Walzenhausen, Suiza a dónde están levantando el trabajo de MOVIDA en Europa.</p>
-                  </div>
-                </div>
-              </div>
+
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 50 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png" alt="Thomas" />
             </div>
 
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png" alt="Helder" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>Evangelista, pastor cofundador de C29 Granada y misionero con OC-UK / SEPAL España. Máster en Interpretación bíblica por la London School of Theology. Es confundador de RedTimoteo y de la European Young Evangelists NetWork. Predica en diferentes países en español, inglés y portugués.</p>
-                  </div>
-                </div>
-              </div>
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png" alt="Helder" />
             </div>
 
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png" alt="Mika" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>
-                      Pastor misionero nacido en Singapur, nieto de misioneros en China. Estudió en el Instituto Bíblico Elim, Nueva York. Ha servido en Indonesia, Canadá y Australia. Lidera una iglesia con enfoque misionero llamada Living Word International Church, que dedica ⅓  de su presupuesto anual a la misión. Está casado y tiene seis hijos.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png" alt="Mika" />
             </div>
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png" alt="Soon" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>Coreana. Misionera de largo plazo en Asia, trabajando en la plantación de iglesias y desarrollo comunitario desde 1994. Hoy es coordinadora de Wec en Argentina.</p>
-                  </div>
-                </div>
-              </div>
+
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png" alt="Soon" />
             </div>
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png" alt="Rafael" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>Rafael es casado con su esposa Xochitl desde 1987, y siempre han servido juntos en el ministerio. Rafael y Xochitl tienen una sola hija, Nayeli, quien terminó su maestría en misiones en el Seminario Fuller, en Pasadena, CA, y ella, junto a su esposo e hijos han servido como misioneros en el Sudeste de Asia.</p>
-                  </div>
-                </div>
-              </div>
+
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png" alt="Rafael" />
             </div>
-            <div className={style.divimagenesOradores}>
-              <div class={style.card}>
-                <div class={style.cardinner}>
-                  <div class={style.cardfront}>
-                    <motion.img
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      className={style.imageneOradores} src="https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png" alt="Hebert" />
-                  </div>
-                  <div class={style.cardback}>
-                    <p className={style.textoTarjeta}>info detallada</p>
-                  </div>
-                </div>
-              </div>
+
+            <div class={style.card}>
+              <motion.img
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className={style.imageneOradores} src="https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png" alt="Hebert" />
             </div>
           </div>
 
@@ -229,12 +179,62 @@ const Landin = () => {
               whileInView={{ scale: 1, opacity: 1 }} className={style.textoTalleres}
               src='https://i.postimg.cc/fRP5ZDbG/Recurso-1texto-Ple-Tall.png'
             />
-          </div>
 
+          </div>
           <div className={style.divSlide}>
-
+            <div className={style.tyPSlide}>
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/m240Z3Q7/Recurso-1-Norte-De-Africa.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/gjHtL5v8/Recurso-10-Historiadl-Mision.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/xTPBXkRh/Recurso-2-Islam.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/HLFhqbYc/Recurso-3-Pasos-PSM.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: 100 }} className={style.imgTyP} src="https://i.postimg.cc/j2bk5KJR/Recurso-4-Ev-Creativo.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: 100 }} className={style.imgTyP} src="https://i.postimg.cc/1z8d7vQ1/Recurso-5-Proyde-Vida.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: 100 }} className={style.imgTyP} src="https://i.postimg.cc/nhR516N1/Recurso-6-Hospitales.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/nhcgBHSz/Recurso-7-Adicciones.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/tR3Mc1LJ/Recurso-8-Choque-Cultural.png" alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.1 }}
+                exit={{ opacity: 0, x: -100 }} className={style.imgTyP} src="https://i.postimg.cc/PxZRTNJ6/Recurso-9-Amoral-E.png" alt="" />
+            </div>
           </div>
-
         </div>
 
         <div className={style.divOper}>
@@ -354,60 +354,72 @@ const Landin = () => {
               {/* info Argentina */}
               <img className={style.infoArg} src="https://i.postimg.cc/zX6hKMMf/Recurso-8info-Arg.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igArg} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igArg} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcArg} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcArg} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
               {/* info Bolivia */}
 
               <img className={style.infoBol} src="https://i.postimg.cc/W1xLPqP0/Recurso-11info-Bolivia.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igBol} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igBol} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcBol} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcBol} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
               {/* info Paraguay */}
 
               <img className={style.infoPar} src="https://i.postimg.cc/sgrHPPy6/Recurso-12info-Paraguay.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igPar} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igPar} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcPar} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcPar} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
               {/* info Uruguay */}
 
               <img className={style.infoUru} src="https://i.postimg.cc/VvG827RF/Recurso-13info-Uruguay.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igUru} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igUru} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcUru} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcUru} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
               {/* info Perú */}
 
               <img className={style.infoPer} src="https://i.postimg.cc/zD78Lkhj/Recurso-14info-Peru.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igPer} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igPer} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcPer} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcPer} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
               {/* info Chile */}
 
               <img className={style.infoChi} src="https://i.postimg.cc/7Pn0fjXW/Recurso-15info-Chile.png" alt="infoArg" />
               <a href="https://www.movida-net.com">
-                <img className={style.igChi} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.igChi} src="https://i.postimg.cc/L8f08ng3/Recurso-9ig.png" alt="" />
               </a>
               <a href="https://www.movida-net.com">
-                <img className={style.fcChi} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }} className={style.fcChi} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
             </div>
