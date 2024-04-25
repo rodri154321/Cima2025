@@ -65,22 +65,13 @@
 
 }
 
-.videoIns {
-  width: 60%;
-  height: 500px;
-}
 
 .reactPlayer {
   height: 50vh;
   width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .videoIns {
-    width: 90%;
-    height: 200px;
-  }
-}
+
 
 /*-------------------------------------------------------------secciones----------------------------------------------------------*/
 
@@ -232,8 +223,7 @@
 
 
 .imageneOradores {
-  width: 80%;
-  margin: 30px;
+  width: 100%;
 }
 
 
@@ -242,65 +232,28 @@
 }
 
 
-.textoOr {
-  font-family: 'Gotham Medium';
-  font-size: 20px;
-  text-align: center;
-}
-
-.imagenContainer{
-  position: relative;
-  display: inline-block;
+.imagenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 
 .cartelito {
-  position: absolute;
-  width: 50%;
-  top: 85%;
-  left: 45%;
-  transform: translateX(-50%);
-  z-index: 1;
+  width: 80%;
+ margin-top: -9%;
 }
 
 @media screen and (max-width: 768px) {
-  .oradoresimg {
-    width: 90%;
-    margin-left: 10%;
-  }
-
-  .textoOra {
-    left: 8%;
-    width: 45%;
-  }
-
-  .textoTarjeta {
-    font-size: 30%;
-
-  }
 
   .imagenesOradores {
-    width:85%;
-  }
-
-  .imagenContainer{
-    position: relative;
-    width: 40%;
-    padding: 0 5% 0 5%;
-  }
-
-  .cartelito {
-    position: absolute;
-    width: 80%;
-    top: 72%;
-    left: 67%;
-    z-index: 1;
-  }
-  
-  .imageneOradores {
     width: 100%;
   }
 
-  
+
+  .imageneOradores {
+    width: 100%;
+  }
 
 }
 
@@ -460,7 +413,7 @@
 
   .divopfotos {
     margin-top: 5%;
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-right: 0%;
   }
@@ -509,12 +462,12 @@
 }
 
 .TituloExp {
-  width: 50%;
+  width: 70%;
 }
 
 .mapa {
   margin-top: 5%;
-  width: 65%;
+  width: 70%;
   align-self: center;
 }
 
@@ -525,34 +478,34 @@
 
 .latam {
   position: absolute;
-  width: 30%;
+  width: 40%;
   top: 5%;
   left: 9%;
 }
 
 .africa {
   position: absolute;
-  width: 15%;
+  width: 23%;
   top: 5%;
-  left: 42%;
+  left: 49%;
 }
 
 .europa {
   position: absolute;
-  width: 15%;
+  width: 25%;
   top: 5%;
-  left: 62%;
+  left: 74%;
 }
 
 .asia {
   position: absolute;
-  width: 12%;
-  top: 5%;
-  left: 79%;
+  width: 22%;
+  top: 55%;
+  left: 73%;
 }
 
 .transoceanicas {
-  width: 60%;
+  width: 70%;
   margin-left: -2%;
 }
 
@@ -567,7 +520,7 @@
   }
 
   .africa {
-    left: 42%;
+    left: 50%;
   }
 
 }
@@ -595,18 +548,30 @@
   width: 70%;
 }
 
+.videoIns {
+  width: 65%;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .videoIns {
+    width: 90%;
+    height: 200px;
+  }
+}
+
 .mediofooter {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  margin-right: 6%;
 }
 
 .imgMedioFoot {
-  width: 80%;
+  width: 100%;
 }
 
 .mediotextofooter {
-  width: 80%;
-  margin-left: 17%;
+  width: 90%;
+
 }
 
 .contactanos {
@@ -788,6 +753,111 @@
     width: 75%;
     margin-top: 5%;
     margin-left: -10%;
+  }
+
+  .infoArg {
+    width: 38%;
+    left: 11%;
+  }
+
+  .igArg {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 17%;
+  }
+
+  .fcArg {
+    width: 5%;
+    left: 9%;
+    margin-top: 17%;
+  }
+
+  .infoBol {
+    width: 37%;
+    left: 11%;
+  }
+
+  .igBol {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcBol {
+    width: 5%;
+    left: 9%;
+    margin-top: 32.6%;
+  }
+
+  .infoPar {
+    width: 38%;
+    left: 11%;
+  }
+
+  .igPar {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 47%;
+  }
+
+  .fcPar {
+    width: 5%;
+    left: 9%;
+    margin-top: 47%;
+  }
+
+  .infoUru {
+    width: 38%;
+    left: 55%;
+    margin-top: 10%;
+  }
+
+  .igUru {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 17%;
+  }
+
+  .fcUru {
+    width: 5%;
+    left: 53%;
+    margin-top: 17%;
+  }
+
+  .infoPer {
+    width: 38%;
+    left: 55%;
+    margin-top: 25%;
+  }
+
+  .igPer {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcPer {
+    width: 5%;
+    left: 53%;
+    margin-top: 32.6%;
+  }
+
+  .infoChi {
+    width: 38%;
+    left: 55%;
+    margin-top: 40%;
+  }
+
+  .igChi {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 47.5%;
+  }
+
+  .fcChi {
+    width: 5%;
+    left: 53%;
+    margin-top: 47.5%;
   }
 
 }

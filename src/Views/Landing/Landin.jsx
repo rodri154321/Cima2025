@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Tilt } from '@jdion/tilt-react'
 
@@ -23,26 +23,10 @@ const Landin = () => {
     { id: 3, src: 'https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png', cartelito: 'https://i.postimg.cc/s2TMBZsy/mika.png', nombre: 'Mika', showCartelito: false },
     { id: 4, src: 'https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png', cartelito: 'https://i.postimg.cc/K8JsvL0x/soon-im.png', nombre: 'Soon', showCartelito: false },
     { id: 5, src: 'https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png', cartelito: 'https://i.postimg.cc/yY5DqrHH/rafael-canada.png', nombre: 'Rafael', showCartelito: false },
-    { id: 6, src: 'https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png', cartelito: 'https://i.postimg.cc/cJ05dhRD/helder-farvin.png', nombre: 'Hebert', showCartelito: false },
+    { id: 6, src: 'https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png', cartelito: 'https://i.postimg.cc/tJfnvkbR/hebert.png', nombre: 'Hebert', showCartelito: false },
     { id: 7, src: 'https://i.postimg.cc/FsyYQ6f2/andrew-burson.png', cartelito: 'https://i.postimg.cc/YCrLzmM4/cartelito-verde-2.png', nombre: 'Andrew', showCartelito: false },
     { id: 8, src: 'https://i.postimg.cc/jdmZGL78/yasir-eric.png', cartelito: 'https://i.postimg.cc/Xv6hP31y/cartelito-verde-3.png', nombre: 'Yasir', showCartelito: false }
   ]);
-
-  const handleMouseEnter = (id) => {
-    setOradoresData((prevState) =>
-      prevState.map((orador) =>
-        orador.id === id ? { ...orador, showCartelito: true } : orador
-      )
-    );
-  };
-
-  const handleMouseLeave = (id) => {
-    setOradoresData((prevState) =>
-      prevState.map((orador) =>
-        orador.id === id ? { ...orador, showCartelito: false } : orador
-      )
-    );
-  };
 
   return (
     <>
@@ -168,8 +152,6 @@ const Landin = () => {
               <div
                 key={orador.id}
                 className={style.imagenContainer}
-                onMouseEnter={() => handleMouseEnter(orador.id)}
-                onMouseLeave={() => handleMouseLeave(orador.id)}
               >
                 <motion.img
                   initial={{ opacity: 0, y: 50 }}
@@ -179,9 +161,9 @@ const Landin = () => {
                   src={orador.src}
                   alt={orador.nombre}
                 />
-                {orador.showCartelito && (
-                  <img className={style.cartelito} src={orador.cartelito} alt="" />
-                )}
+
+                <img className={style.cartelito} src={orador.cartelito} alt={orador.nombre} />
+
               </div>
             ))}
           </div>
@@ -275,12 +257,13 @@ const Landin = () => {
             </div>
 
             <div className={style.divopfotos}>
-              <iframe
-                src="https://drive.google.com/file/d/1_rjKLuKhQqIR6AVDcbkHAbABYE0VCvy_/preview"
+              <ReactPlayer
+                url='https://youtu.be/TfMalLtq9uY'
                 width={'100%'}
                 height={'100%'}
-                allow="autoplay">
-              </iframe>
+                controls
+                origin="https://www.youtube.com"
+              />
             </div>
           </div>
 
