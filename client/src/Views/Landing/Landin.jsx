@@ -328,19 +328,19 @@ const Landin = () => {
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.latam}
-              src="https://i.postimg.cc/d3sLYWJm/Recurso-7latam.png" alt="Latino America" />
+              src="https://i.postimg.cc/QtTPf1Z7/Recurso-3latam.png" alt="Latino America" />
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.africa}
-              src="https://i.postimg.cc/VNsKTwCK/Recurso-8africa.png" alt="Africa" />
+              src="https://i.postimg.cc/HLjF7FSB/Recurso-4africa.png" alt="Africa" />
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.europa}
-              src="https://i.postimg.cc/5yWvh5rf/Recurso-9europa.png" alt="Europa" />
+              src="https://i.postimg.cc/NjdWFQxK/Recurso-2europa.png" alt="Europa" />
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.asia}
-              src="https://i.postimg.cc/bJcWBWqr/Recurso-11asia.png" alt="Asia" />
+              src="https://i.postimg.cc/cJj27T2Z/Recurso-5asia.png" alt="Asia" />
 
 
 
