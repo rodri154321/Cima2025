@@ -1,66 +1,87 @@
 import React, { useState } from 'react';
-import getCountrysAndProvinces from '../utils/getCountrysAndProvinces';
+import useForm from '../hook/useForm';
+import { getCheckListItemsCima, getCheckListItemsFeeding, getCountrysAndProvinces } from '../utils/formFieldData';
 
 function RegistroFormulario() {
-    const [selectedName, setName] = useState('');
-    const [selectedLastname, setLastName] = useState('');
-    const [selectedCountry, setCountry] = useState('');
-    const [selectedProvince, setProvince] = useState('');
-    const [selectedChurch, setChurch] = useState('');
-    const [city, setCity] = useState('');
-    const [leaderName, setLeaderName] = useState('');
-    const [leaderPhone, setLeaderPhone] = useState('');
-    const [allergies, setAllergies] = useState('');
-    const [medication, setMedication] = useState('');
-    const [healthNotes, setHealthNotes] = useState('');
-    const [whatsapp, setWhatsapp] = useState('');
-    const [email, setEmail] = useState('');
-    const [emergencyContactName, setEmergencyContactName] = useState('');
-    const [emergencyContactPhone, setEmergencyContactPhone] = useState('');
-    const [diet, setDiet] = useState('');
-    const [participationCima, setParticipationCima] = useState('');
-    const [participation, setParticipation] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Aquí puedes procesar los datos enviados (por ejemplo, enviarlos al servidor).
-
-    };
+    const checkListItemsCima = getCheckListItemsCima();
+    const checkListItemsFeeding = getCheckListItemsFeeding();
     const location = getCountrysAndProvinces();
-
-    const handleCountryChange = (event) => {
-        setCountry(event.target.value);
+    const initialData = {
+        firstname: "",
+        lastName: "",
+        dateOfBirth: "",
+        gender: "",
+        nationality: "",
+        countryOfResidence: "",
+        province: "",
+        city: "",
+        church: "",
+        pastor: "",
+        pastorPhoneNumber: 0,
+        allergies: "",
+        medication: "",
+        healthDetails: "",
+        whatsappNumber: 0,
+        email: "",
+        emergencyContactName: "",
+        emergencyContactPhoneNumber: 0,
+        dietaryPreferences: [],
+        cima: []
     };
+    const onValidate = (form) => {
+        let errors = {};
+        if (!form.firstname.trim()) {
+            errors.firstname = "Debe colocar un nombre";
+        }
 
-    const handleProvinceChange = (event) => {
-        setProvince(event.target.value);
-    };
+        return errors
+    }
+    const { form, errors, loading, handleSubmit, handleChange } = useForm(initialData, onValidate);
+
+
     return (
         <div>
             <h1>Registro de Datos</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Nombre:</label>
+                <label htmlFor="firstname">Nombre:</label>
                 <input
                     type="text"
-                    id="name"
-                    value={selectedName}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                /><br />
+                    name="firstname"
+                    value={form.firstname}
+                    onChange={handleChange}
 
-                <label htmlFor="lastname">Apellido:</label>
+                /><br />
+                {errors.firstname && <div>{errors.firstname}</div>}
+
+                <label htmlFor="lastName">Apellido:</label>
                 <input
                     type="text"
-                    id="lastname"
-                    value={selectedLastname}
-                    onChange={(e) => setLastName(e.target.value)}
-                    required
+                    name="lastName"
+                    value={form.lastName}
+                    onChange={handleChange}
+
                 /><br />
+                {errors.lastName && <div>{errors.lastname}</div>}
 
+                <label htmlFor="dateOfBirth">Fecha de Nacimiento:</label>
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="dateOfBirth"
+                    value={form.dateOfBirth}
+                    onChange={handleChange}
+                /><br />
+                {errors.dateOfBirth && <div>{errors.dateOfBirth}</div>}
+                <label htmlFor="gender">Genero:</label>
+                <select name="gender" value={form.gender} onChange={handleChange}>
+                    <option value="">Seleciona tu genero</option>
+                    <option value="masculino">masculino</option>
+                    <option value="femenino">femenino</option>
+                </select>
+                {errors.gender && <div>{errors.gender}</div>}
 
-
-                <label htmlFor="country">País:</label>
-                <select value={selectedCountry} onChange={handleCountryChange}>
+                <label htmlFor="country">Nacionalidad:</label>
+                <select name="nationality" value={form.nationality} onChange={handleChange}>
                     <option value="">Selecciona un país</option>
                     {location.countries.map((country) => (
                         <option key={country} value={country}>
@@ -68,43 +89,60 @@ function RegistroFormulario() {
                         </option>
                     ))}
                 </select>
+                {errors.nationality && <div>{errors.nationality}</div>}
+                <label htmlFor="country">Pais de residencia:</label>
+                <select name="countryOfResidence" value={form.countryOfResidence} onChange={handleChange}>
+                    <option value="">Selecciona un país</option>
+                    {location.countries.map((country) => (
+                        <option
+                            key={country}
+                            value={country}>
+                            {country}
+                        </option>
+                    ))}
+                </select>
+                {errors.countryOfResidence && <div>{errors.countryOfResidence}</div>}
 
                 <label htmlFor="province">Provincia:</label>
-                <select value={selectedProvince} onChange={handleProvinceChange}>
+                <select name="province" value={form.province} onChange={handleChange}>
                     <option value="">Selecciona una province</option>
-                    {location[selectedCountry]?.map((province) => (
-                        <option key={province} value={province}>
+                    {location[form.countryOfResidence]?.map((province) => (
+                        <option
+                            key={province}
+
+                            value={province}>
                             {province}
 
                         </option>
                     ))}
-
                 </select><br />
-
+                {errors.province && <div>{errors.province}</div>}
                 <label htmlFor="church">Iglesia:</label>
                 <input
                     type="text"
-                    id="church"
-                    value={selectedChurch}
-                    onChange={(e) => setChurch(e.target.value)}
+                    name="church"
+                    value={form.church}
+                    onChange={handleChange}
                 /><br />
-
-                <label htmlFor="leaderName">Nombre y apellido del Pastor / Anciano / Líder:</label>
+                {errors.church && <div>{errors.church}</div>}
+                <label htmlFor="pastor">Nombre y apellido del Pastor / Anciano / Líder:</label>
                 <input
                     type="text"
-                    id="leaderName"
-                    value={leaderName}
-                    onChange={(e) => setLeaderName(e.target.value)}
+                    name="pastor"
+                    value={form.pastor}
+                    onChange={handleChange}
                 /><br />
+                {errors.pastor && <div>{errors.pastor}</div>}
 
 
-                <label htmlFor="leaderPhone">Teléfono del Pastor / Anciano / Líder:</label>
+                <label htmlFor="pastorPhoneNumber">Teléfono del Pastor / Anciano / Líder:</label>
                 <input
                     type="tel"
-                    id="leaderPhone"
-                    value={leaderPhone}
-                    onChange={(e) => setLeaderPhone(e.target.value)}
+                    name="pastorPhoneNumber"
+                    value={form.pastorPhoneNumber}
+                    onChange={handleChange}
                 /><br />
+                {errors.pastor && <div>{errors.pastor}</div>}
                 <h2>Datos de Salud</h2>
                 <p>Durante CIMA tendremos un equipo de enfermeros atentos a ayudarte en situaciones no complejas. Ante alguna complejidad, se derivará al hospital correspondiente.
                 </p>
@@ -112,84 +150,113 @@ function RegistroFormulario() {
                 <label htmlFor="allergies">	¿Sos alérgico/a algo? Detalla tus alergias </label>
                 <input
                     type="text"
-                    id="allergies"
-                    value={allergies}
-                    onChange={(e) => setAllergies(e.target.value)} /><br />
-
+                    name="allergies"
+                    value={form.allergies}
+                    onChange={handleChange} /><br />
+                {errors.allergies && <div>{errors.allergies}</div>}
                 <label htmlFor="medication">¿Tomás alguna medicación? Detalla los medicamentos que estás tomando:</label>
                 <input
                     type="text"
-                    id="medication"
-                    value={medication}
-                    onChange={(e) => setMedication(e.target.value)} /><br />
-
-                <label htmlFor="healthNotes">Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</label>
+                    name="medication"
+                    value={form.medication}
+                    onChange={handleChange} /><br />
+                {errors.medication && <div>{errors.medication}</div>}
+                <label htmlFor="healthDetails">Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</label>
                 <input
                     type="text"
-                    id="healthNotes"
-                    value={healthNotes}
-                    onChange={(e) => setHealthNotes(e.target.value)} /><br />
-
+                    name="healthDetails"
+                    value={form.healthDetails}
+                    onChange={handleChange} /><br />
+                {errors.healthDetails && <div>{errors.healthDetails}</div>}
                 <h2>Datos de Contacto: </h2><p> Asegurate de completar los siguientes datos con información actualizada porque serán los medios por los cuales nos contactaremos con vos.</p>
 
-                <label htmlFor="whatsapp">Whatsapp</label>
+                <label htmlFor="whatsappNumber">Whatsapp</label>
                 <input
                     type="tel"
-                    id="leadewhatsapprPhone"
-                    value={whatsapp}
-                    onChange={(e) => setWhatsapp(e.target.value)}
+                    name="whatsappNumber"
+                    value={form.whatsappNumber}
+                    onChange={handleChange}
                 /><br />
-
+                {errors.whatsappNumber && <div>{errors.whatsappNumber}</div>}
                 <label htmlFor="email">Correo electrónico</label>
                 <input
                     type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)} /><br />
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange} /><br />
+                {errors.email && <div>{errors.email}</div>}
                 <h2>Ante una emergencia, ¿a quién podríamos contactar? </h2>
 
                 <label htmlFor="emergencyContactName">Nombre:</label>
                 <input
                     type="text"
-                    id="emergencyContactName"
-                    value={emergencyContactName}
-                    onChange={(e) => setName(e.target.value)}
-                    required
+                    name="emergencyContactName"
+                    value={form.emergencyContactName}
+                    onChange={handleChange}
                 /><br />
-                <label htmlFor="emergencyContactPhone">	Teléfono (Con código de país)</label>
+                {errors.emergencyContactName && <div>{errors.emergencyContactName}</div>}
+                <label htmlFor="emergencyContactPhoneNumber">	Teléfono (Con código de país)</label>
                 <input
                     type="tel"
-                    id="emergencyContactPhone"
-                    value={emergencyContactPhone}
-                    onChange={(e) => setEmergencyContactPhone(e.target.value)}
+                    name="emergencyContactPhoneNumber"
+                    value={form.emergencyContactPhoneNumber}
+                    onChange={handleChange}
                 /><br />
+                {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
-                <select value={diet} onChange={setDiet}>
-                    <option value="celiaco">Soy celiaco/a</option>
-                    <option value="vegetariano">Soy vegetariano/a</option>
-                    <option value="diabetico">Soy diabético/a</option>
-                    <option value="ninguna">Ninguna</option>
-                    <option value="otra">Otra</option>
-                </select>
-                {diet === 'otra' && (
+                <ol>
+
+                    {checkListItemsFeeding.map((item, index) => {
+
+                        return (
+                            <li key={index}>
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="dietaryPreferences"
+                                        value={item}
+                                        checked={form.dietaryPreferences.includes(item)}
+                                        onChange={handleChange}
+                                    />
+                                    {item}
+                                </label>
+                            </li>
+                        );
+                    })}
+                </ol>
+
+                {form.dietaryPreferences[0] === 'Otra' && (
                     <input
                         type="text"
+                        name="dietaryPreferences"
                         placeholder="Especifica otra opción"
+                        value={form.dietaryPreferences}
+                        onChange={handleChange}
                     //*si se quiere especificar la almentacion en un futuro
                     />
                 )}
+                {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
 
                 <h2>Otros Datos :</h2>
-                <select value={participationCima} onChange={setParticipationCima}>
-                    <option value="celiaco">Cima Day</option>
-                    <option value="vegetariano">Prisma</option>
-                    <option value="diabetico">Eurovoluntariado</option>
-                    <option value="ninguna">Cimay</option>
-                    <option value="otra">Hice el curso Storyline o Vaya a Movilizar</option>
-                    <option value="otra">Ninguno</option>
-                </select>
-                <button type="submit">Enviar</button>
+                <ol>
+                    {checkListItemsCima.map((item, index) => (
+                        <li key={index}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="cima"
+                                    value={item}
+                                    checked={form.cima.includes(item)}
+                                    onChange={handleChange}
+                                />
+                                {item}
+                            </label>
+                        </li>
+                    ))}
+                </ol>
+                {errors.cima && <div>{errors.cima}</div>}
+                <button type="submit" disabled = {loading}>{loading ? "Enviando....": "Enviar"}</button>
             </form>
         </div>
     );
