@@ -239,7 +239,7 @@
 
 .cartelito {
   width: 80%;
- margin-top: -9%;
+  margin-top: -9%;
 }
 
 @media screen and (max-width: 768px) {
@@ -455,7 +455,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -463,10 +463,99 @@
   width: 70%;
 }
 
+.maparelative {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mapa {
   margin-top: 5%;
   width: 70%;
-  align-self: center;
+}
+
+.pointArg {
+  position: absolute;
+  width: 2.5%;
+  top: 79%;
+  left: 32.5%;
+}
+
+.pointChi {
+  position: absolute;
+  width: 2.5%;
+  top: 81%;
+  left: 30%;
+}
+
+.pointPer {
+  position: absolute;
+  width: 2.5%;
+  top: 69%;
+  left: 28.5%;
+}
+
+.pointBol {
+  position: absolute;
+  width: 2.5%;
+  top: 72%;
+  left: 31%;
+}
+.pointPar {
+  position: absolute;
+  width: 2.5%;
+  top: 72%;
+  left: 33.5%;
+}
+.pointUru {
+  position: absolute;
+  width: 2.5%;
+  top: 74%;
+  left: 36%;
+}
+.pointKen {
+  position: absolute;
+  width: 2.5%;
+  top: 64%;
+  left: 53.5%;
+}
+.pointSen {
+  position: absolute;
+  width: 2.5%;
+  top: 54%;
+  left: 41%;
+}
+.pointEsp {
+  position: absolute;
+  width: 2.5%;
+  top: 40%;
+  left: 43.5%;
+}
+.pointAlb {
+  position: absolute;
+  width: 2%;
+  top: 41%;
+  left: 49%;
+}
+.pointMac {
+  position: absolute;
+  width: 2%;
+  top: 40%;
+  left: 50%;
+}
+.pointTur {
+  position: absolute;
+  width: 2.5%;
+  top: 41%;
+  left: 52%;
+}
+.pointTai {
+  position: absolute;
+  width: 2.5%;
+  top: 54%;
+  left: 68.5%;
 }
 
 .exprelative {
@@ -521,6 +610,61 @@
     left: 50%;
   }
 
+
+  .pointArg {
+    width: 3%;
+    left: 26%;
+  }
+  
+  .pointChi {
+    width: 3%;
+    left: 23%;
+  }
+  
+  .pointPer {
+    width: 3%;
+    left: 21%;
+  }
+  
+  .pointBol {
+    width: 3%;
+    left: 24%;
+  }
+  .pointPar {
+    width: 3%;
+    left: 27%;
+  }
+  .pointUru {
+    width: 3%;
+    left: 30%;
+  }
+  .pointKen {
+    width: 3%;
+    left: 54%;
+  }
+  .pointSen {
+    width: 3%;
+    left: 38%;
+  }
+  .pointEsp {
+    width: 3%;
+    left: 41%;
+  }
+  .pointAlb {
+    left: 50%;
+  }
+  .pointMac {
+    left: 51%;
+  }
+  .pointTur {
+    width: 3%;
+    left: 53%;
+  }
+  .pointTai {
+    width: 3%;
+    left: 75%;
+  }
+  
 }
 
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/

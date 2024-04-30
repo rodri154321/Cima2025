@@ -22,11 +22,15 @@ const Landin = () => {
     { id: 2, src: 'https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png', cartelito: 'https://i.postimg.cc/cJ05dhRD/helder-farvin.png', nombre: 'Helder', showCartelito: false },
     { id: 3, src: 'https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png', cartelito: 'https://i.postimg.cc/s2TMBZsy/mika.png', nombre: 'Mika', showCartelito: false },
     { id: 4, src: 'https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png', cartelito: 'https://i.postimg.cc/K8JsvL0x/soon-im.png', nombre: 'Soon', showCartelito: false },
-    { id: 5, src: 'https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png', cartelito: 'https://i.postimg.cc/yY5DqrHH/rafael-canada.png', nombre: 'Rafael', showCartelito: false },
+    { id: 5, src: 'https://i.postimg.cc/Wb1y5KHr/Recurso-7-Rafael.png', cartelito: 'https://i.postimg.cc/cJMYpqvT/rafael-canada.png', nombre: 'Rafael', showCartelito: false },
     { id: 6, src: 'https://i.postimg.cc/J4Y2vqfF/Recurso-6-Hebert.png', cartelito: 'https://i.postimg.cc/tJfnvkbR/hebert.png', nombre: 'Hebert', showCartelito: false },
-    { id: 7, src: 'https://i.postimg.cc/FsyYQ6f2/andrew-burson.png', cartelito: 'https://i.postimg.cc/YCrLzmM4/cartelito-verde-2.png', nombre: 'Andrew', showCartelito: false },
+    { id: 7, src: 'https://i.postimg.cc/FsyYQ6f2/andrew-burson.png', cartelito: 'https://i.postimg.cc/RFjqbXM4/andrew.png', nombre: 'Andrew', showCartelito: false },
     { id: 8, src: 'https://i.postimg.cc/jdmZGL78/yasir-eric.png', cartelito: 'https://i.postimg.cc/Xv6hP31y/cartelito-verde-3.png', nombre: 'Yasir', showCartelito: false }
   ]);
+
+  const [experimentaData, setExperimentaData] = useState([
+    //{id:1, src: , }
+  ])
 
   return (
     <>
@@ -317,10 +321,94 @@ const Landin = () => {
             whileHover={{ scale: 1.1 }} className={style.TituloExp}
             src='https://i.postimg.cc/PrtKKHbM/Recurso-4-Experimenta-Sec.png' alt='Experimenta' />
 
-          <motion.img
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }} className={style.mapa}
-            src="https://i.postimg.cc/ZYjY655R/Recurso-5mapa.png" alt="Mapa Experimenta" />
+
+          <div className={style.maparelative}>
+
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointArg}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Argentina"/>
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointChi}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Chile" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointPer}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Perú" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointBol}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Bolivia" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointPar}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Paraguay" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointUru}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Uruguay" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointKen}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Kenia" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointSen}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Senegal" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointEsp}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="España" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointAlb}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Albania" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointMac}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Macedonia" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointTur}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Turquia" />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointTai}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Tailandia" />
+
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }} className={style.mapa}
+              src="https://i.postimg.cc/ZYjY655R/Recurso-5mapa.png" alt="Mapa Experimenta" />
+
+          </div>
 
           <div className={style.exprelative}>
 
