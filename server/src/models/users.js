@@ -8,52 +8,34 @@ module.exports = (sequelize) => {
             primaryKey: true,
             unique: true
         },
-        username: {
+        emailGoogle: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        lastName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
         },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        cellPhone: {
+        pagoARealizar: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        country: {
+        monto: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        admin: {
-            type: DataTypes.BOOLEAN,
-            defaultValue: false
-        },
-        image: {
-            type: DataTypes.STRING(1000),
-            allowNull: true,
-        },
-        customCreatedAt: {
-            type: DataTypes.DATE,
+        estadoInscripcion: {
+            type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'), // Establece la fecha de creación al crear el registro
         },
-        active: {
+        voluntario: {
             type: DataTypes.BOOLEAN,
-            defaultValue: true,
+            allowNull: false,
+        },
+        preinscripto: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
         },
     }, 
     );

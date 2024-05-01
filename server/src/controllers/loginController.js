@@ -1,10 +1,11 @@
 const { users } = require("../db.js");
 
-const postLogin = async(email, password) =>{
+const postLogin = async(emailGoogle, password) =>{
 
-      console.log(email,password);
+      console.log(emailGoogle,password);
 
-        const exist = await users.findOne({ where: { email: email } });
+      const exist = await users.findOne({ where: { emailGoogle: email } });
+      
       if (!exist) throw Error("Usuario no encontrado")
   
       if (exist.password !== password) throw Error("Contraseña Invalida")
