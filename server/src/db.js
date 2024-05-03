@@ -11,7 +11,6 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
   native: false,
 });
 
-console.log(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
 
 const basename = path.basename(__filename);
 
