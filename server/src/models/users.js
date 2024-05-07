@@ -10,87 +10,87 @@ module.exports = (sequelize) => {
         },
         nombre: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         apellido: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         fechaNacimiento: {
             type: DataTypes.DATE,
-            allowNull: false
+            allowNull: true
         },
         sexo: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         documento: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         nacionalidad: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         paisResidencia: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         provincia: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         ciudad: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         iglesia: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         nombrePastor: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         telefonoPastor: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         esAlergico: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
+            allowNull: true
         },
         detalleAlergia: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         tieneMedicacion: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
+            allowNull: true
         },
         detalleMedicacion: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         telefono: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         alimentacion: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         participacionMovida: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         esVoluntario: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
+            allowNull: true
         },
         emailGoogle: {
             type: DataTypes.STRING,
@@ -103,23 +103,23 @@ module.exports = (sequelize) => {
         },
         descubrePagos: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         experimentaPagos: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         voluntarioPagos: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         cartaPastoral: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
+            allowNull: true
         },
         estadoInscripcion: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         preinscripto: {
             type: DataTypes.BOOLEAN,
