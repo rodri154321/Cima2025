@@ -28,9 +28,16 @@ const Landin = () => {
     { id: 8, src: 'https://i.postimg.cc/jdmZGL78/yasir-eric.png', cartelito: 'https://i.postimg.cc/Xv6hP31y/cartelito-verde-3.png', nombre: 'Yasir', showCartelito: false }
   ]);
 
-  const [experimentaData, setExperimentaData] = useState([
-    //{id:1, src: , }
-  ])
+  
+    const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+  
+    const handleClickImagen = (imagenSrc) => {
+      setImagenSeleccionada(imagenSrc);
+    };
+  
+    const handleCloseModal = () => {
+      setImagenSeleccionada(null);
+    };
 
   return (
     <>
@@ -314,7 +321,7 @@ const Landin = () => {
           </div>
         </div>
 
-        <div className={style.experimentaDiv}>
+        <div className={style.experimentaDiv} >
           <motion.img
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -322,86 +329,133 @@ const Landin = () => {
             src='https://i.postimg.cc/PrtKKHbM/Recurso-4-Experimenta-Sec.png' alt='Experimenta' />
 
 
-          <div className={style.maparelative}>
+          <div className={style.maparelative} >
 
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointArg}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Argentina"/>
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Argentina"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointChi}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Chile" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Chile"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointPer}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Perú" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Perú"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointBol}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Bolivia" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Bolivia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointPar}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Paraguay" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Paraguay"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointUru}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Uruguay" />
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Uruguay"
+              onClick={() => handleClickImagen("https://i.postimg.cc/SsdLSJ3h/Recurso-8ps-Sudamerica.png")} />
+            <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointBra}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Brasil"
+              onClick={() => handleClickImagen("https://i.postimg.cc/76n95BCj/Recurso-1ps-Brasil.png")} />
               <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointEcu}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Ecuador"
+              onClick={() => handleClickImagen("https://i.postimg.cc/wTv2BQ9b/Recurso-2ps-Ecuador.png")} />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointCol}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Colombia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/L6bTggX4/Recurso-3ps-Colombia.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointKen}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Kenia" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Kenia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/pdDYS0By/Recurso-7ps-Kenia.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointSen}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Senegal" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Senegal"
+              onClick={() => handleClickImagen("https://i.postimg.cc/YSczbcYJ/Recurso-6ps-Senegal.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointEsp}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="España" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="España"
+              onClick={() => handleClickImagen("https://i.postimg.cc/V6mBPj7g/Recurso-3ps-Espa-a.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointAlb}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Albania" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Albania"
+              onClick={() => handleClickImagen("https://i.postimg.cc/6p4hr62r/Recurso-4ps-Mac-Alb.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointMac}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Macedonia" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Macedonia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/6p4hr62r/Recurso-4ps-Mac-Alb.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointTur}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Turquia" />
-              <motion.img
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Turquia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/x8jRMKM8/Recurso-1ps-Turquia.png")} />
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointTai}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Tailandia" />
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Tailandia"
+              onClick={() => handleClickImagen("https://i.postimg.cc/xjggY4Vz/Recurso-5ps-Tailandia.png")} />
+
+            {/* Modal para mostrar la imagen en grande */}
+            {imagenSeleccionada && (
+              <div className={style.modal} onClick={handleCloseModal}>
+                <div className={style.modalContenido} onClick={handleCloseModal}>
+                  <img
+                    className={style.imagenGrande}
+                    src={imagenSeleccionada}
+                    alt="Imagen en grande"
+                  />
+                </div>
+              </div>
+            )}
 
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
@@ -435,7 +489,7 @@ const Landin = () => {
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.transoceanicas}
-              src="https://i.postimg.cc/QtkZRYc8/Recurso-2transoceanicas.png" alt="Transoceanicas" />
+              src="https://i.postimg.cc/sxnzy43R/Recurso-1transoceanicas.png" alt="Transoceanicas" />
 
           </div>
 

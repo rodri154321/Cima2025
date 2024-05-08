@@ -515,6 +515,24 @@
   top: 74%;
   left: 36%;
 }
+.pointBra {
+  position: absolute;
+  width: 2.5%;
+  top: 66%;
+  left: 36%;
+}
+.pointEcu {
+  position: absolute;
+  width: 2.5%;
+  top: 63%;
+  left: 27%;
+}
+.pointCol {
+  position: absolute;
+  width: 2.5%;
+  top: 57%;
+  left: 28.5%;
+}
 .pointKen {
   position: absolute;
   width: 2.5%;
@@ -562,6 +580,25 @@
   position: relative;
   width: 100%;
 }
+
+/*modal experimenta*/
+
+.modal{
+  position: absolute;
+  width: 100%;
+}
+
+.modalContenido{
+  width: 100%;
+}
+
+.imagenGrande{
+  width: 50%;
+  margin-top: 12%;
+  margin-left: 24%;
+}
+
+
 
 .latam {
   position: absolute;
@@ -638,6 +675,18 @@
     width: 3%;
     left: 30%;
   }
+  .pointBra {
+    width: 3%;
+    left: 30%;
+  }
+  .pointEcu {
+    width: 3%;
+    left: 19%;
+  }
+  .pointCol {
+    width: 3%;
+    left: 20%;
+  }
   .pointKen {
     width: 3%;
     left: 54%;
@@ -665,6 +714,12 @@
     left: 75%;
   }
   
+
+  .imagenGrande{
+    width: 70%;
+    margin-top: 12%;
+    margin-left: 16%;
+  }
 }
 
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/
