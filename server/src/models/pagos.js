@@ -1,24 +1,23 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-    sequelize.define('admin', {
+    sequelize.define('pagos', {
         id: {
-            type: DataTypes.UUID,
+            type: DataTypes.UUID, 
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
             unique: true
         },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true
-        },
-        password: {
+        comprobante: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        pais: {
-            type: DataTypes.STRING,
+        esDescubre: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+        },
+        fechaPago: {
+            type: DataTypes.DATE,
             allowNull: false,
         },
     }, 

@@ -4,10 +4,10 @@ require('dotenv/config')
 
 const fs = require('fs');
 const path = require('path');
-const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
 
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, {
-  logging: false, 
+  logging: false,
   native: false,
 });
 
@@ -25,15 +25,29 @@ fs.readdirSync(path.join(__dirname, '/models'))
 modelDefiners.forEach(model => model(sequelize));
 
 // Definición de las relaciones
-const { admin, users, plenaria, taller } = sequelize.models;
+const { admins, users, plenarias, talleres, pagos } = sequelize.models;
 
-taller.hasMany(users, {
-  foreignKey: 'tallerId', 
-}); 
-users.belongsTo(taller, {
-  foreignKey: 'tallerId', 
+talleres.hasMany(users, {
+  foreignKey: 'tallerId',
 });
- 
+users.belongsTo(talleres, {
+  foreignKey: 'tallerId',
+});
+
+users.hasMany(pagos, {
+  foreignKey: 'idPagos',
+});
+pagos.belongsTo(users, {
+  foreignKey: 'idPagos',
+});
+
+users.belongsToMany(plenarias, {
+  through: 'UsuariosXPlenarias'
+});
+plenarias.belongsToMany(users, {
+  through: 'UsuariosXPlenarias'
+});
+
 // 1. Relación uno a muchos: users -> nfts
 //users.belongsTo(taller, { as: "taller" });
 //taller.hasMany(users, { as: "users", foreignKey: 'idUser' });
