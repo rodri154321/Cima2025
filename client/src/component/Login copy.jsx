@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
+import loginService from "../utils/serviceLogin.js"
 
 
 const Login = () => {
 
-  const [email, setEmail] = useState(null)
+  const [emailGoogle, setEmailGoogle] = useState("")
+  const [user, setUser] = useState(null)
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
-      const { payload } = decodeJwt(CredentialsResponse.credential);
-      console.log("respuesta", payload)
-      setEmail(payload.email);
+
+     const { header, payload } = decodeJwt(CredentialsResponse.credential)
+      
+    const response = await loginService.login({
+      emailGoogle:payload.email,
+      password:CredentialsResponse.clientID
+     })
+     if(response){
+      setUser(response.user)
+     }
+      
     }
   }
   const handleGoogleError = (error) => {
@@ -18,13 +28,13 @@ const Login = () => {
   }
   return (
     <div>
-      {email === null && (
+      {emailGoogle === null && (
         <GoogleLogin
           useOneTap
           onSuccess={handleGoogleLogin}
           onError={handleGoogleError}
         />)}
-      {email && <p>El usuario ah iniciado secion: {email}</p>}
+      {emailGoogle && <p>El usuario ah iniciado secion: {emailGoogle}</p>}
     </div>
   );
 };

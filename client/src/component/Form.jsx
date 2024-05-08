@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useForm from '../hook/useForm';
-import { getCheckListItemsCima, getCheckListItemsFeeding, getCountrysAndProvinces } from '../utils/formFieldData';
+import { getCheckListItemsCima, getCheckListItemsFeeding } from '../utils/formFieldData';
+import getApiCountry from '../utils/getApiCountry';
+import SerachResultList from './SerachResultList';
+
 
 function RegistroFormulario() {
-    const checkListItemsCima = getCheckListItemsCima();
+    const [dataCountry, setDataCountry] = useState("")
     const checkListItemsFeeding = getCheckListItemsFeeding();
-    const location = getCountrysAndProvinces();
+    const checkListItemsCima = getCheckListItemsCima();
     const initialData = {
         firstname: "",
         lastName: "",
@@ -18,15 +21,17 @@ function RegistroFormulario() {
         church: "",
         pastor: "",
         pastorPhoneNumber: 0,
-        allergies: "",
-        medication: "",
-        healthDetails: "",
+        allergies: false,
+        allergyDetails: "",
+        medication: false,
+        medicationDetails: "",
         whatsappNumber: 0,
         email: "",
         emergencyContactName: "",
-        emergencyContactPhoneNumber: 0,
+        emergencyContactPhoneNumber: "",
         dietaryPreferences: [],
-        cima: []
+        dietaryDeatail: null,
+        participacionMovida: []
     };
     const onValidate = (form) => {
         let errors = {};
@@ -36,9 +41,14 @@ function RegistroFormulario() {
 
         return errors
     }
-    const { form, errors, loading, handleSubmit, handleChange } = useForm(initialData, onValidate);
+  
 
-
+    useEffect( () =>  {
+        // Ejecuta getApiCountry() cuando el componente se monta
+        let data =  getApiCountry();
+        setDataCountry(data);
+    }, []);
+    const {filterCountry, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
     return (
         <div>
             <h1>Registro de Datos</h1>
@@ -80,41 +90,31 @@ function RegistroFormulario() {
                 </select>
                 {errors.gender && <div>{errors.gender}</div>}
 
-                <label htmlFor="country">Nacionalidad:</label>
-                <select name="nationality" value={form.nationality} onChange={handleChange}>
-                    <option value="">Selecciona un país</option>
-                    {location.countries.map((country) => (
-                        <option key={country} value={country}>
-                            {country}
-                        </option>
-                    ))}
-                </select>
+
+                <label htmlFor="nationality">Nacionalidad:</label>
+                <div>
+                <input
+                    type="text"
+                    name="nationality"
+                    value={form.nationality}
+                    onChange={handleChange}
+
+                />
+                <SerachResultList dataCountry ={filterCountry}/>
+                </div>
+                
+
+                <br />
                 {errors.nationality && <div>{errors.nationality}</div>}
                 <label htmlFor="country">Pais de residencia:</label>
                 <select name="countryOfResidence" value={form.countryOfResidence} onChange={handleChange}>
                     <option value="">Selecciona un país</option>
-                    {location.countries.map((country) => (
-                        <option
-                            key={country}
-                            value={country}>
-                            {country}
-                        </option>
-                    ))}
                 </select>
                 {errors.countryOfResidence && <div>{errors.countryOfResidence}</div>}
 
                 <label htmlFor="province">Provincia:</label>
                 <select name="province" value={form.province} onChange={handleChange}>
                     <option value="">Selecciona una province</option>
-                    {location[form.countryOfResidence]?.map((province) => (
-                        <option
-                            key={province}
-
-                            value={province}>
-                            {province}
-
-                        </option>
-                    ))}
                 </select><br />
                 {errors.province && <div>{errors.province}</div>}
                 <label htmlFor="church">Iglesia:</label>
@@ -147,20 +147,46 @@ function RegistroFormulario() {
                 <p>Durante CIMA tendremos un equipo de enfermeros atentos a ayudarte en situaciones no complejas. Ante alguna complejidad, se derivará al hospital correspondiente.
                 </p>
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
-                <label htmlFor="allergies">	¿Sos alérgico/a algo? Detalla tus alergias </label>
+                <p>¿Sos alérgico/a algo?</p>
+                <label htmlFor="allergies">Si</label>
                 <input
-                    type="text"
+                    type="checkbox"
                     name="allergies"
-                    value={form.allergies}
-                    onChange={handleChange} /><br />
-                {errors.allergies && <div>{errors.allergies}</div>}
-                <label htmlFor="medication">¿Tomás alguna medicación? Detalla los medicamentos que estás tomando:</label>
+                    checked={form.allergies}
+                    onChange={handleChange}
+                />
+                {form.allergies && (
+                    <div>
+                        <label htmlFor="allergyDetails">Detalla tus alergias</label>
+                        <input
+                            type="text"
+                            name="allergyDetails"
+                            value={form.allergyDetails}
+                            onChange={handleChange}
+                        />
+                    </div>
+                )}<br />
+
+
+                <label htmlFor="medication">¿Tomás alguna medicación? </label>
                 <input
-                    type="text"
+                    type="checkbox"
                     name="medication"
-                    value={form.medication}
-                    onChange={handleChange} /><br />
+                    checked={form.medication}
+                    onChange={handleChange}
+                />
                 {errors.medication && <div>{errors.medication}</div>}
+                {form.medication && (
+                    <div>
+                        <label htmlFor="medicationDetails">Detalla los medicamentos que estás tomando:</label>
+                        <input
+                            type="text"
+                            name="medicationDetails"
+                            value={form.medicationDetails}
+                            onChange={handleChange}
+                        />
+                    </div>
+                )}<br />
                 <label htmlFor="healthDetails">Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</label>
                 <input
                     type="text"
@@ -205,38 +231,35 @@ function RegistroFormulario() {
                 {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
-                <ol>
-
-                    {checkListItemsFeeding.map((item, index) => {
-
-                        return (
-                            <li key={index}>
-                                <label>
-                                    <input
-                                        type="checkbox"
-                                        name="dietaryPreferences"
-                                        value={item}
-                                        checked={form.dietaryPreferences.includes(item)}
-                                        onChange={handleChange}
-                                    />
-                                    {item}
-                                </label>
-                            </li>
-                        );
-                    })}
+                 <ol>
+                    {checkListItemsFeeding.map((item, index) => (
+                        <li key={index}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="dietaryPreferences"
+                                    value={item}
+                                    checked={form.dietaryPreferences.includes(item)}
+                                    onChange={handleChange}
+                                />
+                                {item}
+                            </label>
+                        </li>
+                    ))}
                 </ol>
-
+                {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
                 {form.dietaryPreferences[0] === 'Otra' && (
+                    <div>
+                    <label htmlFor="dietaryDeatail"> Especifique los detalles de alimentacion.</label>
                     <input
                         type="text"
-                        name="dietaryPreferences"
-                        placeholder="Especifica otra opción"
-                        value={form.dietaryPreferences}
+                        name="dietaryDeatail"
+                        value={form.dietaryDeatail}
                         onChange={handleChange}
                     //*si se quiere especificar la almentacion en un futuro
                     />
+                    </div>
                 )}
-                {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
 
                 <h2>Otros Datos :</h2>
                 <ol>
@@ -245,9 +268,9 @@ function RegistroFormulario() {
                             <label>
                                 <input
                                     type="checkbox"
-                                    name="cima"
+                                    name="participacionMovida"
                                     value={item}
-                                    checked={form.cima.includes(item)}
+                                    checked={form.participacionMovida.includes(item)}
                                     onChange={handleChange}
                                 />
                                 {item}
@@ -255,8 +278,8 @@ function RegistroFormulario() {
                         </li>
                     ))}
                 </ol>
-                {errors.cima && <div>{errors.cima}</div>}
-                <button type="submit" disabled = {loading}>{loading ? "Enviando....": "Enviar"}</button>
+                {errors.participacionMovida && <div>{errors.participacionMovida}</div>}
+                <button type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
             </form>
         </div>
     );

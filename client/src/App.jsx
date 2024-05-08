@@ -1,7 +1,7 @@
 import './App.css'
 import {Routes, Route, useLocation} from 'react-router-dom';
 import Landing from './Views/Landing/Landin';
-import UserSection from './Views/userSection.jsx/UserSection';
+import UserSection from './Views/userSection/UserSection';
 
 
 function App() {
