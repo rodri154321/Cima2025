@@ -1,5 +1,5 @@
 .fondo1 {
-  background-image: url("https://i.postimg.cc/d0n5CK1N/collage-2025.jpg");
+  background-image: url("https://i.postimg.cc/KvGxj7mH/collage-2025.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -65,17 +65,13 @@
 
 }
 
+
 .reactPlayer {
-  width: 100%;
-  height: 3000px;
-  max-width: 100%;
+  height: 50vh;
+  width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .contenedorvideo .reactPlayer {
-    max-width: 100%;
-  }
-}
+
 
 /*-------------------------------------------------------------secciones----------------------------------------------------------*/
 
@@ -126,8 +122,6 @@
   margin-left: 10px;
 }
 
-
-
 .textoexp {
   position: absolute;
   top: 30%;
@@ -162,6 +156,35 @@
   }
 }
 
+.expeDiv {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experimentarelative {
+  position: relative;
+}
+
+.expe {
+  position: absolute;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.expetexto {
+  position: absolute;
+  width: 60%;
+  top: 30%;
+  left: 10%;
+}
+
+.experimentaImg {
+  width: 50%;
+  margin-left: 50%;
+}
+
 /*-------------------------------------------------------------ORADORES----------------------------------------------------------*/
 
 .oradoresdiv {
@@ -194,120 +217,40 @@
   width: 100%;
   height: 100%;
   margin-top: 30px;
-}
-
-.textoTarjeta {
-  font-family: 'Gotham Medium';
-  font-size: 1vw;
-  text-align: center;
-  height: 90%;
-  width: 90%;
-  color: #fff;
-}
-
-.textoTarjetaThomas {
-  font-family: 'Gotham Medium';
-  font-size: 1vw;
-  text-align: center;
-  height: 90%;
-  width: 90%;
-  color: #fff;
+  margin-bottom: 30px;
 }
 
 .imageneOradores {
-  width: 80%;
-  margin: 30px;
-  margin-right: 0px;
+  width: 100%;
 }
 
+
 .divimagenesOradores {
+  width: 100%;
+}
+
+
+.imagenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30%;
 }
 
-
-.cardinner {
-  width: 100%;
-  height: 100%;
-
-  transform-style: preserve-3d;
-  transition: transform 0.999s;
-}
-
-.card:hover .cardinner {
-  transform: rotateY(180deg);
-}
-
-.cardfront {
-
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.cardback {
-  position: absolute;
-  width: 70%;
-  height: 80%;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.cardfront {
-  transform: rotateY(0deg);
-}
-
-.cardback {
-  background-color: #E4A300;
-  color: #000000;
-  border-radius: 3px;
-  font-size: 24px;
-  transform: rotateY(180deg);
-}
-
-.textoOr {
-  font-family: 'Gotham Medium';
-  font-size: 20px;
-  text-align: center;
+.cartelito {
+  width: 80%;
+  margin-top: -9%;
 }
 
 @media screen and (max-width: 768px) {
-  .oradoresimg {
-    width: 90%;
-    margin-left: 10%;
+
+  .imagenesOradores {
+    width: 100%;
   }
 
-  .textoOra {
-    left: 8%;
-    width: 45%;
-  }
 
-  .textoTarjeta {
-    font-size: 30%;
-
-  }
-
-  .textoTarjetaThomas {
-    font-size: 22%;
-  }
-
-  .textoOr {
-    font-size: 5px;
-  }
-
-  .divimagenesOradores {
-    width: 50%;
-  }
-
-  .cardback {
-    width: 60%;
-    height: 60%;
+  .imageneOradores {
+    width: 100%;
   }
 
 }
@@ -339,8 +282,10 @@
   width: 100%;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Oculta el contenido que se desborde */
-  word-wrap: break-word; /* Rompe palabras largas para que se ajusten */
+  overflow: hidden;
+  /* Oculta el contenido que se desborde */
+  word-wrap: break-word;
+  /* Rompe palabras largas para que se ajusten */
   white-space: normal;
 }
 
@@ -410,7 +355,7 @@
 
 .divopfotos {
   width: 50%;
-  height: 50%;
+  height: 400px;
   margin-right: 5%;
 }
 
@@ -466,7 +411,7 @@
 
   .divopfotos {
     margin-top: 5%;
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-right: 0%;
   }
@@ -503,6 +448,225 @@
   }
 }
 
+/*---------------------------------------------------------EXPERIMENTA----------------------------------------------------------*/
+
+.experimentaDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.TituloExp {
+  width: 70%;
+}
+
+.maparelative {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa {
+  margin-top: 5%;
+  width: 70%;
+}
+
+.pointArg {
+  position: absolute;
+  width: 2.5%;
+  top: 79%;
+  left: 32.5%;
+}
+
+.pointChi {
+  position: absolute;
+  width: 2.5%;
+  top: 81%;
+  left: 30%;
+}
+
+.pointPer {
+  position: absolute;
+  width: 2.5%;
+  top: 69%;
+  left: 28.5%;
+}
+
+.pointBol {
+  position: absolute;
+  width: 2.5%;
+  top: 72%;
+  left: 31%;
+}
+.pointPar {
+  position: absolute;
+  width: 2.5%;
+  top: 72%;
+  left: 33.5%;
+}
+.pointUru {
+  position: absolute;
+  width: 2.5%;
+  top: 74%;
+  left: 36%;
+}
+.pointKen {
+  position: absolute;
+  width: 2.5%;
+  top: 64%;
+  left: 53.5%;
+}
+.pointSen {
+  position: absolute;
+  width: 2.5%;
+  top: 54%;
+  left: 41%;
+}
+.pointEsp {
+  position: absolute;
+  width: 2.5%;
+  top: 40%;
+  left: 43.5%;
+}
+.pointAlb {
+  position: absolute;
+  width: 2%;
+  top: 41%;
+  left: 49%;
+}
+.pointMac {
+  position: absolute;
+  width: 2%;
+  top: 40%;
+  left: 50%;
+}
+.pointTur {
+  position: absolute;
+  width: 2.5%;
+  top: 41%;
+  left: 52%;
+}
+.pointTai {
+  position: absolute;
+  width: 2.5%;
+  top: 54%;
+  left: 68.5%;
+}
+
+.exprelative {
+  position: relative;
+  width: 100%;
+}
+
+.latam {
+  position: absolute;
+  width: 40%;
+  top: 5%;
+  left: 9%;
+}
+
+.africa {
+  position: absolute;
+  width: 23%;
+  top: 5%;
+  left: 49%;
+}
+
+.europa {
+  position: absolute;
+  width: 25%;
+  top: 5%;
+  left: 74%;
+}
+
+.asia {
+  position: absolute;
+  width: 22%;
+  top: 55%;
+  left: 73%;
+}
+
+.transoceanicas {
+  width: 70%;
+  margin-left: -2%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .mapa {
+    width: 95%;
+  }
+
+  .latam {
+    left: 10%;
+  }
+
+  .africa {
+    left: 50%;
+  }
+
+
+  .pointArg {
+    width: 3%;
+    left: 26%;
+  }
+  
+  .pointChi {
+    width: 3%;
+    left: 23%;
+  }
+  
+  .pointPer {
+    width: 3%;
+    left: 21%;
+  }
+  
+  .pointBol {
+    width: 3%;
+    left: 24%;
+  }
+  .pointPar {
+    width: 3%;
+    left: 27%;
+  }
+  .pointUru {
+    width: 3%;
+    left: 30%;
+  }
+  .pointKen {
+    width: 3%;
+    left: 54%;
+  }
+  .pointSen {
+    width: 3%;
+    left: 38%;
+  }
+  .pointEsp {
+    width: 3%;
+    left: 41%;
+  }
+  .pointAlb {
+    left: 50%;
+  }
+  .pointMac {
+    left: 51%;
+  }
+  .pointTur {
+    width: 3%;
+    left: 53%;
+  }
+  .pointTai {
+    width: 3%;
+    left: 75%;
+  }
+  
+}
+
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/
 
 .footer {
@@ -511,6 +675,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
 
@@ -522,22 +687,33 @@
 }
 
 .primertexto {
-  width: 90%;
+  width: 70%;
+}
+
+.videoIns {
+  width: 65%;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .videoIns {
+    width: 90%;
+    height: 200px;
+  }
 }
 
 .mediofooter {
   width: 100%;
-  height: 100%;
+  margin-right: 6%;
 }
 
 .imgMedioFoot {
   width: 100%;
-  height: 100%;
 }
 
 .mediotextofooter {
-  width: 70%;
-  height: 100%;
+  width: 90%;
+
 }
 
 .contactanos {
@@ -719,6 +895,111 @@
     width: 75%;
     margin-top: 5%;
     margin-left: -10%;
+  }
+
+  .infoArg {
+    width: 38%;
+    left: 11%;
+  }
+
+  .igArg {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 17%;
+  }
+
+  .fcArg {
+    width: 5%;
+    left: 9%;
+    margin-top: 17%;
+  }
+
+  .infoBol {
+    width: 37%;
+    left: 11%;
+  }
+
+  .igBol {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcBol {
+    width: 5%;
+    left: 9%;
+    margin-top: 32.6%;
+  }
+
+  .infoPar {
+    width: 38%;
+    left: 11%;
+  }
+
+  .igPar {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 47%;
+  }
+
+  .fcPar {
+    width: 5%;
+    left: 9%;
+    margin-top: 47%;
+  }
+
+  .infoUru {
+    width: 38%;
+    left: 55%;
+    margin-top: 10%;
+  }
+
+  .igUru {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 17%;
+  }
+
+  .fcUru {
+    width: 5%;
+    left: 53%;
+    margin-top: 17%;
+  }
+
+  .infoPer {
+    width: 38%;
+    left: 55%;
+    margin-top: 25%;
+  }
+
+  .igPer {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcPer {
+    width: 5%;
+    left: 53%;
+    margin-top: 32.6%;
+  }
+
+  .infoChi {
+    width: 38%;
+    left: 55%;
+    margin-top: 40%;
+  }
+
+  .igChi {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 47.5%;
+  }
+
+  .fcChi {
+    width: 5%;
+    left: 53%;
+    margin-top: 47.5%;
   }
 
 }
