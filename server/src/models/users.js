@@ -80,10 +80,6 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        alimentacion: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        },
         participacionMovida: {
             type: DataTypes.INTEGER,
             allowNull: true
@@ -124,6 +120,34 @@ module.exports = (sequelize) => {
         preinscripto: {
             type: DataTypes.BOOLEAN,
             allowNull: false
+        },
+        esCeliaco: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        esDiabetico: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        esVegetariano: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        detalleAlimentacion: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        montoPagado: {
+            type: DataTypes.DECIMAL,
+            allowNull: true
+        },
+        montoAPagar: {
+            type: DataTypes.DECIMAL,
+            allowNull: true
+        },
+        pagoCompletado: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
         },
     }, 
     );
