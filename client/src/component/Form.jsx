@@ -10,68 +10,72 @@ function RegistroFormulario() {
     const checkListItemsFeeding = getCheckListItemsFeeding();
     const checkListItemsCima = getCheckListItemsCima();
     const initialData = {
-        firstname: "",
-        lastName: "",
-        dateOfBirth: "",
-        gender: "",
-        nationality: "",
-        countryOfResidence: "",
-        province: "",
-        city: "",
-        church: "",
+        nombre: "",
+        apellido: "",
+        emailGoogle: "",
+        email: "",
+        fechaNacimiento: "",
+        documento: "",
+        sexo: "",
+        nacionalidad: "",
+        paisResidencia: "",
+        provincia: "",
+        ciudad: "",
+        iglesia: "",
         pastor: "",
         pastorPhoneNumber: 0,
-        allergies: false,
-        allergyDetails: "",
-        medication: false,
-        medicationDetails: "",
-        whatsappNumber: 0,
-        email: "",
+        esAlergico: false,
+        detalleAlergia: "",
+        tieneMedicacion: false,
+        detalleMedicacion: "",
+        telefono: 0,
         emergencyContactName: "",
         emergencyContactPhoneNumber: "",
-        dietaryPreferences: [],
-        dietaryDeatail: null,
+        esCeliaco:false,
+        esDiabetico:false,
+        esVegetariano:false,
+        detalleAlimentacion : null,
         participacionMovida: []
     };
     const onValidate = (form) => {
         let errors = {};
-        if (!form.firstname.trim()) {
-            errors.firstname = "Debe colocar un nombre";
+        if (!form.nombre.trim()) {
+            errors.nombre = "Debe colocar un nombre";
         }
 
         return errors
     }
-  
 
-    useEffect( () =>  {
+
+    useEffect(() => {
         // Ejecuta getApiCountry() cuando el componente se monta
-        let data =  getApiCountry();
+        let data = getApiCountry();
         setDataCountry(data);
     }, []);
-    const {filterCountry, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
+    const { filterCountry, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
     return (
         <div>
             <h1>Registro de Datos</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="firstname">Nombre:</label>
+                <label htmlFor="nombre">Nombre:</label>
                 <input
                     type="text"
-                    name="firstname"
-                    value={form.firstname}
+                    name="nombre"
+                    value={form.nombre}
                     onChange={handleChange}
 
                 /><br />
-                {errors.firstname && <div>{errors.firstname}</div>}
+                {errors.nombre && <div>{errors.nombre}</div>}
 
-                <label htmlFor="lastName">Apellido:</label>
+                <label htmlFor="apellido">Apellido:</label>
                 <input
                     type="text"
-                    name="lastName"
-                    value={form.lastName}
+                    name="apellido"
+                    value={form.apellido}
                     onChange={handleChange}
 
                 /><br />
-                {errors.lastName && <div>{errors.lastname}</div>}
+                {errors.apellido && <div>{errors.apellido}</div>}
 
                 <label htmlFor="dateOfBirth">Fecha de Nacimiento:</label>
                 <input
@@ -82,49 +86,49 @@ function RegistroFormulario() {
                     onChange={handleChange}
                 /><br />
                 {errors.dateOfBirth && <div>{errors.dateOfBirth}</div>}
-                <label htmlFor="gender">Genero:</label>
-                <select name="gender" value={form.gender} onChange={handleChange}>
+                <label htmlFor="sexo">Genero:</label>
+                <select name="sexo" value={form.sexo} onChange={handleChange}>
                     <option value="">Seleciona tu genero</option>
                     <option value="masculino">masculino</option>
                     <option value="femenino">femenino</option>
                 </select>
-                {errors.gender && <div>{errors.gender}</div>}
+                {errors.sexo && <div>{errors.sexo}</div>}
 
 
-                <label htmlFor="nationality">Nacionalidad:</label>
+                <label htmlFor="nacionalidad">Nacionalidad:</label>
                 <div>
-                <input
-                    type="text"
-                    name="nationality"
-                    value={form.nationality}
-                    onChange={handleChange}
+                    <input
+                        type="text"
+                        name="nacionalidad"
+                        value={form.nacionalidad}
+                        onChange={handleChange}
 
-                />
-                <SerachResultList dataCountry ={filterCountry}/>
+                    />
+                    <SerachResultList dataCountry={filterCountry} />
                 </div>
-                
+
 
                 <br />
-                {errors.nationality && <div>{errors.nationality}</div>}
+                {errors.nacionalidad && <div>{errors.nacionalidad}</div>}
                 <label htmlFor="country">Pais de residencia:</label>
-                <select name="countryOfResidence" value={form.countryOfResidence} onChange={handleChange}>
+                <select name="paisResidencia" value={form.paisResidencia} onChange={handleChange}>
                     <option value="">Selecciona un país</option>
                 </select>
-                {errors.countryOfResidence && <div>{errors.countryOfResidence}</div>}
+                {errors.paisResidencia && <div>{errors.paisResidencia}</div>}
 
                 <label htmlFor="province">Provincia:</label>
                 <select name="province" value={form.province} onChange={handleChange}>
                     <option value="">Selecciona una province</option>
                 </select><br />
                 {errors.province && <div>{errors.province}</div>}
-                <label htmlFor="church">Iglesia:</label>
+                <label htmlFor="iglesia">Iglesia:</label>
                 <input
                     type="text"
-                    name="church"
-                    value={form.church}
+                    name="iglesia"
+                    value={form.iglesia}
                     onChange={handleChange}
                 /><br />
-                {errors.church && <div>{errors.church}</div>}
+                {errors.iglesia && <div>{errors.iglesia}</div>}
                 <label htmlFor="pastor">Nombre y apellido del Pastor / Anciano / Líder:</label>
                 <input
                     type="text"
@@ -148,41 +152,41 @@ function RegistroFormulario() {
                 </p>
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
                 <p>¿Sos alérgico/a algo?</p>
-                <label htmlFor="allergies">Si</label>
+                <label htmlFor="esAlergico">Si</label>
                 <input
                     type="checkbox"
-                    name="allergies"
-                    checked={form.allergies}
+                    name="esAlergico"
+                    checked={form.esAlergico}
                     onChange={handleChange}
                 />
-                {form.allergies && (
+                {form.esAlergico && (
                     <div>
-                        <label htmlFor="allergyDetails">Detalla tus alergias</label>
+                        <label htmlFor="detalleAlergia">Detalla tus alergias</label>
                         <input
                             type="text"
-                            name="allergyDetails"
-                            value={form.allergyDetails}
+                            name="detalleAlergia"
+                            value={form.detalleAlergia}
                             onChange={handleChange}
                         />
                     </div>
                 )}<br />
 
 
-                <label htmlFor="medication">¿Tomás alguna medicación? </label>
+                <label htmlFor="tieneMedicacion">¿Tomás alguna medicación? </label>
                 <input
                     type="checkbox"
-                    name="medication"
-                    checked={form.medication}
+                    name="tieneMedicacion"
+                    checked={form.tieneMedicacion}
                     onChange={handleChange}
                 />
-                {errors.medication && <div>{errors.medication}</div>}
-                {form.medication && (
+                {errors.tieneMedicacion && <div>{errors.tieneMedicacion}</div>}
+                {form.tieneMedicacion && (
                     <div>
-                        <label htmlFor="medicationDetails">Detalla los medicamentos que estás tomando:</label>
+                        <label htmlFor="detalleMedicacion">Detalla los medicamentos que estás tomando:</label>
                         <input
                             type="text"
-                            name="medicationDetails"
-                            value={form.medicationDetails}
+                            name="detalleMedicacion"
+                            value={form.detalleMedicacion}
                             onChange={handleChange}
                         />
                     </div>
@@ -196,14 +200,14 @@ function RegistroFormulario() {
                 {errors.healthDetails && <div>{errors.healthDetails}</div>}
                 <h2>Datos de Contacto: </h2><p> Asegurate de completar los siguientes datos con información actualizada porque serán los medios por los cuales nos contactaremos con vos.</p>
 
-                <label htmlFor="whatsappNumber">Whatsapp</label>
+                <label htmlFor="telefono">Whatsapp</label>
                 <input
                     type="tel"
-                    name="whatsappNumber"
-                    value={form.whatsappNumber}
+                    name="telefono"
+                    value={form.telefono}
                     onChange={handleChange}
                 /><br />
-                {errors.whatsappNumber && <div>{errors.whatsappNumber}</div>}
+                {errors.telefono && <div>{errors.telefono}</div>}
                 <label htmlFor="email">Correo electrónico</label>
                 <input
                     type="email"
@@ -231,7 +235,7 @@ function RegistroFormulario() {
                 {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
-                 <ol>
+                <ol>
                     {checkListItemsFeeding.map((item, index) => (
                         <li key={index}>
                             <label>
@@ -250,14 +254,14 @@ function RegistroFormulario() {
                 {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
                 {form.dietaryPreferences[0] === 'Otra' && (
                     <div>
-                    <label htmlFor="dietaryDeatail"> Especifique los detalles de alimentacion.</label>
-                    <input
-                        type="text"
-                        name="dietaryDeatail"
-                        value={form.dietaryDeatail}
-                        onChange={handleChange}
-                    //*si se quiere especificar la almentacion en un futuro
-                    />
+                        <label htmlFor="detalleAlimentacion "> Especifique los detalles de alimentacion.</label>
+                        <input
+                            type="text"
+                            name="detalleAlimentacion "
+                            value={form.detalleAlimentacion }
+                            onChange={handleChange}
+                        //*si se quiere especificar la almentacion en un futuro
+                        />
                     </div>
                 )}
 

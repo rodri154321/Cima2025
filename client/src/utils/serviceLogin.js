@@ -1,5 +1,5 @@
 //  const baseURL="http://localhost:3001/login/login"
-const baseURL = "https://cima2025.up.railway.app/login/register"
+const baseURL = "https://cima2025.up.railway.app/login/login"
 const login = async (credentials) => {
     try {
         console.log(credentials)
