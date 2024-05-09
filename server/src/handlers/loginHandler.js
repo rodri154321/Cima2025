@@ -26,6 +26,7 @@ const registerUser = async (req,res) =>{
 
 const infoUser = async (req,res) =>{
 
+  //{firstname,lastName,dateOfBirth,gender, document, nationality, countryOfResidence, province, city, church, pastor, pastorPhoneNumber, allergies, allergyDetails, medication, medicationDetails, whatsappNumber, email, emergencyContactName, emergencyContactPhoneNumber, participacionMovida }
   const {emailGoogle, nombre, apellido, telefono, documento, sexo, nacionalidad, ciudad, provincia, email, fechaNacimiento, estadoInscripcion, preinscripto, cartaPastoral, descubrePagos, experimentaPagos, esVoluntario, tieneMedicacion, detalleMedicacion, esAlergico, detalleAlergia, iglesia, nombrePastor, paisResidencia } = req.body;
   try {
     const response = await addInfoUser(emailGoogle, nombre, apellido, telefono, documento, sexo, nacionalidad, ciudad, provincia, email, fechaNacimiento, estadoInscripcion, preinscripto, cartaPastoral, descubrePagos, experimentaPagos, esVoluntario, tieneMedicacion, detalleMedicacion, esAlergico, detalleAlergia, iglesia, nombrePastor, paisResidencia);
