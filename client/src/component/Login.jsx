@@ -11,10 +11,9 @@ const Login = () => {
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
       const { header, payload } = decodeJwt(CredentialsResponse.credential)
-      
     const response = await loginService.login({
-      emailGoogle:payload.email,
-      password:CredentialsResponse.clientID
+      emailGoogle :payload.email,
+      password :payload.sub
      })
      if(response.user){
       setUser(response.user)
