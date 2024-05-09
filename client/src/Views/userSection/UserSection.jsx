@@ -5,7 +5,7 @@ function UserSection() {
   return (
     <div>
         <Login/>
-        <RegistroFormulario/>
+        {/* <RegistroFormulario/> */}
     </div>
   )
 }

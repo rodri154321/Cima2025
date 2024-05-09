@@ -234,7 +234,7 @@ function RegistroFormulario() {
                 /><br />
                 {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
                 <h2>Alimentacion</h2>
-                <h2>Selecciona una opción:</h2>
+               <h2>Selecciona una opción:</h2>
                 <ol>
                     {checkListItemsFeeding.map((item, index) => (
                         <li key={index}>
@@ -249,7 +249,7 @@ function RegistroFormulario() {
                                 {item}
                             </label>
                         </li>
-                    ))}
+                    ))} 
                 </ol>
                 {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
                 {form.dietaryPreferences[0] === 'Otra' && (

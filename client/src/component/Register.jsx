@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
-import registerService from "../utils/serviceResgister.js"
+import serviceRegister from "../utils/serviceResgister.js"
 
 
 const Register = () => {
-
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
       const { header, payload } = decodeJwt(CredentialsResponse.credential)
-      console.log(payload)
-    const response = await registerService.login({
+    const response = await serviceRegister.login({
       emailGoogle :payload.email,
       password :payload.sub
      })
@@ -20,7 +18,7 @@ const Register = () => {
       setUser(response.user)
       setEmailGoogle(payload.email)
      } else {
-      console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
+      console.error('Registro fallido: no se pudo obtener el usuario');
   }
     }
   }

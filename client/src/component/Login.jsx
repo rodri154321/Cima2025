@@ -11,7 +11,6 @@ const Login = () => {
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
       const { header, payload } = decodeJwt(CredentialsResponse.credential)
-      console.log(payload)
     const response = await serviceLogin.login({
       emailGoogle :payload.email,
       password :payload.sub
