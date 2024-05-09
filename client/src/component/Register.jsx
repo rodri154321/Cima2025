@@ -10,7 +10,7 @@ const Register = () => {
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
       const { header, payload } = decodeJwt(CredentialsResponse.credential)
-    const response = await serviceRegister.login({
+    const response = await serviceRegister.register({
       emailGoogle :payload.email,
       password :payload.sub
      })

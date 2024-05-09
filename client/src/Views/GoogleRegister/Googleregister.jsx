@@ -1,6 +1,5 @@
 import React from 'react';
 import style from "./Googleregister.module.css"
-import serviceRegister from "../../utils/serviceResgister.js"
 import Register from '../../component/Register.jsx';
 
 const Googleregister = () => {
@@ -12,7 +11,6 @@ const Googleregister = () => {
                 <h2>Registrate</h2>
             <Register/>
             </div>
-            
         </div>
 
     );

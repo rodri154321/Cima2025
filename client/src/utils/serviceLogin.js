@@ -10,9 +10,12 @@ const login = async (credentials) => {
             },
             body: JSON.stringify(credentials),
         });
-        const data = await response.json();
-        localStorage.setItem('user', JSON.stringify(data.user))
-        return data; // Retorna los datos devueltos por el servidor
+        if(response.ok){
+            const data = await response.json();
+            localStorage.setItem('user', JSON.stringify(data.user))
+            return data; // Retorna los datos devueltos por el servidor
+        }
+        
     } catch (error) {
         console.error('Error en la solicitud:', error);
         throw new Error('Hubo un error en la solicitud');
