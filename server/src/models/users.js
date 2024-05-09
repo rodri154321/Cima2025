@@ -135,7 +135,7 @@ module.exports = (sequelize) => {
         },
         detalleAlimentacion: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         montoPagado: {
             type: DataTypes.DECIMAL,
