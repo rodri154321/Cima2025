@@ -1,0 +1,22 @@
+.fondolin {
+    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
+    background-size: contain;
+    margin-bottom: -27%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recuadro{
+    margin-top: 2%;
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .recuadro{
+        margin-top: 35%;
+        width: 70%;
+    }
+}
