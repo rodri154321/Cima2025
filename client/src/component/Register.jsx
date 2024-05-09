@@ -6,23 +6,22 @@ import registerService from "../utils/serviceResgister.js"
 
 const Register = () => {
 
-  const [emailGoogle, setEmailGoogle] = useState("")
+  const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
-
-     const { header, payload } = decodeJwt(CredentialsResponse.credential)
-      setEmailGoogle(payload.email)
-  
-     console.log(header,payload.email)
-    const response = await registerService.register({
-      emailGoogle:payload.email,
-      password:CredentialsResponse.clientID
+      const { header, payload } = decodeJwt(CredentialsResponse.credential)
+      console.log(payload)
+    const response = await registerService.login({
+      emailGoogle :payload.email,
+      password :payload.sub
      })
-     if(response){
+     if(response.user){
       setUser(response.user)
-     }
-      
+      setEmailGoogle(payload.email)
+     } else {
+      console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
+  }
     }
   }
   const handleGoogleError = (error) => {

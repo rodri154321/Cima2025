@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
+import serviceLogin from "../utils/serviceLogin"
 
 
-
-const Login = (service) => {
+const Login = () => {
 
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const handleGoogleLogin = async (CredentialsResponse) => {
     if (CredentialsResponse.credential) {
       const { header, payload } = decodeJwt(CredentialsResponse.credential)
-    const response = await service.login({
+      console.log(payload)
+    const response = await serviceLogin.login({
       emailGoogle :payload.email,
       password :payload.sub
      })
