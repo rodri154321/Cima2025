@@ -2,7 +2,6 @@ import React from 'react';
 
 import style from "./Googlelogin.module.css"
 import Login from '../../component/Login';
-import serviceLogin from "../../utils/serviceLogin.js"
 const Googlelogin = () => {
 
     return (

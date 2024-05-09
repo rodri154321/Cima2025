@@ -5,7 +5,6 @@ import serviceLogin from "../utils/serviceLogin"
 
 
 const Login = () => {
-
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const handleGoogleLogin = async (CredentialsResponse) => {
