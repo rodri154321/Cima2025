@@ -10,7 +10,7 @@ const Googlelogin = () => {
             <img className={style.recuadro} src="https://i.postimg.cc/3NgJ1PJY/Recurso-1login.png" alt="Login" />
             <div className={style.contenedorBtn}>
                 <h2>Inicia Secion</h2>
-                <Login service={serviceLogin}/>
+                <Login/>
             </div>
         </div>
     );
