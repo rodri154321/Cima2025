@@ -4,6 +4,7 @@ import Landing from './Views/Landing/Landin';
 import Inscripciones from './Views/Inscripciones/Inscripciones';
 import Googlelogin from './Views/GoogleLogin/Googlelogin';
 import Googleregister from './Views/GoogleRegister/Googleregister';
+import UserSection from './Views/userSection/UserSection';
 
 
 function App() {
@@ -13,11 +14,13 @@ function App() {
   return (
     <div className="App">
       {/* {pathname !== '/' ? <NavBar/> : ""} */}
+      {/* {pathname !== '/' ? <NavBar/> : ""} */}
       <Routes>
             <Route path='/' element={<Landing/>}/>
             <Route path='/inscripciones' element={<Inscripciones/>}/>
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
+            <Route path='/user' element={<UserSection/>}/>
          </Routes>
     </div>
   )
