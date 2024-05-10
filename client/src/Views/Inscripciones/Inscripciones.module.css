@@ -15,14 +15,14 @@
 }
 
 .imgRa {
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 25.5%;
+    width: 50%;
 }
 
 .imgInscripciones {
     margin-top: 5%;
-    margin-left: 15%;
-    width: 70%;
+    margin-left: 21%;
+    width: 60%;
 }
 
 .logeo{
@@ -31,13 +31,13 @@
 }
 
 .imgYateInsc{
-    width: 60%;
-    margin-left: 17%;
+    width: 50%;
+    margin-left: 22%;
 }
 
 .imgIngreso{
-    margin-left: 32%;
-    width: 40%;
+    margin-left: 35.5%;
+    width: 30%;
 }
 
 .cortes{
@@ -46,14 +46,14 @@
 }
 
 .corteUno{
-    width: 60%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .otrosCortes{
-    width: 90%;
+    width: 80%;
     margin-top: 4%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 768px) {

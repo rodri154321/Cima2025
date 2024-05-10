@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./Googleregister.module.css"
-import Register from '../../component/Register.jsx';
+//import Register from '../../component/Register.jsx';
 
 const Googleregister = () => {
 
@@ -9,7 +9,7 @@ const Googleregister = () => {
             <img className={style.recuadro} src="https://i.postimg.cc/9M9WXv9Z/Recurso-1register.png" alt="cuadro de registro" />
             <div className={style.contenedorBtn}>
                 <h2>Registrate</h2>
-            <Register/>
+            {/* <Register/> */}
             </div>
         </div>
 
