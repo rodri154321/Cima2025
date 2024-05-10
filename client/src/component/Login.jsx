@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
-import serviceLogin from "../utils/serviceLogin"
+import serviceLogin from "../utils/serviceLogin.js"
 
 
 const Login = () => {
