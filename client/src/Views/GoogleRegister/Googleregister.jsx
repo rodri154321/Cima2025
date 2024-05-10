@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./Googleregister.module.css"
-import Register from '../../Component/Register';
+import Register from "../../Component/Register";
 
 const Googleregister = () => {
 
