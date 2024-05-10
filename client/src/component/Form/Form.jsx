@@ -96,9 +96,9 @@ function RegistroFormulario() {
                 <br />
                 {errors.fechaNacimiento && <div>{errors.fechaNacimiento}</div>}
                 <div className={style.inputGroup}>
-                    <label htmlFor="sexo">Genero:</label>
+                    <label htmlFor="sexo">Sexo:</label>
                     <select name="sexo" value={form.sexo} onChange={handleChange}>
-                        <option value="">Seleciona tu genero</option>
+                        <option value=""></option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
@@ -106,19 +106,15 @@ function RegistroFormulario() {
                 {errors.sexo && <div>{errors.sexo}</div>}
 
                 <div className={style.inputGroup}>
-
-                    <div>
-                        <input
-                            className=''
-                            type="text"
-                            name="nacionalidad"
-                            value={form.nacionalidad}
-                            onChange={handleChange}
-
-                        />
-                        <label htmlFor="nacionalidad">Nacionalidad:</label>
-                        <SerachResultList dataCountry={filterCountry} />
-                    </div>
+                    <label htmlFor="nacionalidad">Nacionalidad:</label>
+                    <input
+                        className=''
+                        type="text"
+                        name="nacionalidad"
+                        value={form.nacionalidad}
+                        onChange={handleChange}
+                    />
+                    <SerachResultList dataCountry={filterCountry} />
                 </div>
 
                 <br />
@@ -164,14 +160,14 @@ function RegistroFormulario() {
                 {errors.pastor && <div>{errors.pastor}</div>}
 
                 <div className={style.inputGroup}>
-
+                    <label htmlFor="pastorPhoneNumber">Teléfono del Pastor / Anciano / Líder:</label>
                     <input
                         type="tel"
                         name="pastorPhoneNumber"
                         value={form.pastorPhoneNumber}
                         onChange={handleChange}
                     />
-                    <label htmlFor="pastorPhoneNumber">Teléfono del Pastor / Anciano / Líder:</label>
+
                 </div>
                 <br />
                 {errors.pastor && <div>{errors.pastor}</div>}
@@ -181,14 +177,14 @@ function RegistroFormulario() {
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
                 <p>¿Sos alérgico/a algo?</p>
                 <div className={style.checkbox}>
-                   
+
                     <input
                         type="checkbox"
                         name="esAlergico"
                         checked={form.esAlergico}
                         onChange={handleChange}
                     />
-                     <label htmlFor="check-23" style={{ '--size': '30px' }}>
+                    <label htmlFor="check-23" style={{ '--size': '30px' }}>
                         <svg viewBox="0 0 50 50">
                             <path d="M5 30 L20 45 L45 5"></path>
                         </svg>

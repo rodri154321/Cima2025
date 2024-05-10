@@ -99,7 +99,7 @@ padding: 5%;
 
 .checkbox input + label svg path {
 fill: none;
-stroke: rgb(39, 3, 3);
+stroke: rgb(247, 247, 247);
 stroke-width: 4px;
 stroke-linecap: round;
 stroke-linejoin: round;
