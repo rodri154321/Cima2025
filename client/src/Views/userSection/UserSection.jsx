@@ -1,6 +1,6 @@
 import React from 'react'
 //import Login from '../../Component/Login'
-import RegistroFormulario from '../../Component/Form/Form'
+import RegistroFormulario from "../../Component/Form/Form"
 import style from "./UserSection.module.css"
 function UserSection() {
   return (
