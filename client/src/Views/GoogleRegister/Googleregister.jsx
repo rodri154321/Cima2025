@@ -1,6 +1,6 @@
 import React from 'react';
-import style from "./Googleregister.module.css"
-import serviceRegister from "../../utils/serviceResgister.js"
+import style from "./Googleregister.module.css";
+import serviceRegister from "../../utils/serviceResgister.js";
 import Register from '../../component/Register.jsx';
 
 const Googleregister = () => {
