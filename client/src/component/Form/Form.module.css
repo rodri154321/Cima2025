@@ -1,0 +1,116 @@
+.contenedorForm h1{
+    text-align: center;
+}
+.Form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.inputGroup {
+
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em auto 1em auto;
+    width: 600px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(220, 220, 240);
+  }
+
+  .inputGroup select {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+/*--------------------------------checkbox-------------------------------*/
+.checkbox *,
+.checkbox *:after,
+.checkbox *:before {
+box-sizing: border-box;
+}
+
+.checkbox input {
+position: absolute;
+opacity: 0;
+}
+
+.checkbox input:checked + label svg path {
+stroke-dashoffset: 0;
+}
+
+.checkbox input:focus + label {
+transform: scale(1.03);
+}
+
+.checkbox input + label {
+display: block;
+border: 2px solid rgb(253, 237, 237);
+width: var(--size);
+height: var(--size);
+border-radius: 6px;
+cursor: pointer;
+transition: all .2s ease;
+}
+
+.checkbox input + label:active {
+transform: scale(1.05);
+border-radius: 12px;
+}
+
+.checkbox input + label svg {
+pointer-events: none;
+padding: 5%;
+}
+
+.checkbox input + label svg path {
+fill: none;
+stroke: rgb(39, 3, 3);
+stroke-width: 4px;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-dasharray: 100;
+stroke-dashoffset: 101;
+transition: all 250ms cubic-bezier(1,0,.37,.91);
+}
+  .error{
+    
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: red;
+  }
