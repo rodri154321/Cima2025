@@ -58,14 +58,16 @@ const useForm = (initialData, dataCountry, onValidate) => {
         }
     };
     const handleSubmit = async (event) => {
+       
         event.preventDefault();
+        console.log(form,"aa")
         const err = onValidate(form)
 
         if (Object.keys(err).length === 0) {
             setLoading(true)
             try {
-                const response = await fetch('/api/submit', {
-                    method: 'POST',
+                const response = await fetch('https://cima2025.up.railway.app/login/addInfo', {
+                    method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
                     },
