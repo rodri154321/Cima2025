@@ -1,4 +1,5 @@
 const baseURL="https://cima2025.up.railway.app/login/register"
+// const baseURL="http://localhost:3001/login/register"
 const register = async (credentials) => {
     try {
         const response = await fetch(baseURL, {

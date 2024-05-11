@@ -2,7 +2,6 @@
 const baseURL = "https://cima2025.up.railway.app/login/login"
 const login = async (credentials) => {
     try {
-        console.log(credentials)
         const response = await fetch(baseURL, {
             method: 'POST',
             headers: {

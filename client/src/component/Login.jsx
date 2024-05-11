@@ -17,7 +17,7 @@ const Login = () => {
         });
         if (loginResponse.user) {
           setUser(loginResponse.user);
-          setEmail(payload.email);
+          setEmailGoogle(payload.email);
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
