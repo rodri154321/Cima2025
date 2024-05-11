@@ -51,16 +51,25 @@ function RegistroFormulario() {
 
     useEffect(() => {
         // Ejecuta getApiCountry() cuando el componente se monta
-        let data = getApiCountry();
-        setDataCountry(data);
+        async function fetchData() {
+            try {
+                const data = await getApiCountry();
+                setDataCountry(data);
+            } catch (error) {
+                console.error('Error al obtener datos del país:', error);
+            }
+        }
+
+        fetchData();
     }, []);
-    const { filterCountry, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
+    const { filterCountry,filterCountryResidence, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
     return (
         <div className={style.contenedorForm}>
-            <h1>Registro de Datos</h1>
+            <h1>COMPLETA TUS DATOS</h1>
+            <h2>Datos Personales</h2>
             <form onSubmit={handleSubmit} className={style.Form}>
                 <div className={style.inputGroup}>
-                    <label htmlFor="nombre" >Nombre:</label>
+                    <label htmlFor="nombre"  >Nombre:</label>
                     <input
                         type="text"
                         id="nombre"
@@ -98,7 +107,6 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
                     <label htmlFor="sexo">Sexo:</label>
                     <select name="sexo" value={form.sexo} onChange={handleChange}>
-                        <option value=""></option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
@@ -118,12 +126,16 @@ function RegistroFormulario() {
                 </div>
 
                 <br />
-                {errors.nacionalidad && <div>{errors.nacionalidad}</div>}
                 <div className={style.inputGroup}>
-                    <label htmlFor="country">Pais de residencia:</label>
-                    <select name="paisResidencia" value={form.paisResidencia} onChange={handleChange}>
-                        <option value="">Selecciona un país</option>
-                    </select>
+                    <label htmlFor="paisResidencia">Residencia:</label>
+                    <input
+                        className=''
+                        type="text"
+                        name="paisResidencia"
+                        value={form.paisResidencia}
+                        onChange={handleChange}
+                    />
+                    <SerachResultList dataCountry={filterCountryResidence}   onChange={handleChange}/>
                 </div>
                 {errors.paisResidencia && <div>{errors.paisResidencia}</div>}
                 <div className={style.inputGroup}>
@@ -177,18 +189,19 @@ function RegistroFormulario() {
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
                 <p>¿Sos alérgico/a algo?</p>
                 <div className={style.checkbox}>
-
                     <input
                         type="checkbox"
                         name="esAlergico"
+                        id='esAlergico'
                         checked={form.esAlergico}
                         onChange={handleChange}
                     />
-                    <label htmlFor="check-23" style={{ '--size': '30px' }}>
-                        <svg viewBox="0 0 50 50">
-                            <path d="M5 30 L20 45 L45 5"></path>
+                    <label htmlFor="esAlergico" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
+
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
@@ -203,19 +216,25 @@ function RegistroFormulario() {
                     </div>
                 )}<br />
 
-                <div className={style.inputGroup}>
-                    <label htmlFor="tieneMedicacion">¿Tomás alguna medicación? </label>
+                <div className={style.checkbox}>
                     <input
                         type="checkbox"
                         name="tieneMedicacion"
+                        id="tieneMedicacion"
                         checked={form.tieneMedicacion}
                         onChange={handleChange}
                     />
+                    <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                        </svg>
+                    </label>
                 </div>
+
                 {errors.tieneMedicacion && <div>{errors.tieneMedicacion}</div>}
                 {form.tieneMedicacion && (
                     <div className={style.inputGroup}>
-                        <label htmlFor="detalleMedicacion">Detalla los medicamentos que estás tomando:</label>
+                        <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
                         <input
                             className=''
                             type="text"
@@ -298,7 +317,7 @@ function RegistroFormulario() {
                     ))}
                 </ol>
                 {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
-                {form.dietaryPreferences[0] === 'Otra' && (
+                {form.dietaryPreferences.includes("Otra") && (
                     <div>
                         <label htmlFor="detalleAlimentacion "> Especifique los detalles de alimentacion.</label>
                         <input

@@ -10,8 +10,8 @@
     align-items: center;
 }
 
-.contenedorViews{
-    width: 60%;
+.contenedor{
+    width: 75%;
     height: 100vh;
     margin: auto;
 }

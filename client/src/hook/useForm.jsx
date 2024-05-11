@@ -6,45 +6,56 @@ const useForm = (initialData, dataCountry, onValidate) => {
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState({});
     const [filterCountry, setFilterCountry] = useState([]);
+    const [filterCountryResidence, setFilterCountryResidence] = useState([]);
     const handleChange = async (event) => {
         const { name, value, checked } = event.target;
-        if (name == "nationality") {
+
+        if (name == "nacionalidad" || name == "paisResidencia") {
             setFilterCountry([]);
             const result = await dataCountry;
+
             setForm({ ...form, [name]: value })
             const searchCountry = result.filter(country => {
-                return country.name.common.toLowerCase().startsWith(form.nationality.toLowerCase());
+                if (name == "paisResidencia") {
+                    return country.name.common.toLowerCase().startsWith(form.paisResidencia.toLowerCase());
+                } else {
+                    return country.name.common.toLowerCase().startsWith(form.nacionalidad.toLowerCase());
+                }
             });
 
             // Manejar los resultados filtrados
             if (searchCountry.length > 0) {
-                let coutrys =[]
-              
+                let coutrys = []
+
                 searchCountry.forEach(element => {
-                      coutrys.push(element.name.common.toLowerCase())
-                        
-                    setFilterCountry(coutrys)
+                    coutrys.push(element.name.common.toLowerCase())
+                    if (name == "paisResidencia") {
+                        setFilterCountryResidence(coutrys)
+                    } else {
+                        setFilterCountry(coutrys)
+                    }
+
                 });
             } else {
                 // Manejar el caso en que no se encuentren países que coincidan con el filtro
                 console.log("No se encontraron países que coincidan con el filtro.");
             }
         }
-        else if (name === "allergies") {
+        else if (name === "esAlergico" || name === "tieneMedicacion") {
             const isChecked = event.target.checked;
             setForm({ ...form, [name]: isChecked ? true : false });
         }
 
-        else if (name === "medication") {
-            const isChecked = event.target.checked;
-            setForm({ ...form, [name]: isChecked ? true : false });
-        }
+        // else if (name === "medication") {
+        //     const isChecked = event.target.checked;
+        //     setForm({ ...form, [name]: isChecked ? true : false });
+        // }
 
         else if (name === "dietaryPreferences" || name === "participacionMovida") {
-            if (value === "Otra" || value === "Ninguno" || value == "Ninguna") {
+            if (value === "Ninguno" || value == "Ninguna") {
                 setForm({ ...form, [name]: [value] });
             } else {
-                if (form[name].includes("Otra") || form[name].includes("Ninguno") || form[name].includes("Ninguna")) {
+                if (form[name].includes("Ninguno") || form[name].includes("Ninguna")) {
                     setForm({ ...form, [name]: [value] })
                 }
                 else if (form[name].includes(value)) {
@@ -53,14 +64,21 @@ const useForm = (initialData, dataCountry, onValidate) => {
                     setForm({ ...form, [name]: [...form[name], value] });
                 }
             }
-        } else {
-            setForm({ ...form, [name]: value });
+            if (name === "dietaryPreferences") {
+                console.log(form.dietaryPreferences)
+                const isVegetariano = form.dietaryPreferences.includes('Soy vegetariano/a');
+                console.log(isVegetariano,"aaa")
+                const isCeliaco = form.dietaryPreferences.includes("Soy celiaco/a");
+                const isDiabetico = form.dietaryPreferences.includes("Soy diabetico/a");
+                // setForm({ ...form, esVegetariano: isVegetariano, esCeliaco: isCeliaco, esDiabetico: isDiabetico });
+            }
+
         }
     };
     const handleSubmit = async (event) => {
-       
+
         event.preventDefault();
-        console.log(form,"aa")
+        console.log(form, "aa")
         const err = onValidate(form)
 
         if (Object.keys(err).length === 0) {
@@ -91,7 +109,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
         }
     }
 
-    return {filterCountry, form, errors, loading, handleSubmit, handleChange }
+    return { filterCountry, filterCountryResidence, form, errors, loading, handleSubmit, handleChange }
 }
 
 export default useForm

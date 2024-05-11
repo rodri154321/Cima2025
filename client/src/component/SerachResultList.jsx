@@ -4,9 +4,9 @@ import SearchResult from './SearchResult'
 function SerachResultList({ dataCountry }) {
   return (
     <div className="result-list">
-    {dataCountry.map(( data, id )=>{
-    return <SearchResult  dataCountry={data} key={id} />
-})}
+   {dataCountry.slice(0, 5).map((data, id) => (
+        <SearchResult dataCountry={data} key={id} />
+      ))}
 </div>
   )
 }

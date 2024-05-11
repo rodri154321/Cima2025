@@ -7,19 +7,23 @@ import serviceRegister from "../utils/serviceResgister.js"
 const Register = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
-  const handleGoogleLogin = async (CredentialsResponse) => {
-    if (CredentialsResponse.credential) {
-      const { header, payload } = decodeJwt(CredentialsResponse.credential)
-    const response = await serviceRegister.register({
-      emailGoogle :payload.email,
-      password :payload.sub
-     })
-     if(response.user){
-      setUser(response.user)
-      setEmailGoogle(payload.email)
-     } else {
-      console.error('Registro fallido: no se pudo obtener el usuario');
-  }
+  const handleGoogleLogin = async (response) => {
+    if (response.credential) {
+      const {  payload } = decodeJwt(response.credential)
+      try {
+        const loginResponse = await serviceLogin.login({
+          emailGoogle: payload.email,
+          password: payload.sub
+        });
+        if (loginResponse.user) {
+          setUser(loginResponse.user);
+          setEmail(payload.email);
+        } else {
+          console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
+        }
+      } catch (error) {
+        console.error('Error al iniciar sesión con el servicio de autenticación:', error);
+      }
     }
   }
   const handleGoogleError = (error) => {

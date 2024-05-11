@@ -15,7 +15,7 @@ const Inscripciones = () => {
                 </Link>
             </div>
             <div className={style.logeo}>
-                <img className={style.imgYateInsc} src="https://i.postimg.cc/fW5LrhMg/Recurso-4siyateinsc.png" alt="loguin acá" />
+                <img className={style.imgYateInsc} src="https://i.postimg.cc/GtQzg4sX/Recurso-1logeate.png" alt="loguin acá" />
                 <Link to='/login'>
                     <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.imgIngreso} src="https://i.postimg.cc/LsTK82Cc/Recurso-5ingresaaqui.png" alt="ingreso" />
                 </Link>
