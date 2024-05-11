@@ -11,7 +11,7 @@ const Register = () => {
     if (response.credential) {
       const {  payload } = decodeJwt(response.credential)
       try {
-        const loginResponse = await serviceLogin.login({
+        const loginResponse = await serviceRegister.login({
           emailGoogle: payload.email,
           password: payload.sub
         });
