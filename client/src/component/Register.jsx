@@ -8,7 +8,7 @@ import serviceRegister from "../utils/serviceResgister.js"
 const Register = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
-  const history = useNavigate();
+  const navigate = useNavigate();
   const handleGoogleLogin = async (response) => {
     if (response.credential) {
       const {  payload } = decodeJwt(response.credential)
@@ -20,7 +20,7 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
-          history.push('/user');
+          navigate('/user');
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
