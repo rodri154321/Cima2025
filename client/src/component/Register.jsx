@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceRegister from "../utils/serviceResgister.js"
@@ -8,6 +8,7 @@ import serviceRegister from "../utils/serviceResgister.js"
 const Register = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
+  const history = useHistory();
   const handleGoogleLogin = async (response) => {
     if (response.credential) {
       const {  payload } = decodeJwt(response.credential)
@@ -19,6 +20,7 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
+          history.push('/otra-pagina');
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
@@ -38,7 +40,7 @@ const Register = () => {
           onSuccess={handleGoogleLogin}
           onError={handleGoogleError}
         />)}
-      {emailGoogle && redirect("/user")}
+      {emailGoogle && <p>El usuario ah iniciado secion: {emailGoogle}</p>}
     </div>
   );
 };
