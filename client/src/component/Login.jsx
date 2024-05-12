@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceLogin from "../utils/serviceLogin.js"
@@ -8,6 +9,7 @@ import Swal from 'sweetalert2'
 const Login = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
+  const navigate = useNavigate();
   const handleGoogleLogin = async (reponse) => {
     if (reponse.credential) {
       const { payload } = decodeJwt(reponse.credential)

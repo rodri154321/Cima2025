@@ -53,7 +53,8 @@ const Register = () => {
     Swal.fire({
       title: "Error",
       text: error,
-      icon: "error"
+      icon: "error",
+      confirmButtonText: "volver"
     }).then((result) => {
       if (result.isConfirmed) {
         navigate('/inscripciones');
