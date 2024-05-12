@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {redirect} from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceRegister from "../utils/serviceResgister.js"
@@ -18,6 +19,7 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
+          redirect("/user")
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
