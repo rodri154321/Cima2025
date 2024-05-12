@@ -10,6 +10,7 @@ const Register = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const navigate = useNavigate();
+  console.log(localStorage);
   const handleGoogleLogin = async (response) => {
     if (response.credential) {
       const {  payload } = decodeJwt(response.credential)
