@@ -10,10 +10,11 @@ import UserSection from './Views/userSection/UserSection';
 function App() {
 
   const {pathname} = useLocation();
+  const dashboard = localStorage.getItem('isLoggedIn') === 'true';
 
   return (
     <div className="App">
-      {/* {pathname !== '/' ? <NavBar/> : ""} */}
+      
       {/* {pathname !== '/' ? <NavBar/> : ""} */}
       <Routes>
             <Route path='/' element={<Landing/>}/>
@@ -21,6 +22,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
+            {/* <Route path='/dashboard'/> */}
          </Routes>
     </div>
   )
