@@ -19,7 +19,7 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
-          redirect("/user")
+          return redirect("/user")
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
