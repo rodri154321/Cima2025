@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceRegister from "../utils/serviceResgister.js"
@@ -8,7 +8,7 @@ import serviceRegister from "../utils/serviceResgister.js"
 const Register = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
-  const history = useHistory();
+  const history = useNavigate();
   const handleGoogleLogin = async (response) => {
     if (response.credential) {
       const {  payload } = decodeJwt(response.credential)
