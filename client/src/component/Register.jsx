@@ -24,16 +24,41 @@ const Register = () => {
           navigate('/user');
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
-          Swal.fire("no se pudo obtener el usuario");
+          Swal.fire({
+            title: "Error",
+            text: "No se pudo obtener el usuario",
+            icon: "error"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              navigate('/inscripciones');
+            }
+          });
         }
       } catch (error) {
         console.error('Error al iniciar sesión con el servicio de autenticación:', error);
-        Swal.fire("Error al iniciar sesión con el servicio de autenticación:",error);
+        Swal.fire({
+          title: "Error",
+          text: error,
+          icon: "error"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            navigate('/inscripciones');
+          }
+        });
       }
     }
   }
   const handleGoogleError = (error) => {
     console.error('Error al iniciar sesión con Google:', error);
+    Swal.fire({
+      title: "Error",
+      text: error,
+      icon: "error"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate('/inscripciones');
+      }
+    });
   }
   return (
     <div>

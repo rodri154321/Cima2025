@@ -14,7 +14,7 @@ const register = async (credentials) => {
         return data; // Retorna los datos devueltos por el servidor
     } catch (error) {
         console.error('Error en la solicitud:', error);
-        throw new Error('Hubo un error en la solicitud');
+        throw new Error('Hubo un error en la solicitud',error);
     }
 };
 

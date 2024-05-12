@@ -17,7 +17,7 @@ const login = async (credentials) => {
         
     } catch (error) {
         console.error('Error en la solicitud:', error);
-        throw new Error('Hubo un error en la solicitud');
+        throw new Error('Hubo un error en la solicitud',error);
     }
 };
 
