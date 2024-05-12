@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceRegister from "../utils/serviceResgister.js"
+import Swal from 'sweetalert2'
 
 
 const Register = () => {
@@ -23,9 +24,11 @@ const Register = () => {
           navigate('/user');
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
+          Swal.fire("no se pudo obtener el usuario");
         }
       } catch (error) {
         console.error('Error al iniciar sesión con el servicio de autenticación:', error);
+        Swal.fire("Error al iniciar sesión con el servicio de autenticación:",error);
       }
     }
   }
