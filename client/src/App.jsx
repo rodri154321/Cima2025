@@ -5,12 +5,14 @@ import Inscripciones from './Views/Inscripciones/Inscripciones';
 import Googlelogin from './Views/GoogleLogin/Googlelogin';
 import Googleregister from './Views/GoogleRegister/Googleregister';
 import UserSection from './Views/userSection/UserSection';
+import UserDashboard from './Views/UserDashboard/UserDashboard';
+
 
 
 function App() {
 
   const {pathname} = useLocation();
-  const dashboard = localStorage.getItem('isLoggedIn') === 'true';
+  const dashboard = localStorage.getItem('preinscripto') === 'true';
 
   return (
     <div className="App">
@@ -22,7 +24,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            {/* <Route path='/dashboard'/> */}
+            <Route path='/dashboard' element={dashboard ? <UserDashboard /> : <UserSection navigate={navigate}/>}/>
          </Routes>
     </div>
   )
