@@ -20,7 +20,7 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
-          history.push('/otra-pagina');
+          history.push('/user');
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
         }
