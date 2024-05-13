@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import getApiCountry from '../utils/getApiCountry';
 
 const useForm = (initialData, dataCountry, onValidate) => {
@@ -7,7 +8,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
     const [errors, setErrors] = useState({});
     const [filterCountry, setFilterCountry] = useState([]);
     const [filterCountryResidence, setFilterCountryResidence] = useState([]);
-    
+    const navigate = useNavigate();
 
 
     const handleChange = async (event) => {
@@ -82,6 +83,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
                 if (response.ok) {
                     setLoading(false)
                     console.log('Datos enviados correctamente');
+                    navigate('/dashboard');
                 } else {
                     console.error('Error al enviar datos');
                     setLoading(false)
