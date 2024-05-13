@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const userPreinscripto = localStorage.getItem('user');
     const userObject = JSON.parse(userPreinscripto);
-    setPreinscripto.userObject.preinscripto;
+    setPreinscripto(userObject.preinscripto);
     
 }, [localStorage]);
   
