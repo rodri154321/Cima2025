@@ -1,5 +1,4 @@
-const { getUserId, searchUsersnameByName, deleteUsersById, allUsers, createUser, findUserName, deleteSearchName, updateUser,searchUserNft, grantAdminAcces, banearUser } = require('../controllers/userController')
-const {WelcomeEmail} = require('../nodemailer/userNodemailer')
+const { getUserId, searchUsersnameByName, deleteUsersById, allUsers, createUser, findUserName, deleteSearchName, updateUser, searchUserNft, grantAdminAcces, banearUser } = require('../controllers/userController')
 
 const getUsersHandler = async (req, res) => {
     const { username } = req.query
@@ -12,6 +11,17 @@ const getUsersHandler = async (req, res) => {
     }
 }
 
+const getAllUsersHandler = async (req, res) => {
+    try {
+        const results = username
+            ? await allUsers() : await allUsers()
+        res.status(200).json(results)
+    } catch (error) {
+        res.status(400).json({ error: error.message })
+    }
+}
+
+
 const createUsersHandler = async (req, res) => {
     const { username, name, lastName, email, password, cellPhone, country, admin, image } = req.body;
     try {
@@ -19,8 +29,8 @@ const createUsersHandler = async (req, res) => {
 
         const userEmail = newUser.email;
         const nameuser = newUser.name;
-      await WelcomeEmail(userEmail, nameuser);
-        
+        await WelcomeEmail(userEmail, nameuser);
+
         res.status(200).json(newUser);
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -28,18 +38,19 @@ const createUsersHandler = async (req, res) => {
 };
 
 const getUserNameHandler = async (req, res) => {
-    const { username, password } = req.method === 'GET' ? req.query : req.body;
+    const { emailGoogle } = req.method === 'GET' ? req.body : req.body;
     try {
-      const isAuthenticated = await findUserName(username, password);
-      if (isAuthenticated) {
-        res.status(200).json({ authenticated: true });
-      } else {
-        res.status(401).json({ authenticated: false });
-      }
+        const isAuthenticated = await findUserName(emailGoogle);
+        if (isAuthenticated) {
+            res.status(200).json({ authenticated: true });
+        } else {
+            res.status(401).json({ authenticated: false });
+        }
     } catch (error) {
-      res.status(401).json({ authenticated: false, error: error.message });
+        res.status(401).json({ authenticated: false, error: error.message });
     }
-  };
+};
+
 
 const getIdUsersHandler = async (req, res) => {
     const { id } = req.params
@@ -55,7 +66,7 @@ const getIdUsersHandler = async (req, res) => {
 }
 
 const grantAdminAccesHandler = async (req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
     try {
         const adminUser = await grantAdminAcces(id)
         if (!adminUser) {
@@ -65,8 +76,8 @@ const grantAdminAccesHandler = async (req, res) => {
         await adminUser.save();
 
         const message = adminUser.admin
-        ? 'Acceso de administrador otorgado con éxito'
-        : 'Acceso de administrador revocado con éxito';
+            ? 'Acceso de administrador otorgado con éxito'
+            : 'Acceso de administrador revocado con éxito';
 
         return res.status(200).json({ message });
     } catch (error) {
@@ -76,18 +87,18 @@ const grantAdminAccesHandler = async (req, res) => {
 }
 
 const banearUserHandler = async (req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
     try {
         const user = await banearUser(id)
-        if(!user){
+        if (!user) {
             return res.status(400).json({ error: 'Usuario no encontrado' });
         }
         user.active = !user.active;
         await user.save();
 
         const message = user.active
-        ? 'Usuario desbaneado'
-        : 'Usuario baneado con exito'
+            ? 'Usuario desbaneado'
+            : 'Usuario baneado con exito'
 
         return res.status(200).json({ message });
     } catch (error) {
@@ -127,8 +138,8 @@ const getDeleteUsersnameHandler = async (req, res) => {
     }
 }
 
-const getNftsUsersHandler = async(req, res) =>{
-    const {id}= req.params
+const getNftsUsersHandler = async (req, res) => {
+    const { id } = req.params
     try {
         const results = await searchUserNft(id)
         res.status(200).json(results)
@@ -138,6 +149,7 @@ const getNftsUsersHandler = async(req, res) =>{
 }
 
 module.exports = {
+    getAllUsersHandler,
     getUsersHandler,
     createUsersHandler,
     getUserNameHandler,

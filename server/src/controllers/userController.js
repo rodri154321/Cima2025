@@ -2,13 +2,13 @@ const { users, nfts } = require('../db')
 
 
 const allUsers = async () => {
-    const allusersDb = users.findAll({where:{admin:false}})
+    const allusersDb = users.findAll()
     return allusersDb;
 }
 
 const createUser = async (username, name, lastName, email, password, cellPhone, country, admin, image, active) => {
     const customCreatedAt = new Date();
-    const newUser = await users.create({ username, name, lastName, email, password, cellPhone, country, admin, image, active ,customCreatedAt})
+    const newUser = await users.create({ username, name, lastName, email, password, cellPhone, country, admin, image, active, customCreatedAt })
 
     return newUser
 }
@@ -28,58 +28,56 @@ const banearUser = async (id) => {
     return userBan;
 }
 
-const findUserName = async (username, password) => {
-    const exist = await users.findOne({ where: { username: username } });
-    if (exist) {
-        if (exist.password === password) {
-            login = true;
-            return login;
-        } else {
-            login = false;
-            return (`Contraseña Incorrecta`);
-        }
-    } else {
-        login = false;
-        throw Error(`Usuario Incorrecto`);
-    }
+const findUserName = async (emailGoogle) => {
+    const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
+    console.log(exist);
 
+    if (exist) {
+        login = true;
+        return login;
+    }
+    else {
+        login = false;
+        throw Error(`Usuario no encontrado`);
+    }
 };
+
 
 const updateUser = async (id, updates) => {
     try {
-      const user = await users.findByPk(id);
-      
-      if (!user) {
-        throw new Error('Usuario no encontrado');
-      }
-  
-      // Validar los datos actualizados si es necesario
-  
-      // Realizar actualizaciones solo para campos que han cambiado
-      const updatedFields = {};
-  
-      for (const key of Object.keys(updates)) {
-        if (user[key] !== updates[key]) {
-          updatedFields[key] = updates[key];
+        const user = await users.findByPk(id);
+
+        if (!user) {
+            throw new Error('Usuario no encontrado');
         }
-      }
-  
-      if (Object.keys(updatedFields).length === 0) {
-        return user; // No hay actualizaciones necesarias
-      }
-  
-      await users.update(updatedFields, {
-        where: { id },
-      });
-  
-      // Obtener el usuario actualizado
-      const updatedUser = await users.findByPk(id);
-      
-      return updatedUser;
+
+        // Validar los datos actualizados si es necesario
+
+        // Realizar actualizaciones solo para campos que han cambiado
+        const updatedFields = {};
+
+        for (const key of Object.keys(updates)) {
+            if (user[key] !== updates[key]) {
+                updatedFields[key] = updates[key];
+            }
+        }
+
+        if (Object.keys(updatedFields).length === 0) {
+            return user; // No hay actualizaciones necesarias
+        }
+
+        await users.update(updatedFields, {
+            where: { id },
+        });
+
+        // Obtener el usuario actualizado
+        const updatedUser = await users.findByPk(id);
+
+        return updatedUser;
     } catch (error) {
-      throw new Error('No se pudo actualizar el Usuario');
+        throw new Error('No se pudo actualizar el Usuario');
     }
-  };
+};
 
 
 const deleteUsersById = async (id) => {
