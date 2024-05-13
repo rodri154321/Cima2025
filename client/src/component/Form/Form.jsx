@@ -24,20 +24,25 @@ function RegistroFormulario() {
         ciudad: "",
         iglesia: "",
         pastor: "",
-        pastorPhoneNumber: 0,
+        telefonoPastor: 0,
         esAlergico: false,
         detalleAlergia: "",
         tieneMedicacion: false,
         detalleMedicacion: "",
         telefono: 0,
-        emergencyContactName: "",
-        emergencyContactPhoneNumber: "",
-        esCeliaco: false,
+        telefonoEmergencia: 0,
+        nombreEmergencia: "",
         esDiabetico: false,
+        esCeliaco: false,
         esVegetariano: false,
-        dietaryPreferences: [],
+        Otra: false,
         detalleAlimentacion: null,
-        participacionMovida: []
+        participoCimaday: false,
+        participoPrisma: false,
+        participoEurovoluntariado: false,
+        participoCima: false,
+        participoSigue: false,
+
     };
     const onValidate = (form) => {
         let errors = {};
@@ -46,6 +51,16 @@ function RegistroFormulario() {
         }
 
         return errors
+    }
+
+    const handleSelect = (option, name) => {
+        if (name == "nacionalidad") {
+            setFilterCountry([])
+            setForm({ ...form, nacionalidad: option });
+        } else if (name == "paisResidencia") {
+            setFilterCountryResidence([])
+            setForm({ ...form, paisResidencia: option });
+        }
     }
 
 
@@ -62,7 +77,7 @@ function RegistroFormulario() {
 
         fetchData();
     }, []);
-    const { filterCountry,filterCountryResidence, form, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate);
+    const { filterCountry, filterCountryResidence, form, setForm, setFilterCountry, setFilterCountryResidence, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate,);
     return (
         <div className={style.contenedorForm}>
             <h1>COMPLETA TUS DATOS</h1>
@@ -122,7 +137,7 @@ function RegistroFormulario() {
                         value={form.nacionalidad}
                         onChange={handleChange}
                     />
-                    <SerachResultList dataCountry={filterCountry} />
+                    <SerachResultList dataCountry={filterCountry} onSelect={(option) => handleSelect(option, "nacionalidad")} />
                 </div>
 
                 <br />
@@ -135,7 +150,7 @@ function RegistroFormulario() {
                         value={form.paisResidencia}
                         onChange={handleChange}
                     />
-                    <SerachResultList dataCountry={filterCountryResidence}   onChange={handleChange}/>
+                    <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />
                 </div>
                 {errors.paisResidencia && <div>{errors.paisResidencia}</div>}
                 <div className={style.inputGroup}>
@@ -149,7 +164,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
                     <label htmlFor="iglesia">Iglesia:</label>
                     <input
-                        className=''
+
                         type="text"
                         name="iglesia"
                         value={form.iglesia}
@@ -161,7 +176,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
                     <label htmlFor="pastor">Nombre y apellido del Pastor / Anciano / Líder:</label>
                     <input
-                        className=''
+
                         type="text"
                         name="pastor"
                         value={form.pastor}
@@ -300,24 +315,54 @@ function RegistroFormulario() {
                 {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
-                <ol>
-                    {checkListItemsFeeding.map((item, index) => (
-                        <li key={index}>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="dietaryPreferences"
-                                    value={item}
-                                    checked={form.dietaryPreferences.includes(item)}
-                                    onChange={handleChange}
-                                />
-                                {item}
-                            </label>
-                        </li>
-                    ))}
-                </ol>
-                {errors.dietaryPreferences && <div>{errors.dietaryPreferences}</div>}
-                {form.dietaryPreferences.includes("Otra") && (
+                <div className={style.checkbox}>
+                    <input
+                        type="checkbox"
+                        name="esCeliaco"
+                        id='esCeliaco'
+                        checked={form.esCeliaco}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="esCeliaco" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                        </svg>
+                    </label>
+                    Es Celiaco
+                </div>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        name="esDiabetico"
+                        checked={form.esDiabetico}
+                        onChange={handleChange}
+                    />
+                    Es Diabético
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        name="esVegetariano"
+                        checked={form.esVegetariano}
+                        onChange={handleChange}
+                    />
+                    Es Vegetariano
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        name="Otra"
+                        checked={form.Otra}
+                        onChange={handleChange}
+                    />
+                    Otra
+                </label>
+                <br />
+
+                {form.Otra && (
                     <div>
                         <label htmlFor="detalleAlimentacion "> Especifique los detalles de alimentacion.</label>
                         <input
@@ -326,28 +371,62 @@ function RegistroFormulario() {
                             name="detalleAlimentacion "
                             value={form.detalleAlimentacion}
                             onChange={handleChange}
-                        //*si se quiere especificar la almentacion en un futuro
                         />
                     </div>
                 )}
-
-                <h2>Otros Datos :</h2>
-                <ol>
-                    {checkListItemsCima.map((item, index) => (
-                        <li key={index}>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="participacionMovida"
-                                    value={item}
-                                    checked={form.participacionMovida.includes(item)}
-                                    onChange={handleChange}
-                                />
-                                {item}
-                            </label>
-                        </li>
-                    ))}
-                </ol>
+                <div>
+                    <h2>Otros Datos :</h2>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="participoCimaday"
+                            checked={form.participoCimaday}
+                            onChange={handleChange}
+                        />
+                        Participo en Cimaday
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="participoPrisma"
+                            checked={form.participoPrisma}
+                            onChange={handleChange}
+                        />
+                        Participo en Prisma
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="participoEurovoluntariado"
+                            checked={form.participoEurovoluntariado}
+                            onChange={handleChange}
+                        />
+                        Participo en Eurovoluntariado
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="participoCima"
+                            checked={form.participoCima}
+                            onChange={handleChange}
+                        />
+                        Participo en Cima
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="participoSigue"
+                            checked={form.participoSigue}
+                            onChange={handleChange}
+                        />
+                        Hice el curso Storyline o Vaya a Movilizar
+                    </label>
+                    <br />
+                </div>
                 {errors.participacionMovida && <div>{errors.participacionMovida}</div>}
                 <button type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
             </form>
