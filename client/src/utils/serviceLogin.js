@@ -12,7 +12,7 @@ const login = async (credentials) => {
         if(response.ok){
             const data = await response.json();
             localStorage.setItem('user', JSON.stringify(data.user));
-            localStorage.setItem('preinscripto',data.user.preinscripto)
+            localStorage.setItem('preinscripto',data.user.preinscripto);
             console.log(data.user.preinscripto);
             return data; // Retorna los datos devueltos por el servidor
         }
