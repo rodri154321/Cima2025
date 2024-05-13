@@ -6,6 +6,7 @@ import Googlelogin from './Views/GoogleLogin/Googlelogin';
 import Googleregister from './Views/GoogleRegister/Googleregister';
 import UserSection from './Views/userSection/UserSection';
 import UserDashboard from './Views/UserDashboard/UserDashboard';
+import { useEffect, useState } from 'react';
 
 
 
@@ -14,8 +15,12 @@ function App() {
   const {pathname} = useLocation();
 
   const navigate = useNavigate();
- 
-  const usuarioAutenticado = localStorage.getItem('autenticado') === 'true';
+  const [preinscripto, setPreinscripto] = useState(false);
+  useEffect(() => {
+    setPreinscripto.localStorage.getItem('user') === 'true';
+    
+}, [localStorage]);
+  
 
   return (
     <div className="App">
@@ -27,7 +32,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={usuarioAutenticado ? <UserDashboard /> : navigate('/login')}/>
+            {/* <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : navigate('/login')}/> */}
          </Routes>
     </div>
   )
