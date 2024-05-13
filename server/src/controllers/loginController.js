@@ -28,10 +28,10 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
   esAlergico, detalleAlergia, tieneMedicacion, detalleMedicacion, telefono, telefonoEmergencia,
   nombreEmergencia, esDiabetico, esCeliaco, esVegetariano, detalleAlimentacion, participoCimaday,
   participoPrisma, participoEurovoluntariado, participoCima, participoSigue) => {
-
+    
+    console.log(emailGoogle);
   try {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
-    console.log(emailGoogle);
     if (!exist) {
       // No se encontró ningún usuario con el correo electrónico dado
       throw Error('Ocurrio un error intente mas tarde');
