@@ -26,7 +26,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate('/user')}/>}/>
+            <Route path='/dashboard' element={dashboard && dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate('/user')}/>}/>
          </Routes>
     </div>
   )
