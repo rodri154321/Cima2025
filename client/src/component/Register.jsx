@@ -21,8 +21,8 @@ const Register = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
-          
           navigate('/user');
+          localStorage.setItem('preinscripto',data.user.preinscripto);
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
           Swal.fire({

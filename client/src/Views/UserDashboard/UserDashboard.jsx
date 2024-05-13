@@ -6,7 +6,7 @@ function UserDashboard() {
   return (
     <div >
       <div >
-        dashboard usuario
+        <h1>USUARIO</h1>
       </div>
     </div>
   )

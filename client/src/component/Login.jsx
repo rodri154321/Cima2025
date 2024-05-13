@@ -31,6 +31,7 @@ const Login = () => {
             icon: "error"
           }).then((result) => {
             if (result.isConfirmed) {
+              localStorage.setItem('preinscripto',data.user.preinscripto);
               navigate('/inscripciones');
             }
           });
