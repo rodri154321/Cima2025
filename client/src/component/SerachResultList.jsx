@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SearchResult from './SearchResult'
+//import SearchResult from './SearchResult'
 
 function SerachResultList({ dataCountry,onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
