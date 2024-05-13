@@ -38,7 +38,7 @@ const addInfoUser = async (nombre,apellido,emailGoogle,email,fechaNacimiento,doc
       { provincia: provincia },
       { ciudad: ciudad },
       { iglesia: iglesia },
-      { nombrePastor: nombrePastor },
+      { nombrePastor: pastor },
       { telefonoPastor: telefonoPastor },
       { esAlergico: esAlergico },
       { detalleAlergia: detalleAlergia },
