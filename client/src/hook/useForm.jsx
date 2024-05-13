@@ -7,10 +7,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
     const [errors, setErrors] = useState({});
     const [filterCountry, setFilterCountry] = useState([]);
     const [filterCountryResidence, setFilterCountryResidence] = useState([]);
-    const userString = localStorage.getItem('user');
-    const userObject = JSON.parse(userString);
-    const emailGoogle = userObject.emailGoogle;
-    console.log(emailGoogle);
+    
 
 
     const handleChange = async (event) => {
@@ -66,7 +63,6 @@ const useForm = (initialData, dataCountry, onValidate) => {
         }
     };
     const handleSubmit = async (event) => {
-        setForm({...form, emailGoogle:emailGoogle})
         event.preventDefault();
         console.log(form, "aa")
         const err = onValidate(form)
