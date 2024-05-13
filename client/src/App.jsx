@@ -12,7 +12,7 @@ import UserDashboard from './Views/UserDashboard/UserDashboard';
 function App() {
 
   const {pathname} = useLocation();
-  const dashboard = localStorage.getItem('preinscripto') === 'true';
+  const dashboard = localStorage.getItem('preinscripto');
 
   return (
     <div className="App">
