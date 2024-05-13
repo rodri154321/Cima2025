@@ -15,11 +15,11 @@ function App() {
   const {pathname} = useLocation();
 
   const navigate = useNavigate();
-  const [preinscripto, setPreinscripto] = useState(false);
-  useEffect(() => {
-    setPreinscripto.localStorage.getItem('user') === 'true';
+//   const [preinscripto, setPreinscripto] = useState(false);
+//   useEffect(() => {
+//     setPreinscripto.localStorage.getItem('user') === 'true';
     
-}, [localStorage]);
+// }, [localStorage]);
   
 
   return (
