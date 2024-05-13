@@ -10,6 +10,7 @@ const register = async (credentials) => {
             body: JSON.stringify(credentials),
         });
         const data = await response.json();
+        // Object.values(data);
         localStorage.setItem('user', JSON.stringify(data.user))
         return data; // Retorna los datos devueltos por el servidor
     } catch (error) {
