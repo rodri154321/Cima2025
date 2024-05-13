@@ -24,7 +24,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={dashboard ? <UserDashboard /> : <UserSection navigate={navigate}/>}/>
+            {/* <Route path='/dashboard' element={dashboard ? <UserDashboard /> : <UserSection navigate={navigate}/>}/> */}
          </Routes>
     </div>
   )
