@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route, useLocation} from 'react-router-dom';
+import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import Landing from './Views/Landing/Landin';
 import Inscripciones from './Views/Inscripciones/Inscripciones';
 import Googlelogin from './Views/GoogleLogin/Googlelogin';
@@ -13,6 +13,7 @@ function App() {
 
   const {pathname} = useLocation();
 
+  const navigate = useNavigate();
   const dashboard = localStorage.getItem('user');
 
   return (
@@ -25,7 +26,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate}/>}/>
+            <Route path='/dashboard' element={dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate('/user')}/>}/>
          </Routes>
     </div>
   )
