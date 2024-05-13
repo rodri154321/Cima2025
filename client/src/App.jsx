@@ -27,7 +27,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={usuarioAutenticado ? <UserDashboard /> : <Redirect to="/login" />}/>
+            <Route path='/dashboard' element={usuarioAutenticado ? <UserDashboard /> : navigate('/login')}/>
          </Routes>
     </div>
   )
