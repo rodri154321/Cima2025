@@ -26,6 +26,7 @@ const postRegisterUser = async (emailGoogle, password) => {
 const addInfoUser = async (nombre,apellido,emailGoogle,email,fechaNacimiento,documento,sexo,nacionalidad,paisResidencia,provincia,ciudad,iglesia,pastor,telefonoPastor,esAlergico,detalleAlergia,tieneMedicacion,detalleMedicacion,telefono,telefonoEmergencia,nombreEmergencia,esDiabetico,esCeliaco,esVegetariano,detalleAlimentacion,participoCimaday,participoPrisma,participoEurovoluntariado,participoCima,participoSigue) => {
   const newUser = null
   const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
+  console.log(exist);
   if (!exist.preinscripto) {
     newUser = await users.update(
       { nombre: nombre },
