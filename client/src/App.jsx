@@ -15,11 +15,14 @@ function App() {
   const {pathname} = useLocation();
 
   const navigate = useNavigate();
-//   const [preinscripto, setPreinscripto] = useState(false);
-//   useEffect(() => {
-//     setPreinscripto.localStorage.getItem('user') === 'true';
+  const [preinscripto, setPreinscripto] = useState(false);
+
+  useEffect(() => {
+    const userPreinscripto = localStorage.getItem('user');
+    const userObject = JSON.parse(userPreinscripto);
+    setPreinscripto.userObject.preinscripto;
     
-// }, [localStorage]);
+}, [localStorage]);
   
 
   return (
@@ -32,7 +35,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            {/* <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : navigate('/login')}/> */}
+            <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : navigate('/login')}/>
          </Routes>
     </div>
   )
