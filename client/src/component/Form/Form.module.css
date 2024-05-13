@@ -59,7 +59,6 @@
 
 
   .inputGroup select {
-    background-color: red;
     font-size: 100%;
     padding: 0.88em;
     outline: none;
@@ -90,7 +89,7 @@ transform: scale(1.03);
 
 .checkbox input + label {
 display: block;
-border: 2px solid rgb(137, 16, 16);
+border: 2px solid rgb(150, 150, 200);
 width: var(--size);
 height: var(--size);
 border-radius: 6px;
