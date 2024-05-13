@@ -6,12 +6,15 @@ import style from "./Form.module.css"
 
 
 function RegistroFormulario() {
+    const userString = localStorage.getItem('user');
+    const userObject = JSON.parse(userString);
+    const emailGoogle = userObject.emailGoogle;
     const [dataCountry, setDataCountry] = useState("")
     const initialData = {
         nombre: "",
         apellido: "",
         emailGoogle: "",
-        email: "",
+        email: emailGoogle,
         fechaNacimiento: "",
         documento: "",
         sexo: "",
