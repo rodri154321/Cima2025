@@ -70,6 +70,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
         if (Object.keys(err).length === 0) {
             setLoading(true)
             try {
+                console.log(form);
                 const response = await fetch('https://cima2025.up.railway.app/login/addInfo', {
                     method: 'PUT',
                     headers: {
