@@ -9,6 +9,7 @@ function RegistroFormulario() {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
     const emailGoogle = userObject.emailGoogle;
+    console.log(emailGoogle);
     const [dataCountry, setDataCountry] = useState("")
     const initialData = {
         nombre: "",
