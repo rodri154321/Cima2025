@@ -7,13 +7,14 @@ const useForm = (initialData, dataCountry, onValidate) => {
     const [errors, setErrors] = useState({});
     const [filterCountry, setFilterCountry] = useState([]);
     const [filterCountryResidence, setFilterCountryResidence] = useState([]);
+
+
     const handleChange = async (event) => {
         const { name, value, checked } = event.target;
-
         if (name == "nacionalidad" || name == "paisResidencia") {
+           
             setFilterCountry([]);
             const result = await dataCountry;
-
             setForm({ ...form, [name]: value })
             const searchCountry = result.filter(country => {
                 if (name == "paisResidencia") {
@@ -22,57 +23,42 @@ const useForm = (initialData, dataCountry, onValidate) => {
                     return country.name.common.toLowerCase().startsWith(form.nacionalidad.toLowerCase());
                 }
             });
-
-            // Manejar los resultados filtrados
             if (searchCountry.length > 0) {
                 let coutrys = []
 
                 searchCountry.forEach(element => {
                     coutrys.push(element.name.common.toLowerCase())
-                    if (name == "paisResidencia") {
-                        setFilterCountryResidence(coutrys)
-                    } else {
-                        setFilterCountry(coutrys)
-                    }
-
                 });
+                if (name == "paisResidencia") {
+                    if(coutrys.includes(value)){
+                        setFilterCountryResidence([])
+                    }
+                    else if(value != ""){
+                        setFilterCountryResidence(coutrys)
+                    }else{
+                        setFilterCountryResidence([])
+                    }
+                  
+                } else {
+                    if(coutrys.includes(value)){
+                        setFilterCountry([])
+                    } else if(value != ""){
+                        setFilterCountry(coutrys)
+                    } else{
+                        setFilterCountry([])
+                    }
+                }
             } else {
                 // Manejar el caso en que no se encuentren países que coincidan con el filtro
                 console.log("No se encontraron países que coincidan con el filtro.");
             }
         }
-        else if (name === "esAlergico" || name === "tieneMedicacion") {
+        else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === " participoCimaday" || name ==="participoPrisma" || name ==="participoEurovoluntariado" || name ==="participoCima" || name ==="participoSigue") {
             const isChecked = event.target.checked;
             setForm({ ...form, [name]: isChecked ? true : false });
-        }
-
-        // else if (name === "medication") {
-        //     const isChecked = event.target.checked;
-        //     setForm({ ...form, [name]: isChecked ? true : false });
-        // }
-
-        else if (name === "dietaryPreferences" || name === "participacionMovida") {
-            if (value === "Ninguno" || value == "Ninguna") {
-                setForm({ ...form, [name]: [value] });
-            } else {
-                if (form[name].includes("Ninguno") || form[name].includes("Ninguna")) {
-                    setForm({ ...form, [name]: [value] })
-                }
-                else if (form[name].includes(value)) {
-                    setForm({ ...form, [name]: form[name].filter(item => item !== value) });
-                } else {
-                    setForm({ ...form, [name]: [...form[name], value] });
-                }
-            }
-            if (name === "dietaryPreferences") {
-                console.log(form.dietaryPreferences)
-                const isVegetariano = form.dietaryPreferences.includes('Soy vegetariano/a');
-                console.log(isVegetariano,"aaa")
-                const isCeliaco = form.dietaryPreferences.includes("Soy celiaco/a");
-                const isDiabetico = form.dietaryPreferences.includes("Soy diabetico/a");
-                // setForm({ ...form, esVegetariano: isVegetariano, esCeliaco: isCeliaco, esDiabetico: isDiabetico });
-            }
-
+  
+        }else{
+            setForm({ ...form, [name]: value });
         }
     };
     const handleSubmit = async (event) => {
@@ -109,7 +95,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
         }
     }
 
-    return { filterCountry, filterCountryResidence, form, errors, loading, handleSubmit, handleChange }
+    return { filterCountry, filterCountryResidence, form,setForm,setFilterCountry,setFilterCountryResidence,errors, loading, handleSubmit, handleChange }
 }
 
 export default useForm

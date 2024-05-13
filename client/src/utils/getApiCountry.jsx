@@ -21,8 +21,3 @@ const getApiCountry = async (value) => {
 
 export default getApiCountry
 
-// [{name:{common:"chile"}},
-// {name:{common:"colombia"}},
-// {name:{common:"peru"}},
-// {name:{common:"argentina"}}
-// ]
