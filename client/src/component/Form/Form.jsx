@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import useForm from '../../hook/useForm';
-import { getCheckListItemsCima, getCheckListItemsFeeding } from '../../utils/formFieldData';
 import getApiCountry from '../../utils/getApiCountry';
 import SerachResultList from '../SerachResultList';
 import style from "./Form.module.css"
@@ -8,8 +7,6 @@ import style from "./Form.module.css"
 
 function RegistroFormulario() {
     const [dataCountry, setDataCountry] = useState("")
-    const checkListItemsFeeding = getCheckListItemsFeeding();
-    const checkListItemsCima = getCheckListItemsCima();
     const initialData = {
         nombre: "",
         apellido: "",
