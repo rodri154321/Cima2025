@@ -87,6 +87,7 @@ const useForm = (initialData, dataCountry, onValidate) => {
                 }
             } catch (error) {
                 console.error('Error de red:', error);
+                console.log(error);
                 setLoading(false)
             }
 
