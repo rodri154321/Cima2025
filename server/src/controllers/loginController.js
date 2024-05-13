@@ -31,7 +31,11 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
 
   try {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
-    console.log(fechaNacimiento);
+    console.log(emailGoogle);
+    if (!exist) {
+      // No se encontró ningún usuario con el correo electrónico dado
+      throw Error('Ocurrio un error intente mas tarde');
+    }
     if (!exist.dataValues.preinscripto) {
       await users.update({
         nombre: nombre,
@@ -71,11 +75,12 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
           },
         },
       );
+      return 'Usuario actualizado correctamente';
     }
-    return 'Usuario actualizado correctamente';
+    else throw Error('Ocurrio un error intente mas tarde');
+    
   } catch (error) {
-    console.error('Error al actualizar el usuario:', error);
-    return 'Hubo un error al actualizar el usuario';
+    throw Error('Error al actualizar el usuario:', error);
   }
   }
 
