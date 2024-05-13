@@ -82,7 +82,15 @@ const useForm = (initialData, dataCountry, onValidate) => {
 
                 if (response.ok) {
                     setLoading(false)
-                    console.log('Datos enviados correctamente');
+                    // console.log('Datos enviados correctamente');
+                    Swal.fire({
+                        icon: "success",
+                        title: "User Created",
+                        showConfirmButton: false,
+                        timer: 2000,
+                        background: "#666",
+                        color: "#FFFFFF",
+                      });
                     navigate('/dashboard');
                 } else {
                     console.error('Error al enviar datos');
