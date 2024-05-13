@@ -10,13 +10,10 @@ const postLogin = async (emailGoogle, password) => {
 
   if (exist.password !== password) throw Error("Contraseña Invalida")
 
-
   return exist;
 }
 
 const postRegisterUser = async (emailGoogle, password) => {
-
-  console.log("esto es controller", emailGoogle, password);
 
   const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
 

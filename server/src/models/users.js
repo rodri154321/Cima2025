@@ -80,8 +80,12 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        participacionMovida: {
-            type: DataTypes.INTEGER,
+        nombreEmergencia:{
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        telefonoEmergencia:{
+            type: DataTypes.STRING,
             allowNull: true
         },
         esVoluntario: {
@@ -135,6 +139,26 @@ module.exports = (sequelize) => {
         },
         detalleAlimentacion: {
             type: DataTypes.STRING,
+            allowNull: true
+        },
+        participoCimaday:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        participoPrisma:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        participoEurovoluntariado:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        participoCima:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        participoSigue:{
+            type: DataTypes.BOOLEAN,
             allowNull: true
         },
         montoPagado: {
