@@ -61,7 +61,7 @@ const addInfoUser = async (nombre,apellido,emailGoogle,email,fechaNacimiento,doc
       { participoSigue: participoSigue },
       {
         where: {
-          id: exist.id,
+          id: exist.dataValues.id,
         },
       },
     );
