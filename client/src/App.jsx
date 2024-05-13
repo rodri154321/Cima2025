@@ -13,6 +13,8 @@ function App() {
 
   const {pathname} = useLocation();
 
+  const dashboard = localStorage.getItem('user');
+
   return (
     <div className="App">
       
@@ -23,7 +25,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            {/* <Route path='/dashboard' element={dashboard ? <UserDashboard /> : <UserSection navigate={navigate}/>}/> */}
+            <Route path='/dashboard' element={dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate}/>}/>
          </Routes>
     </div>
   )
