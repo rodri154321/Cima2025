@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
+import {Routes, Route, useLocation, useNavigate, Redirect } from 'react-router-dom';
 import Landing from './Views/Landing/Landin';
 import Inscripciones from './Views/Inscripciones/Inscripciones';
 import Googlelogin from './Views/GoogleLogin/Googlelogin';
@@ -15,6 +15,7 @@ function App() {
 
   const navigate = useNavigate();
  
+  const usuarioAutenticado = localStorage.getItem('autenticado') === 'true';
 
   return (
     <div className="App">
@@ -26,7 +27,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            {/* <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : <UserSection navigate={navigate}/>}/> */}
+            <Route path='/dashboard' element={usuarioAutenticado ? <UserDashboard /> : <Redirect to="/login" />}/>
          </Routes>
     </div>
   )
