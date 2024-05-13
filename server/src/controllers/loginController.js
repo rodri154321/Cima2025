@@ -23,36 +23,41 @@ const postRegisterUser = async (emailGoogle, password) => {
   
 }
 
-const addInfoUser = async (emailGoogle, nombre, apellido, telefono, documento, sexo, nacionalidad, ciudad, provincia, email, fechaNacimiento, estadoInscripcion, preinscripto, cartaPastoral, descubrePagos, experimentaPagos, esVoluntario, tieneMedicacion, detalleMedicacion, esAlergico, detalleAlergia, iglesia, nombrePastor, paisResidencia) => {
+const addInfoUser = async (nombre,apellido,emailGoogle,email,fechaNacimiento,documento,sexo,nacionalidad,paisResidencia,provincia,ciudad,iglesia,pastor,telefonoPastor,esAlergico,detalleAlergia,tieneMedicacion,detalleMedicacion,telefono,telefonoEmergencia,nombreEmergencia,esDiabetico,esCeliaco,esVegetariano,detalleAlimentacion,participoCimaday,participoPrisma,participoEurovoluntariado,participoCima,participoSigue) => {
   const newUser = null
   const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
   if (!exist.preinscripto) {
     newUser = await users.update(
       { nombre: nombre },
       { apellido: apellido },
-      { telefono: telefono },
-      { documento: documento },
-      { sexo: sexo },
-      { nacionalidad: nacionalidad },
-      { ciudad: ciudad },
-      { provincia: provincia },
-      { email: email },
       { fechaNacimiento: fechaNacimiento },
-      { estadoInscripcion: estadoInscripcion },
-      { preinscripto: true },
-      { cartaPastoral: null },
-      { descubrePagos: null },
-      { experimentaPagos: null },
-      { descubrePagos: null },
-      { esVoluntario: false },
-      { tieneMedicacion: tieneMedicacion },
-      { detalleMedicacion: detalleMedicacion },
-      { esAlergico: esAlergico },
-      { detalleAlergia: detalleAlergia },
+      { sexo: sexo },
+      { documento: documento },
+      { nacionalidad: nacionalidad },
+      { paisResidencia: paisResidencia },
+      { provincia: provincia },
+      { ciudad: ciudad },
       { iglesia: iglesia },
       { nombrePastor: nombrePastor },
       { telefonoPastor: telefonoPastor },
-      { paisResidencia: paisResidencia },
+      { esAlergico: esAlergico },
+      { detalleAlergia: detalleAlergia },
+      { tieneMedicacion: tieneMedicacion },
+      { detalleMedicacion: detalleMedicacion },
+      { telefono: telefono },
+      { email: email },
+      { nombreEmergencia: nombreEmergencia },
+      { telefonoEmergencia: telefonoEmergencia },
+      { preinscripto: true },
+      { esDiabetico: esDiabetico },
+      { esCeliaco: esCeliaco },
+      { esVegetariano: esVegetariano },
+      { detalleAlimentacion: detalleAlimentacion },
+      { participoCimaday: participoCimaday },
+      { participoPrisma: participoPrisma },
+      { participoEurovoluntariado: participoEurovoluntariado },
+      { participoCima: participoCima },
+      { participoSigue: participoSigue },
       {
         where: {
           id: exist.id,
@@ -66,3 +71,5 @@ const addInfoUser = async (emailGoogle, nombre, apellido, telefono, documento, s
 module.exports = {
   postLogin, addInfoUser, postRegisterUser
 }
+
+
