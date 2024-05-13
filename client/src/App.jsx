@@ -12,9 +12,6 @@ import UserDashboard from './Views/UserDashboard/UserDashboard';
 function App() {
 
   const {pathname} = useLocation();
-  localStorage.setItem('user', "");
-  const dashboard = localStorage.getItem(user);
-  console.log(dashboard);
 
   return (
     <div className="App">
