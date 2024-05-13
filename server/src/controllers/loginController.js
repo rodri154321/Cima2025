@@ -31,6 +31,7 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
 
   try {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
+    console.log(exist);
     if (!exist.dataValues.preinscripto) {
       await users.update({
         nombre: nombre,
