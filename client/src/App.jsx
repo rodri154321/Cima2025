@@ -14,7 +14,10 @@ function App() {
   const {pathname} = useLocation();
 
   const navigate = useNavigate();
-  // const dashboard = localStorage.getItem('user');
+  const userString = localStorage.getItem('user');
+    const userObject = JSON.parse(userString);
+    const preinscripto = userObject.preinscripto;
+    console.log(preinscripto);
 
   return (
     <div className="App">
@@ -26,7 +29,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            {/* <Route path='/dashboard' element={dashboard && dashboard.preinscripto ? <UserDashboard /> : <UserSection navigate={navigate}/>}/> */}
+            <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : <UserSection navigate={navigate}/>}/>
          </Routes>
     </div>
   )
