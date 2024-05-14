@@ -26,6 +26,7 @@ const useForm = (initialData, dataCountry) => {
             setFilterCountry([]);
             const result = await dataCountry;
             setForm({ ...form, [name]: value })
+            console.log("result",result)
             const searchCountry = result.filter(country => {
                 if (name == "paisResidencia") {
                     return country.countryName.toLowerCase().startsWith(form.paisResidencia.toLowerCase());
@@ -33,6 +34,7 @@ const useForm = (initialData, dataCountry) => {
                     return country.countryName.toLowerCase().startsWith(form.nacionalidad.toLowerCase());
                 }
             });
+            console.log("searchCountry",searchCountry)
             
             if (searchCountry.length > 0) {
                 let coutrys = []

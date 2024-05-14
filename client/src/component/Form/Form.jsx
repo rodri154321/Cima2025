@@ -26,13 +26,13 @@ function RegistroFormulario() {
         ciudad: "",
         iglesia: "",
         pastor: "",
-        telefonoPastor: 0,
+        telefonoPastor: "",
         esAlergico: false,
         detalleAlergia: "",
         tieneMedicacion: false,
         detalleMedicacion: "",
-        telefono: 0,
-        telefonoEmergencia: 0,
+        telefono: "",
+        telefonoEmergencia: "",
         nombreEmergencia: "",
         detalleSalud: "",
         esDiabetico: false,
@@ -65,7 +65,7 @@ function RegistroFormulario() {
 
     useEffect(() => {
         // Ejecuta getApiCountry() cuando el componente se monta
-        setForm({...form, emailGoogle:emailGoogle})
+        setForm({ ...form, emailGoogle: emailGoogle })
         async function fetchData() {
             try {
                 const data = await getApiCountry();
@@ -137,13 +137,14 @@ function RegistroFormulario() {
                     {errors.fechaNacimiento && <div className={style.error}>{errors.fechaNacimiento}</div>}
                 </div>
                 <br />
-
+               
                 <div className={style.inputGroup}>
-                    <label htmlFor="sexo">Sexo:</label>
                     <select name="sexo" value={form.sexo} onChange={handleChange} required>
+                        <option >Selecciona un sexo:</option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
+                   
                     {errors.sexo && <div className={style.error}>{errors.sexo}</div>}
                 </div>
 
@@ -282,7 +283,7 @@ function RegistroFormulario() {
                     </div>
                 )}<br />
                 <p>¿Tomas alguna medicacion?</p>
-                <div className={style.cFheckbox}>
+                <div className={style.checkbox}>
                     <input
                         type="checkbox"
                         name="tieneMedicacion"
@@ -290,7 +291,7 @@ function RegistroFormulario() {
                         checked={form.tieneMedicacion}
                         onChange={handleChange}
                     />
-                      <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
+                    <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
                         <svg viewBox="0,0,50,50" className="checkbox-icon">
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
@@ -300,7 +301,7 @@ function RegistroFormulario() {
                 {errors.tieneMedicacion && <div className={style.error}>{errors.tieneMedicacion}</div>}
                 {form.tieneMedicacion && (
                     <div className={style.inputGroup}>
-                      
+
                         <input
                             className=''
                             type="text"
@@ -308,7 +309,7 @@ function RegistroFormulario() {
                             value={form.detalleMedicacion}
                             onChange={handleChange}
                         />
-                          <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
+                        <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
                     </div>
                 )}<br />
                 <h2 >Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</h2>
@@ -325,7 +326,7 @@ function RegistroFormulario() {
 
                 <h2>Datos de Contacto: </h2><p> Asegurate de completar los siguientes datos con información actualizada porque serán los medios por los cuales nos contactaremos con vos.</p>
                 <div className={style.inputGroup}>
-                   
+
                     <input
                         type="tel"
                         name="telefono"
@@ -333,27 +334,27 @@ function RegistroFormulario() {
                         onChange={handleChange}
                         required
                     />
-                     <label htmlFor="telefono">Whatsapp</label>
+                    <label htmlFor="telefono">Whatsapp</label>
                     {errors.telefono && <div className={style.error}>{errors.telefono}</div>}
                 </div>
                 <br />
 
                 <div className={style.inputGroup}>
-                   
+
                     <input
                         type="email"
                         name="email"
                         value={form.email}
                         onChange={handleChange}
                         required />
-                         <label htmlFor="email">Correo electrónico</label>
+                    <label htmlFor="email">Correo electrónico</label>
                     {errors.email && <div className={style.error}>{errors.email}</div>}
                 </div>
                 <br />
 
                 <h2>Ante una emergencia, ¿a quién podríamos contactar? </h2>
                 <div className={style.inputGroup}>
-                  
+
                     <input
                         className=''
                         type="text"
@@ -362,19 +363,19 @@ function RegistroFormulario() {
                         onChange={handleChange}
                         required
                     />
-                      <label htmlFor="nombreEmergencia">Nombre:</label>
+                    <label htmlFor="nombreEmergencia">Nombre:</label>
                     {errors.nombreEmergencia && <div className={style.error}>{errors.nombreEmergencia}</div>}
                 </div>
 
                 <div className={style.inputGroup}>
-                    
+
                     <input
                         type="tel"
                         name="telefonoEmergencia"
                         value={form.telefonoEmergencia}
                         onChange={handleChange}
                         required />
-                        <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
+                    <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
                     {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
                 </div>
 
