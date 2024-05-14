@@ -19,7 +19,14 @@ const useForm = (initialData, dataCountry) => {
 
     const navigate = useNavigate();
 
-    const handleChange = async (event) => {
+    const handleChange = async (event,dateFieldName) => {
+        if (dateFieldName === "fechaNacimiento") {
+            
+            const value = event.getFullYear() + '/' + (event.getMonth() + 1) + '/' + event.getDate();
+            setForm({ ...form, [dateFieldName]: value });
+          
+        } else {
+        
         const { name, value, checked } = event.target;
         if (name == "nacionalidad" || name == "paisResidencia") {
            
@@ -91,18 +98,22 @@ const useForm = (initialData, dataCountry) => {
         else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === "participoCimaday" || name ==="participoPrisma" || name ==="participoEurovoluntariado" || name ==="participoCima" || name ==="participoSigue") {
             const isChecked = event.target.checked;
             setForm({ ...form, [name]: isChecked ? true : false });
-  
+        }else if (name === "fechaNacimiento" ){
+            setForm({ ...form, [name]: value });
+            console.log(value,"date")
         }else{
             setForm({ ...form, [name]: value });
         }
+    }
     };
 //validacion de errores
     const onValidate = (form) => {
         
         const regexCaractersName = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{3,}$/; // /^[a-zA-ZáéíóúÁÉÍÓÚüÜ]{3,}$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const dateRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}  $/;
-        const regexTel = /^\+(?:[0-9] ?){6,14}[0-9]$/;
+        const dateRegex = / ^\d{4}-\d{2}-\d{2}$/;
+        const regexTel = /^\+(?:[0-9\s]){6,14}[0-9]$/;
+     
         let errors = {};
         if (!form.nombre.trim()) {
             errors.nombre = "Debe colocar un nombre";
@@ -110,7 +121,8 @@ const useForm = (initialData, dataCountry) => {
         
             if(!regexCaractersName.test(form.nombre)){
                 errors.nombre ="No debe tener caracteres especiales"
-        }}
+        }
+    }
         if (!form.nombreEmergencia.trim()) {
             errors.nombreEmergencia = "Debe colocar un nombre";
         }else if(form.nombreEmergencia){ 
@@ -132,13 +144,13 @@ const useForm = (initialData, dataCountry) => {
                 errors.email = "Debe cumplir con el formato email"
             }
         }
-        if (!form.fechaNacimiento.trim()) {
+        if (!form.fechaNacimiento) {
            
             errors.fechaNacimiento = "Debe agregar Fecha de nacimiento";
         }else if(form.fechaNacimiento){
-          
+          console.log(form.fechaNacimiento)
             if(dateRegex.test(form.fechaNacimiento)){
-                errors.fechaNacimiento = "Debe cumplir con el formato dd/mm/yyyy"
+                errors.fechaNacimiento = "Debe cumplir con el formato yyyy/mm/dd"
             }else if(!isValidateAge(form.fechaNacimiento)){
                 errors.fechaNacimiento = "Debe ser mayor de 14 años"
             }

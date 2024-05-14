@@ -14,11 +14,12 @@ const Login = () => {
   const handleGoogleLogin = async (reponse) => {
     if (reponse.credential) {
       const { payload } = decodeJwt(reponse.credential)
+     const pictureGoogle = payload.picture
       try {
         const loginResponse = await serviceLogin.login({
           emailGoogle: payload.email,
           password: payload.sub
-        });
+        },pictureGoogle);
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);

@@ -3,6 +3,8 @@ import useForm from '../../hook/useForm';
 import getApiCountry from '../../utils/getApiCountry';
 import getApiProvinces from "../../utils/getApiProvince"
 import SerachResultList from '../SearchResultList';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import style from "./Form.module.css"
 
 
@@ -10,7 +12,7 @@ function RegistroFormulario() {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
     const emailGoogle = userObject.emailGoogle;
-    console.log(emailGoogle);
+    
     const [dataCountry, setDataCountry] = useState("")
     const initialData = {
         nombre: "",
@@ -126,25 +128,25 @@ function RegistroFormulario() {
                 </div>
                 <br />
                 <div className={style.inputGroup}>
-                    <input
-                        type="date"
+                    <DatePicker
                         id="fechaNacimiento"
                         name="fechaNacimiento"
-                        value={form.fechaNacimiento}
-                        onChange={handleChange}
+                        selected={form.fechaNacimiento}
+                        onChange={(date) => handleChange(date, "fechaNacimiento")}
+                        dateFormat="yyyy-MM-dd"
                         required
                     />
                     {errors.fechaNacimiento && <div className={style.error}>{errors.fechaNacimiento}</div>}
                 </div>
                 <br />
-               
+
                 <div className={style.inputGroup}>
                     <select name="sexo" value={form.sexo} onChange={handleChange} required>
                         <option selected >Selecciona un sexo:</option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
-                   
+
                     {errors.sexo && <div className={style.error}>{errors.sexo}</div>}
                 </div>
 
@@ -152,7 +154,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                       
+
                         type="text"
                         name="nacionalidad"
                         value={form.nacionalidad}
@@ -167,14 +169,14 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                     
+
                         type="text"
                         name="paisResidencia"
                         value={form.paisResidencia}
                         onChange={handleChange}
                         required
                     />
-                    <label htmlFor="paisResidencia">Residencia:</label>
+                    <label htmlFor="paisResidencia">Pais de residencia:</label>
                     <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />
                     {errors.paisResidencia && <div className={style.error}>{errors.paisResidencia}</div>}
                 </div>
@@ -183,7 +185,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        
+
                         type="text"
                         name="provincia"
                         value={form.provincia}
@@ -240,7 +242,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        type="tel"
+                        type="text"
                         name="telefonoPastor"
                         value={form.telefonoPastor}
                         onChange={handleChange}
@@ -255,22 +257,22 @@ function RegistroFormulario() {
                 </p>
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
                 <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="esAlergico"
-                        id='esAlergico'
-                        checked={form.esAlergico}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="esAlergico" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="esAlergico"
+                            id='esAlergico'
+                            checked={form.esAlergico}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="esAlergico" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
 
-                </div>
-                <p>¿Sos alérgico/a algo?</p>
+                    </div>
+                    <p>¿Sos alérgico/a algo?</p>
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
@@ -284,22 +286,22 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}<br />
-               <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="tieneMedicacion"
-                        id="tieneMedicacion"
-                        checked={form.tieneMedicacion}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
-                </div>
-                <p>¿Tomas alguna medicacion?</p>
+                <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="tieneMedicacion"
+                            id="tieneMedicacion"
+                            checked={form.tieneMedicacion}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <p>¿Tomas alguna medicacion?</p>
                 </div>
                 {errors.tieneMedicacion && <div className={style.error}>{errors.tieneMedicacion}</div>}
                 {form.tieneMedicacion && (
@@ -331,7 +333,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        type="tel"
+                        type="text"
                         name="telefono"
                         value={form.telefono}
                         onChange={handleChange}
@@ -373,7 +375,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        type="tel"
+                        type="text"
                         name="telefonoEmergencia"
                         value={form.telefonoEmergencia}
                         onChange={handleChange}
@@ -385,77 +387,77 @@ function RegistroFormulario() {
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
                 <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="esCeliaco"
-                        id='esCeliaco'
-                        checked={form.esCeliaco}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="esCeliaco" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
-                </div>
-                <p> Es Celiaco</p>
-                </div>
-                <br />
-                <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="esDiabetico"
-                        id='esDiabetico'
-                        checked={form.esDiabetico}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="esDiabetico" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
-                    
-                </div>
-                <p>Es Diabetico</p>
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="esCeliaco"
+                            id='esCeliaco'
+                            checked={form.esCeliaco}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="esCeliaco" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <p> Es Celiaco</p>
                 </div>
                 <br />
                 <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="esVegetariano"
-                        id='esVegetariano'
-                        checked={form.esVegetariano}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="esVegetariano" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
-                </div>
-                <p> Es Vegetariano</p>
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="esDiabetico"
+                            id='esDiabetico'
+                            checked={form.esDiabetico}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="esDiabetico" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <p>Es Diabetico</p>
                 </div>
                 <br />
                 <div className={style.cont_Checkbox}>
-                <div className={style.checkbox}>
-                    <input
-                        type="checkbox"
-                        name="Otra"
-                        id='Otra'
-                        checked={form.Otra}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor="Otra" style={{ '--size': '30px' }}>
-                        <svg viewBox="0,0,50,50" className="checkbox-icon">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                    </label>
-                    
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="esVegetariano"
+                            id='esVegetariano'
+                            checked={form.esVegetariano}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="esVegetariano" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <p> Es Vegetariano</p>
                 </div>
-                <p>Otra</p>
+                <br />
+                <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
+                        <input
+                            type="checkbox"
+                            name="Otra"
+                            id='Otra'
+                            checked={form.Otra}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="Otra" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <p>Otra</p>
                 </div>
                 <br />
 
@@ -471,9 +473,9 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}
-             
-                    <h2>Otros Datos :</h2>
-                    <div className={style.cont_Checkbox}>
+
+                <h2>Otros Datos :</h2>
+                <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -486,12 +488,12 @@ function RegistroFormulario() {
                             <svg viewBox="0,0,50,50" className="checkbox-icon">
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
-                        </label>      
+                        </label>
                     </div>
                     <p>Participo en Cima Day</p>
-                    </div>
-                    <br />
-                    <div className={style.cont_Checkbox}>
+                </div>
+                <br />
+                <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -505,12 +507,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        
+
                     </div>
                     <p>Participo en Prisma</p>
-                    </div>
-                    <br />
-                    <div className={style.cont_Checkbox}>
+                </div>
+                <br />
+                <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -524,12 +526,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        
+
                     </div>
                     <p>Participo en Eurovoluntariado</p>
-                    </div>
-                    <br />
-                    <div className={style.cont_Checkbox}>
+                </div>
+                <br />
+                <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -543,12 +545,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                       
+
                     </div>
                     <p> Participo en Cima</p>
-                    </div>
-                    <br />
-                    <div className={style.cont_Checkbox}>
+                </div>
+                <br />
+                <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -562,12 +564,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                       
+
                     </div>
                     <p> Hice el curso Storyline o Vaya a Movilizar</p>
-                    </div>
-                    <br />
-               
+                </div>
+                <br />
+
                 {errors.participacionMovida && <div className={style.error}>{errors.participacionMovida}</div>}
                 <button className={style.btnSubmit} type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
             </form>
