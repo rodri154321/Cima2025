@@ -9,7 +9,6 @@ const getAllUsersHandler = async (req, res) => {
     }
 }
 
-
 const getUserEmailHandler = async (req, res) => {
     const { emailGoogle } = req.method === 'GET' ? req.body : req.body;
     try {
@@ -33,8 +32,6 @@ const getUsernameHandler = async (req, res) => {
         res.status(401).json({ authenticated: false, error: error.message });
     }
 };
-
-
 
 module.exports = {
     getAllUsersHandler,
