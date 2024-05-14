@@ -258,7 +258,7 @@ const useForm = (initialData, dataCountry) => {
                         background: "#666",
                         color: "#FFFFFF",
                       });
-                    navigate('/dashboard');
+                    navigate('/login');
                 } else {
                     console.error('Error al enviar datos');
                     setLoading(false)

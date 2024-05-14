@@ -13,7 +13,6 @@ const allUsers = async () => {
 
 const findUserEmail = async (emailGoogle) => {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
-    console.log(exist);
 
     if (exist) {
         return exist;
@@ -35,5 +34,16 @@ const findUsername = async (nombre) => {
     }
 };
 
+const findUserPais = async (nacionalidad) => {
+    const exist = await users.findOne({ where: { nacionalidad: nacionalidad } });
 
-module.exports = { allUsers, findUserEmail, findUsername}
+    if (exist) {
+        return exist;
+    }
+    else {
+        throw Error(`Usuario no encontrado`);
+    }
+};
+
+
+module.exports = { allUsers, findUserEmail, findUsername, findUserPais}

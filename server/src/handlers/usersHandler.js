@@ -1,4 +1,4 @@
-const { allUsers, findUserEmail, findUsername } = require('../controllers/userController')
+const { allUsers, findUserEmail, findUsername, findUserPais } = require('../controllers/userController')
 
 const getAllUsersHandler = async (req, res) => {
     try {
@@ -33,8 +33,21 @@ const getUsernameHandler = async (req, res) => {
     }
 };
 
+const getUserPaisHandler = async (req, res) => {
+    const { nacionalidad } = req.method === 'GET' ? req.body : req.body;
+    try {
+        const isAuthenticated = await findUserPais(nacionalidad);
+        if (isAuthenticated) {
+            res.status(200).json(isAuthenticated);
+        } 
+    } catch (error) {
+        res.status(401).json({ authenticated: false, error: error.message });
+    }
+};
+
 module.exports = {
     getAllUsersHandler,
     getUserEmailHandler,
-    getUsernameHandler
+    getUsernameHandler,
+    getUserPaisHandler
 }

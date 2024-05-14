@@ -27,7 +27,7 @@ const Register = () => {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
           Swal.fire({
             title: "Error",
-            text: "No se pudo obtener el usuario",
+            text: "Usuario ya registrado",
             icon: "error"
           }).then((result) => {
             if (result.isConfirmed) {

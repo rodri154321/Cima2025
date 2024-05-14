@@ -173,6 +173,10 @@ module.exports = (sequelize) => {
             type: DataTypes.BOOLEAN,
             allowNull: true
         },
+        detalleSalud: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
     }, 
     );
 }; 
