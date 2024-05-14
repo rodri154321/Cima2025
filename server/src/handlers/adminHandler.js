@@ -22,7 +22,7 @@ const loginAdminHandler = async (req, res) => {
   }
 };
 
-const getAdminEmail = async (req, res) => {
+const getAdminEmailHandler = async (req, res) => {
   const { email } = req.method === 'GET' ? req.body : req.body;
   try {
       const isAuthenticated = await findAdminEmail(email);
@@ -37,5 +37,5 @@ const getAdminEmail = async (req, res) => {
 module.exports = {
   registerAdminHandler,
   loginAdminHandler,
-  getAdminEmail
+  getAdminEmailHandler
 }
