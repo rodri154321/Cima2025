@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.inputGroup input {
+/* .inputGroup input {
   
   font-size: 100%;
   padding: 0.8em;
@@ -30,9 +30,9 @@
   background-color: transparent;
   border-radius: 20px;
   width: 100%;
-}
+} */
 
-.inputGroup label {
+/* .inputGroup label {
   font-size: 100%;
   position: absolute;
   left: 0;
@@ -41,9 +41,51 @@
   pointer-events: none;
   transition: all 0.3s ease;
   color: rgb(100, 100, 100);
+} */
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+  outline: none;
+}
+input:valid ~ label{
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0 5px;
+}
+.inputGroup label {
+  font-size: 100%;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 1.3em;
+  pointer-events: none;
+  position: absolute;
+  color: rgb(100, 100, 100);
+  top: 50%;
+  left: 15px;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+  pointer-events: none;
+  
 }
 
-.inputGroup:focus-within label,
+.inputGroup input:focus ~label{
+  top:0;
+  left:15px;
+  font-size: 16px;
+  padding: 0 2px;
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+/* .inputGroup:focus-within label,
 .inputGroup input:focus + label {
   transform: translateY(-50%) scale(.9);
   margin: 0em;
@@ -51,7 +93,7 @@
   padding: 0.4em;
   background-color: rgb(255, 255, 255);
   border: none;
-}
+} */
 
 .inputGroup :is(input:focus, input:valid) {
   border-color: rgb(150, 150, 200);
@@ -71,6 +113,7 @@
 .checkbox *,
 .checkbox *:after,
 .checkbox *:before {
+  display: flex;
 box-sizing: border-box;
 }
 
