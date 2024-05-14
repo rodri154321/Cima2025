@@ -1,0 +1,65 @@
+.logOut {
+    width: 100%;
+    background-color: #005d7e;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imglogOut {
+    width: 10%;
+    margin: 2% 5% 2% 5%;
+}
+
+.fondolin {
+    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
+    background-size: contain;
+    margin-bottom: -27%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    width: 25%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.fondoInfo {
+    width: 100%;
+}
+
+.fondoDash {
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.fondoDashCel {
+    width: 100%;
+    margin-top: 5%;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .boton {
+        width: 29%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .imglogOut {
+        width: 20%;
+        margin: 2% 5% 2% 5%;
+    }
+}
