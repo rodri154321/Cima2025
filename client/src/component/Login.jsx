@@ -22,7 +22,14 @@ const Login = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
-          navigate('/dashboard');
+          const userPreinscripto = localStorage.getItem('user');
+          const userObject = JSON.parse(userPreinscripto);
+          if(userObject.preinscripto){
+            navigate('/dashboard');
+          }else{
+            navigate('/user');
+          }
+          
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
           Swal.fire({

@@ -1,20 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
-
-const loginRoutes = require('./loginRoutes')
-
-
+const loginRoutes = require('./loginRoutes');
+const userRoutes = require("./userRoutes");
 
 router.use("/login", loginRoutes);
-// routes.js
-
-
-
-
-
-
+router.use("/user", userRoutes);
 
 module.exports = router;
-
-//Buscar por Id y por nombre los users. eso
