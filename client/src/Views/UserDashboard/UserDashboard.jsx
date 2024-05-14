@@ -16,7 +16,7 @@ function UserDashboard() {
       if(userObject){
         setInfoUser(userObject);
       }else navigate('/inscripciones')
-  }, []);
+  }, [navigate]);
 
   const logOutHandler = () =>{
     localStorage.clear();
