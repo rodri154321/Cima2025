@@ -1,6 +1,6 @@
 const baseURL="https://cima2025.up.railway.app/login/register"
 // const baseURL="http://localhost:3001/login/register"
-const register = async (credentials) => {
+const register = async (credentials,picture) => {
     try {
         const response = await fetch(baseURL, {
             method: 'POST',
@@ -11,6 +11,7 @@ const register = async (credentials) => {
         });
         const data = await response.json();
         // Object.values(data);
+        localStorage.setItem('pictureGoogle', JSON.stringify(picture))
         localStorage.setItem('user', JSON.stringify(data.user))
         return data; // Retorna los datos devueltos por el servidor
     } catch (error) {

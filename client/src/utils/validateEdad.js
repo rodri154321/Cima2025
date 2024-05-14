@@ -1,6 +1,6 @@
 const isValidateAge = (dateOfBirth) => {
     const currentDate = new Date();
-    const [day, month, year] = dateOfBirth.split('/');
+    const [day, month, year] = dateOfBirth.split('-');
   
     // Construir la fecha de nacimiento
     const dob = new Date(`${year}-${month}-${day}`);
