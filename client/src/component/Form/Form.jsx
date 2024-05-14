@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useForm from '../../hook/useForm';
 import getApiCountry from '../../utils/getApiCountry';
 import getApiProvinces from "../../utils/getApiProvince"
-import SerachResultList from '../SerachResultList';
+import SerachResultList from '../SearchResultList';
 import style from "./Form.module.css"
 
 
@@ -140,7 +140,7 @@ function RegistroFormulario() {
                
                 <div className={style.inputGroup}>
                     <select name="sexo" value={form.sexo} onChange={handleChange} required>
-                        <option >Selecciona un sexo:</option>
+                        <option selected >Selecciona un sexo:</option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
@@ -152,7 +152,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        className=''
+                       
                         type="text"
                         name="nacionalidad"
                         value={form.nacionalidad}
@@ -167,7 +167,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        className=''
+                     
                         type="text"
                         name="paisResidencia"
                         value={form.paisResidencia}
@@ -183,7 +183,7 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
 
                     <input
-                        className=''
+                        
                         type="text"
                         name="provincia"
                         value={form.provincia}
@@ -254,7 +254,7 @@ function RegistroFormulario() {
                 <p>Durante CIMA tendremos un equipo de enfermeros atentos a ayudarte en situaciones no complejas. Ante alguna complejidad, se derivará al hospital correspondiente.
                 </p>
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
-                <p>¿Sos alérgico/a algo?</p>
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -270,6 +270,8 @@ function RegistroFormulario() {
                     </label>
 
                 </div>
+                <p>¿Sos alérgico/a algo?</p>
+                </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
                         <label htmlFor="detalleAlergia">Detalla tus alergias:</label>
@@ -282,7 +284,7 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}<br />
-                <p>¿Tomas alguna medicacion?</p>
+               <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -297,7 +299,8 @@ function RegistroFormulario() {
                         </svg>
                     </label>
                 </div>
-
+                <p>¿Tomas alguna medicacion?</p>
+                </div>
                 {errors.tieneMedicacion && <div className={style.error}>{errors.tieneMedicacion}</div>}
                 {form.tieneMedicacion && (
                     <div className={style.inputGroup}>
@@ -381,6 +384,7 @@ function RegistroFormulario() {
 
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -394,9 +398,11 @@ function RegistroFormulario() {
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
-                    Es Celiaco
+                </div>
+                <p> Es Celiaco</p>
                 </div>
                 <br />
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -410,9 +416,12 @@ function RegistroFormulario() {
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
-                    Es Diabetico
+                    
+                </div>
+                <p>Es Diabetico</p>
                 </div>
                 <br />
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -426,9 +435,11 @@ function RegistroFormulario() {
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
-                    Es Vegetariano
+                </div>
+                <p> Es Vegetariano</p>
                 </div>
                 <br />
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -442,7 +453,9 @@ function RegistroFormulario() {
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
-                    Otra
+                    
+                </div>
+                <p>Otra</p>
                 </div>
                 <br />
 
@@ -458,8 +471,9 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}
-                <div>
+             
                     <h2>Otros Datos :</h2>
+                    <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -472,10 +486,12 @@ function RegistroFormulario() {
                             <svg viewBox="0,0,50,50" className="checkbox-icon">
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
-                        </label>
-                        Participo en Cima Day
+                        </label>      
+                    </div>
+                    <p>Participo en Cima Day</p>
                     </div>
                     <br />
+                    <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -489,9 +505,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        Participo en Prisma
+                        
+                    </div>
+                    <p>Participo en Prisma</p>
                     </div>
                     <br />
+                    <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -505,9 +524,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        Participo en Eurovoluntariado
+                        
+                    </div>
+                    <p>Participo en Eurovoluntariado</p>
                     </div>
                     <br />
+                    <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -521,9 +543,12 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        Participo en Cima
+                       
+                    </div>
+                    <p> Participo en Cima</p>
                     </div>
                     <br />
+                    <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
                             type="checkbox"
@@ -537,12 +562,14 @@ function RegistroFormulario() {
                                 <path d="M5 30 L 20 45 L 45 5"></path>
                             </svg>
                         </label>
-                        Hice el curso Storyline o Vaya a Movilizar
+                       
+                    </div>
+                    <p> Hice el curso Storyline o Vaya a Movilizar</p>
                     </div>
                     <br />
-                </div>
+               
                 {errors.participacionMovida && <div className={style.error}>{errors.participacionMovida}</div>}
-                <button type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
+                <button className={style.btnSubmit} type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
             </form>
         </div>
     );
