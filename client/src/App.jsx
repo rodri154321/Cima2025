@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route, useLocation, useNavigate, Redirect } from 'react-router-dom';
+import {Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Landing from './Views/Landing/Landin';
 import Inscripciones from './Views/Inscripciones/Inscripciones';
 import Googlelogin from './Views/GoogleLogin/Googlelogin';
@@ -15,15 +15,6 @@ function App() {
   const {pathname} = useLocation();
 
   const navigate = useNavigate();
-  const [preinscripto, setPreinscripto] = useState(false);
-
-  useEffect(() => {
-    const userPreinscripto = localStorage.getItem('user');
-    const userObject = JSON.parse(userPreinscripto);
-    console.log(userObject);
-    setPreinscripto(userObject.preinscripto);
-    
-}, [localStorage]);
   
 
   return (
@@ -36,7 +27,7 @@ function App() {
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
-            <Route path='/dashboard' element={preinscripto ? <UserDashboard /> : navigate('/login')}/>
+            <Route path='/dashboard' element={<UserDashboard/> }/>
          </Routes>
     </div>
   )

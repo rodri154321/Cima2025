@@ -2,7 +2,14 @@ const { users, nfts } = require('../db')
 
 
 const allUsers = async () => {
-    const allusersDb = users.findAll()
+    const allusersDb = await users.findAll()
+    if (allusersDb.length > 0) {
+        return allusersDb;
+    }
+    else {
+        console.log(allusersDb);
+        throw Error(`No se encontraron usuarios`);
+    }
     return allusersDb;
 }
 
@@ -33,11 +40,9 @@ const findUserName = async (emailGoogle) => {
     console.log(exist);
 
     if (exist) {
-        login = true;
-        return login;
+        return exist;
     }
     else {
-        login = false;
         throw Error(`Usuario no encontrado`);
     }
 };
@@ -119,32 +124,5 @@ const searchUsersnameByName = async (username) => {
 
 
 
-const deleteSearchName = async (username) => {
 
-    const exist = await users.findOne({ where: { username: username } });
-    if (exist) {
-        if (exist.username === username) {
-            users.destroy({
-                where: { username: username }
-            })
-
-            return 'usuario eliminado'
-        }
-        return 'usuario inexistente'
-
-
-
-    }
-};
-
-const searchUserNft = async (id) => {
-    const user = await users.findByPk(id, {
-        include: [{
-            model: nfts
-        }]
-    })
-    return user
-};
-
-
-module.exports = { deleteSearchName, getUserId, searchUsersnameByName, allUsers, createUser, findUserName, deleteUsersById, updateUser, searchUserNft, grantAdminAcces, banearUser }
+module.exports = { getUserId, searchUsersnameByName, allUsers, createUser, findUserName, deleteUsersById, updateUser, grantAdminAcces, banearUser }

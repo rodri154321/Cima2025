@@ -1,10 +1,9 @@
 const { getUserId, searchUsersnameByName, deleteUsersById, allUsers, createUser, findUserName, deleteSearchName, updateUser, searchUserNft, grantAdminAcces, banearUser } = require('../controllers/userController')
 
 const getUsersHandler = async (req, res) => {
-    const { username } = req.query
+    const { emailGoogle } = req.query
     try {
-        const results = username
-            ? await searchUsersnameByName({ username }) : await allUsers()
+        const results = await findUserName({ emailGoogle })
         res.status(200).json(results)
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -13,8 +12,7 @@ const getUsersHandler = async (req, res) => {
 
 const getAllUsersHandler = async (req, res) => {
     try {
-        const results = username
-            ? await allUsers() : await allUsers()
+        const results = await allUsers()
         res.status(200).json(results)
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -42,10 +40,8 @@ const getUserNameHandler = async (req, res) => {
     try {
         const isAuthenticated = await findUserName(emailGoogle);
         if (isAuthenticated) {
-            res.status(200).json({ authenticated: true });
-        } else {
-            res.status(401).json({ authenticated: false });
-        }
+            res.status(200).json(isAuthenticated);
+        } 
     } catch (error) {
         res.status(401).json({ authenticated: false, error: error.message });
     }
