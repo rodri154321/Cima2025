@@ -6,6 +6,8 @@ import Googlelogin from './Views/GoogleLogin/Googlelogin';
 import Googleregister from './Views/GoogleRegister/Googleregister';
 import UserSection from './Views/userSection/UserSection';
 import UserDashboard from './Views/UserDashboard/UserDashboard';
+import LoginAdmin from './Views/Admin/LoginAdmin';
+import AdminDashboard from './Views/Admin/AdminDashboard'
 import { useEffect, useState } from 'react';
 
 
@@ -28,6 +30,8 @@ function App() {
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
             <Route path='/dashboard' element={<UserDashboard/> }/>
+            <Route path='/loginadminsregional25' element={<LoginAdmin/>}/>
+            <Route path='/dashboardadminsregional25' element={<AdminDashboard/>}/>
          </Routes>
     </div>
   )

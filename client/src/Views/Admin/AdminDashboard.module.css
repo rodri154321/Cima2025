@@ -1,0 +1,53 @@
+.logOut {
+    width: 100%;
+    background-color: #005d7e;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imglogOut {
+    width: 10%;
+    margin: 2% 5% 2% 5%;
+}
+
+.contenedor {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #77b178;
+    overflow: hidden;
+    
+}
+
+.contenedorLogo{
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 45%;
+}
+.contenedorBanderas{
+    width: 100%;
+    margin-left: 30%;
+}
+
+.logo{
+    width: 10%;
+}
+.bandera {
+    width: 5%;
+    padding: 1%;
+}
+.informacion{
+    width: 80%;
+    background-color: #d9c7a5;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 20%;
+    }
+    .contenedorLogo{
+        margin-top: 3%;
+        margin-left: 41%;
+    }
+
+}
