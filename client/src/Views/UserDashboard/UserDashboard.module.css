@@ -37,19 +37,37 @@
 
 .fondoInfo {
     width: 100%;
+    position: relative;
 }
 
-.fondoDash {
+.fondoFotos{
     width: 100%;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
 }
-
-.fondoDashCel {
-    width: 100%;
+.fondoDash {
+    width: 105%;
     margin-top: 5%;
-    opacity: 0;
+    margin-right: -5%;
 }
+
+.grupoPequeño{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.userData{
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Gotham Black';
+    color: white;
+    top: 50%;
+    left: 5%;
+}
+
 
 @media screen and (max-width: 768px) {
     .boton {
@@ -58,8 +76,14 @@
         margin-left: 2%;
     }
 
-    .imglogOut {
-        width: 20%;
-        margin: 2% 5% 2% 5%;
+    .fondoDash {
+        width: 120%;
+        margin-right: -20%;
     }
+
+    .userData{
+        font-size: 15px;
+        top: 25%;
+    }
+
 }
