@@ -1,8 +1,9 @@
 const { Router } = require("express");
 const userRoutes = Router();
-const { getUserNameHandler, getAllUsersHandler } = require("../handlers/usersHandler");
+const { getUserEmailHandler, getUsernameHandler, getAllUsersHandler } = require("../handlers/usersHandler");
 
-userRoutes.get("/getUser", getUserNameHandler)
+userRoutes.get("/getUserEmail", getUserEmailHandler)
+userRoutes.get("/getUsername", getUsernameHandler)
 userRoutes.get("/getAllUser", getAllUsersHandler)
 
 module.exports = userRoutes;

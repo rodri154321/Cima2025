@@ -18,7 +18,7 @@ const postRegisterUser = async (emailGoogle, password) => {
   const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
 
   if (exist == null) return newUser = await users.create({ emailGoogle, password, preinscripto: false })
-  else throw Error("usuario ya existente")
+  else throw Error("Usuario ya existente")
 
 
 }

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import useForm from '../../hook/useForm';
 import getApiCountry from '../../utils/getApiCountry';
-import SerachResultList from '../SerachResultList';
+import getApiProvinces from "../../utils/getApiProvince"
+import SerachResultList from '../SearchResultList';
 import style from "./Form.module.css"
 
 
 function RegistroFormulario() {
-
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
     const emailGoogle = userObject.emailGoogle;
@@ -26,14 +26,15 @@ function RegistroFormulario() {
         ciudad: "",
         iglesia: "",
         pastor: "",
-        telefonoPastor: 0,
+        telefonoPastor: "",
         esAlergico: false,
         detalleAlergia: "",
         tieneMedicacion: false,
         detalleMedicacion: "",
-        telefono: 0,
-        telefonoEmergencia: 0,
+        telefono: "",
+        telefonoEmergencia: "",
         nombreEmergencia: "",
+        detalleSalud: "",
         esDiabetico: false,
         esCeliaco: false,
         esVegetariano: false,
@@ -46,14 +47,7 @@ function RegistroFormulario() {
         participoSigue: false,
 
     };
-    const onValidate = (form) => {
-        let errors = {};
-        if (!form.nombre.trim()) {
-            errors.nombre = "Debe colocar un nombre";
-        }
 
-        return errors
-    }
 
     const handleSelect = (option, name) => {
         if (name == "nacionalidad") {
@@ -62,13 +56,16 @@ function RegistroFormulario() {
         } else if (name == "paisResidencia") {
             setFilterCountryResidence([])
             setForm({ ...form, paisResidencia: option });
+        } else {
+            setForm({ ...form, provincia: option });
+            setFilterProvinces([])
         }
     }
 
 
     useEffect(() => {
         // Ejecuta getApiCountry() cuando el componente se monta
-        setForm({...form, emailGoogle:emailGoogle})
+        setForm({ ...form, emailGoogle: emailGoogle })
         async function fetchData() {
             try {
                 const data = await getApiCountry();
@@ -80,132 +77,184 @@ function RegistroFormulario() {
 
         fetchData();
     }, []);
-    const { filterCountry, filterCountryResidence, form, setForm, setFilterCountry, setFilterCountryResidence, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry, onValidate,);
+    const { filterCountry, filterProvinces, filterCountryResidence, form, setForm, setFilterCountry, onValidate, setFilterProvinces, setFilterCountryResidence, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry);
     return (
         <div className={style.contenedorForm}>
             <h1>COMPLETA TUS DATOS</h1>
             <h2>Datos Personales</h2>
             <form onSubmit={handleSubmit} className={style.Form}>
                 <div className={style.inputGroup}>
-                    <label htmlFor="nombre"  >Nombre:</label>
+
                     <input
                         type="text"
                         id="nombre"
                         name="nombre"
                         value={form.nombre}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="nombre"  >Nombre:</label>
                     {errors.nombre && <div className={style.error}>{errors.nombre}</div>}
                 </div>
                 <br />
 
                 <div className={style.inputGroup}>
-                    <label htmlFor="apellido">Apellido:</label>
+
                     <input
                         type="text"
                         name="apellido"
                         value={form.apellido}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="apellido">Apellido:</label>
+                    {errors.apellido && <div className={style.error}>{errors.apellido}</div>}
                 </div>
                 <br />
-                {errors.apellido && <div>{errors.apellido}</div>}
+
                 <div className={style.inputGroup}>
 
+                    <input
+                        type="text"
+                        name="documento"
+                        value={form.documento}
+                        onChange={handleChange}
+                        required
+                    />
+                    <label htmlFor="documento">n° Documento:</label>
+                    {errors.documento && <div className={style.error}>{errors.documento}</div>}
+                </div>
+                <br />
+                <div className={style.inputGroup}>
                     <input
                         type="date"
                         id="fechaNacimiento"
                         name="fechaNacimiento"
                         value={form.fechaNacimiento}
                         onChange={handleChange}
+                        required
                     />
+                    {errors.fechaNacimiento && <div className={style.error}>{errors.fechaNacimiento}</div>}
                 </div>
                 <br />
-                {errors.fechaNacimiento && <div>{errors.fechaNacimiento}</div>}
+               
                 <div className={style.inputGroup}>
-                    <label htmlFor="sexo">Sexo:</label>
-                    <select name="sexo" value={form.sexo} onChange={handleChange}>
+                    <select name="sexo" value={form.sexo} onChange={handleChange} required>
+                        <option selected >Selecciona un sexo:</option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
+                   
+                    {errors.sexo && <div className={style.error}>{errors.sexo}</div>}
                 </div>
-                {errors.sexo && <div>{errors.sexo}</div>}
+
 
                 <div className={style.inputGroup}>
-                    <label htmlFor="nacionalidad">Nacionalidad:</label>
+
                     <input
-                        className=''
+                       
                         type="text"
                         name="nacionalidad"
                         value={form.nacionalidad}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="nacionalidad">Nacionalidad:</label>
                     <SerachResultList dataCountry={filterCountry} onSelect={(option) => handleSelect(option, "nacionalidad")} />
+                    {errors.nacionalidad && <div className={style.error}>{errors.nacionalidad}</div>}
                 </div>
-
                 <br />
                 <div className={style.inputGroup}>
-                    <label htmlFor="paisResidencia">Residencia:</label>
+
                     <input
-                        className=''
+                     
                         type="text"
                         name="paisResidencia"
                         value={form.paisResidencia}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="paisResidencia">Residencia:</label>
                     <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />
+                    {errors.paisResidencia && <div className={style.error}>{errors.paisResidencia}</div>}
                 </div>
-                {errors.paisResidencia && <div>{errors.paisResidencia}</div>}
+
+
                 <div className={style.inputGroup}>
-                    <label htmlFor="province">Provincia:</label>
-                    <select name="province" value={form.province} onChange={handleChange}>
-                        <option value="">Selecciona una province</option>
-                    </select>
+
+                    <input
+                        
+                        type="text"
+                        name="provincia"
+                        value={form.provincia}
+                        onChange={handleChange}
+                        disabled={form.paisResidencia.length > 0 ? false : true}
+                        required
+                    />
+                    <label htmlFor="provincia">Provincia:</label>
+                    <SerachResultList dataCountry={filterProvinces} onSelect={(option) => handleSelect(option, "provincia")} />
+                    {errors.province && <div className={style.error}>{errors.province}</div>}
+                </div>
+
+                <div className={style.inputGroup}>
+
+                    <input
+                        type="text"
+                        name="ciudad"
+                        value={form.ciudad}
+                        onChange={handleChange}
+                        required
+                    />
+                    <label htmlFor="ciudad">Ciudad:</label>
+                    {errors.ciudad && <div className={style.error}>{errors.ciudad}</div>}
                 </div>
                 <br />
-                {errors.province && <div>{errors.province}</div>}
-                <div className={style.inputGroup}>
-                    <label htmlFor="iglesia">Iglesia:</label>
-                    <input
 
+
+                <div className={style.inputGroup}>
+
+                    <input
                         type="text"
                         name="iglesia"
                         value={form.iglesia}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="iglesia">Iglesia:</label>
+                    {errors.iglesia && <div className={style.error}>{errors.iglesia}</div>}
                 </div>
                 <br />
-                {errors.iglesia && <div>{errors.iglesia}</div>}
                 <div className={style.inputGroup}>
-                    <label htmlFor="pastor">Nombre y apellido del Pastor / Anciano / Líder:</label>
-                    <input
 
+                    <input
                         type="text"
                         name="pastor"
                         value={form.pastor}
+                        required
                         onChange={handleChange}
                     />
+                    <label htmlFor="pastor">Nombre y apellido del Pastor / Anciano / Líder:</label>
+                    {errors.pastor && <div className={style.error}>{errors.pastor}</div>}
                 </div>
                 <br />
-                {errors.pastor && <div>{errors.pastor}</div>}
-
                 <div className={style.inputGroup}>
-                    <label htmlFor="pastorPhoneNumber">Teléfono del Pastor / Anciano / Líder:</label>
+
                     <input
                         type="tel"
-                        name="pastorPhoneNumber"
-                        value={form.pastorPhoneNumber}
+                        name="telefonoPastor"
+                        value={form.telefonoPastor}
                         onChange={handleChange}
+                        required
                     />
-
+                    <label htmlFor="telefonoPastor">Teléfono del Pastor / Anciano / Líder:</label>
+                    {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
                 </div>
                 <br />
-                {errors.pastor && <div>{errors.pastor}</div>}
                 <h2>Datos de Salud</h2>
                 <p>Durante CIMA tendremos un equipo de enfermeros atentos a ayudarte en situaciones no complejas. Ante alguna complejidad, se derivará al hospital correspondiente.
                 </p>
                 <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
-                <p>¿Sos alérgico/a algo?</p>
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -221,9 +270,11 @@ function RegistroFormulario() {
                     </label>
 
                 </div>
+                <p>¿Sos alérgico/a algo?</p>
+                </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
-                        <label htmlFor="detalleAlergia">Detalla tus alergias</label>
+                        <label htmlFor="detalleAlergia">Detalla tus alergias:</label>
                         <input
                             className=''
                             type="text"
@@ -233,7 +284,7 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}<br />
-
+               <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -248,11 +299,12 @@ function RegistroFormulario() {
                         </svg>
                     </label>
                 </div>
-
-                {errors.tieneMedicacion && <div>{errors.tieneMedicacion}</div>}
+                <p>¿Tomas alguna medicacion?</p>
+                </div>
+                {errors.tieneMedicacion && <div className={style.error}>{errors.tieneMedicacion}</div>}
                 {form.tieneMedicacion && (
                     <div className={style.inputGroup}>
-                        <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
+
                         <input
                             className=''
                             type="text"
@@ -260,6 +312,7 @@ function RegistroFormulario() {
                             value={form.detalleMedicacion}
                             onChange={handleChange}
                         />
+                        <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
                     </div>
                 )}<br />
                 <h2 >Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</h2>
@@ -267,57 +320,71 @@ function RegistroFormulario() {
                     <input
                         className=''
                         type="text"
-                        name="healthDetails"
-                        value={form.healthDetails}
+                        name="detalleSalud"
+                        value={form.detalleSalud}
                         onChange={handleChange} />
+                    {errors.detalleSalud && <div className={style.error}>{errors.detalleSalud}</div>}
                 </div>
                 <br />
-                {errors.healthDetails && <div>{errors.healthDetails}</div>}
+
                 <h2>Datos de Contacto: </h2><p> Asegurate de completar los siguientes datos con información actualizada porque serán los medios por los cuales nos contactaremos con vos.</p>
                 <div className={style.inputGroup}>
-                    <label htmlFor="telefono">Whatsapp</label>
+
                     <input
                         type="tel"
                         name="telefono"
                         value={form.telefono}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="telefono">Whatsapp</label>
+                    {errors.telefono && <div className={style.error}>{errors.telefono}</div>}
                 </div>
                 <br />
-                {errors.telefono && <div>{errors.telefono}</div>}
+
                 <div className={style.inputGroup}>
-                    <label htmlFor="email">Correo electrónico</label>
+
                     <input
                         type="email"
                         name="email"
                         value={form.email}
-                        onChange={handleChange} />
+                        onChange={handleChange}
+                        required />
+                    <label htmlFor="email">Correo electrónico</label>
+                    {errors.email && <div className={style.error}>{errors.email}</div>}
                 </div>
                 <br />
-                {errors.email && <div>{errors.email}</div>}
+
                 <h2>Ante una emergencia, ¿a quién podríamos contactar? </h2>
                 <div className={style.inputGroup}>
-                    <label htmlFor="emergencyContactName">Nombre:</label>
+
                     <input
                         className=''
                         type="text"
-                        name="emergencyContactName"
-                        value={form.emergencyContactName}
+                        name="nombreEmergencia"
+                        value={form.nombreEmergencia}
                         onChange={handleChange}
+                        required
                     />
+                    <label htmlFor="nombreEmergencia">Nombre:</label>
+                    {errors.nombreEmergencia && <div className={style.error}>{errors.nombreEmergencia}</div>}
                 </div>
-                {errors.emergencyContactName && <div>{errors.emergencyContactName}</div>}
+
                 <div className={style.inputGroup}>
-                    <label htmlFor="emergencyContactPhoneNumber">	Teléfono (Con código de país)</label>
+
                     <input
                         type="tel"
-                        name="emergencyContactPhoneNumber"
-                        value={form.emergencyContactPhoneNumber}
+                        name="telefonoEmergencia"
+                        value={form.telefonoEmergencia}
                         onChange={handleChange}
-                    /></div>
-                {errors.emergencyContactPhoneNumber && <div>{errors.emergencyContactPhoneNumber}</div>}
+                        required />
+                    <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
+                    {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
+                </div>
+
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
+                <div className={style.cont_Checkbox}>
                 <div className={style.checkbox}>
                     <input
                         type="checkbox"
@@ -331,38 +398,65 @@ function RegistroFormulario() {
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
                     </label>
-                    Es Celiaco
+                </div>
+                <p> Es Celiaco</p>
                 </div>
                 <br />
-                <label>
+                <div className={style.cont_Checkbox}>
+                <div className={style.checkbox}>
                     <input
                         type="checkbox"
                         name="esDiabetico"
+                        id='esDiabetico'
                         checked={form.esDiabetico}
                         onChange={handleChange}
                     />
-                    Es Diabético
-                </label>
+                    <label htmlFor="esDiabetico" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                        </svg>
+                    </label>
+                    
+                </div>
+                <p>Es Diabetico</p>
+                </div>
                 <br />
-                <label>
+                <div className={style.cont_Checkbox}>
+                <div className={style.checkbox}>
                     <input
                         type="checkbox"
                         name="esVegetariano"
+                        id='esVegetariano'
                         checked={form.esVegetariano}
                         onChange={handleChange}
                     />
-                    Es Vegetariano
-                </label>
+                    <label htmlFor="esVegetariano" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                        </svg>
+                    </label>
+                </div>
+                <p> Es Vegetariano</p>
+                </div>
                 <br />
-                <label>
+                <div className={style.cont_Checkbox}>
+                <div className={style.checkbox}>
                     <input
                         type="checkbox"
                         name="Otra"
+                        id='Otra'
                         checked={form.Otra}
                         onChange={handleChange}
                     />
-                    Otra
-                </label>
+                    <label htmlFor="Otra" style={{ '--size': '30px' }}>
+                        <svg viewBox="0,0,50,50" className="checkbox-icon">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                        </svg>
+                    </label>
+                    
+                </div>
+                <p>Otra</p>
+                </div>
                 <br />
 
                 {form.Otra && (
@@ -377,61 +471,105 @@ function RegistroFormulario() {
                         />
                     </div>
                 )}
-                <div>
+             
                     <h2>Otros Datos :</h2>
-                    <label>
+                    <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
                         <input
                             type="checkbox"
                             name="participoCimaday"
+                            id='participoCimaday'
                             checked={form.participoCimaday}
                             onChange={handleChange}
                         />
-                        Participo en Cimaday
-                    </label>
+                        <label htmlFor="participoCimaday" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>      
+                    </div>
+                    <p>Participo en Cima Day</p>
+                    </div>
                     <br />
-                    <label>
+                    <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
                         <input
                             type="checkbox"
                             name="participoPrisma"
+                            id='participoPrisma'
                             checked={form.participoPrisma}
                             onChange={handleChange}
                         />
-                        Participo en Prisma
-                    </label>
+                        <label htmlFor="participoPrisma" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                        
+                    </div>
+                    <p>Participo en Prisma</p>
+                    </div>
                     <br />
-                    <label>
+                    <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
                         <input
                             type="checkbox"
                             name="participoEurovoluntariado"
+                            id='participoEurovoluntariado'
                             checked={form.participoEurovoluntariado}
                             onChange={handleChange}
                         />
-                        Participo en Eurovoluntariado
-                    </label>
+                        <label htmlFor="participoEurovoluntariado" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                        
+                    </div>
+                    <p>Participo en Eurovoluntariado</p>
+                    </div>
                     <br />
-                    <label>
+                    <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
                         <input
                             type="checkbox"
                             name="participoCima"
+                            id='participoCima'
                             checked={form.participoCima}
                             onChange={handleChange}
                         />
-                        Participo en Cima
-                    </label>
+                        <label htmlFor="participoCima" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                       
+                    </div>
+                    <p> Participo en Cima</p>
+                    </div>
                     <br />
-                    <label>
+                    <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
                         <input
                             type="checkbox"
                             name="participoSigue"
+                            id='participoSigue'
                             checked={form.participoSigue}
                             onChange={handleChange}
                         />
-                        Hice el curso Storyline o Vaya a Movilizar
-                    </label>
+                        <label htmlFor="participoSigue" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+                       
+                    </div>
+                    <p> Hice el curso Storyline o Vaya a Movilizar</p>
+                    </div>
                     <br />
-                </div>
-                {errors.participacionMovida && <div>{errors.participacionMovida}</div>}
-                <button type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
+               
+                {errors.participacionMovida && <div className={style.error}>{errors.participacionMovida}</div>}
+                <button className={style.btnSubmit} type="submit" disabled={loading}>{loading ? "Enviando...." : "Enviar"}</button>
             </form>
         </div>
     );

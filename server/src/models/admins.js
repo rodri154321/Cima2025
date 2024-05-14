@@ -19,7 +19,7 @@ module.exports = (sequelize) => {
         },
         pais: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
     }, 
     );

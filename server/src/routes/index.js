@@ -3,11 +3,10 @@ const router = Router();
 
 const loginRoutes = require('./loginRoutes');
 const userRoutes = require("./userRoutes");
+const adminRoutes = require("./adminRoutes");
 
 router.use("/login", loginRoutes);
 router.use("/user", userRoutes);
-// routes.js
+router.use("/admin", adminRoutes);
 
 module.exports = router;
-
-//Buscar por Id y por nombre los users. eso
