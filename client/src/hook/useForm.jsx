@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
+
 import getApiProvinces from '../utils/getApiProvince';
 import searchCountryId from "../utils/getApiCountryID"
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
+
+
 
 
 const useForm = (initialData, dataCountry) => {
@@ -10,6 +15,8 @@ const useForm = (initialData, dataCountry) => {
     const [filterCountry, setFilterCountry] = useState([]);
     const [filterCountryResidence, setFilterCountryResidence] = useState([]);
     const [filterProvinces, setFilterProvinces] = useState([]);
+
+    const navigate = useNavigate();
 
     const handleChange = async (event) => {
         const { name, value, checked } = event.target;
@@ -205,7 +212,6 @@ const useForm = (initialData, dataCountry) => {
         return errors
     }
     const handleSubmit = async (event) => {
-
         event.preventDefault();
         console.log(form, "aa")
         const err = onValidate(form)
@@ -214,6 +220,7 @@ const useForm = (initialData, dataCountry) => {
         if (Object.keys(err).length === 0) {
             setLoading(true)
             try {
+                console.log(form);
                 const response = await fetch('https://cima2025.up.railway.app/login/addInfo', {
                     method: 'PUT',
                     headers: {
@@ -225,13 +232,23 @@ const useForm = (initialData, dataCountry) => {
                 if (response.ok) {
                     setForm({})
                     setLoading(false)
-                    console.log('Datos enviados correctamente');
+                    // console.log('Datos enviados correctamente');
+                    Swal.fire({
+                        icon: "success",
+                        title: "User Created",
+                        showConfirmButton: false,
+                        timer: 2000,
+                        background: "#666",
+                        color: "#FFFFFF",
+                      });
+                    navigate('/dashboard');
                 } else {
                     console.error('Error al enviar datos');
                     setLoading(false)
                 }
             } catch (error) {
                 console.error('Error de red:', error);
+                console.log(error);
                 setLoading(false)
             }
 

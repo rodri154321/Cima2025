@@ -7,9 +7,11 @@ import style from "./Form.module.css"
 
 
 function RegistroFormulario() {
-    const [dataCountry, setDataCountry] = useState([])
-    // const [condition, setCondition] = useState(false)
-
+    const userString = localStorage.getItem('user');
+    const userObject = JSON.parse(userString);
+    const emailGoogle = userObject.emailGoogle;
+    console.log(emailGoogle);
+    const [dataCountry, setDataCountry] = useState("")
     const initialData = {
         nombre: "",
         apellido: "",
@@ -63,6 +65,7 @@ function RegistroFormulario() {
 
     useEffect(() => {
         // Ejecuta getApiCountry() cuando el componente se monta
+        setForm({...form, emailGoogle:emailGoogle})
         async function fetchData() {
             try {
                 const data = await getApiCountry();

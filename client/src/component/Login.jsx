@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import decodeJwt from '../utils/decodeJwt';
 import serviceLogin from "../utils/serviceLogin.js"
+import Swal from 'sweetalert2'
 
 
 const Login = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
+  const navigate = useNavigate();
+  console.log(localStorage);
   const handleGoogleLogin = async (reponse) => {
     if (reponse.credential) {
       const { payload } = decodeJwt(reponse.credential)
@@ -18,16 +22,51 @@ const Login = () => {
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
+          const userPreinscripto = localStorage.getItem('user');
+          const userObject = JSON.parse(userPreinscripto);
+          if(userObject.preinscripto){
+            navigate('/dashboard');
+          }else{
+            navigate('/user');
+          }
+          
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
+          Swal.fire({
+            title: "Error",
+            text: error,
+            icon: "error"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              navigate('/inscripciones');
+            }
+          });
         }
       } catch (error) {
         console.error('Error al iniciar sesión con el servicio de autenticación:', error);
+        Swal.fire({
+          title: "Error",
+          text: error,
+          icon: "error"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            navigate('/inscripciones');
+          }
+        });
       }
     }
   }
   const handleGoogleError = (error) => {
     console.error('Error al iniciar sesión con Google:', error);
+    Swal.fire({
+      title: "Error",
+      text: error,
+      icon: "error"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate('/inscripciones');
+      }
+    });
   }
   return (
     <div>
