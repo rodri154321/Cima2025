@@ -2,7 +2,7 @@
 const username = "estebann" 
 const getApiCountry  = async () => {
   try {
-    const response = await fetch(`https://api.geonames.org/countryInfoJSON?lang=es&username=${username}`);
+    const response = await fetch(`https://secure.geonames.org/countryInfoJSON?lang=es&username=${username}`);
     if(response.ok){
       const data = await response.json();
   
