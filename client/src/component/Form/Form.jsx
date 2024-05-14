@@ -290,7 +290,7 @@ function RegistroFormulario() {
                         checked={form.tieneMedicacion}
                         onChange={handleChange}
                     />
-                    <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
+                   <label htmlFor="tieneMedicacion" style={{ '--size': '30px' }}>
                         <svg viewBox="0,0,50,50" className="checkbox-icon">
                             <path d="M5 30 L 20 45 L 45 5"></path>
                         </svg>
@@ -523,7 +523,7 @@ function RegistroFormulario() {
                             type="checkbox"
                             name="participoSigue"
                             id='participoSigue'
-                            checked={form.participoCima}
+                            checked={form.participoSigue}
                             onChange={handleChange}
                         />
                         <label htmlFor="participoSigue" style={{ '--size': '30px' }}>
