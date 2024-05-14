@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Swal from 'sweetalert2'
 import style from './UserDashboard.module.css'
 
 function UserDashboard() {
@@ -20,7 +21,15 @@ function UserDashboard() {
   const logOutHandler = () =>{
     localStorage.clear();
     navigate('/inscripciones');
-  }
+  };
+
+  const alertasHandler = () =>{
+    Swal.fire({
+      title: "Pronto...",
+      text: "Muy pronto vas a poder ingresar a estas secciones",
+      icon: "info"
+    })
+  };
 
   const anchoVentana = window.innerWidth;
 
@@ -31,9 +40,9 @@ function UserDashboard() {
       </div>
       <div className={style.fondolin} >
         <div className={style.botones}>
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.boton} src="https://i.postimg.cc/85WbVzsV/Recurso-3boton-Descubre.png" alt="" />
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.boton} src="https://i.postimg.cc/j2b4qYJn/Recurso-4boton-Experimenta.png" alt="" />
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.boton} src="https://i.postimg.cc/mkyNtpQX/Recurso-5boton-Informacion.png" alt="" />
+          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/85WbVzsV/Recurso-3boton-Descubre.png" alt="" />
+          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/j2b4qYJn/Recurso-4boton-Experimenta.png" alt="" />
+          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/mkyNtpQX/Recurso-5boton-Informacion.png" alt="" />
         </div>
         <div className={style.fondoInfo}>
 
