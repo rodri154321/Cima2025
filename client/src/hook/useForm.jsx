@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import getApiProvinces from '../utils/getApiProvince';
 import searchCountryId from "../utils/getApiCountryID"
+import isValidateAge from "../utils/validateEdad"
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
@@ -96,7 +97,7 @@ const useForm = (initialData, dataCountry) => {
 //validacion de errores
     const onValidate = (form) => {
         
-        const regexCaracters = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ]{3,}$/;
+        const regexCaractersName = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{3,}$/; // /^[a-zA-ZáéíóúÁÉÍÓÚüÜ]{3,}$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const dateRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}  $/;
         const regexTel = /^\+(?:[0-9] ?){6,14}[0-9]$/;
@@ -105,21 +106,21 @@ const useForm = (initialData, dataCountry) => {
             errors.nombre = "Debe colocar un nombre";
         }else if(form.nombre){ 
         
-            if(!regexCaracters.test(form.nombre)){
+            if(!regexCaractersName.test(form.nombre)){
                 errors.nombre ="No debe tener caracteres especiales"
         }}
         if (!form.nombreEmergencia.trim()) {
             errors.nombreEmergencia = "Debe colocar un nombre";
         }else if(form.nombreEmergencia){ 
         
-            if(!regexCaracters.test(form.nombreEmergencia)){
+            if(!regexCaractersName.test(form.nombreEmergencia)){
                 errors.nombreEmergencia ="No debe tener caracteres especiales"
         }}
         if (!form.apellido.trim()) {
             errors.apellido = "Debe colocar un apellido";
         }else if(form.apellido){ 
             
-            if(!regexCaracters.test(form.apellido)){
+            if(!regexCaractersName.test(form.apellido)){
                 errors.apellido ="No debe tener caracteres especiales"
         }}
         if (!form.email.trim()) {
@@ -136,6 +137,8 @@ const useForm = (initialData, dataCountry) => {
           
             if(dateRegex.test(form.fechaNacimiento)){
                 errors.fechaNacimiento = "Debe cumplir con el formato dd/mm/yyyy"
+            }else if(!isValidateAge(form.fechaNacimiento)){
+                errors.fechaNacimiento = "Debe ser mayor de 14 años"
             }
         }
         if (!form.documento.trim()) {
@@ -147,42 +150,42 @@ const useForm = (initialData, dataCountry) => {
         if (!form.nacionalidad.trim()) {
             errors.nacionalidad = "Debe completar Nacionalidad";
         }else if(form.nacionalidad){
-            if(!regexCaracters.test(form.nacionalidad)){
+            if(!regexCaractersName.test(form.nacionalidad)){
                 errors.nacionalidad = "No debe tener caracteres especiales"
             }
         }
         if (!form.paisResidencia.trim()) {
             errors.paisResidencia = "Debe colocar un nombre";
         }else if(form.paisResidencia){
-            if(!regexCaracters.test(form.paisResidencia)){
+            if(!regexCaractersName.test(form.paisResidencia)){
                 errors.paisResidencia = "No debe tener caracteres especiales"
             }
         }
         if (!form.provincia.trim()) {
             errors.provincia = "Debe colocar un nombre";
         }else if(form.provincia){
-            if(!regexCaracters.test(form.provincia)){
+            if(!regexCaractersName.test(form.provincia)){
                 errors.provincia = "No debe tener caracteres especiales"
             }
         }
         if (!form.ciudad.trim()) {
             errors.ciudad = "Debe colocar un nombre";
         }else if(form.ciudad){
-            if(!regexCaracters.test(form.ciudad)){
+            if(!regexCaractersName.test(form.ciudad)){
                 errors.ciudad = "No debe tener caracteres especiales"
             }
         }
         if (!form.iglesia.trim()) {
             errors.iglesia = "Debe colocar un nombre";
         }else if(form.iglesia){
-            if(!regexCaracters.test(form.iglesia)){
+            if(!regexCaractersName.test(form.iglesia)){
                 errors.iglesia = "No debe tener caracteres especiales"
             }
         }
         if (!form.pastor.trim()) {
             errors.pastor = "Debe colocar un nombre";
         }else if(form.pastor){
-            if(!regexCaracters.test(form.pastor)){
+            if(!regexCaractersName.test(form.pastor)){
                 errors.pastor = "No debe tener caracteres especiales"
             }
         }
