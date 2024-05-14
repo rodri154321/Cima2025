@@ -2,8 +2,6 @@ const { users } = require("../db.js");
 
 const postLogin = async (emailGoogle, password) => {
 
-  console.log(emailGoogle, password);
-
   const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
 
   if (!exist) throw Error("Usuario no encontrado")
@@ -29,7 +27,6 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
   nombreEmergencia, esDiabetico, esCeliaco, esVegetariano, detalleAlimentacion, participoCimaday,
   participoPrisma, participoEurovoluntariado, participoCima, participoSigue) => {
     
-    console.log(emailGoogle);
   try {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
     if (!exist) {

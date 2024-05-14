@@ -11,8 +11,6 @@ const registerAdmin = async (email, password) => {
 
 const loginAdmin = async (email, password) => {
 
-    console.log(email, password);
-
     const exist = await admins.findOne({ where: { email: email } });
 
     if (!exist) throw Error("Admin no encontrado")
@@ -24,7 +22,6 @@ const loginAdmin = async (email, password) => {
 
 const findAdminEmail = async (email) => {
     const exist = await admins.findOne({ where: { email: email } });
-    console.log(exist);
 
     if (exist) {
         return exist;

@@ -35,10 +35,10 @@ users.belongsTo(talleres, {
 });
 
 users.hasMany(pagos, {
-  foreignKey: 'idPagos',
+  foreignKey: 'idUsuario',
 });
 pagos.belongsTo(users, {
-  foreignKey: 'idPagos',
+  foreignKey: 'idUsuario',
 });
 
 users.belongsToMany(plenarias, {

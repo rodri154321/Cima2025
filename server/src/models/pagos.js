@@ -8,10 +8,6 @@ module.exports = (sequelize) => {
             primaryKey: true,
             unique: true
         },
-        comprobante: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         esDescubre: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
@@ -19,6 +15,10 @@ module.exports = (sequelize) => {
         fechaPago: {
             type: DataTypes.DATE,
             allowNull: false,
+        },
+        montoPago: {
+            type: DataTypes.DECIMAL,
+            allowNull: true,
         },
     }, 
     );
