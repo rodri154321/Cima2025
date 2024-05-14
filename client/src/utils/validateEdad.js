@@ -6,7 +6,7 @@ const isValidateAge = (dateOfBirth) => {
     const dob = new Date(`${year}-${month}-${day}`);
     
     // Calcular la edad del usuario
-    const age = currentDate.getFullYear() - dob.getFullYear();
+    let age = currentDate.getFullYear() - dob.getFullYear();
     const monthDiff = currentDate.getMonth() - dob.getMonth();
   
     // Verificar si la fecha de nacimiento ya ha ocurrido este año
