@@ -13,17 +13,32 @@
 .recuadro{
     position: absolute;
     margin-top: 2%;
-    width: 30%;
+    width: 20%;
+}
+.titulo{
+    position: absolute;
+    margin-top: 2%;
+    width: 25%;
 }
 
 .contenedorBtn {
-    margin-top: 10%;
+    margin-top: 15%;
     z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
     .recuadro{
         margin-top: 35%;
+        width: 65%;
+    }
+    .titulo{
+        position: absolute;
+        margin-top: 35%;
         width: 70%;
+    }
+    
+    .contenedorBtn {
+        margin-top: 70%;
+        z-index: 10;
     }
 }
