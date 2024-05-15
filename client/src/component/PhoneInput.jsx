@@ -13,7 +13,7 @@ function PhoneNumberValidation({ value, onChange }) {
                 <label >
 
                     <PhoneInput
-                        country={"ar"}
+                       
                         placeholder="Ej:+54"
                         value={value}
                         onChange={handlePhoneChange}
