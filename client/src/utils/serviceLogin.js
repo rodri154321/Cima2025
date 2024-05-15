@@ -11,6 +11,7 @@ const login = async (credentials) => {
         });
         if(response.ok){
             const data = await response.json();
+            localStorage.setItem('pictureGoogle', JSON.stringify(picture))
             localStorage.setItem('user', JSON.stringify(data.user));
             return data; // Retorna los datos devueltos por el servidor
         }

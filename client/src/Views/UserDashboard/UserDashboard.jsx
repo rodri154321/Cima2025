@@ -9,21 +9,22 @@ function UserDashboard() {
   const navigate = useNavigate();
   const [infoUser, setInfoUser] = useState('');
 
-
-    useEffect(() => {
-      const userString = localStorage.getItem('user');
-      const userObject = JSON.parse(userString);
-      if(userObject){
-        setInfoUser(userObject);
-      }else navigate('/inscripciones')
+  const pictureGoogle = localStorage.getItem('pictureGoogle');
+  console.log(pictureGoogle,"aa")
+  useEffect(() => {
+    const userString = localStorage.getItem('user');
+    const userObject = JSON.parse(userString);
+    if (userObject) {
+      setInfoUser(userObject);
+    } else navigate('/inscripciones')
   }, [navigate]);
 
-  const logOutHandler = () =>{
+  const logOutHandler = () => {
     localStorage.clear();
     navigate('/inscripciones');
   };
 
-  const alertasHandler = () =>{
+  const alertasHandler = () => {
     Swal.fire({
       title: "Pronto...",
       text: "Muy pronto vas a poder ingresar a estas secciones",
@@ -54,7 +55,7 @@ function UserDashboard() {
             <p>D.N.I: {infoUser.documento}</p>
             <p>Pais de Residencia: {infoUser.paisResidencia}</p>
           </div>
-
+          <img src={pictureGoogle} alt="imagen de perfil Google" />
           <div className={style.fondoFotos}>
             {anchoVentana < 600 ? (
               <img className={style.fondoDash} src="https://i.postimg.cc/xj34k6TV/Recurso-9fondo-Dashboard-Cel.png" alt="Imagen para celular" />
