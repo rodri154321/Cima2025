@@ -35,7 +35,7 @@ const findUsername = async (nombre) => {
 };
 
 const findUserPais = async (nacionalidad) => {
-    const exist = await users.findAll({ where: { nacionalidad: nacionalidad } });
+    const exist = await users.findAll({ where: { paisResidencia: nacionalidad } });
 
     if (exist) {
         return exist;
