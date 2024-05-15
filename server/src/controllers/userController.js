@@ -35,13 +35,13 @@ const findUsername = async (nombre) => {
 };
 
 const findUserPais = async (nacionalidad) => {
-    const exist = await users.findOne({ where: { nacionalidad: nacionalidad } });
+    const exist = await users.findAll({ where: { nacionalidad: nacionalidad } });
 
     if (exist) {
         return exist;
     }
     else {
-        throw Error(`Usuario no encontrado`);
+        throw Error(`No hay usuarios de este pais`);
     }
 };
 
