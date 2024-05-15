@@ -3,22 +3,26 @@ import useForm from '../../hook/useForm';
 import getApiCountry from '../../utils/getApiCountry';
 import getApiProvinces from "../../utils/getApiProvince"
 import SerachResultList from '../SearchResultList';
+import PhoneNumberValidation from '../PhoneInput';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import style from "./Form.module.css"
+
 
 
 function RegistroFormulario() {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
     const emailGoogle = userObject.emailGoogle;
-    
+
     const [dataCountry, setDataCountry] = useState("")
     const initialData = {
         nombre: "",
         apellido: "",
         emailGoogle: "",
         email: "",
+        telefono: "",
+        codAreaUser: "",
         fechaNacimiento: "",
         documento: "",
         sexo: "",
@@ -29,12 +33,13 @@ function RegistroFormulario() {
         iglesia: "",
         pastor: "",
         telefonoPastor: "",
+        codAreaPastor: "",
         esAlergico: false,
         detalleAlergia: "",
         tieneMedicacion: false,
         detalleMedicacion: "",
-        telefono: "",
         telefonoEmergencia: "",
+        codAreaEmergencia: "",
         nombreEmergencia: "",
         detalleSalud: "",
         esDiabetico: false,
@@ -127,6 +132,39 @@ function RegistroFormulario() {
                     {errors.documento && <div className={style.error}>{errors.documento}</div>}
                 </div>
                 <br />
+
+                <div className={style.container_inputPhone}>
+                    <PhoneNumberValidation
+                        name="codAreaUser"
+                        value={form.codAreaUser}
+                        onChange={(cod) => handleChange(cod, "codAreaUser")}
+                    />
+                    <div className={style.inputGroup}>
+                        <input
+                            type="text"
+                            name="telefono"
+                            value={form.telefono}
+                            onChange={handleChange}
+                            required
+                        />
+                        <label htmlFor="telefono">Teléfono :</label>
+                        {errors.telefono && <div className={style.error}>{errors.telefono}</div>}
+                    </div>
+                </div>
+                <br />
+
+                <div className={style.inputGroup}>
+
+                    <input
+                        type="email"
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        required />
+                    <label htmlFor="email">Correo electrónico</label>
+                    {errors.email && <div className={style.error}>{errors.email}</div>}
+                </div>
+                <br />
                 <div className={style.inputGroup}>
                     <DatePicker
                         id="fechaNacimiento"
@@ -180,9 +218,24 @@ function RegistroFormulario() {
                     <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />
                     {errors.paisResidencia && <div className={style.error}>{errors.paisResidencia}</div>}
                 </div>
-
-
                 <div className={style.inputGroup}>
+
+                    <input
+
+                        type="text"
+                        name="provincia"
+                        value={form.provincia}
+                        onChange={handleChange}
+                        disabled={form.paisResidencia.length > 0 ? false : true}
+                        required
+                    />
+                    <label htmlFor="provincia">Provincia:</label>
+        
+                    {errors.province && <div className={style.error}>{errors.province}</div>}
+                </div> 
+
+
+                {/* <div className={style.inputGroup}>
 
                     <input
 
@@ -196,7 +249,7 @@ function RegistroFormulario() {
                     <label htmlFor="provincia">Provincia:</label>
                     <SerachResultList dataCountry={filterProvinces} onSelect={(option) => handleSelect(option, "provincia")} />
                     {errors.province && <div className={style.error}>{errors.province}</div>}
-                </div>
+                </div> */}
 
                 <div className={style.inputGroup}>
 
@@ -239,17 +292,24 @@ function RegistroFormulario() {
                     {errors.pastor && <div className={style.error}>{errors.pastor}</div>}
                 </div>
                 <br />
-                <div className={style.inputGroup}>
 
-                    <input
-                        type="text"
-                        name="telefonoPastor"
-                        value={form.telefonoPastor}
-                        onChange={handleChange}
-                        required
+                <div className={style.container_inputPhone}>
+                    <PhoneNumberValidation
+                        name="codAreaPastor"
+                        value={form.codAreaPastor}
+                        onChange={(cod) => handleChange(cod, "codAreaPastor")}
                     />
-                    <label htmlFor="telefonoPastor">Teléfono del Pastor / Anciano / Líder:</label>
-                    {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
+                    <div className={style.inputGroup}>
+                        <input
+                            type="text"
+                            name="telefonoPastor"
+                            value={form.telefonoPastor}
+                            onChange={handleChange}
+                            required
+                        />
+                        <label htmlFor="telefonoPastor">Teléfono :</label>
+                        {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
+                    </div>
                 </div>
                 <br />
                 <h2>Datos de Salud</h2>
@@ -321,39 +381,11 @@ function RegistroFormulario() {
                 <div className={style.inputGroup}>
                     <input
                         className=''
-                        type="text"
+                        type="textarea"
                         name="detalleSalud"
                         value={form.detalleSalud}
                         onChange={handleChange} />
                     {errors.detalleSalud && <div className={style.error}>{errors.detalleSalud}</div>}
-                </div>
-                <br />
-
-                <h2>Datos de Contacto: </h2><p> Asegurate de completar los siguientes datos con información actualizada porque serán los medios por los cuales nos contactaremos con vos.</p>
-                <div className={style.inputGroup}>
-
-                    <input
-                        type="text"
-                        name="telefono"
-                        value={form.telefono}
-                        onChange={handleChange}
-                        required
-                    />
-                    <label htmlFor="telefono">Whatsapp</label>
-                    {errors.telefono && <div className={style.error}>{errors.telefono}</div>}
-                </div>
-                <br />
-
-                <div className={style.inputGroup}>
-
-                    <input
-                        type="email"
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        required />
-                    <label htmlFor="email">Correo electrónico</label>
-                    {errors.email && <div className={style.error}>{errors.email}</div>}
                 </div>
                 <br />
 
@@ -372,17 +404,26 @@ function RegistroFormulario() {
                     {errors.nombreEmergencia && <div className={style.error}>{errors.nombreEmergencia}</div>}
                 </div>
 
-                <div className={style.inputGroup}>
+                <div className={style.container_inputPhone}>
 
-                    <input
-                        type="text"
-                        name="telefonoEmergencia"
-                        value={form.telefonoEmergencia}
-                        onChange={handleChange}
-                        required />
-                    <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
-                    {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
+                    <PhoneNumberValidation
+                        name="codAreaEmergencia"
+                        value={form.codAreaEmergencia}
+                        onChange={(cod) => handleChange(cod, "codAreaEmergencia")}
+                    />
+                    <div className={style.inputGroup}>
+
+                        <input
+                            type="text"
+                            name="telefonoEmergencia"
+                            value={form.telefonoEmergencia}
+                            onChange={handleChange}
+                            required />
+                        <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
+                        {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
+                    </div>
                 </div>
+                <br />
 
                 <h2>Alimentacion</h2>
                 <h2>Selecciona una opción:</h2>
@@ -462,15 +503,17 @@ function RegistroFormulario() {
                 <br />
 
                 {form.Otra && (
-                    <div>
-                        <label htmlFor="detalleAlimentacion "> Especifique los detalles de alimentacion.</label>
+                   <div className={style.inputGroup}>
+                        
                         <input
                             className=''
                             type="text"
                             name="detalleAlimentacion "
+                            id='detalleAlimentacion'
                             value={form.detalleAlimentacion}
                             onChange={handleChange}
                         />
+                        <label htmlFor="detalleAlimentacion "> Especifique los detalles de alimentacion.</label>
                     </div>
                 )}
 

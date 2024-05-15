@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.react-tel-input {
+    width: 100px !important;
+    /* Ajusta el ancho del componente según lo necesites */
+    font-size: 14px;
+    /* Ajusta el tamaño de la fuente según lo necesites */
+}
+
+.phone-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.form-control {
+    height: 3em !important;
+    width: 100px !important;
+}
+
+.phone-input-container label {
+    margin-bottom: 10px;
+}
