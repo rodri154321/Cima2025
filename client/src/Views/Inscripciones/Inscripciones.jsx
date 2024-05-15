@@ -24,13 +24,13 @@ const Inscripciones = () => {
             </div>
             <div className={style.cortes}>
                 <img className={style.imgNuestrasPromos} src="https://i.postimg.cc/pybXjMFf/Recurso-2nuestraspromos.png" alt="Nuestras Promos" />
-                <img className={style.corteUno} src="https://i.postimg.cc/m2J6Q2hf/Recurso-3primer-Corte.png" alt="corte promocional 1" />
-                <img className={style.otrosCortes} src="https://i.postimg.cc/9frd1ykL/Recurso-4otroscortes.png" alt="Corte 2, 3 y 4" />
+                <img className={style.corteUno} src="https://i.postimg.cc/mDnNZbgj/Recurso-1primer-Corte.png" alt="corte promocional 1" />
+                <img className={style.otrosCortes} src="https://i.postimg.cc/90VTQrjG/Recurso-2cortes.png" alt="Corte 2, 3 y 4" />
             </div>
             {anchoVentana < 600 ? (
-                <img className={style.salvedades} src="https://i.postimg.cc/rF7MKTkz/Recurso-8salvedades-Cel.png" alt="Salvedades" />
+                <img className={style.salvedades} src="https://i.postimg.cc/wBMYnVyN/Recurso-4salvedades-Cel.png" alt="Salvedades" />
             ) : (
-                <img className={style.salvedades} src="https://i.postimg.cc/rFfRbKx3/Recurso-5salvedades.png" alt="Salvedades" />
+                <img className={style.salvedades} src="https://i.postimg.cc/52nMPG01/Recurso-3salvedades.png" alt="Salvedades" />
             )}
             <div className={style.preguntasFrecuentes}>
                 <img className={style.pfTitulo} src="https://i.postimg.cc/NjhvQx6H/Recurso-6preguntas-Frecuentes.png" alt="Preguntas Frecuentes" />
