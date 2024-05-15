@@ -43,6 +43,13 @@
     flex-direction: column;
     align-items: center;
 }
+/*/////// input DATA///*/
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+#fechaNacimiento{
+  width: 100% !important;
+}
 /*Contenedores de check*/
 .cont_Checkbox{
   display: flex;
@@ -180,6 +187,74 @@ stroke-dasharray: 100;
 stroke-dashoffset: 101;
 transition: all 250ms cubic-bezier(1,0,.37,.91);
 }
+/*/////////////////////button Submit///*/
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-bottom: 4em;
+  width: 20%;
+  justify-content: center;
+}
+
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg_wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(8em);
+}
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+/* media query btn*/
+@media (max-width: 700px) {
+  button {
+    width: 90%;
+  }
+  button:hover span {
+    transform: translateX(14em);
+  }
+}
   .error{
     
     font-weight: 400;
@@ -187,4 +262,5 @@ transition: all 250ms cubic-bezier(1,0,.37,.91);
     font-family: 'Segoe UI', sans-serif;
     color: red;
   }
+  
   
