@@ -177,6 +177,14 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true
         },
+        ocupacion: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        areaMinisterio: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
     }, 
     );
 }; 
