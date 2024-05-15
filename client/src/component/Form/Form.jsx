@@ -87,9 +87,9 @@ function RegistroFormulario() {
     const { filterCountry, filterProvinces, filterCountryResidence, form, setForm, setFilterCountry, onValidate, setFilterProvinces, setFilterCountryResidence, errors, loading, handleSubmit, handleChange } = useForm(initialData, dataCountry);
     return (
         <div className={style.contenedorForm}>
-            <h1>COMPLETA TUS DATOS</h1>
-            <h2>Datos Personales</h2>
+            <img className={style.titulo} src="https://i.postimg.cc/nzT7MnVg/Recurso-1completa-Datod.png" alt="Completa tus Datos" />
             <form onSubmit={handleSubmit} className={style.Form}>
+            <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
                 <div className={style.inputGroup}>
 
                     <input
@@ -311,11 +311,12 @@ function RegistroFormulario() {
                         {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
                     </div>
                 </div>
-                <br />
-                <h2>Datos de Salud</h2>
-                <p>Durante CIMA tendremos un equipo de enfermeros atentos a ayudarte en situaciones no complejas. Ante alguna complejidad, se derivará al hospital correspondiente.
-                </p>
-                <p>Los siguientes datos serán muy útiles ante alguna contingencia.</p>
+
+                <img className={style.saludTitulo} src="https://i.postimg.cc/LXs5CLRQ/Recurso-4salud.png" alt="Salud" />
+
+                <img className={style.textoSalud} src="https://i.postimg.cc/658jsmYt/Recurso-5durante-Cima.png" alt="Medicos" />
+                <img className={style.textoSalud} src="https://i.postimg.cc/GtVjhbqr/Recurso-6siguientes-Datos.png" alt="Medicos" />
+
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
@@ -376,8 +377,9 @@ function RegistroFormulario() {
                         />
                         <label htmlFor="detalleMedicacion">Detalla los medicamentos:</label>
                     </div>
-                )}<br />
-                <h2 >Detalla cualquier situación referente a tu salud que creas conveniente que sepamos.</h2>
+                )}
+
+                <img className={style.textoSalud} src="https://i.postimg.cc/nL2Y9403/Recurso-7detalle-Salud.png" alt="" />
                 <div className={style.inputGroup}>
                     <input
                         className=''
@@ -387,9 +389,8 @@ function RegistroFormulario() {
                         onChange={handleChange} />
                     {errors.detalleSalud && <div className={style.error}>{errors.detalleSalud}</div>}
                 </div>
-                <br />
 
-                <h2>Ante una emergencia, ¿a quién podríamos contactar? </h2>
+                <img className={style.textoSalud} src="https://i.postimg.cc/L8MzyCWy/Recurso-9contacto-Emergencia.png" alt="" />
                 <div className={style.inputGroup}>
 
                     <input
@@ -425,8 +426,9 @@ function RegistroFormulario() {
                 </div>
                 <br />
 
-                <h2>Alimentacion</h2>
-                <h2>Selecciona una opción:</h2>
+                <img className={style.tituloAlimentacion} src="https://i.postimg.cc/wBwLj6jP/Recurso-10alimentacion.png" alt="" />
+                <img className={style.subTituloAlimentacion} src="https://i.postimg.cc/pT7jKq8J/Recurso-11una-Opcion.png" alt="" />
+                
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
@@ -517,7 +519,7 @@ function RegistroFormulario() {
                     </div>
                 )}
 
-                <h2>Otros Datos :</h2>
+                <img className={style.tituloAlimentacion} src="https://i.postimg.cc/zDbPbfRT/Recurso-12otros-Datos.png" alt="" />
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
