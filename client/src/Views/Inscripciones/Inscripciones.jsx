@@ -6,12 +6,13 @@ import style from "./Inscripciones.module.css"
 
 const Inscripciones = () => {
 
+    const anchoVentana = window.innerWidth;
+
     return (
         <div className={style.fondolin}>
             <div className={style.registro}>
-                <img className={style.imgRa} src="https://i.postimg.cc/Cxm8gfCk/Recurso-1registrate-Ac.png" alt="Registrate Acá" />
                 <Link to='/register'>
-                    <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.imgInscripciones} src="https://i.postimg.cc/RC25gPjn/Recurso-3inscripciones.png" alt="inscripciones" />
+                    <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.imgInscripciones} src="https://i.postimg.cc/Tw3y2xVh/Recurso-1registrate.png" alt="inscripciones" />
                 </Link>
             </div>
             <div className={style.logeo}>
@@ -21,8 +22,18 @@ const Inscripciones = () => {
                 </Link>
             </div>
             <div className={style.cortes}>
-                <img className={style.corteUno} src="https://i.postimg.cc/T3TXMKQV/Recurso-6corteuno.png" alt="corte promocional 1" />
-                <img className={style.otrosCortes} src="https://i.postimg.cc/3JntNWYC/Recurso-7otros-Cortes.png" alt="Corte 2, 3 y 4" />
+                <img className={style.imgNuestrasPromos} src="https://i.postimg.cc/pybXjMFf/Recurso-2nuestraspromos.png" alt="Nuestras Promos" />
+                <img className={style.corteUno} src="https://i.postimg.cc/m2J6Q2hf/Recurso-3primer-Corte.png" alt="corte promocional 1" />
+                <img className={style.otrosCortes} src="https://i.postimg.cc/9frd1ykL/Recurso-4otroscortes.png" alt="Corte 2, 3 y 4" />
+            </div>
+            {anchoVentana < 600 ? (
+                <img className={style.salvedades} src="https://i.postimg.cc/rF7MKTkz/Recurso-8salvedades-Cel.png" alt="Salvedades" />
+            ) : (
+                <img className={style.salvedades} src="https://i.postimg.cc/rFfRbKx3/Recurso-5salvedades.png" alt="Salvedades" />
+            )}
+            <div className={style.preguntasFrecuentes}>
+                <img className={style.pfTitulo} src="https://i.postimg.cc/NjhvQx6H/Recurso-6preguntas-Frecuentes.png" alt="Preguntas Frecuentes" />
+                <img className={style.pfCuadros} src="https://i.postimg.cc/FRKH0xnK/Recurso-7preguntas-Principales.png" alt="Preguntas Frecuentes" />
             </div>
         </div>
     );

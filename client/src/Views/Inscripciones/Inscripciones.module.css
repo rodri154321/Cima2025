@@ -1,7 +1,6 @@
 .fondolin {
     background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
     background-size: contain;
-    margin-bottom: -27%;
     width: 100%;
     height: auto;
     display: flex;
@@ -10,7 +9,6 @@
 }
 
 .registro {
-    margin-top: 3%;
     width: 100%;
 }
 
@@ -21,8 +19,8 @@
 
 .imgInscripciones {
     margin-top: 5%;
-    margin-left: 21%;
-    width: 60%;
+    margin-left: 25%;
+    width: 50%;
 }
 
 .logeo{
@@ -31,13 +29,18 @@
 }
 
 .imgYateInsc{
+    width: 30%;
+    margin-left: 33%;
+}
+
+.imgNuestrasPromos{
     width: 50%;
-    margin-left: 22%;
+    margin-left: 25%;
 }
 
 .imgIngreso{
-    margin-left: 35.5%;
-    width: 30%;
+    margin-left: 30%;
+    width: 40%;
 }
 
 .cortes{
@@ -46,19 +49,40 @@
 }
 
 .corteUno{
-    width: 50%;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: 30%;
 }
 
 .otrosCortes{
-    width: 80%;
+    width: 70%;
     margin-top: 4%;
-    margin-left: 10%;
+    margin-left: 15.5%;
+}
+
+.salvedades{
+    width: 80%;
+    margin-top: 3%;
+}
+
+.preguntasFrecuentes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfTitulo{
+    width: 70%;
+    margin-top: 5%;
+}
+.pfCuadros{
+    width: 70%;
+    margin-top: 2%;
 }
 
 @media screen and (max-width: 768px) {
     .registro {
-        margin-top: 30%;
+        margin-top: 10%;
     }
     .imgInscripciones {
         width: 80%;
@@ -66,5 +90,18 @@
     }
     .fondolin {
         height: 100vh;
+    }
+    .corteUno{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .otrosCortes{
+        width: 80%;
+        margin-top: 4%;
+        margin-left: 10%;
+    }
+    .pfCuadros{
+        width: 100%;
+        margin-top: 2%;
     }
 }
