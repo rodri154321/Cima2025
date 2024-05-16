@@ -280,40 +280,40 @@ const useForm = (initialData, dataCountry) => {
                 errors.pastor = "No debe tener caracteres especiales"
             }
         }
-        if (!form.codAreaPastor) {
-            errors.telefonoPastor = "Debe ingresar un numero de area";
-        } else if (!form.telefonoPastor) {
-            errors.telefonoPastor = "Debe ingresar un numero telefonico";
-        } else if (form.telefonoPastor && form.codAreaPastor) {
-            if (!regexCodArea.test(form.codAreaPastor)) {
-                errors.telefonoPastor = "Codigo de area no permitido"
-            } else if (!regexTel.test(form.telefonoPastor)) {
-                errors.telefonoPastor = "Numero de telefono  no permitido"
-            }
-        }
-        if (!form.codAreaUser) {
-            errors.telefono = "Debe ingresar un numero de area";
-        } else if (!form.telefono) {
-            errors.telefono = "Debe ingresar un numero telefonico";
-        } else if (form.telefono && form.codAreaUser) {
-            if (!regexCodArea.test(form.codAreaUser)) {
-                errors.telefono = "Codigo de area no permitido"
-            } else if (!regexTel.test(form.telefono)) {
-                errors.telefono = "Numero de telefono  no permitido"
-            }
-        }
+        // if (!form.codAreaPastor) {
+        //     errors.telefonoPastor = "Debe ingresar un numero de area";
+        // } else if (!form.telefonoPastor) {
+        //     errors.telefonoPastor = "Debe ingresar un numero telefonico";
+        // } else if (form.telefonoPastor && form.codAreaPastor) {
+        //     if (!regexCodArea.test(form.codAreaPastor)) {
+        //         errors.telefonoPastor = "Codigo de area no permitido"
+        //     } else if (!regexTel.test(form.telefonoPastor)) {
+        //         errors.telefonoPastor = "Numero de telefono  no permitido"
+        //     }
+        // }
+        // if (!form.codAreaUser) {
+        //     errors.telefono = "Debe ingresar un numero de area";
+        // } else if (!form.telefono) {
+        //     errors.telefono = "Debe ingresar un numero telefonico";
+        // } else if (form.telefono && form.codAreaUser) {
+        //     if (!regexCodArea.test(form.codAreaUser)) {
+        //         errors.telefono = "Codigo de area no permitido"
+        //     } else if (!regexTel.test(form.telefono)) {
+        //         errors.telefono = "Numero de telefono  no permitido"
+        //     }
+        // }
 
-        if (!form.codAreaEmergencia) {
-            errors.telefonoEmergencia = "Debe ingresar un numero de area";
-        } else if (!form.telefonoEmergencia) {
-            errors.telefonoEmergencia = "Debe ingresar un numero telefonico";
-        } else if (form.telefonoEmergencia && form.codAreaEmergencia) {
-            if (!regexCodArea.test(form.codAreaEmergencia)) {
-                errors.telefonoEmergencia = "Codigo de area no permitido"
-            } else if (!regexTel.test(form.telefonoEmergencia)) {
-                errors.telefonoEmergencia = "Numero de telefono  no permitido"
-            }
-        }
+        // if (!form.codAreaEmergencia) {
+        //     errors.telefonoEmergencia = "Debe ingresar un numero de area";
+        // } else if (!form.telefonoEmergencia) {
+        //     errors.telefonoEmergencia = "Debe ingresar un numero telefonico";
+        // } else if (form.telefonoEmergencia && form.codAreaEmergencia) {
+        //     if (!regexCodArea.test(form.codAreaEmergencia)) {
+        //         errors.telefonoEmergencia = "Codigo de area no permitido"
+        //     } else if (!regexTel.test(form.telefonoEmergencia)) {
+        //         errors.telefonoEmergencia = "Numero de telefono  no permitido"
+        //     }
+        // }
        
 
         return errors
