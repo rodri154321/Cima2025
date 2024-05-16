@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Tilt } from '@jdion/tilt-react'
+import { Link } from 'react-router-dom'
 import style from './Landin.module.css';
 
 
@@ -85,6 +86,7 @@ const Landin = () => {
 
       <div className={style.fondolin}>
 
+        
         <div className={style.descubrediv}>
 
           <div className={style.Descubretext}>
@@ -612,6 +614,10 @@ const Landin = () => {
 
         </div>
       </div>
+      <Link to='/inscripciones'>
+          <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
+      </Link>
+
     </>
   );
 };
