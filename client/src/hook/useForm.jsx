@@ -88,7 +88,9 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    setForm({ ...form, [name]: value })
+            let telPastor =  "+"+form.codAreaPastor + " " + form.telefonoEmergencia;
+            setForm({ ...form, telefonoEmergencia: telPastor})
+        
                 }
 
             }
@@ -98,7 +100,10 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    setForm({ ...form, [name]: value })
+                    let telUser = "+"+form.codAreaPastor + " " + form.telefono;
+                    setForm({ ...form, telefono: telUser })
+                 
+                  
                 }
 
             }
@@ -108,7 +113,10 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    setForm({ ...form, [name]: value })
+                   
+                    let telEmerg = "+"+form.codAreaPastor + " " + form.telefonoPastor;
+                   
+                    setForm({ ...form, telefonoPastor:telEmerg })
                 }
 
                 // }
@@ -153,7 +161,7 @@ const useForm = (initialData, dataCountry) => {
         const regexCaractersName = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{3,}$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const dateRegex = / ^\d{4}-\d{2}-\d{2}$/;
-        const regexTel = /^(?:[0-9\s]){6,14}$/;
+        const regexTel = /^\+?(?:[0-9\s]){6,14}$/;
         const regexCodArea = /^(?!(?:.*\d){4})\d{1,2}(?:\s?\d{1,2})*$/;
         const regexCaracterProv = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s.]{3,}$/;
         let errors = {};
@@ -291,12 +299,7 @@ const useForm = (initialData, dataCountry) => {
         console.log(err)
 
         if (err && Object.keys(err).length === 0) {
-            let telUser = "+"+form.codAreaPastor + " " + form.telefono;
-            let telPastor =  "+"+form.codAreaPastor + " " + form.telefonoEmergencia;
-            let telEmerg = "+"+form.codAreaPastor + " " + form.telefonoPastor;
-            setForm({ ...form, telefono: telUser })
-            setForm({ ...form, telefonoEmergencia: telPastor})
-            setForm({ ...form, telefonoPastor:telEmerg })
+            
             setLoading(true)
             try {
 
