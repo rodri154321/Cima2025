@@ -88,8 +88,8 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-            let telPastor =  "+"+form.codAreaPastor + " " + form.telefonoEmergencia;
-            setForm({ ...form, telefonoEmergencia: telPastor})
+            let telPastor =  `+${form.codAreaPastor} ${form.telefonoPastor}`;
+            setForm({ ...form, telefonoPastor: telPastor})
         
                 }
 
@@ -100,7 +100,7 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    let telUser = "+"+form.codAreaPastor + " " + form.telefono;
+                    let telUser =  `+${form.codAreaUser} ${form.telefono}`;
                     setForm({ ...form, telefono: telUser })
                  
                   
@@ -114,9 +114,9 @@ const useForm = (initialData, dataCountry) => {
                 }
                 else {
                    
-                    let telEmerg = "+"+form.codAreaPastor + " " + form.telefonoPastor;
+                    let telEmerg = `+${form.codAreaEmergencia} ${form.telefonoEmergencia}`;
                    
-                    setForm({ ...form, telefonoPastor:telEmerg })
+                    setForm({ ...form, telefonoEmergencia:telEmerg })
                 }
 
                 // }
