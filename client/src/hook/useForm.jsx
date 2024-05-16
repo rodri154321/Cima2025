@@ -36,13 +36,13 @@ const useForm = (initialData, dataCountry) => {
         else {
 
             const { name, value, checked } = event.target;
-
+            console.log(name, value, "valores")
             if (name == "nacionalidad" || name == "paisResidencia") {
 
                 setFilterCountry([]);
                 const result = await dataCountry;
                 setForm({ ...form, [name]: value })
-                console.log("result", result)
+
                 const searchCountry = result.filter(country => {
                     if (name == "paisResidencia") {
                         return country.countryName.toLowerCase().startsWith(form.paisResidencia.toLowerCase());
@@ -108,7 +108,7 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    setForm({ ...form, [name]: value })  
+                    setForm({ ...form, [name]: value })
                 }
 
                 // }
@@ -141,7 +141,7 @@ const useForm = (initialData, dataCountry) => {
                 setForm({ ...form, [name]: isChecked ? true : false });
             } else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
-                console.log(value, "date")
+
             } else {
                 setForm({ ...form, [name]: value });
             }
@@ -192,7 +192,7 @@ const useForm = (initialData, dataCountry) => {
 
             errors.fechaNacimiento = "Debe agregar Fecha de nacimiento";
         } else if (form.fechaNacimiento) {
-            console.log(form.fechaNacimiento)
+
             if (dateRegex.test(form.fechaNacimiento)) {
                 errors.fechaNacimiento = "Debe cumplir con el formato yyyy/mm/dd"
             } else if (!isValidateAge(form.fechaNacimiento)) {
@@ -284,20 +284,30 @@ const useForm = (initialData, dataCountry) => {
 
         return errors
     }
+    const armarTelefono = () => {
+        setForm({ ...form, telefonoPastor: "+" + form.codAreaPastor + " " + form.telefonoPastor })
+        setForm({ ...form, telefono: "+" + form.codAreaUser + " " + form.telefono })
+        setForm({ ...form, telefonoEmergencia: "+" + form.codAreaEmergencia + " " + form.telefonoEmergencia })
+    }
     const handleSubmit = async (event) => {
+
         event.preventDefault();
-        console.log(form, "aa")
+
+
+        // setForm({ ...form, telefono: `+${form.codAreaUser} ${form.telefono}` })
+        console.log("telefono", form.codAreaPastor, "aaa")
+
+
+
+        console.log("333", form, "aaa")
         const err = onValidate(form)
         console.log(err)
 
+
         if (err && Object.keys(err).length === 0) {
-            setForm({ ...form, telefonoPastor:`+${form.codAreaPastor} ${form.telefonoPastor}` })
-            setForm({ ...form, telefonoEmergencia: `+${form.codAreaEmergencia} ${form.telefonoEmergencia}`})
-            setForm({ ...form, telefono: `+${form.codAreaUser} ${form.telefono}` })
+            armarTelefono()
             setLoading(true)
             try {
-
-                console.log(form);
                 const response = await fetch('https://cima2025.up.railway.app/login/addInfo', {
                     method: 'PUT',
                     headers: {
