@@ -291,9 +291,12 @@ const useForm = (initialData, dataCountry) => {
         console.log(err)
 
         if (err && Object.keys(err).length === 0) {
-            setForm({ ...form, telefono: "+"+form.codAreaPastor + " " + form.telefono })
-            setForm({ ...form, telefonoEmergencia: "+"+form.codAreaPastor + " " + form.telefonoEmergencia })
-            setForm({ ...form, telefonoPastor:"+"+form.codAreaPastor + " " + form.telefonoPastor })
+            let telUser = "+"+form.codAreaPastor + " " + form.telefono;
+            let telPastor =  "+"+form.codAreaPastor + " " + form.telefonoEmergencia;
+            let telEmerg = "+"+form.codAreaPastor + " " + form.telefonoPastor;
+            setForm({ ...form, telefono: telUser })
+            setForm({ ...form, telefonoEmergencia: telPastor})
+            setForm({ ...form, telefonoPastor:telEmerg })
             setLoading(true)
             try {
 

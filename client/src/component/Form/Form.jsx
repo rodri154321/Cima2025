@@ -324,7 +324,7 @@ function RegistroFormulario() {
                         required
                         onChange={handleChange}
                     />
-                    <label htmlFor="areaMinisterio">Area en la que sirve:</label>
+                    <label htmlFor="areaMinisterio">Ministerio en el que sirves:</label>
                     {errors.areaMinisterio && <div className={style.areaMinisterio}>{errors.areaMinisterio}</div>}
                 </div>
                 <br />
