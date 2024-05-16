@@ -21,6 +21,8 @@ function RegistroFormulario() {
         apellido: "",
         emailGoogle: "",
         email: "",
+        areaMinisterio:"",
+        ocupacion:"",
         telefono: "",
         codAreaUser: "",
         fechaNacimiento: "",
@@ -313,6 +315,32 @@ function RegistroFormulario() {
                         {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
                     </div>
                 </div>
+                <div className={style.inputGroup}>
+
+                    <input
+                        type="text"
+                        name="areaMinisterio"
+                        value={form.areaMinisterio}
+                        required
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="areaMinisterio">Area en la que sirve:</label>
+                    {errors.areaMinisterio && <div className={style.areaMinisterio}>{errors.areaMinisterio}</div>}
+                </div>
+                <br />
+                <div className={style.inputGroup}>
+
+                    <input
+                        type="text"
+                        name="ocupacion"
+                        value={form.ocupacion}
+                        required
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="ocupacion">Ocupacion:</label>
+                    {errors.ocupacion && <div className={style.error}>{errors.ocupacion}</div>}
+                </div>
+                <br />
 
                 <img className={style.saludTitulo} src="https://i.postimg.cc/LXs5CLRQ/Recurso-4salud.png" alt="Salud" />
 
