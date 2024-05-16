@@ -591,7 +591,7 @@ const Landin = () => {
                   whileHover={{ scale: 1.1 }} className={style.fcPer} src="https://i.postimg.cc/W4Y99rBj/Recurso-10face.png" alt="" />
               </a>
 
-              {/* info Chile */}
+              {/* info Chileee */}
 
               <img className={style.infoChi} src="https://i.postimg.cc/7Pn0fjXW/Recurso-15info-Chile.png" alt="infoArg" />
               <a href="https://www.instagram.com/movidachile/">
@@ -614,6 +614,8 @@ const Landin = () => {
 
         </div>
       </div>
+
+
       {/* <Link to='/inscripciones'>
           <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
       </Link> */}
