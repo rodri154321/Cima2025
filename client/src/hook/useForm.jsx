@@ -190,6 +190,7 @@ const useForm = (initialData, dataCountry) => {
         const regexCodArea = /^(?!(?:.*\d){4})\d{1,2}(?:\s?\d{1,2})*$/;
         const regexCaracterProv = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s.]{3,}$/;
         let errors = {};
+        setErrors({})
         if (!form.nombre.trim()) {
             errors.nombre = "Debe colocar un nombre";
         } else if (form.nombre) {
