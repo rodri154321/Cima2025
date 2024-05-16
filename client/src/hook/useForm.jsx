@@ -81,36 +81,54 @@ const useForm = (initialData, dataCountry) => {
                     // Manejar el caso en que no se encuentren países que coincidan con el filtro
                     console.log("No se encontraron países que coincidan con el filtro.");
                 }
-            }
-            else if (name == "telefonoPastor") {
-                if (!errors.telefonoPastor && form.codAreaPastor && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
-                    let finalPhone = form.codAreaPastor + " " + value;
-                    setForm({ ...form, [name]: finalPhone })
-                }
-                else {
-                    setForm({ ...form, [name]: value })
-                }
+            
+            // else if (name == "telefonoPastor") {
+            //     if (!errors.telefonoPastor && form.codAreaPastor && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
+            //         let finalPhone = form.codAreaPastor + " " + value;
+            //         setForm({ ...form, [name]: finalPhone })
+            //     }
+            //     else if(form.codAreaPastor){
+            //         if(form.telefonoPastor.includes("+")){
+            //            let tel= form.telefonoPastor.split(" ")[1];
+            //           let telPastor = "+"+form.codAreaPastor + " " + tel;
+            //           setForm({ ...form, [name]: telPastor })
+            //         }  
+            //     }
+            // }
+            // else if (name == "telefono") {
+            //     if (!errors.telefono && form.codAreaUser && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
+            //         let finalPhone = form.codAreaUser + " " + value;
+            //         setForm({ ...form, [name]: finalPhone })
+            //     }
+            //     else if(form.codAreaUser){
+            //         if(form.telefono.includes("+")){
+            //            let tel= form.telefono.split(" ")[1];
+            //           let telUser = "+"+form.codAreaUser + " " + tel;
+            //           setForm({ ...form, [name]: telUser })
+            //         }  
+            //     }
 
-            }
-            else if (name == "telefono") {
-                if (!errors.telefono && form.codAreaUser && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
-                    let finalPhone = form.codAreaUser + " " + value;
-                    setForm({ ...form, [name]: finalPhone })
-                }
-                else {
-                    setForm({ ...form, [name]: value })
-                }
+            // }
+            // else if (name == "telefonoEmergencia") {
+               
+            //      if(form.codAreaEmergencia){
+            //           if(form.telefonoEmergencia.includes("+"+form.codAreaEmergencia)){
 
-            }
-            else if (name == "telefonoEmergencia") {
-                if (!errors.telefonoEmergencia && form.codAreaPastor && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
-                    let finalPhone = form.codAreaEmergencia + " " + value;
-                    setForm({ ...form, [name]: finalPhone })
-                }
-                else {
-                    setForm({ ...form, [name]: value })
-                }
-
+            //             setForm({ ...form, [name]: value })
+            //             console.log("www")
+            //           }else if(form.codAreaEmergencia ){
+            //             let tel = "+"+form.codAreaEmergencia +" "+value
+            //                 setForm({ ...form, [name]: tel })
+            //                 console.log("ww")
+                        
+                       
+                 
+            //         }if(form.telefonoEmergencia.includes("+")){
+            //             let tel= form.telefonoEmergencia.split(" ")[1];
+            //            let telEmerg = "+"+form.codAreaEmergencia + " " + tel;
+            //            setForm({ ...form, [name]: telEmerg })
+            //     }
+            // 
                 // }
                 //     else if (name == "provincia"){
 
@@ -147,6 +165,21 @@ const useForm = (initialData, dataCountry) => {
             }
         }
     };
+
+    const armarTelefono = () => {
+        // setForm({ ...form, telefonoPastor: "+54" + form.telefonoPastor })
+        // setForm({ ...form, telefono: "+" + form.codAreaUser + " " + form.telefono })
+        // setForm({ ...form, telefonoEmergencia: "+" + form.codAreaEmergencia + " " + form.telefonoEmergencia })
+        let telUser = "+"+form.codAreaPastor + " " + form.telefono;
+            let telPastor =  "+"+form.codAreaPastor + " " + form.telefonoEmergencia;
+            let telEmerg = "+"+form.codAreaPastor + " " + form.telefonoPastor;
+        setForm({
+            ...form,
+            telefono: telUser,
+            telefonoEmergencia: telPastor,
+            telefonoPastor: telEmerg,
+          });
+    }
     //validacion de errores
     const onValidate = (form) => {
 
@@ -281,31 +314,22 @@ const useForm = (initialData, dataCountry) => {
                 errors.telefonoEmergencia = "Numero de telefono  no permitido"
             }
         }
+       
 
         return errors
     }
-    const armarTelefono = () => {
-        setForm({ ...form, telefonoPastor: "+" + form.codAreaPastor + " " + form.telefonoPastor })
-        setForm({ ...form, telefono: "+" + form.codAreaUser + " " + form.telefono })
-        setForm({ ...form, telefonoEmergencia: "+" + form.codAreaEmergencia + " " + form.telefonoEmergencia })
-    }
+   
     const handleSubmit = async (event) => {
 
         event.preventDefault();
-
-
-        // setForm({ ...form, telefono: `+${form.codAreaUser} ${form.telefono}` })
-        console.log("telefono", form.codAreaPastor, "aaa")
-
-
-
-        console.log("333", form, "aaa")
         const err = onValidate(form)
         console.log(err)
-
-
         if (err && Object.keys(err).length === 0) {
-            armarTelefono()
+        }
+        
+        console.log(form)
+        if (err && Object.keys(err).length === 0) {
+            // armarTelefono()
             setLoading(true)
             try {
                 const response = await fetch('https://cima2025.up.railway.app/login/addInfo', {

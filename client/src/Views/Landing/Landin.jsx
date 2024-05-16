@@ -616,9 +616,9 @@ const Landin = () => {
       </div>
 
 
-      {/* <Link to='/inscripciones'>
+      <Link to='/inscripciones'>
           <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
-      </Link> */}
+      </Link>
 
     </>
   );

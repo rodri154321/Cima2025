@@ -136,11 +136,11 @@ function RegistroFormulario() {
                 <br />
 
                 <div className={style.container_inputPhone}>
-                    <PhoneNumberValidation
+                    {/* <PhoneNumberValidation
                         name="codAreaUser"
                         value={form.codAreaUser}
                         onChange={(cod) => handleChange(cod, "codAreaUser")}
-                    />
+                    /> */}
                     <div className={style.inputGroup}>
                         <input
                             type="text"
@@ -149,7 +149,7 @@ function RegistroFormulario() {
                             onChange={handleChange}
                             required
                         />
-                        <label htmlFor="telefono">Teléfono :</label>
+                        <label htmlFor="telefono">Teléfono (ej: +56 299334344 ):</label>
                         {errors.telefono && <div className={style.error}>{errors.telefono}</div>}
                     </div>
                 </div>
@@ -298,11 +298,11 @@ function RegistroFormulario() {
                 <br />
 
                 <div className={style.container_inputPhone}>
-                    <PhoneNumberValidation
+                    {/* <PhoneNumberValidation
                         name="codAreaPastor"
                         value={form.codAreaPastor}
                         onChange={(cod) => handleChange(cod, "codAreaPastor")}
-                    />
+                    /> */}
                     <div className={style.inputGroup}>
                         <input
                             type="text"
@@ -311,7 +311,7 @@ function RegistroFormulario() {
                             onChange={handleChange}
                             required
                         />
-                        <label htmlFor="telefonoPastor">Teléfono :</label>
+                        <label htmlFor="telefonoPastor">Teléfono Pastor (ej: +56 299334344 ):</label>
                         {errors.telefonoPastor && <div className={style.error}>{errors.telefonoPastor}</div>}
                     </div>
                 </div>
@@ -437,11 +437,11 @@ function RegistroFormulario() {
 
                 <div className={style.container_inputPhone}>
 
-                    <PhoneNumberValidation
+                    {/* <PhoneNumberValidation
                         name="codAreaEmergencia"
                         value={form.codAreaEmergencia}
                         onChange={(cod) => handleChange(cod, "codAreaEmergencia")}
-                    />
+                    /> */}
                     <div className={style.inputGroup}>
 
                         <input
@@ -449,8 +449,9 @@ function RegistroFormulario() {
                             name="telefonoEmergencia"
                             value={form.telefonoEmergencia}
                             onChange={handleChange}
+                            
                             required />
-                        <label htmlFor="telefonoEmergencia">	Teléfono (Con código de país)</label>
+                        <label htmlFor="telefonoEmergencia">Teléfono Emergencia (ej: +56 299334344 )</label>
                         {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
                     </div>
                 </div>
