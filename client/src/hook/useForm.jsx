@@ -186,7 +186,7 @@ const useForm = (initialData, dataCountry) => {
         const regexCaractersName = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{3,}$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const dateRegex = / ^\d{4}-\d{2}-\d{2}$/;
-        const regexTel = /^\+(?:[0-9\s]){6,14}$/
+        const regexTel = /^\+(?:[0-9\s]){6,16}$/
         const regexCodArea = /^(?!(?:.*\d){4})\d{1,2}(?:\s?\d{1,2})*$/;
         const regexCaracterProv = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s.]{3,}$/;
         let errors = {};
