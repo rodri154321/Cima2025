@@ -186,7 +186,7 @@ const useForm = (initialData, dataCountry) => {
         const regexCaractersName = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{3,}$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const dateRegex = / ^\d{4}-\d{2}-\d{2}$/;
-        const regexTel = /^\+?(?:[0-9\s]){6,14}$/;
+        const regexTel = /^\+(?:[0-9\s]){6,14}$/
         const regexCodArea = /^(?!(?:.*\d){4})\d{1,2}(?:\s?\d{1,2})*$/;
         const regexCaracterProv = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s.]{3,}$/;
         let errors = {};
@@ -280,40 +280,31 @@ const useForm = (initialData, dataCountry) => {
                 errors.pastor = "No debe tener caracteres especiales"
             }
         }
-        // if (!form.codAreaPastor) {
-        //     errors.telefonoPastor = "Debe ingresar un numero de area";
-        // } else if (!form.telefonoPastor) {
-        //     errors.telefonoPastor = "Debe ingresar un numero telefonico";
-        // } else if (form.telefonoPastor && form.codAreaPastor) {
-        //     if (!regexCodArea.test(form.codAreaPastor)) {
-        //         errors.telefonoPastor = "Codigo de area no permitido"
-        //     } else if (!regexTel.test(form.telefonoPastor)) {
-        //         errors.telefonoPastor = "Numero de telefono  no permitido"
-        //     }
-        // }
-        // if (!form.codAreaUser) {
-        //     errors.telefono = "Debe ingresar un numero de area";
-        // } else if (!form.telefono) {
-        //     errors.telefono = "Debe ingresar un numero telefonico";
-        // } else if (form.telefono && form.codAreaUser) {
-        //     if (!regexCodArea.test(form.codAreaUser)) {
-        //         errors.telefono = "Codigo de area no permitido"
-        //     } else if (!regexTel.test(form.telefono)) {
-        //         errors.telefono = "Numero de telefono  no permitido"
-        //     }
-        // }
-
-        // if (!form.codAreaEmergencia) {
-        //     errors.telefonoEmergencia = "Debe ingresar un numero de area";
-        // } else if (!form.telefonoEmergencia) {
-        //     errors.telefonoEmergencia = "Debe ingresar un numero telefonico";
-        // } else if (form.telefonoEmergencia && form.codAreaEmergencia) {
-        //     if (!regexCodArea.test(form.codAreaEmergencia)) {
-        //         errors.telefonoEmergencia = "Codigo de area no permitido"
-        //     } else if (!regexTel.test(form.telefonoEmergencia)) {
-        //         errors.telefonoEmergencia = "Numero de telefono  no permitido"
-        //     }
-        // }
+       
+        if (!form.telefonoPastor) {
+            errors.telefonoPastor = "Debe ingresar un numero telefonico";
+        } else if (form.telefonoPastor ) {
+            if (!regexTel.test(form.telefonoPastor)) {
+                errors.telefonoPastor = "Numero de teléfono debe cumplir con el formato permitido, ej.+58 (número telefónico)"
+            }
+        }
+        if (!form.telefono) {
+            errors.telefono = "Debe ingresar un numero telefonico";
+        } else if (form.telefono ) {
+            if (!regexTel.test(form.telefono)) {
+                errors.telefono = "Numero de teléfono debe cumplir con el formato permitido, ej.+58 (número telefónico)"
+            }
+        }
+        if (!form.telefonoEmergencia) {
+            errors.telefonoEmergencia = "Debe ingresar un numero telefonico";
+        } else if (form.telefonoEmergencia ) {
+            if (!regexTel.test(form.telefonoEmergencia)) {
+                errors.telefonoEmergencia = "Numero de teléfono debe cumplir con el formato permitido, ej.+58 (número telefónico)"
+            }
+        }
+     if( Object.keys(errors).length != 0){
+        errors.aviso = "Algunos campos contienen errores"
+     }
        
 
         return errors
