@@ -100,8 +100,16 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    let telUser =  `+${form.codAreaUser} ${form.telefono}`;
-                    setForm({ ...form, telefono: telUser })
+                    if(form.telefono.includes(`+${form.codAreaUser}`)){
+                        const telefonoSinCodigoArea = form.telefono.replace(new RegExp(`\\+${form.codAreaUser}\\s*`), '');
+                        let telUser =  `+${form.codAreaUser} ${telefonoSinCodigoArea}`;
+                        setForm({ ...form, telefono: telUser })
+    
+                    }else{
+                        let telUser =  `+${form.codAreaUser} ${form.telefono}`;
+                        setForm({ ...form, telefono: telUser })
+                    }
+                    
                  
                   
                 }
