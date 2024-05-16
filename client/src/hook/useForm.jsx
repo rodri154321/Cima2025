@@ -88,9 +88,7 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-            let telPastor =  `+${form.codAreaPastor} ${form.telefonoPastor}`;
-            setForm({ ...form, telefonoPastor: telPastor})
-        
+                    setForm({ ...form, [name]: value })
                 }
 
             }
@@ -100,18 +98,7 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                    if(form.telefono.includes(`+${form.codAreaUser}`)){
-                        const telefonoSinCodigoArea = form.telefono.replace(new RegExp(`\\+${form.codAreaUser}\\s*`), '');
-                        let telUser =  `+${form.codAreaUser} ${telefonoSinCodigoArea}`;
-                        setForm({ ...form, telefono: telUser })
-    
-                    }else{
-                        let telUser =  `+${form.codAreaUser} ${form.telefono}`;
-                        setForm({ ...form, telefono: telUser })
-                    }
-                    
-                 
-                  
+                    setForm({ ...form, [name]: value })
                 }
 
             }
@@ -121,10 +108,7 @@ const useForm = (initialData, dataCountry) => {
                     setForm({ ...form, [name]: finalPhone })
                 }
                 else {
-                   
-                    let telEmerg = `+${form.codAreaEmergencia} ${form.telefonoEmergencia}`;
-                   
-                    setForm({ ...form, telefonoEmergencia:telEmerg })
+                    setForm({ ...form, [name]: value })  
                 }
 
                 // }
@@ -307,7 +291,9 @@ const useForm = (initialData, dataCountry) => {
         console.log(err)
 
         if (err && Object.keys(err).length === 0) {
-            
+            setForm({ ...form, telefonoPastor:`+${form.codAreaPastor} ${form.telefonoPastor}` })
+            setForm({ ...form, telefonoEmergencia: `+${form.codAreaEmergencia} ${form.telefonoEmergencia}`})
+            setForm({ ...form, telefono: `+${form.codAreaUser} ${form.telefono}` })
             setLoading(true)
             try {
 
