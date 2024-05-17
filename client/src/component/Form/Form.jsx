@@ -130,7 +130,7 @@ function RegistroFormulario() {
                         onChange={handleChange}
                         required
                     />
-                    <label htmlFor="documento">n° Documento:</label>
+                    <label htmlFor="documento">DNI/CI/RUT/Pas.</label>
                     {errors.documento && <div className={style.error}>{errors.documento}</div>}
                 </div>
                 <br />
@@ -233,7 +233,7 @@ function RegistroFormulario() {
                         disabled={form.paisResidencia.length > 0 ? false : true}
                         required
                     />
-                    <label htmlFor="provincia">Provincia:</label>
+                    <label htmlFor="provincia">Provincia (Dpto / Región)</label>
 
                     {errors.province && <div className={style.error}>{errors.province}</div>}
                 </div>
