@@ -45,5 +45,18 @@ const findUserPais = async (nacionalidad) => {
     }
 };
 
+const deleteUserId = async (id) => {
+    let idUser = await users.findByPk(id)
 
-module.exports = { allUsers, findUserEmail, findUsername, findUserPais}
+    if (idUser) {
+        users.destroy({
+            where: { id: id }
+        })
+        return 'Usuario eliminado'
+    }
+
+    return 'Usuario inexistente'
+}
+
+
+module.exports = { allUsers, findUserEmail, findUsername, findUserPais, deleteUserId}
