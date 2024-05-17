@@ -4,13 +4,15 @@ import { motion } from 'framer-motion';
 import Swal from 'sweetalert2'
 import style from './UserDashboard.module.css'
 
+
 function UserDashboard() {
 
   const navigate = useNavigate();
   const [infoUser, setInfoUser] = useState('');
 
-  const pictureGoogle = localStorage.getItem('pictureGoogle');
-  console.log(pictureGoogle,"aa")
+  let pictureGoogle = localStorage.getItem('pictureGoogle');
+  const foto = pictureGoogle.slice(0, -7);
+  console.log(foto,"aa")
   useEffect(() => {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
@@ -55,7 +57,7 @@ function UserDashboard() {
             <p>D.N.I: {infoUser.documento}</p>
             <p>Pais de Residencia: {infoUser.paisResidencia}</p>
           </div>
-          <img src={pictureGoogle} alt="imagen de perfil Google" />
+          <img className={style.fotoPerfil} src="/perfil.svg" alt="imagen de perfil Google" />
           <div className={style.fondoFotos}>
             {anchoVentana < 600 ? (
               <img className={style.fondoDash} src="https://i.postimg.cc/xj34k6TV/Recurso-9fondo-Dashboard-Cel.png" alt="Imagen para celular" />

@@ -30,6 +30,7 @@
     text-align: center;
 }
 .contenedorForm h2{
+  
   font-size: 2.5rem;
   /* background-color: aqua; */
   width: 100%;
@@ -49,6 +50,13 @@
 }
 #fechaNacimiento{
   width: 100% !important;
+}
+.dateTitle{
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 3em;
+  margin-bottom: 0;
+  width: 100%;
+
 }
 /*Contenedores de check*/
 .cont_Checkbox{
@@ -202,6 +210,7 @@ button {
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
+  margin-top: 1em;
   margin-bottom: 4em;
   width: 20%;
   justify-content: center;

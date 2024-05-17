@@ -167,7 +167,7 @@ function RegistroFormulario() {
                     {errors.email && <div className={style.error}>{errors.email}</div>}
                 </div>
                 <br />
-                <p>Fecha de Nacimiento</p>
+                <p className={style.dateTitle}>Fecha de Nacimiento</p>
                 <div className={style.inputGroup}>
                     <DatePicker
                         id="fechaNacimiento"
@@ -645,8 +645,8 @@ function RegistroFormulario() {
                     <p> Hice el curso Storyline o Vaya a Movilizar</p>
                 </div>
                 <br />
-
-                {errors.participacionMovida && <div className={style.error}>{errors.participacionMovida}</div>}
+                {errors.aviso && <div className={style.error}>{errors.aviso}</div>}
+                
                 <button type="submit" disabled={loading}>
                     <div class={style.svg_wrapper}>
                         <div class={style.svg_wrapper}>
@@ -666,7 +666,7 @@ function RegistroFormulario() {
                     </div>
                     <span>{loading ? "Enviando...." : "Enviar"}</span>
                 </button>
-
+                
             </form>
         </div>
     );
