@@ -1,0 +1,297 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    margin-top: 5%;
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .items1{
+    margin-top: 3%;
+    width: 80%;
+  }
+  .items{
+    margin-top: 3%;
+    width: 60%;
+  }
+
+  .finalFooter {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .mundoLineas {
+    width: 70%;
+  }
+  .finalImg {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -20%;
+  }
+  
+  .movidaNet {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
+  .linkmovidaNet {
+    width: 40%;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoArg {
+    width: 28%;
+    position: absolute;
+    left: 20%;
+    margin-top: 10%;
+  }
+  
+  .igArg {
+    width: 3%;
+    position: absolute;
+    left: 23.5%;
+    margin-top: 15%;
+  }
+  
+  .fcArg {
+    width: 3%;
+    position: absolute;
+    left: 20%;
+    margin-top: 15%;
+  }
+  
+  .infoBol {
+    width: 26%;
+    position: absolute;
+    left: 20%;
+    margin-top: 25%;
+  }
+  
+  .igBol {
+    width: 3%;
+    position: absolute;
+    left: 23.5%;
+    margin-top: 30.6%;
+  }
+  
+  .fcBol {
+    width: 3%;
+    position: absolute;
+    left: 20%;
+    margin-top: 30.6%;
+  }
+  
+  .infoPar {
+    width: 26%;
+    position: absolute;
+    left: 20%;
+    margin-top: 40%;
+  }
+  
+  .igPar {
+    width: 3%;
+    position: absolute;
+    left: 23.5%;
+    margin-top: 45%;
+  }
+  
+  .fcPar {
+    width: 3%;
+    position: absolute;
+    left: 20%;
+    margin-top: 45%;
+  }
+  
+  .infoUru {
+    width: 28%;
+    position: absolute;
+    left: 55%;
+    margin-top: 10%;
+  }
+  
+  .igUru {
+    width: 3%;
+    position: absolute;
+    left: 58.5%;
+    margin-top: 15%;
+  }
+  
+  .fcUru {
+    width: 3%;
+    position: absolute;
+    left: 55%;
+    margin-top: 15%;
+  }
+  
+  .infoPer {
+    width: 28%;
+    position: absolute;
+    left: 55%;
+    margin-top: 25%;
+  }
+  
+  .igPer {
+    width: 3%;
+    position: absolute;
+    left: 58.5%;
+    margin-top: 30.6%;
+  }
+  
+  .fcPer {
+    width: 3%;
+    position: absolute;
+    left: 55%;
+    margin-top: 30.6%;
+  }
+  
+  .infoChi {
+    width: 28%;
+    position: absolute;
+    left: 55%;
+    margin-top: 40%;
+  }
+  
+  .igChi {
+    width: 3%;
+    position: absolute;
+    left: 58.5%;
+    margin-top: 45.5%;
+  }
+  
+  .fcChi {
+    width: 3%;
+    position: absolute;
+    left: 55%;
+    margin-top: 45.5%;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .mundoLineas {
+      width: 100%;
+      margin-left: -10%;
+    }
+  
+    .finalImg {
+      width: 75%;
+      margin-top: 5%;
+      margin-left: -10%;
+    }
+
+    .linkmovidaNet {
+      margin-top: 3%;
+    }
+  
+    .infoArg {
+      width: 38%;
+      left: 11%;
+    }
+  
+    .igArg {
+      width: 5%;
+      left: 14.5%;
+      margin-top: 17%;
+    }
+  
+    .fcArg {
+      width: 5%;
+      left: 9%;
+      margin-top: 17%;
+    }
+  
+    .infoBol {
+      width: 37%;
+      left: 11%;
+    }
+  
+    .igBol {
+      width: 5%;
+      left: 14.5%;
+      margin-top: 32.6%;
+    }
+  
+    .fcBol {
+      width: 5%;
+      left: 9%;
+      margin-top: 32.6%;
+    }
+  
+    .infoPar {
+      width: 38%;
+      left: 11%;
+    }
+  
+    .igPar {
+      width: 5%;
+      left: 14.5%;
+      margin-top: 47%;
+    }
+  
+    .fcPar {
+      width: 5%;
+      left: 9%;
+      margin-top: 47%;
+    }
+  
+    .infoUru {
+      width: 38%;
+      left: 55%;
+      margin-top: 10%;
+    }
+  
+    .igUru {
+      width: 5%;
+      left: 58.5%;
+      margin-top: 17%;
+    }
+  
+    .fcUru {
+      width: 5%;
+      left: 53%;
+      margin-top: 17%;
+    }
+  
+    .infoPer {
+      width: 38%;
+      left: 55%;
+      margin-top: 25%;
+    }
+  
+    .igPer {
+      width: 5%;
+      left: 58.5%;
+      margin-top: 32.6%;
+    }
+  
+    .fcPer {
+      width: 5%;
+      left: 53%;
+      margin-top: 32.6%;
+    }
+  
+    .infoChi {
+      width: 38%;
+      left: 55%;
+      margin-top: 40%;
+    }
+  
+    .igChi {
+      width: 5%;
+      left: 58.5%;
+      margin-top: 47.5%;
+    }
+  
+    .fcChi {
+      width: 5%;
+      left: 53%;
+      margin-top: 47.5%;
+    }
+  
+  }

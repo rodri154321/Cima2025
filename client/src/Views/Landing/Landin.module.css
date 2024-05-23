@@ -735,6 +735,52 @@
   }
 }
 
+.preguntasFrecuentes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.preguntasFrecuentes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.pfTitulo{
+  width: 70%;
+  margin-top: 5%;
+}
+.pfCuadros{
+  width: 70%;
+  margin-top: 2%;
+}
+
+.botonPF{
+  margin-top: 3%;
+}
+.contBoton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .pfCuadros{
+      width: 100%;
+      margin-top: 2%;
+      margin-bottom: 7%;
+  }
+  .botonPF{
+      width: 50%;
+  }
+}
+
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/
 
 .footer {

@@ -34,7 +34,10 @@ const Inscripciones = () => {
             )}
             <div className={style.preguntasFrecuentes}>
                 <img className={style.pfTitulo} src="https://i.postimg.cc/NjhvQx6H/Recurso-6preguntas-Frecuentes.png" alt="Preguntas Frecuentes" />
-                <img className={style.pfCuadros} src="https://i.postimg.cc/FRKH0xnK/Recurso-7preguntas-Principales.png" alt="Preguntas Frecuentes" />
+                <img className={style.pfCuadros} src="https://i.postimg.cc/RhhLMf3s/Recurso-2pf-Portada.png" alt="Preguntas Frecuentes" />
+                <Link className={style.contBoton} to="/preguntasfrecuentes" target="_blank" rel="noopener noreferrer">
+                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.botonPF} src="https://i.postimg.cc/k4fy3w5R/Recurso-1pf-Boton.png" alt="Mas Preguntas" />
+                </Link>
             </div>
         </div>
     );

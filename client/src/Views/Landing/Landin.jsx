@@ -28,16 +28,16 @@ const Landin = () => {
     { id: 8, src: 'https://i.postimg.cc/jdmZGL78/yasir-eric.png', cartelito: 'https://i.postimg.cc/Xv6hP31y/cartelito-verde-3.png', nombre: 'Yasir', showCartelito: false }
   ]);
 
-  
-    const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
-  
-    const handleClickImagen = (imagenSrc) => {
-      setImagenSeleccionada(imagenSrc);
-    };
-  
-    const handleCloseModal = () => {
-      setImagenSeleccionada(null);
-    };
+
+  const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+
+  const handleClickImagen = (imagenSrc) => {
+    setImagenSeleccionada(imagenSrc);
+  };
+
+  const handleCloseModal = () => {
+    setImagenSeleccionada(null);
+  };
 
   return (
     <>
@@ -86,7 +86,7 @@ const Landin = () => {
 
       <div className={style.fondolin}>
 
-        
+
         <div className={style.descubrediv}>
 
           <div className={style.Descubretext}>
@@ -381,14 +381,14 @@ const Landin = () => {
               className={style.pointBra}
               src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Brasil"
               onClick={() => handleClickImagen("https://i.postimg.cc/76n95BCj/Recurso-1ps-Brasil.png")} />
-              <motion.img
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               className={style.pointEcu}
               src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Ecuador"
               onClick={() => handleClickImagen("https://i.postimg.cc/wTv2BQ9b/Recurso-2ps-Ecuador.png")} />
-              <motion.img
+            <motion.img
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
@@ -494,6 +494,14 @@ const Landin = () => {
 
           </div>
 
+        </div>
+
+        <div className={style.preguntasFrecuentes}>
+          <img className={style.pfTitulo} src="https://i.postimg.cc/NjhvQx6H/Recurso-6preguntas-Frecuentes.png" alt="Preguntas Frecuentes" />
+          <img className={style.pfCuadros} src="https://i.postimg.cc/RhhLMf3s/Recurso-2pf-Portada.png" alt="Preguntas Frecuentes" />
+          <Link className={style.contBoton} to="/preguntasfrecuentes" target="_blank" rel="noopener noreferrer">
+            <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.botonPF} src="https://i.postimg.cc/k4fy3w5R/Recurso-1pf-Boton.png" alt="Mas Preguntas" />
+          </Link>
         </div>
 
         <div className={style.footer}>
@@ -617,7 +625,7 @@ const Landin = () => {
 
 
       <Link to='/inscripciones'>
-          <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
+        <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
       </Link>
 
     </>
