@@ -4,8 +4,10 @@ import ReactPlayer from 'react-player';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { Tilt } from '@jdion/tilt-react'
-import { Link } from 'react-router-dom'
+import { Tilt } from '@jdion/tilt-react';
+import { Link } from 'react-router-dom';
+import { Fab, Action } from 'react-tiny-fab';
+import 'react-tiny-fab/dist/styles.css';
 import style from './Landin.module.css';
 
 
@@ -85,7 +87,6 @@ const Landin = () => {
       </div>
 
       <div className={style.fondolin}>
-
 
         <div className={style.descubrediv}>
 

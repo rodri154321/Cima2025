@@ -66,7 +66,8 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
         participoCima: participoCima,
         participoSigue: participoSigue,
         ocupacion, 
-        areaMinisterio
+        areaMinisterio,
+        fechaAlta: new Date()
       },
         {
           where: {
