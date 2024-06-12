@@ -1,0 +1,69 @@
+.general{
+    height: 100%;
+    background-color: #018166;
+}
+
+.fondolin {
+    
+    background-color: #018166;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+.fondo {
+    width: 100%;
+}
+
+.titulo {
+    position: absolute;
+    width: 50%;
+    top: 6%
+}
+
+.banderas {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imgBanderas {
+    width: 10%;
+    
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%
+}
+
+.fondo2 {
+    width: 100%;
+    height: auto;
+    background-color: #018166;
+    overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+
+    .banderas {
+        gap: 20px;
+    }
+    
+    .imgBanderas {
+        width: 15%;
+    }
+    .info{
+        position: absolute;
+        top: 70%
+    }
+  
+  }
