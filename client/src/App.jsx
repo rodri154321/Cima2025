@@ -35,7 +35,7 @@ function App() {
             <Route path='/loginadminsregional25' element={<LoginAdmin/>}/>
             <Route path='/dashboardadminsregional25' element={<AdminDashboard/>}/>
             <Route path='/preguntasfrecuentes' element={<PregFrecuentes/>}/>
-            <Route path='/experimenta' element={<Experimenta/>}/>
+            <Route path='/infoexperimenta' element={<Experimenta/>}/>
          </Routes>
     </div>
   )
