@@ -10,6 +10,7 @@ import LoginAdmin from './Views/Admin/LoginAdmin';
 import AdminDashboard from './Views/Admin/AdminDashboard'
 import { useEffect, useState } from 'react';
 import PregFrecuentes from './Views/PregFrecuentes/PregFrecuentes';
+import Experimenta from './Views/Experimenta/Experimenta';
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/loginadminsregional25' element={<LoginAdmin/>}/>
             <Route path='/dashboardadminsregional25' element={<AdminDashboard/>}/>
             <Route path='/preguntasfrecuentes' element={<PregFrecuentes/>}/>
+            <Route path='/infoexperimenta' element={<Experimenta/>}/>
          </Routes>
     </div>
   )
