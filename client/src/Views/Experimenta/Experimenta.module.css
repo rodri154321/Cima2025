@@ -39,10 +39,11 @@
 }
 
 .info{
+    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 40%
+    top: 40%;
 }
 
 .fondo2 {
@@ -63,7 +64,7 @@
     }
     .info{
         position: absolute;
-        top: 70%
+        top: 50%
     }
   
   }

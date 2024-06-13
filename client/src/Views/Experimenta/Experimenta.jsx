@@ -38,9 +38,9 @@ const Experimenta = () => {
                     {banderasImgTrans.map((url, index) => (
                         <motion.img onClick={() => { setTripIndex(index); setOceans(0); }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.imgBanderas} src={url} alt={index + 1} />
                     ))}
-                    {banderasImg.map((url, index) => (
+                    {/* {banderasImg.map((url, index) => (
                         <motion.img onClick={() => { setTripIndex(index); setOceans(1); }} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }} className={style.imgBanderas} src={url} alt={index + 1} />
-                    ))}
+                    ))} */}
                 </div>
                 <div className={style.info}>
                     {oceans==0 ? <InfoExperimenta index={tripIndex} /> : <Lugares index={tripIndex} />}

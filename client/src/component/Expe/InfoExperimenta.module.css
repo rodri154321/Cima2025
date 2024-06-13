@@ -1,64 +1,78 @@
+.img {
+  width: 70%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 2px solid #e29400;
+  border-radius: 0.5rem;
+}
+
 .card {
-    max-width:95%;
-    border-radius: 0.5rem;
-    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    border: 2px solid #e29400;
-  }
-  
-  .content {
-    padding: 1.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .image {
-    object-fit: cover;
+  width: 100%;
+
+  background-color: #005b7b;
+  /* background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png'); */
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 30%;
+  background-color: #018166;
+  border-radius: 0.5rem;
+}
+
+.title {
+  width: 100%;
+  color: #111827;
+  font-size: 3.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.imgCarucel {
+  width: 100%;
+  height: 80%;
+}
+
+.carucel {
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+
+  .img {
     width: 100%;
-    height: 150px;
-    background-color: #018166;
-    border-radius: 0.5rem;
   }
-  
-  .title {
+
+  .imgCarucel {
     width: 100%;
-    color: #111827;
-    font-size: 3.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2%;
+    height: 80%;
   }
-  
-  .desc {
-    margin-top: 0.5rem;
-    color: #000000;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+
+  .carucel {
     width: 100%;
-    text-align: center;
+    height: 40vh;
   }
-  
-  .action {
-    display: inline-flex;
-    margin-top: 1rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    align-items: center;
-    gap: 0.25rem;
-    background-color: #2563EB;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  
-  .action span {
-    transition: .3s ease;
-  }
-  
-  .action:hover span {
-    transform: translateX(4px);
-  }
+
+}
