@@ -204,7 +204,7 @@ function RegistroFormulario() {
                         required
                         autoComplete="new-Pais"
                     />
-                    <label htmlFor="nacionalidad">Nacionalidad:</label>
+                    <label htmlFor="nacionalidad">Nacionalidad: Selecciona uno de la lista</label>
                     <SerachResultList dataCountry={filterCountry} onSelect={(option) => handleSelect(option, "nacionalidad")} />
                     {errors.nacionalidad && <div className={style.error}>{errors.nacionalidad}</div>}
                 </div>
@@ -220,7 +220,7 @@ function RegistroFormulario() {
                         required
                         autoComplete="new-Pais"
                     />
-                    <label htmlFor="paisResidencia">Pais de residencia:</label>
+                    <label htmlFor="paisResidencia">Pais de residencia: Selecciona uno de la lista</label>
                     <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />
                     {errors.paisResidencia && <div className={style.error}>{errors.paisResidencia}</div>}
                 </div>
