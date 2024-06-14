@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Swal from 'sweetalert2'
-import style from './UserDashboard.module.css'
+import Swal from 'sweetalert2';
+import 'sweetalert2/src/sweetalert2.scss'
+import style from './UserDashboard.module.css';
 
 
 function UserDashboard() {
@@ -12,7 +14,7 @@ function UserDashboard() {
 
   let pictureGoogle = localStorage.getItem('pictureGoogle');
   const foto = pictureGoogle.slice(0, -7);
-  console.log(foto,"aa")
+  console.log(foto, "aa")
   useEffect(() => {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
@@ -29,8 +31,11 @@ function UserDashboard() {
   const alertasHandler = () => {
     Swal.fire({
       title: "Pronto...",
-      text: "Muy pronto vas a poder ingresar a estas secciones",
-      icon: "info"
+      text: "Muy pronto vas a poder ingresar a esta seccion",
+      icon: "info",
+      customClass: {
+        confirmButton: style.confirmButton
+      }
     })
   };
 
@@ -43,9 +48,15 @@ function UserDashboard() {
       </div>
       <div className={style.fondolin} >
         <div className={style.botones}>
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/85WbVzsV/Recurso-3boton-Descubre.png" alt="" />
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/j2b4qYJn/Recurso-4boton-Experimenta.png" alt="" />
-          <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/mkyNtpQX/Recurso-5boton-Informacion.png" alt="" />
+          <Link className={style.link}>
+            <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/85WbVzsV/Recurso-3boton-Descubre.png" alt="" />
+          </Link>
+          <Link to={'/dashboardexperimenta'} className={style.link}>
+            <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.boton} src="https://i.postimg.cc/j2b4qYJn/Recurso-4boton-Experimenta.png" alt="" />
+          </Link>
+          <Link className={style.link}>
+            <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/mkyNtpQX/Recurso-5boton-Informacion.png" alt="" />
+          </Link>
         </div>
         <div className={style.fondoInfo}>
 

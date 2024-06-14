@@ -1,0 +1,87 @@
+.fondolin {
+    /* background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png'); */
+    background-color: #005B7B;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.recurso{
+    position: absolute;
+    width: 50%;
+    top:0%;
+    left:50%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.recurso2{
+    position: absolute;
+    width: 50%;
+    top:150%;
+    left:0%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.TituloExp{
+    width: 60%;
+    margin-top: 1%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.subTituloExp{
+    width: 50%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.textoExp{
+    width: 50%;
+    margin-top: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.botones{
+    width: 35%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .fondolin {
+        height: 100vh;;
+      }
+    .contenido{
+        margin-top: -50%;
+    }
+    .recurso2{
+        top:50%;
+    }
+    
+    .TituloExp{
+        width: 70%;
+    }
+    .subTituloExp{
+        width: 70%;
+    }
+  }

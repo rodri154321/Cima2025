@@ -11,6 +11,7 @@ import AdminDashboard from './Views/Admin/AdminDashboard'
 import { useEffect, useState } from 'react';
 import PregFrecuentes from './Views/PregFrecuentes/PregFrecuentes';
 import Experimenta from './Views/Experimenta/Experimenta';
+import UserExperimenta from './Views/Experimenta/UserExperimenta';
 
 
 
@@ -36,6 +37,7 @@ function App() {
             <Route path='/dashboardadminsregional25' element={<AdminDashboard/>}/>
             <Route path='/preguntasfrecuentes' element={<PregFrecuentes/>}/>
             <Route path='/infoexperimenta' element={<Experimenta/>}/>
+            <Route path='/dashboardexperimenta' element={<UserExperimenta/>}/>
          </Routes>
     </div>
   )

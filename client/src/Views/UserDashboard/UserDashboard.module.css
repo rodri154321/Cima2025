@@ -1,3 +1,10 @@
+.confirmButton {
+    width: auto;
+    height: auto;
+    padding: 10px 20px; /* Ajusta estos valores según sea necesario */
+    font-size: 16px; /* Puedes ajustar otros estilos como el tamaño de la fuente */
+  }
+
 .logOut {
     width: 100%;
     background-color: #005d7e;
@@ -30,10 +37,19 @@
 }
 
 .boton {
-    width: 25%;
+    width: 65%;
     margin-right: 3%;
     margin-left: 3%;
 }
+
+.link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .fondoInfo {
     width: 100%;
@@ -47,10 +63,8 @@
     overflow: hidden;
 }
 .fondoDash {
-    width: 105%;
+    width: 100vw;
     margin-top: 5%;
-    margin-right: -5%;
-    height: 100%;
 }
 
 .grupoPequeño{
