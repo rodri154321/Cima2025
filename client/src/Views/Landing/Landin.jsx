@@ -393,13 +393,6 @@ const Landin = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{ scale: 1.1 }}
-              className={style.pointCol}
-              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Colombia"
-              onClick={() => handleClickImagen("https://i.postimg.cc/L6bTggX4/Recurso-3ps-Colombia.png")} />
-            <motion.img
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              whileHover={{ scale: 1.1 }}
               className={style.pointKen}
               src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Kenia"
               onClick={() => handleClickImagen("https://i.postimg.cc/pdDYS0By/Recurso-7ps-Kenia.png")} />
@@ -447,7 +440,7 @@ const Landin = () => {
               onClick={() => handleClickImagen("https://i.postimg.cc/xjggY4Vz/Recurso-5ps-Tailandia.png")} />
 
             {/* Modal para mostrar la imagen en grande */}
-            {imagenSeleccionada && (
+            {/* {imagenSeleccionada && (
               <div className={style.modal} onClick={handleCloseModal}>
                 <div className={style.modalContenido} onClick={handleCloseModal}>
                   <img
@@ -457,7 +450,7 @@ const Landin = () => {
                   />
                 </div>
               </div>
-            )}
+            )} */}
 
             <motion.img
               initial={{ scale: 0, opacity: 0 }}
@@ -492,6 +485,15 @@ const Landin = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }} className={style.transoceanicas}
               src="https://i.postimg.cc/sxnzy43R/Recurso-1transoceanicas.png" alt="Transoceanicas" />
+
+            <Link to='/infoexperimenta'>
+              <motion.img
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.botonMasInfoExpe}
+                src="https://i.postimg.cc/YSmGhxqN/Recurso-2-Boton-Experimenta.png" alt="Transoceanicas" />
+            </Link>
+
 
           </div>
 

@@ -202,6 +202,7 @@ function RegistroFormulario() {
                         value={form.nacionalidad}
                         onChange={handleChange}
                         required
+                        autoComplete="off"
                     />
                     <label htmlFor="nacionalidad">Nacionalidad:</label>
                     <SerachResultList dataCountry={filterCountry} onSelect={(option) => handleSelect(option, "nacionalidad")} />
@@ -217,6 +218,7 @@ function RegistroFormulario() {
                         value={form.paisResidencia}
                         onChange={handleChange}
                         required
+                        autoComplete="off"
                     />
                     <label htmlFor="paisResidencia">Pais de residencia:</label>
                     <SerachResultList dataCountry={filterCountryResidence} onSelect={(option) => handleSelect(option, "paisResidencia")} />

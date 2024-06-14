@@ -637,13 +637,19 @@
 .asia {
   position: absolute;
   width: 22%;
-  top: 55%;
+  top: 45%;
   left: 73%;
 }
 
 .transoceanicas {
   width: 70%;
   margin-left: -2%;
+}
+
+.botonMasInfoExpe{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 27%;
 }
 
 @media screen and (max-width: 768px) {
