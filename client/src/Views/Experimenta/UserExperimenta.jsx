@@ -23,7 +23,7 @@ function UserExperimenta() {
 
     const handlerAcces = () => {
         // if (userObject.montoPagado == null) {
-        if (userObject.montoPagado && userObject.montoPagado > 0) {
+        if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
                 navigate('/formexperimenta')
             } else {
                 Swal.fire({
