@@ -52,7 +52,7 @@ function UserDashboard() {
             <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/85WbVzsV/Recurso-3boton-Descubre.png" alt="" />
           </Link>
           {/* to={'/dashboardexperimenta'} */}
-          <Link  className={style.link}>
+          <Link to={'/dashboardexperimenta'} className={style.link}>
             <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={alertasHandler} className={style.boton} src="https://i.postimg.cc/j2b4qYJn/Recurso-4boton-Experimenta.png" alt="" />
           </Link>
           <Link className={style.link}>
