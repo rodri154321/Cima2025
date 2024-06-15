@@ -118,7 +118,6 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
           // No se encontró ningún usuario con el correo electrónico dado
           throw Error('Ocurrio un error intente mas tarde');
         }
-        if (!exist.dataValues.preinscripto) {
           await users.update({
             montoPagado: montoPagado
           },
@@ -129,8 +128,6 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
             },
           );
           return 'monto actualizado';
-        }
-        else throw Error('Ocurrio un error intente mas tarde');
         
       } catch (error) {
         throw Error('Error al agregar experimenta:', error);
