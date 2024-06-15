@@ -13,17 +13,17 @@ function UserExperimenta() {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
 
-    // useEffect(() => {
-    //     console.log(userObject);
-    //     if (userObject) {
-    //         setInfoUser(userObject);
-    //     } else navigate('/inscripciones')
-    // }, [navigate]);
+    useEffect(() => {
+        console.log(userObject);
+        if (userObject) {
+            setInfoUser(userObject);
+        } else navigate('/inscripciones')
+    }, [navigate]);
 
 
     const handlerAcces = () => {
-        // if (userObject.montoPagado && userObject.montoPagado > 0) {
-            if (userObject.montoPagado == null) {
+        // if (userObject.montoPagado == null) {
+        if (userObject.montoPagado && userObject.montoPagado > 0) {
                 navigate('/formexperimenta')
             } else {
                 Swal.fire({
