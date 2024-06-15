@@ -20,7 +20,8 @@ function FormExperimenta() {
     });
 
     useEffect(() => {
-        if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
+        if (userObject.experimenta == null) {
+        // if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
             setForm({ ...form, emailGoogle: emailGoogle })
         } else {
             navigate('/dashboardexperimenta')
