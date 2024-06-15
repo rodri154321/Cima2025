@@ -14,8 +14,6 @@ function UserExperimenta() {
     const userObject = JSON.parse(userString);
 
     useEffect(() => {
-        userString = localStorage.getItem('user');
-        userObject = JSON.parse(userString);
         if (userObject) {
             setInfoUser(userObject);
         } else navigate('/inscripciones')
