@@ -1,0 +1,65 @@
+.divGeneral {
+    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
+    background-size: contain;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    width: 60%;
+    margin-bottom: 15%;
+}
+
+.subtitulo{
+    width: 60%;
+    text-align: center;
+}
+
+.form {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 2px solid #e29400;
+    border-radius: 0.5rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divForm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.img{
+    width: 90%;
+}
+
+.select1{
+    width: 50%;
+    height: 3rem;
+    border-radius:0.5rem ;
+    border-color: #005B7B;
+}
+
+.boton {
+    width: 50%;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .titulo{
+        width: 90%;
+    }
+    .subtitulo{
+        width: 100%;
+    }
+}

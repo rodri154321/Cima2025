@@ -189,6 +189,18 @@ module.exports = (sequelize) => {
             type: DataTypes.DATE,
             allowNull: true
         },
+        experimenta:{
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        otroExperimenta:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        },
+        añoOtroExperimenta:{
+            type: DataTypes.DATE,
+            allowNull: true
+        },
     }, 
     );
 }; 

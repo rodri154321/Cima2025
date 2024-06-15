@@ -1,4 +1,4 @@
-const { postLogin, addInfoUser, postRegisterUser} = require("../controllers/loginController");
+const { postLogin, addInfoUser, postRegisterUser, addExperimenta, updateMonto} = require("../controllers/loginController");
 
 const loginUser = async (req, res) => {
   const { emailGoogle, password } = req.body;
@@ -38,7 +38,33 @@ const infoUser = async (req,res) =>{
 
 };
 
+const experimentaUser = async (req,res) =>{
+
+  const {emailGoogle,experimenta,otroExperimenta,añoOtroExperimenta}= req.body;
+
+  try {
+    const response = await addExperimenta(emailGoogle,experimenta,otroExperimenta,añoOtroExperimenta);
+    if (response) return res.status(200).json({ message: "Actualizacion Exitosa", user: response, homeURL: "/" });
+
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+};
+
+const montoUser = async (req,res) =>{
+
+  const {id, montoPagado}= req.body;
+
+  try {
+    const response = await updateMonto(id,montoPagado);
+    if (response) return res.status(200).json({ message: "Actualizacion Exitosa", user: response, homeURL: "/" });
+
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+};
+
 
 module.exports = {
-  loginUser,registerUser,infoUser
+  loginUser,registerUser,infoUser,experimentaUser,montoUser
 }

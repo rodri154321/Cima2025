@@ -1,0 +1,138 @@
+.confirmButton {
+    width: auto;
+    height: auto;
+    padding: 10px 20px; /* Ajusta estos valores según sea necesario */
+    font-size: 16px; /* Puedes ajustar otros estilos como el tamaño de la fuente */
+  }
+
+.fondolin {
+    /* background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png'); */
+    background-color: #005B7B;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 98.6vw;
+    height: auto;
+    overflow: hidden;
+  }
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.recurso{
+    position: absolute;
+    width: 50%;
+    top:0%;
+    left:50%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.recurso2{
+    position: absolute;
+    width: 100%;
+    top:150%;
+    left:0%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.TituloExp{
+    width: 60%;
+    margin-top: 1%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.subTituloExp{
+    width: 50%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.textoExp{
+    width: 40%;
+    margin-top: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.botones{
+    width: 25%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.divContactos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.LinkContactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.contactos{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .fondolin {
+        height: 100vh;;
+      }
+    .contenido{
+        margin-top: -30%;
+    }
+    .recurso2{
+        top:50%;
+    }
+    
+    .TituloExp{
+        width: 70%;
+    }
+    .subTituloExp{
+        width: 70%;
+    }
+    .textoExp{
+        width: 50%;
+    }
+    
+    .botones{
+        width: 35%;
+    
+    }
+    .LinkContactos{
+        width: 35%;
+    }
+  }
