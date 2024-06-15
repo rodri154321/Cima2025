@@ -130,7 +130,7 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
           return 'monto actualizado';
         
       } catch (error) {
-        throw Error('Error al agregar experimenta:', error);
+        throw Error('Error al modificar monto:', error);
       }
       }
 
