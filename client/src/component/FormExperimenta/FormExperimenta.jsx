@@ -23,9 +23,9 @@ function FormExperimenta() {
         if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
             setForm({ ...form, emailGoogle: emailGoogle })
         } else {
-            navigate('/formexperimenta')
+            navigate('/dashboardexperimenta')
         }
-    }, []);
+    }, [navigate]);
 
 const handleChange = (event) => {
     const { name, value, type, checked } = event.target;

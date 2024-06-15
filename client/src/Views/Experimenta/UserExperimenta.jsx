@@ -14,7 +14,6 @@ function UserExperimenta() {
     const userObject = JSON.parse(userString);
 
     useEffect(() => {
-        console.log(userObject);
         if (userObject) {
             setInfoUser(userObject);
         } else navigate('/inscripciones')
