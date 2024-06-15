@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss'
 import style from "./FormExperimenta.module.css"
@@ -169,7 +169,9 @@ return (
 
             <div className={style.divForm}>
                 <label>
+                    <Link to={"/infoimportanteexperimenta"} target="_blank" rel="noopener noreferrer">
                     Acepto los términos y condiciones
+                    </Link>
                 </label>
                 <input
                     type="checkbox"
