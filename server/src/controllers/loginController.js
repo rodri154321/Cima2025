@@ -84,8 +84,61 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
   }
   }
 
+  const addExperimenta = async (emailGoogle,experimenta,otroExperimenta,añoOtroExperimenta) => {
+      
+    try {
+      const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
+      if (!exist) {
+        // No se encontró ningún usuario con el correo electrónico dado
+        throw Error('Ocurrio un error intente mas tarde');
+      }
+        await users.update({
+          experimenta: experimenta,
+          otroExperimenta: otroExperimenta,
+          añoOtroExperimenta: añoOtroExperimenta
+        },
+          {
+            where: {
+              id: exist.dataValues.id,
+            },
+          },
+        );
+        return 'Preinscripto en experimenta!!';
+      
+    } catch (error) {
+      throw Error('Error al agregar experimenta:', error);
+    }
+    }
+
+    const updateMonto = async ( id, montoPagado) => {
+      
+      try {
+        const exist = await users.findOne({ where: { id: id } });
+        if (!exist) {
+          // No se encontró ningún usuario con el correo electrónico dado
+          throw Error('Ocurrio un error intente mas tarde');
+        }
+        if (!exist.dataValues.preinscripto) {
+          await users.update({
+            montoPagado: montoPagado
+          },
+            {
+              where: {
+                id: exist.dataValues.id,
+              },
+            },
+          );
+          return 'monto actualizado';
+        }
+        else throw Error('Ocurrio un error intente mas tarde');
+        
+      } catch (error) {
+        throw Error('Error al agregar experimenta:', error);
+      }
+      }
+
 module.exports = {
-    postLogin, addInfoUser, postRegisterUser
+    postLogin, addInfoUser, postRegisterUser,addExperimenta,updateMonto
   }
 
 

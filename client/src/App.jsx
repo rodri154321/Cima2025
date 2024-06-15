@@ -12,6 +12,8 @@ import { useEffect, useState } from 'react';
 import PregFrecuentes from './Views/PregFrecuentes/PregFrecuentes';
 import Experimenta from './Views/Experimenta/Experimenta';
 import UserExperimenta from './Views/Experimenta/UserExperimenta';
+import InfoImportanteExperimenta from './Views/Experimenta/InfoImportanteExperimenta';
+import FormExperimenta from './component/FormExperimenta/FormExperimenta';
 
 
 
@@ -38,6 +40,8 @@ function App() {
             <Route path='/preguntasfrecuentes' element={<PregFrecuentes/>}/>
             <Route path='/infoexperimenta' element={<Experimenta/>}/>
             <Route path='/dashboardexperimenta' element={<UserExperimenta/>}/>
+            <Route path='/infoimportanteexperimenta' element={<InfoImportanteExperimenta/>}/>
+            <Route path='/formexperimenta' element={<FormExperimenta/>}/>
          </Routes>
     </div>
   )
