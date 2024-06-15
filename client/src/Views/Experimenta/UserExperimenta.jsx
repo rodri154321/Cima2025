@@ -21,13 +21,13 @@ function UserExperimenta() {
 
 
     const handlerAcces = () => {
-        // if (userObject.montoPagado == null) {
-        if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
+        if (userObject.experimenta == null) {
+        // if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
             navigate('/formexperimenta')
         } else {
             Swal.fire({
                 title: "Ups...",
-                text: "Debes haber pagado la seña/adelanto de descubre para poder inscribirte aquí",
+                text: "ya estas inscripto en otra práctica",
                 icon: "info",
                 customClass: {
                     confirmButton: style.confirmButton
