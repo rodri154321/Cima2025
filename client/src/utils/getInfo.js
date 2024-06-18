@@ -9,7 +9,6 @@ const infoAct = async (emailGoogle) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(emailGoogle),
         });
         if(response.ok){
             const data = await response.json();
