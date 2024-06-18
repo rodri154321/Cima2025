@@ -10,14 +10,18 @@ const getAllUsersHandler = async (req, res) => {
 }
 
 const getUserEmailHandler = async (req, res) => {
-    const { emailGoogle } = req.method === 'GET' ? req.body : req.body;
     try {
+        const emailGoogle = req.query.emailGoogle;
+        
+        if (!emailGoogle) {
+            return res.status(400).json({ error: 'Falta el parámetro emailGoogle' });
+        }
         const isAuthenticated = await findUserEmail(emailGoogle);
         if (isAuthenticated) {
             res.status(200).json(isAuthenticated);
         } 
     } catch (error) {
-        res.status(401).json({ authenticated: false, error: error.message });
+        res.status(404).json({ authenticated: false, error: error.message });
     }
 };
 
