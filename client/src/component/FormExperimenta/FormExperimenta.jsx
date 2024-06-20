@@ -75,7 +75,7 @@ function FormExperimenta() {
 
             // Manejar la respuesta del servidor
             if (response.ok) {
-                await getInfo.infoAct(emailGoogle);
+                const infonew = await getInfo.infoAct(emailGoogle);
                 const result = await response.json();
                 console.log('Respuesta del servidor:', result);
                 navigate('/dashboardexperimenta');
@@ -135,15 +135,17 @@ function FormExperimenta() {
                         onChange={handleChange}
                         required
                     >
+                        {/* Agrega las opciones aquí
+                        cerradas: 
+                        <option value="Kenia">Kenia</option> */}
                         <option value="" disabled>Elige una opción</option>
-                        {/* Agrega las opciones aquí */}
                         <option value="Tailandia">Tailandia</option>
                         <option value="Turquía">Turquía</option>
                         <option value="Albania">Albania</option>
                         <option value="España">España</option>
                         <option value="Macedonia">Macedonia</option>
                         <option value="Senegal">Senegal</option>
-                        <option value="Kenia">Kenia</option>
+                        
                     </select>
                 </div>
 
