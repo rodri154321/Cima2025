@@ -88,7 +88,7 @@
 }
 
 
-.botonFlotante{
+.botonFlotante {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -96,7 +96,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .botonFlotante{
+  .botonFlotante {
     width: 60%;
   }
 }
@@ -363,19 +363,20 @@
 
 .divoptexto {
   width: 50%;
-  margin-left: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .divopfotos {
   width: 50%;
-  height: 400px;
-  margin-right: 5%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
 }
 
 
 .textoOper {
-  margin-left: 2%;
-  width: 90%;
+  width: 80%;
 }
 
 .imgCarucel {
@@ -402,18 +403,19 @@
 
 .divPpPtexto {
   width: 50%;
-  margin-left: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .textoProg {
-  margin-left: 2%;
   width: 90%;
 }
 
 .CaruselPpP {
   width: 50%;
-  height: 50%;
-  margin-left: 5%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -424,8 +426,8 @@
 
   .divopfotos {
     margin-top: 5%;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 35vh;
     margin-right: 0%;
   }
 
@@ -435,29 +437,26 @@
 
   .textoOper {
     margin-top: 10%;
-    width: 100%;
+    width: 90%;
   }
 
 
   .textoProg {
-    margin-left: 0%;
     margin-top: 5%;
   }
 
   .CaruselPpP {
     margin-top: 10%;
-    width: 90%;
-    height: auto;
-    margin-left: 0%;
+    width: 100%;
+    height: 40vh;
   }
 
   .divoptexto {
-    width: 80%;
-    margin-left: 0%;
+    width: 100%;
   }
 
   .divPpPtexto {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -516,72 +515,84 @@
   top: 72%;
   left: 31%;
 }
+
 .pointPar {
   position: absolute;
   width: 2.5%;
   top: 72%;
   left: 33.5%;
 }
+
 .pointUru {
   position: absolute;
   width: 2.5%;
   top: 74%;
   left: 36%;
 }
+
 .pointBra {
   position: absolute;
   width: 2.5%;
   top: 66%;
   left: 36%;
 }
+
 .pointEcu {
   position: absolute;
   width: 2.5%;
   top: 63%;
   left: 27%;
 }
+
 .pointCol {
   position: absolute;
   width: 2.5%;
   top: 57%;
   left: 28.5%;
 }
+
 .pointKen {
   position: absolute;
   width: 2.5%;
   top: 64%;
   left: 53.5%;
 }
+
 .pointSen {
   position: absolute;
   width: 2.5%;
   top: 54%;
   left: 41%;
 }
+
 .pointEsp {
   position: absolute;
   width: 2.5%;
   top: 40%;
   left: 43.5%;
 }
+
 .pointAlb {
   position: absolute;
   width: 2%;
   top: 41%;
   left: 49%;
 }
+
 .pointMac {
   position: absolute;
   width: 2%;
   top: 40%;
   left: 50%;
 }
+
 .pointTur {
   position: absolute;
   width: 2.5%;
   top: 41%;
   left: 52%;
 }
+
 .pointTai {
   position: absolute;
   width: 2.5%;
@@ -596,16 +607,16 @@
 
 /*modal experimenta*/
 
-.modal{
+.modal {
   position: absolute;
   width: 100%;
 }
 
-.modalContenido{
+.modalContenido {
   width: 100%;
 }
 
-.imagenGrande{
+.imagenGrande {
   width: 50%;
   margin-top: 12%;
   margin-left: 24%;
@@ -646,7 +657,7 @@
   margin-left: -2%;
 }
 
-.botonMasInfoExpe{
+.botonMasInfoExpe {
   width: 50%;
   margin-top: 5%;
   margin-left: 27%;
@@ -671,77 +682,89 @@
     width: 3%;
     left: 26%;
   }
-  
+
   .pointChi {
     width: 3%;
     left: 23%;
   }
-  
+
   .pointPer {
     width: 3%;
     left: 21%;
   }
-  
+
   .pointBol {
     width: 3%;
     left: 24%;
   }
+
   .pointPar {
     width: 3%;
     left: 27%;
   }
+
   .pointUru {
     width: 3%;
     left: 30%;
   }
+
   .pointBra {
     width: 3%;
     left: 30%;
   }
+
   .pointEcu {
     width: 3%;
     left: 19%;
   }
+
   .pointCol {
     width: 3%;
     left: 20%;
   }
+
   .pointKen {
     width: 3%;
     left: 54%;
   }
+
   .pointSen {
     width: 3%;
     left: 38%;
   }
+
   .pointEsp {
     width: 3%;
     left: 41%;
   }
+
   .pointAlb {
     left: 50%;
   }
+
   .pointMac {
     left: 51%;
   }
+
   .pointTur {
     width: 3%;
     left: 53%;
   }
+
   .pointTai {
     width: 3%;
     left: 75%;
   }
-  
 
-  .imagenGrande{
+
+  .imagenGrande {
     width: 70%;
     margin-top: 12%;
     margin-left: 16%;
   }
 }
 
-.preguntasFrecuentes{
+.preguntasFrecuentes {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -749,7 +772,8 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.preguntasFrecuentes{
+
+.preguntasFrecuentes {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -757,19 +781,21 @@
   margin-bottom: 3%;
 }
 
-.pfTitulo{
+.pfTitulo {
   width: 70%;
   margin-top: 5%;
 }
-.pfCuadros{
+
+.pfCuadros {
   width: 70%;
   margin-top: 2%;
 }
 
-.botonPF{
+.botonPF {
   margin-top: 3%;
 }
-.contBoton{
+
+.contBoton {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -777,13 +803,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .pfCuadros{
-      width: 100%;
-      margin-top: 2%;
-      margin-bottom: 7%;
+  .pfCuadros {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 7%;
   }
-  .botonPF{
-      width: 50%;
+
+  .botonPF {
+    width: 50%;
   }
 }
 

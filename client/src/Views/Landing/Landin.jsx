@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -292,27 +292,13 @@ const Landin = () => {
 
 
             <div className={style.CaruselPpP}>
-              <Carousel showStatus={false}
-                showIndicators={false} showThumbs={false} centerMode centerSlidePercentage={60} swipeable={true} autoPlay >
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/7L51XZXh/CIMA-2024-101.jpg" alt="" />
-                </div>
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/5tDBrWk3/CIMA-2024-102.jpg" alt="" />
-                </div>
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/c1RRFj7R/CIMA-2024-103.jpg" alt="" />
-                </div>
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/J0Lb1c8H/CIMA-2024-104.jpg" alt="" />
-                </div>
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/d3jGDkQH/CIMA-2024-105.jpg" alt="" />
-                </div>
-                <div>
-                  <img className={style.imgCarucel} src="https://i.postimg.cc/xCHvDpwS/CIMA-2024-106.jpg" alt="" />
-                </div>
-              </Carousel>
+            <ReactPlayer
+                url='https://youtu.be/e4RREtvP7ro'
+                width={'60%'}
+                height={'100%'}
+                controls
+                origin="https://www.youtube.com"
+              />
             </div>
             <div className={style.divPpPtexto}>
               <motion.img
