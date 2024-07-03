@@ -31,8 +31,8 @@ function App() {
       {/* {pathname !== '/' ? <NavBar/> : ""} */}
       <Routes>
             <Route path='/' element={<Landing/>}/>
-            <Route path='/inscripciones' element={<Inscripciones/>}/>
-            <Route path='/newinscripciones' element={<NewInscripciones/>}/>
+            <Route path='/newinscripciones' element={<Inscripciones/>}/>
+            <Route path='/inscripciones' element={<NewInscripciones/>}/>
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
