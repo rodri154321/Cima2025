@@ -292,7 +292,7 @@ const Landin = () => {
 
 
             <div className={style.CaruselPpP}>
-            <ReactPlayer
+              <ReactPlayer
                 url='https://youtu.be/e4RREtvP7ro'
                 width={'60%'}
                 height={'100%'}
@@ -612,10 +612,9 @@ const Landin = () => {
         </div>
       </div>
 
-
-      <Link to='/inscripciones'>
+      <a href="/inscripciones">
         <img className={style.botonFlotante} src="https://i.postimg.cc/Dz0P9Cr1/Recurso-1stikie.png" alt="" />
-      </Link>
+      </a>
 
     </>
   );
