@@ -504,7 +504,7 @@ const Landin = () => {
           <div className={style.videoIns}>
             <ReactPlayer
               className={style.reactPlayer}
-              url='https://www.youtube.com/watch?v=VY3yaF56A9A&t=4s'
+              url='https://youtu.be/P8ilm-t6Fl8'
               width={'100%'}
               height={'100%'}
               controls

@@ -14,6 +14,7 @@ import Experimenta from './Views/Experimenta/Experimenta';
 import UserExperimenta from './Views/Experimenta/UserExperimenta';
 import InfoImportanteExperimenta from './Views/Experimenta/InfoImportanteExperimenta';
 import FormExperimenta from './component/FormExperimenta/FormExperimenta';
+import NewInscripciones from './Views/Inscripciones/NewInscripciones';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Routes>
             <Route path='/' element={<Landing/>}/>
             <Route path='/inscripciones' element={<Inscripciones/>}/>
+            <Route path='/newinscripciones' element={<NewInscripciones/>}/>
             <Route path='/login' element={<Googlelogin/>}/>
             <Route path='/register' element={<Googleregister/>}/>
             <Route path='/user' element={<UserSection/>}/>
