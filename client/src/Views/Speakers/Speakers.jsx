@@ -1,5 +1,7 @@
 import React from 'react'
 import style from "./Speakers.module.css"
+import oradores from "../../utils/datosOradores"
+import cardSpeakers from "../../component/cardOrador/card_Speakers"
 
 function Speakers() {
   return (
@@ -14,17 +16,11 @@ function Speakers() {
       </div>
 
       <div className={style.cards_speaker}>
-        <article  className={style.card_speaker}>
-          <div className={style.presentaction_speaker}>
-            <h1 className={style.name_speaker}>Samuel<br /> Nielsen</h1>
-            <img src="https://i.postimg.cc/13SmScXJ/image.png" alt="bandera" className={style.flag} />
-            <img src="https://i.postimg.cc/2SGH6rkg/Black-Teal-Modern-Shooting-Casting-Poster-1080-x-1350-px-1.png" alt="perfil_orador" />
+        {oradores.map((orador, index) => (
+          <div key={index} className={style.orador_card}>
+            {cardSpeakers(orador.nombre, orador.descripcion, orador.ministerio)}
           </div>
-          <div className={style.description_speaker}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa maiores ipsam quidem obcaecati. Repellat veniam aliquam atque itaque ex, impedit nulla qui aliquid! Ipsa vel dolore eligendi minus nostrum.</p>
-          </div>
-
-        </article>
+        ))}
       </div>
     </div>
   )

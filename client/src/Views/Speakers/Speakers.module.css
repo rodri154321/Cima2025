@@ -13,50 +13,6 @@
     border-radius: 1rem;
     z-index: 3;
 }
-/*//////CARD/////*/
-.cards_speaker{
-    width: 100%;
-    border: 1px solid blue;
-    min-height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.presentaction_speaker{
-    position: relative;
-    background-color: #0b795f;
-    min-height: 200px;
-    min-width: 350px;
-    border-radius: 1.5em;
-}
-
-.card_speaker{
-    max-width: 25%;
-}
-
-.presentaction_speaker img{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-right: 10%;
-}
-.flag{
-    position: absolute;
-    top:10%;
-    width: 13%;
-    
-}
-
-.name_speaker{
-    position: absolute;
-    color: aliceblue;
-    left: 15%;
-    top: 10%;
-    font-size: 1.8rem;
-}
-.description_speaker{
-    min-width: 350px;
-}
 .detalle_fondo1{
     position: absolute;
     left: 5%;
@@ -70,4 +26,17 @@
     right: 0;
     width: 25%;
     margin-top: 25rem;
+}
+
+.cards_speaker{
+    width: 100%;
+    border: 1px solid blue;
+    min-height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.orador_card{
+    width: 20%;
+    padding:20px 0px 0px 1px;
 }

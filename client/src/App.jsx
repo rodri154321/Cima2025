@@ -44,7 +44,7 @@ function App() {
             <Route path='/dashboardexperimenta' element={<UserExperimenta/>}/>
             <Route path='/infoimportanteexperimenta' element={<InfoImportanteExperimenta/>}/>
             <Route path='/formexperimenta' element={<FormExperimenta/>}/>
-            <Route path='/speakers' element={<Speakers/>}/>
+            <Route path='/oradores' element={<Speakers/>}/>
          </Routes>
     </div>
   )
