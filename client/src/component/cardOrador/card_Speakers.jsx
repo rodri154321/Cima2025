@@ -16,7 +16,7 @@ function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad) 
   } else if (nacionalidad === "Mexico") {
     urlBandera = "https://i.postimg.cc/4NYg8c15/mexico.png"
   } else if (nacionalidad === "Finlandia") {
-    urlBandera = "https://i.postimg.cc/wTndnBfd/finlandia.png"
+    urlBandera = "https://i.postimg.cc/3JLghdzW/finlandia.png"
   } else if (nacionalidad === "Alemania") {
     urlBandera = "https://i.postimg.cc/g2RPpPQL/alemania.png"
   } else if (nacionalidad === "Brazil") {
@@ -27,13 +27,15 @@ function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad) 
     urlBandera = "https://i.postimg.cc/gJc93LJ3/colombia.png"
   } else if (nacionalidad === "Uruguay") {
     urlBandera = "https://i.postimg.cc/0jrLBg7Q/uruguay.png"
+  } else if (nacionalidad === "Filipina") {
+    urlBandera = "https://i.postimg.cc/j2SL3hxc/Pngtree-vector-realistic-illustration-of-philippines-8650382.png"
   }
   return (
 
     <article className={style.card_speaker}>
       <div className={style.presentaction_speaker}>
         <h1 className={style.name_speaker}>{nombre}<br />{apellido}</h1>
-        <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad}/>
+        <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad} />
         <img src="https://i.postimg.cc/2SGH6rkg/Black-Teal-Modern-Shooting-Casting-Poster-1080-x-1350-px-1.png" alt="perfil_orador" />
       </div>
       <h3>{ministerio}</h3>

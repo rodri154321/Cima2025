@@ -24,11 +24,14 @@ function Speakers() {
   );
   return (
     <div className={style.container_speakers}>
+      <div className={style.cont_bann}>
       <img src="https://i.postimg.cc/sfH5Hxnn/Recurso-24.png" alt="detalle_fondo" className={style.detalle_fondo1} />
       <img src="https://i.postimg.cc/jSPNjXR9/Recurso-25.png" alt="detalle_fondo" className={style.detalle_fondo2} />
- 
-
       <img className={style.banner_sup} src="https://i.postimg.cc/7L1gKNc7/banner-oradores.png" alt="Inscripciones" />
+      </div>
+      <div className={style.cont_bann_resp}>
+        <img className={style.banner_sup_resp} src="https://i.postimg.cc/tTmr72Mn/responsive-oradores.png" alt="Inscripciones" />
+      </div>
       <div className={style.title_speaker}>
         <h3 >Oradores 2025</h3>
         <h4>Cumple tu destino</h4>

@@ -86,7 +86,7 @@ const oradoresCristianos = [
     {
         nombre: "Pedro",
         apellido:"Pinto ",
-        nacionalidad: "peru",
+        nacionalidad: "Peru",
         ministerio:"LAC Regional Strategy Leader del Jesus Film Project.",
         descripcion:"Más de 24 años sirviendo como misionero en Cru. Forma parte del equipo Global de Jesus Film Project. LAC Regional Strategy Leader. Apasionado por llevar el evangelio a las brechas misionales. Casado con Jorgelina, sus hijos Mateo y Jeremías"
     },

@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.cont_bann_resp {
+    display: none;
+}
+
 .banner_sup {
     width: 100%;
     min-height: 50%;
@@ -35,11 +39,12 @@
     height: 100px;
 }
 
-.detalle_fondo4{
+.detalle_fondo4 {
     position: absolute;
-   left: 0;
+    left: 0;
     height: 150px
 }
+
 .cards_speaker {
     width: 100%;
     margin-bottom: 5%;
@@ -75,7 +80,7 @@
 }
 
 .orador_card {
-    width: 250px;
+    width: 24%;
     padding: 20px 0px 0px 1px;
 }
 
@@ -107,4 +112,42 @@
     justify-content: space-around;
     margin-inline: 5%;
     padding: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .cont_bann {
+        display: none;
+    }
+
+    .cont_bann_resp {
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    .orador_card {
+        width: 40%;
+        margin: 0px auto;
+    }
+    .detalle_fondo1 {
+      display: none;
+    }
+    
+    .detalle_fondo2 {
+        display: none;
+    }
+    
+    .detalle_fondo3 {
+        position: absolute;
+        right: 70px;
+        height: 100px;
+        top: 150px;
+    }
+    
+    .detalle_fondo4{
+        display: none;
+    }
+
+    .title_speaker{
+        display: none;
+    }
 }
