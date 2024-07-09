@@ -40,7 +40,7 @@ function Speakers() {
       <div className={style.cards_speaker}>
         {oradoresPaginados.map((orador, index) => (
           <div key={index} className={style.orador_card}>
-            {cardSpeakers(orador.nombre,orador.apellido, orador.descripcion, orador.ministerio,orador.nacionalidad)}
+            {cardSpeakers(orador.nombre,orador.apellido, orador.descripcion, orador.ministerio,orador.nacionalidad,index)}
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@
 }
 
 .card_speaker {
-    background-color: rgba(194, 202, 202, 0.205);
+    /* background-color: rgba(194, 202, 202, 0.205); */
     min-width: 100%;
     border-radius: 1.5em;
     min-height: 450px;
@@ -13,8 +13,6 @@
 
 .presentaction_speaker {
     position: relative;
-    background: #64B272;
-    ;
     min-height: 157px;
     border-radius: 1.5em;
 }
@@ -64,15 +62,16 @@ h3 {
 }
 
 .description_speaker {
-    min-width: 200px;
+    min-width: 100px;
 }
 
 .description_speaker p {
     font-size: 1.2rem;
     font-family: "Open Sans";
     text-align: left;
-    width: 90%;
+    min-width: 100px;;
     margin: auto;
+    min-height: 150px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -84,5 +83,8 @@ h3 {
     }
     .description_speaker p {
         font-size: 0.8rem;
+    }
+    .flag{
+        width: 20%;
     }
 }

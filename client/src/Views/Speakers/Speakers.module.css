@@ -9,6 +9,7 @@
 
 .cont_bann_resp {
     display: none;
+ 
 }
 
 .banner_sup {
@@ -122,6 +123,10 @@
     .cont_bann_resp {
         display: flex;
         margin-bottom: 10%;
+        width: 80%;
+    }
+    .banner_sup_resp{
+        width: 100%;
     }
 
     .orador_card {
@@ -138,9 +143,9 @@
     
     .detalle_fondo3 {
         position: absolute;
-        right: 70px;
+        right:7%;
         height: 100px;
-        top: 150px;
+        top: 25%;
     }
     
     .detalle_fondo4{

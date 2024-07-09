@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./card_Speakers.module.css"
 
-function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad) {
+function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad,index) {
   let urlBandera = "";
   if (nacionalidad === "Argentina") {
     urlBandera = "https://i.postimg.cc/66zgxQQm/argentina.png"
@@ -33,7 +33,7 @@ function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad) 
   return (
 
     <article className={style.card_speaker}>
-      <div className={style.presentaction_speaker}>
+      <div className={style.presentaction_speaker} style={{ background: getBackgroundColor(index) }}>
         <h1 className={style.name_speaker}>{nombre}<br />{apellido}</h1>
         <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad} />
         <img src="https://i.postimg.cc/2SGH6rkg/Black-Teal-Modern-Shooting-Casting-Poster-1080-x-1350-px-1.png" alt="perfil_orador" />
@@ -46,5 +46,10 @@ function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad) 
 
   )
 }
+const getBackgroundColor = (index) => {
+  const colors = ['#018066', '#64B272', '#DE9204', '#0182AB'];
+  const colorIndex = index % colors.length;
+  return colors[colorIndex];
+};
 
 export default card_Speakers
