@@ -201,6 +201,10 @@ module.exports = (sequelize) => {
             type: DataTypes.DATE,
             allowNull: true
         },
+        altaExperimenta:{
+            type: DataTypes.DATE,
+            allowNull: true
+        },
     }, 
     );
 }; 

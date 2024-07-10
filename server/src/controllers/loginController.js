@@ -95,7 +95,8 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
         await users.update({
           experimenta: experimenta,
           otroExperimenta: otroExperimenta,
-          añoOtroExperimenta: añoOtroExperimenta
+          añoOtroExperimenta: añoOtroExperimenta,
+          altaExperimenta:new Date()
         },
           {
             where: {
