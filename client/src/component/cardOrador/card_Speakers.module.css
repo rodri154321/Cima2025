@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'MADE Dillan';
+    src: url('../../../public/fuentes/MADE-Dillan.otf') format('opentype');
+    /* Agrega otros formatos de fuente aquí si es necesario */
+}
+
+.foto{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    border-radius: 2.5em;
+}
+
+.card_speaker {
+    /* background-color: rgba(194, 202, 202, 0.205); */
+    min-width: 100%;
+    border-radius: 1.5em;
+    min-height: 450px;
+    
+}
+
+.presentaction_speaker {
+    position: relative;
+    min-height: 157px;
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.presentaction_speaker h1 {
+    color: #FEFFFA;
+    font-family: 'MADE Dillan', sans-serif;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+
+
+.presentaction_speaker img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 10%;
+}
+
+.flag {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 13%;
+}
+
+.name_speaker {
+    position: absolute;
+    color: aliceblue;
+    left: 7%;
+    top: 30%;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    color: #000;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    width: 90%;
+    margin: auto;
+    padding-block: 5%;
+}
+
+.description_speaker {
+    min-width: 100px;
+}
+
+.description_speaker p {
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    text-align: left;
+    min-width: 100px;;
+    margin: auto;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    .presentaction_speaker h1 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .description_speaker p {
+        font-size: 0.8rem;
+    }
+    .flag{
+        width: 20%;
+    }
+    .name_speaker {
+        left: 7%;
+        top: 55%;
+    }
+    .foto{
+        width: 70%;
+        left: 20%;
+        top:8%;
+        border-radius: 2.5em;
+    }
+}

@@ -1,0 +1,162 @@
+.container_speakers {
+    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
+    background-size: contain;
+    margin: 10% 0px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont_bann_resp {
+    display: none;
+
+}
+
+.banner_sup {
+    width: 100%;
+    min-height: 50%;
+    border-radius: 1rem;
+    z-index: 3;
+}
+
+.detalle_fondo1 {
+    position: absolute;
+    left: 5%;
+    width: 13%;
+    top: 10%;
+}
+
+
+.detalle_fondo2 {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    margin-top: 25rem;
+}
+
+.detalle_fondo3 {
+    position: absolute;
+    right: 100px;
+    height: 100px;
+}
+
+.detalle_fondo4 {
+    position: absolute;
+    left: 0;
+    height: 150px
+}
+
+.cards_speaker {
+    width: 100%;
+    margin-bottom: 5%;
+    min-height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title_speaker {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.title_speaker h3 {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.title_speaker h4 {
+    color: var(--Object-Black-60, rgba(27, 27, 27, 0.60));
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.orador_card {
+    width: 24%;
+    padding: 20px 0px 0px 1px;
+}
+
+.container_btn {
+    display: flex;
+    height: 40px;
+    margin: 0;
+    background: none;
+}
+
+.container_btn button {
+    height: 40px;
+    background: none;
+    color: gray;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.container_btn button:active {
+    border-color: rgb(7, 231, 127);
+}
+
+.container_btn button:hover {
+    border-color: rgb(7, 231, 127);
+}
+
+.container_pag_btn {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 5%;
+    padding: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .cont_bann {
+        display: none;
+    }
+
+    .cont_bann_resp {
+        display: flex;
+        margin-bottom: 10%;
+        width: 80%;
+    }
+
+    .banner_sup_resp {
+        width: 100%;
+    }
+
+    .orador_card {
+        width: 40%;
+        margin: 0px auto;
+    }
+
+    .detalle_fondo1 {
+        display: none;
+    }
+
+    .detalle_fondo2 {
+        display: none;
+    }
+
+    .detalle_fondo3 {
+        position: absolute;
+        right: 7%;
+        height: 100px;
+        top: 25%;
+    }
+
+    .detalle_fondo4 {
+        display: none;
+    }
+
+    .title_speaker {
+        display: none;
+    }
+}

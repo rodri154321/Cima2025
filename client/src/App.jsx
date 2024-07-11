@@ -15,7 +15,7 @@ import UserExperimenta from './Views/Experimenta/UserExperimenta';
 import InfoImportanteExperimenta from './Views/Experimenta/InfoImportanteExperimenta';
 import FormExperimenta from './component/FormExperimenta/FormExperimenta';
 import NewInscripciones from './Views/Inscripciones/NewInscripciones';
-
+import Speakers from './Views//Speakers/Speakers'
 
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
             <Route path='/dashboardexperimenta' element={<UserExperimenta/>}/>
             <Route path='/infoimportanteexperimenta' element={<InfoImportanteExperimenta/>}/>
             <Route path='/formexperimenta' element={<FormExperimenta/>}/>
+            <Route path='/oradores' element={<Speakers/>}/>
          </Routes>
     </div>
   )
