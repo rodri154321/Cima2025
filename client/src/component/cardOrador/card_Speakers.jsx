@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./card_Speakers.module.css"
 
-function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad,index) {
+function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacionalidad,index) {
   let urlBandera = "";
   if (nacionalidad === "Argentina") {
     urlBandera = "https://i.postimg.cc/66zgxQQm/argentina.png"
@@ -34,9 +34,9 @@ function card_Speakers(nombre, apellido, descripcion, ministerio, nacionalidad,i
 
     <article className={style.card_speaker}>
       <div className={style.presentaction_speaker} style={{ background: getBackgroundColor(index) }}>
-        <h1 className={style.name_speaker}>{nombre}<br />{apellido}</h1>
+        <h1 className={style.name_speaker}>{nombre}<br/>{apellido}</h1>
+        <img className={style.foto} src={foto} alt="perfil_orador" />
         <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad} />
-        <img src="https://i.postimg.cc/2SGH6rkg/Black-Teal-Modern-Shooting-Casting-Poster-1080-x-1350-px-1.png" alt="perfil_orador" />
       </div>
       <h3>{ministerio}</h3>
       <div className={style.description_speaker}>

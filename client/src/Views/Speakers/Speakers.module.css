@@ -1,4 +1,6 @@
 .container_speakers {
+    background-image: url('https://i.postimg.cc/ZqbJfBkd/Recurso-2fondo-Descubre.png');
+    background-size: contain;
     margin: 10% 0px;
     width: 80vw;
     display: flex;
@@ -9,7 +11,7 @@
 
 .cont_bann_resp {
     display: none;
- 
+
 }
 
 .banner_sup {
@@ -125,7 +127,8 @@
         margin-bottom: 10%;
         width: 80%;
     }
-    .banner_sup_resp{
+
+    .banner_sup_resp {
         width: 100%;
     }
 
@@ -133,26 +136,27 @@
         width: 40%;
         margin: 0px auto;
     }
+
     .detalle_fondo1 {
-      display: none;
-    }
-    
-    .detalle_fondo2 {
-        display: none;
-    }
-    
-    .detalle_fondo3 {
-        position: absolute;
-        right:7%;
-        height: 100px;
-        top: 25%;
-    }
-    
-    .detalle_fondo4{
         display: none;
     }
 
-    .title_speaker{
+    .detalle_fondo2 {
+        display: none;
+    }
+
+    .detalle_fondo3 {
+        position: absolute;
+        right: 7%;
+        height: 100px;
+        top: 25%;
+    }
+
+    .detalle_fondo4 {
+        display: none;
+    }
+
+    .title_speaker {
         display: none;
     }
 }

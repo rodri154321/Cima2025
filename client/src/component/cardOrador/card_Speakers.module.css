@@ -4,17 +4,27 @@
     /* Agrega otros formatos de fuente aquí si es necesario */
 }
 
+.foto{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    border-radius: 2.5em;
+}
+
 .card_speaker {
     /* background-color: rgba(194, 202, 202, 0.205); */
     min-width: 100%;
     border-radius: 1.5em;
     min-height: 450px;
+    
 }
 
 .presentaction_speaker {
     position: relative;
     min-height: 157px;
     border-radius: 1.5em;
+    overflow: hidden;
 }
 
 .presentaction_speaker h1 {
@@ -36,15 +46,15 @@
 .flag {
     position: absolute;
     top: 10%;
+    left: 8%;
     width: 13%;
-
 }
 
 .name_speaker {
     position: absolute;
     color: aliceblue;
-    left: 15%;
-    top: 10%;
+    left: 7%;
+    top: 30%;
     font-size: 1.8rem;
 }
 
@@ -86,5 +96,15 @@ h3 {
     }
     .flag{
         width: 20%;
+    }
+    .name_speaker {
+        left: 7%;
+        top: 55%;
+    }
+    .foto{
+        width: 70%;
+        left: 20%;
+        top:8%;
+        border-radius: 2.5em;
     }
 }

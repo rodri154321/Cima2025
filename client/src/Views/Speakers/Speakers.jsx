@@ -15,7 +15,7 @@ function Speakers() {
     setPaginaActual(paginaActual-1)
   }
   function pagSiguiente(){
-    if(paginaActual <4)
+    if(paginaActual <2)
     setPaginaActual(paginaActual+1)
   }
   const oradoresPaginados = oradores.slice(
@@ -40,7 +40,7 @@ function Speakers() {
       <div className={style.cards_speaker}>
         {oradoresPaginados.map((orador, index) => (
           <div key={index} className={style.orador_card}>
-            {cardSpeakers(orador.nombre,orador.apellido, orador.descripcion, orador.ministerio,orador.nacionalidad,index)}
+            {cardSpeakers(orador.foto,orador.nombre,orador.apellido, orador.descripcion, orador.ministerio,orador.nacionalidad,index)}
           </div>
         ))}
       </div>
@@ -51,8 +51,8 @@ function Speakers() {
         <div className={style.container_pag_btn}>
           <button onClick={() => setPaginaActual(1)}>1</button>
           <button onClick={() => setPaginaActual(2)}>2</button>
-          <button onClick={() => setPaginaActual(3)}>3</button>
-          <button onClick={() => setPaginaActual(4)}>4</button>
+          {/* <button onClick={() => setPaginaActual(3)}>3</button>
+          <button onClick={() => setPaginaActual(4)}>4</button> */}
         </div>
         <button onClick={pagSiguiente}>{">"}</button>
       </div>
