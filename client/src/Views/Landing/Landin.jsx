@@ -180,7 +180,13 @@ const Landin = () => {
               </div>
             ))}
           </div>
-
+          <a href='/oradores'>
+              <motion.img
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.botonOradores}
+                src="https://i.postimg.cc/Jh4QQ8qQ/Recurso-2-Boton-Experimenta.png" alt="Todos los Oradores" />
+            </a>
 
         </div>
 
