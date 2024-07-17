@@ -138,7 +138,7 @@ function FormExperimenta() {
                         {/* Agrega las opciones aquí
                         cerradas: 
                         <option value="Kenia">Kenia</option> */}
-                        {/* <option value="Senegal">Senegal</option> */}
+                        {/*  */}
                         
                         <option value="" disabled>Elige una opción</option>
                         <option value="Tailandia">Tailandia</option>
@@ -146,7 +146,7 @@ function FormExperimenta() {
                         <option value="Albania">Albania</option>
                         <option value="España">España</option>
                         <option value="Macedonia">Macedonia</option>
-                        
+                        <option value="Senegal">Senegal</option>
                     </select>
                 </div>
 
