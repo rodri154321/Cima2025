@@ -48,7 +48,7 @@ function RegistroFormulario() {
         esCeliaco: false,
         esVegetariano: false,
         Otra: false,
-        detalleAlimentacion: null,
+        detalleAlimentacion:"",
         participoCimaday: false,
         participoPrisma: false,
         participoEurovoluntariado: false,
