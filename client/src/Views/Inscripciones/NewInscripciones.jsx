@@ -76,7 +76,8 @@ const NewInscripciones = () => {
                     </div>
                     <div className={style.infoImoprtante}>
                         <h1 className={style.tituloII}>Precio programa de pastores</h1>
-                        <img className={style.fotoII} src="https://i.postimg.cc/3w7JRtCB/165-USDPreciopp.png" alt="165 usd" />
+                        <h2 className={style.descripcionII}>El precio del Programa para Pastores y Lideres es el mismo que para el resto de participantes de Cima2025</h2>
+                        {/* <img className={style.fotoII} src="https://i.postimg.cc/3w7JRtCB/165-USDPreciopp.png" alt="165 usd" /> */}
                     </div>
                 </div>
             </div>
