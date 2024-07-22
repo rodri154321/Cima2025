@@ -160,6 +160,12 @@ const useForm = (initialData, dataCountry) => {
             } else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
 
+            } else if (name === "detalleAlimentacion") {
+                setForm({ ...form, [name]: value });
+            } else if (name === "detalleMedicacion") {
+                setForm({ ...form, [name]: value });
+            } else if (name === "detalleAlergia") {
+                setForm({ ...form, [name]: value });
             } else {
                 setForm({ ...form, [name]: value });
             }

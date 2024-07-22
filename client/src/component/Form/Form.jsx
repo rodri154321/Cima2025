@@ -539,9 +539,7 @@ function RegistroFormulario() {
 
                 {form.Otra && (
                     <div className={style.inputGroup}>
-
                         <input
-                            className=''
                             type="text"
                             name="detalleAlimentacion "
                             id='detalleAlimentacion'
