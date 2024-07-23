@@ -25,7 +25,7 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
   sexo, nacionalidad, paisResidencia, provincia, ciudad, iglesia, pastor, telefonoPastor,
   esAlergico, detalleAlergia, tieneMedicacion, detalleMedicacion, telefono, telefonoEmergencia,
   nombreEmergencia, esDiabetico, esCeliaco, esVegetariano, detalleAlimentacion, participoCimaday,
-  participoPrisma, participoEurovoluntariado, participoCima, participoSigue, ocupacion, areaMinisterio) => {
+  participoPrisma, participoEurovoluntariado, participoCima, participoSigue,detalleSalud, ocupacion, areaMinisterio) => {
     
   try {
     const exist = await users.findOne({ where: { emailGoogle: emailGoogle } });
@@ -65,6 +65,7 @@ const addInfoUser = async (nombre, apellido, emailGoogle, email, fechaNacimiento
         participoEurovoluntariado: participoEurovoluntariado,
         participoCima: participoCima,
         participoSigue: participoSigue,
+        detalleSalud: detalleSalud,
         ocupacion, 
         areaMinisterio,
         fechaAlta: new Date()
