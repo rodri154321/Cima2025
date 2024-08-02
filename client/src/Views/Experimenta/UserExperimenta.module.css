@@ -193,9 +193,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .fondolin {
-        height: 100vh;;
-      }
+    
     .contenido{
         margin-top: -30%;
     }
