@@ -220,4 +220,7 @@
     .LinkContactos{
         width: 35%;
     }
+    .descripcion{
+        font-size: 0.2625rem;
+    }
   }
