@@ -54,6 +54,27 @@
     align-self: center;
 }
 
+.divTrans{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonesActiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonesPrac{
+    background-color: #e29400;
+    font-family: "Open Sans";
+    border: 2%;
+    margin: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
     .titulo{

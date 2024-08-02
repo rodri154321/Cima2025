@@ -22,7 +22,7 @@ function UserExperimenta() {
 
     const handlerAcces = () => {
         if (userObject.experimenta == null) {
-        // if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
+            // if (userObject.montoPagado && userObject.montoPagado > 0 && userObject.experimenta == null) {
             navigate('/formexperimenta')
         } else {
             Swal.fire({
@@ -48,10 +48,10 @@ function UserExperimenta() {
                         src='https://i.postimg.cc/MHGjnyFz/Recurso-7recursoclarito.png' alt='Cuadrados' />
 
                     <motion.img
-                        initial={{ scale: 0, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
+                        // initial={{ scale: 0, opacity: 0 }}
+                        // whileInView={{ scale: 1, opacity: 1 }}
                         className={style.recurso2}
-                        src='https://i.postimg.cc/xT532p5s/Recurso-1mapa.png' alt='Cuadrados' />
+                        src='https://i.postimg.cc/xT532p5s/Recurso-1mapa.png' alt='mapa' />
 
                     <motion.img
                         initial={{ scale: 0, opacity: 0 }}
@@ -65,20 +65,43 @@ function UserExperimenta() {
                         className={style.subTituloExp}
                         src='https://i.postimg.cc/nLLpm01j/Recurso-1-Experiencia.png' alt='50 Practicas' />
 
+                    <div className={style.subtitulo}>
+                        <h1 className={style.descripcion}>Es la oportunidad de poner en práctica lo aprendido en un viaje misionero de corto plazo. Podrás sumarte al trabajo de una iglesia o ministerio en Latinoamérica, África, Asia o Europa. ¡Tu profesión y habilidades pueden ser de mucha ayuda!
+                            Cada lugar tiene una duración de tiempo y costo distinto.
+                        </h1>
+                    </div>
+
                     <motion.img
                         initial={{ scale: 0, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         className={style.textoExp}
                         src='https://i.postimg.cc/B6VVzCDz/Recurso-1conoce.png' alt='Conocelas' />
 
-                    <Link to={"/infoexperimenta"} className={style.Link}>
-                        <motion.img
-                            initial={{ scale: 0, opacity: 0 }}
-                            whileInView={{ scale: 1, opacity: 1 }}
-                            whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
-                            className={style.botones}
-                            src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Conocelas Boton' />
-                    </Link>
+                    <div className={style.conocelas}>
+                        <div className={style.divInfoPrac}>
+                            <img className={style.nombreLink} src="https://i.postimg.cc/9XY57j2T/Transoceanicas.png" alt="" />
+                            <Link to={"/infoexperimenta"} className={style.Link}>
+                                <motion.img
+                                    initial={{ scale: 0, opacity: 0 }}
+                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
+                                    className={style.botones1}
+                                    src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Conocelas Boton' />
+                            </Link>
+                        </div>
+
+                        <div className={style.divInfoPrac}>
+                            <img className={style.nombreLink} src="https://i.postimg.cc/mkwvf7jV/Latinoamericanas.png" alt="" />
+                            <Link to={"https://bit.ly/ExperimentaCIMA2025"} className={style.Link}>
+                                <motion.img
+                                    initial={{ scale: 0, opacity: 0 }}
+                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
+                                    className={style.botones1}
+                                    src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Conocelas Boton' />
+                            </Link>
+                        </div>
+                    </div>
 
                     <motion.img
                         initial={{ scale: 0, opacity: 0 }}
@@ -95,19 +118,32 @@ function UserExperimenta() {
                             src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Info Boton' />
                     </Link>
 
-                    <motion.img
-                        initial={{ scale: 0, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        className={style.textoExp}
-                        src='https://i.postimg.cc/pyN1WXsY/Recurso-3inscribite.png' alt='Inscripcion' />
+                    {userObject.experimenta !== null ? (
+                        <div className={style.divIf}>
+                            <h2 className={style.textoYaInscriptoChico}>Ya estas anotado en: </h2>
+                            <h1 className={style.textoYaInscripto}> {userObject.experimenta} </h1>
+                        </div>
+                    )
+                        :
+                        (
+                            <div className={style.divIf}>
+                                <motion.img
+                                    initial={{ scale: 0, opacity: 0 }}
+                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    className={style.textoExpInscripcion}
+                                    src='https://i.postimg.cc/pyN1WXsY/Recurso-3inscribite.png' alt='Inscripcion' />
 
-                    <motion.img
-                        onClick={handlerAcces}
-                        initial={{ scale: 0, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
-                        className={style.botones}
-                        src='https://i.postimg.cc/Sj0c2XFR/Recurso-2-Ingresa-Aquinar.png' alt='Inscripcion Boton' />
+                                <motion.img
+                                    onClick={handlerAcces}
+                                    initial={{ scale: 0, opacity: 0 }}
+                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
+                                    className={style.botonesInscripcion}
+                                    src='https://i.postimg.cc/Sj0c2XFR/Recurso-2-Ingresa-Aquinar.png' alt='Inscripcion Boton' />
+                            </div>
+                        )
+                    }
+
                 </div>
 
                 <div className={style.divContactos}>

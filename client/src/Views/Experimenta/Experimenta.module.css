@@ -1,16 +1,23 @@
+@font-face {
+    font-family: 'MADE Dillan';
+    src: url('../../../public/fuentes/MADE-Dillan.otf') format('opentype');
+    /* Agrega otros formatos de fuente aquí si es necesario */
+}
+
 .general{
     height: 100%;
     background-color: #018166;
 }
 
 .fondolin {
-    
-    background-color: #018166;
+    background-color: #005b7b;
     background-size: contain;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
-    position: relative;
+    height: 100%;
 }
 
 .fondo {
@@ -18,15 +25,48 @@
 }
 
 .titulo {
-    position: absolute;
     width: 50%;
-    top: 6%
+    margin-top: 3%;
+}
+
+.subtitulo{
+   margin-top: 2%;
+    width: 50%;
+    border: 3px solid #d49634;
+    border-radius: 1.97919rem;
+}
+
+.descripcion{
+    color: #FEFFFA;
+    font-family: "Open Sans";
+    font-size: 1.2625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.nomBand{
+    color: #d49634;
+    font-family: "Open Sans";
+    font-size: 1.2625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.divBanderas{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banderas {
+    margin-top: 3%;
     width: 90%;
-    position: absolute;
-    top: 25%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -34,7 +74,7 @@
 }
 
 .imgBanderas {
-    width: 10%;
+    width: 40%;
     
 }
 
@@ -42,8 +82,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 40%;
+    /* position: absolute;
+    top: 40%; */
 }
 
 .fondo2 {

@@ -7,7 +7,7 @@ import style from "./InfoExperimenta.module.css"
 const InfoExperimenta = ({ index }) => {
 
     const specificTrip = missionTrips[index];
-    console.log(specificTrip);
+    // console.log(specificTrip);
 
     if (!specificTrip) {
         return <p>Muy Pronto mas Practicas</p>;
