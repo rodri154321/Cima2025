@@ -217,6 +217,9 @@
         width: 35%;
     }
     .descripcion{
-        font-size: 0.2625rem;
+        font-size: 0.8625rem;
+    }
+    .divIf{
+        width: 70%;
     }
   }
