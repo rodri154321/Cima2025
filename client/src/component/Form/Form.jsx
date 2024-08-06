@@ -184,7 +184,7 @@ function RegistroFormulario() {
 
                 <div className={style.inputGroup}>
                     <select name="sexo" value={form.sexo} onChange={handleChange} required>
-                        <option selected >Selecciona un sexo:</option>
+                        <option  >Selecciona un sexo:</option>
                         <option value="masculino">masculino</option>
                         <option value="femenino">femenino</option>
                     </select>
