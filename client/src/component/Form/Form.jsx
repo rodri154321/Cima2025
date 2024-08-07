@@ -54,6 +54,8 @@ function RegistroFormulario() {
         participoEurovoluntariado: false,
         participoCima: false,
         participoSigue: false,
+        progPastor:false,
+        progGeneral:false,
 
     };
 
@@ -343,6 +345,46 @@ function RegistroFormulario() {
                     {errors.ocupacion && <div className={style.error}>{errors.ocupacion}</div>}
                 </div>
                 <br />
+                <img src="" alt="Programa" />
+                <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
+                        <input
+                         required
+                            type="checkbox"
+                            name="progPastor"
+                            id='progPastor'
+                            checked={form.progPastor}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="progPastor" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <p>Programa Pastores</p>
+                </div>
+                <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
+                        <input
+                        required
+                            type="checkbox"
+                            name="progGeneral"
+                            id='progGeneral'
+                            checked={form.progGeneral}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="progGeneral" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <p>Programa General</p>
+                </div>
+
 
                 <img className={style.saludTitulo} src="https://i.postimg.cc/LXs5CLRQ/Recurso-4salud.png" alt="Salud" />
 
