@@ -115,7 +115,7 @@ const oradoresCristianos = [
         nombre: "Sara y",
         apellido:"Emilio",
         nacionalidad: "Argentina",
-        ministerio: "Dos argentinos por el mundo",
+        ministerio: "Dos cristianos por el mundo",
         descripcion:"Sara y Emilio, un matrimonio que sirve a Dios a través de sus locuras (Arte). El ministerio se formó en 2019 con el objetivo de llevar el Evangelio a niños, jóvenes y adultos a través de payasos, títeres, magia, malabares, maquillaje, etc.",
         foto:"https://i.postimg.cc/hvhPJvsy/Ministerio-DCXM-removebg-preview.png"
     },
