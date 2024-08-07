@@ -478,7 +478,7 @@ const Landin = () => {
               whileInView={{ scale: 1, opacity: 1 }} className={style.transoceanicas}
               src="https://i.postimg.cc/sxnzy43R/Recurso-1transoceanicas.png" alt="Transoceanicas" />
 
-            <Link to='/infoexperimenta'>
+            <Link to={'https://bit.ly/ExperimentaCIMA2025'} target="_blank" rel="noopener noreferrer" >
               <motion.img
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}

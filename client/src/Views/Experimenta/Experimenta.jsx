@@ -60,7 +60,7 @@ const Experimenta = () => {
                         Cada lugar tiene una duración de tiempo y costo distinto.
                     </h1>
                 </div>
-                <h1 className={style.descripcion}>TOCA LA BANDERA PARA MASINFORMACIÓN</h1>
+                <h1 className={style.descripcion}>TOCA LA BANDERA PARA MÁS INFORMACIÓN</h1>
                 <div className={style.banderas}>
                     {banderasObj.map((url, index) => (
                         <div className={style.divBanderas}>
