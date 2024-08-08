@@ -162,12 +162,14 @@ const useForm = (initialData, dataCountry) => {
                     progPastor: checked,
                     progGeneral: !checked ? form.progGeneral : false
                 });
+                console.log(form.progPastor)
             } else if (name === "progGeneral") {
                 setForm({
                     ...form,
                     progGeneral: checked,
                     progPastor: !checked ? form.progPastor : false
                 });
+                console.log(form.progGeneral)
             } else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
 
