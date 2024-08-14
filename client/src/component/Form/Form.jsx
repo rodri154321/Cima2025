@@ -54,7 +54,7 @@ function RegistroFormulario() {
         participoEurovoluntariado: false,
         participoCima: false,
         participoSigue: false,
-        progPastor:false,
+        progPastor:false
 
     };
 
@@ -385,7 +385,7 @@ function RegistroFormulario() {
                         </label>
 
                     </div>
-                    <p>¿Sos alérgico/a algo?</p>
+                    <p>Soy alérgico/a a algo</p>
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>

@@ -205,6 +205,10 @@ module.exports = (sequelize) => {
             type: DataTypes.DATE,
             allowNull: true
         },
+        progPastor:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        }
     }, 
     );
 }; 
