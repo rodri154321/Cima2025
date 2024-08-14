@@ -91,9 +91,28 @@ function RegistroFormulario() {
         <div className={style.contenedorForm}>
             <img className={style.titulo} src="https://i.postimg.cc/nzT7MnVg/Recurso-1completa-Datod.png" alt="Completa tus Datos" />
             <form onSubmit={handleSubmit} className={style.Form}>
+            <p className={style.descPrograma}>Seleccione la siguiente casilla, si desea pertenecer al programa Pastores.</p>
+                <div className={style.cont_Checkbox}>
+                    <div className={style.checkbox}>
+                        <input
+                         required
+                            type="checkbox"
+                            name="progPastor"
+                            id='progPastor'
+                            checked={form.progPastor}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="progPastor" style={{ '--size': '30px' }}>
+                            <svg viewBox="0,0,50,50" className="checkbox-icon">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <p>Programa Pastores</p>
+                </div>
             <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
                 <div className={style.inputGroup}>
-
                     <input
                         type="text"
                         id="nombre"
@@ -343,46 +362,6 @@ function RegistroFormulario() {
                     {errors.ocupacion && <div className={style.error}>{errors.ocupacion}</div>}
                 </div>
                 <br />
-                <img src="" alt="Programa" />
-                <div className={style.cont_Checkbox}>
-                    <div className={style.checkbox}>
-                        <input
-                         required
-                            type="checkbox"
-                            name="progPastor"
-                            id='progPastor'
-                            checked={form.progPastor}
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="progPastor" style={{ '--size': '30px' }}>
-                            <svg viewBox="0,0,50,50" className="checkbox-icon">
-                                <path d="M5 30 L 20 45 L 45 5"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                    <p>Programa Pastores</p>
-                </div>
-                <div className={style.cont_Checkbox}>
-                    <div className={style.checkbox}>
-                        <input
-                        required
-                            type="checkbox"
-                            name="progGeneral"
-                            id='progGeneral'
-                            checked={form.progGeneral}
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="progGeneral" style={{ '--size': '30px' }}>
-                            <svg viewBox="0,0,50,50" className="checkbox-icon">
-                                <path d="M5 30 L 20 45 L 45 5"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                    <p>Programa General</p>
-                </div>
-
 
                 <img className={style.saludTitulo} src="https://i.postimg.cc/LXs5CLRQ/Recurso-4salud.png" alt="Salud" />
 
@@ -405,7 +384,7 @@ function RegistroFormulario() {
                         </label>
 
                     </div>
-                    <p>¿Sos alérgico/a algo?</p>
+                    <p>Soy alérgico/a a algo</p>
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>

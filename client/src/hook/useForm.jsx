@@ -157,20 +157,10 @@ const useForm = (initialData, dataCountry) => {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });
             }else if(name === "progPastor") {
-                setForm({
-                    ...form,
-                    progPastor: checked,
-                    progGeneral: !checked ? form.progGeneral : false
-                });
+                const isChecked = event.target.checked;
+                setForm({ ...form, [name]: isChecked ? true : false });
                 console.log(form.progPastor)
-            } else if (name === "progGeneral") {
-                setForm({
-                    ...form,
-                    progGeneral: checked,
-                    progPastor: !checked ? form.progPastor : false
-                });
-                console.log(form.progGeneral)
-            } else if (name === "fechaNacimiento") {
+            }  else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
 
             } else if (name === "detalleAlimentacion") {
