@@ -54,8 +54,7 @@ function RegistroFormulario() {
         participoEurovoluntariado: false,
         participoCima: false,
         participoSigue: false,
-        progPastor:false,
-        progGeneral:false,
+        progPastor:false
 
     };
 
