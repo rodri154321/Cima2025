@@ -55,7 +55,6 @@ function RegistroFormulario() {
         participoCima: false,
         participoSigue: false,
         progPastor:false
-
     };
 
 
@@ -582,7 +581,7 @@ function RegistroFormulario() {
                     <div className={style.inputGroup}>
                         <input
                             type="text"
-                            name="detalleAlimentacion "
+                            name="detalleAlimentacion"
                             id='detalleAlimentacion'
                             value={form.detalleAlimentacion}
                             onChange={handleChange}
