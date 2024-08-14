@@ -201,6 +201,14 @@ module.exports = (sequelize) => {
             type: DataTypes.DATE,
             allowNull: true
         },
+        altaExperimenta:{
+            type: DataTypes.DATE,
+            allowNull: true
+        },
+        progPastor:{
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        }
     }, 
     );
 }; 

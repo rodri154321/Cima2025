@@ -32,7 +32,7 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
   }
   return (
 
-    <article className={style.card_speaker}>
+    <article className={style.card_speaker} style={{ background: getBackgroundColor(index) }}>
       <div className={style.presentaction_speaker} style={{ background: getBackgroundColor(index) }}>
         <h1 className={style.name_speaker}>{nombre}<br/>{apellido}</h1>
         <img className={style.foto} src={foto} alt="perfil_orador" />

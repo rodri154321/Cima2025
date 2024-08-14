@@ -255,6 +255,11 @@
   margin-top: -9%;
 }
 
+.botonOradores {
+  width: 35%;
+  margin-left: 32%;
+}
+
 @media screen and (max-width: 768px) {
 
   .imagenesOradores {
@@ -264,6 +269,10 @@
 
   .imageneOradores {
     width: 100%;
+  }
+
+  .botonOradores {
+    margin-top: -5%;
   }
 
 }

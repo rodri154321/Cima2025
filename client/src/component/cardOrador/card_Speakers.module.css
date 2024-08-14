@@ -10,6 +10,10 @@
     position: absolute;
     left: 55%;
     border-radius: 2.5em;
+    mask-image: linear-gradient(
+        black 90%,
+        transparent
+    );
 }
 
 .card_speaker {
@@ -78,10 +82,11 @@ h3 {
 .description_speaker p {
     font-size: 1.2rem;
     font-family: "Open Sans";
-    text-align: left;
+    text-align: center;
     min-width: 100px;;
     margin: auto;
     min-height: 150px;
+
 }
 
 @media screen and (max-width: 1200px) {

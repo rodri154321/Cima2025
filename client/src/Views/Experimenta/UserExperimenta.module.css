@@ -1,3 +1,62 @@
+@font-face {
+    font-family: 'MADE Dillan';
+    src: url('../../../public/fuentes/MADE-Dillan.otf') format('opentype');
+    /* Agrega otros formatos de fuente aquí si es necesario */
+}
+
+.divIf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8%;
+    background-color: #005B7B;
+    border: 4px solid #d49634;
+    border-radius: 1.97919rem;
+}
+
+.subtitulo{
+    margin-top: 4%;
+     width: 50%;
+     border: 3px solid #d49634;
+     border-radius: 1.97919rem;
+ }
+ 
+ .descripcion{
+     color: #FEFFFA;
+     font-family: "Open Sans";
+     font-size: 1.2625rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: center;
+ }
+
+.textoYaInscripto{
+    font-family: 'MADE Dillan';
+    font-size: 2vw;
+    color: white;
+}
+
+.textoYaInscriptoChico{
+    font-family: 'MADE Dillan';
+    font-size: 3vw;
+    color: white;
+}
+
+.botonesInscripcion{
+    width: 90%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+}
+.textoExpInscripcion{
+    width: 90%;
+    margin-top: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .confirmButton {
     width: auto;
     height: auto;
@@ -81,7 +140,17 @@
     margin-top: 3%;
     overflow: hidden;
     z-index: 1;
+}
 
+.botones1{
+    width: 90%;
+    margin-top: 3%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nombreLink{
+   width: 100%;
 }
 
 .divContactos{
@@ -107,13 +176,25 @@
     width: 100%;
 }
 
+.conocelas{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.divInfoPrac{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
 @media screen and (max-width: 768px) {
-    .fondolin {
-        height: 100vh;;
-      }
-    .contenido{
-        margin-top: -30%;
-    }
+    
+    
     .recurso2{
         top:50%;
     }
@@ -134,5 +215,18 @@
     }
     .LinkContactos{
         width: 35%;
+    }
+    .descripcion{
+        font-size: 0.8625rem;
+    }
+    .divIf{
+        width: 70%;
+    }
+    .subtitulo{
+         width: 80%;
+     }
+
+     .conocelas{
+        width: 100%;
     }
   }

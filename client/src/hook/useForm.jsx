@@ -153,13 +153,32 @@ const useForm = (initialData, dataCountry) => {
                 //     //     setFilterProvinces(Prov)
                 //     // }
                 // }
-            }
-            else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === "participoCimaday" || name === "participoPrisma" || name === "participoEurovoluntariado" || name === "participoCima" || name === "participoSigue") {
+            }else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === "participoCimaday" || name === "participoPrisma" || name === "participoEurovoluntariado" || name === "participoCima" || name === "participoSigue") {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });
+            }else if(name === "progPastor") {
+                setForm({
+                    ...form,
+                    progPastor: checked,
+                    progGeneral: !checked ? form.progGeneral : false
+                });
+                console.log(form.progPastor)
+            } else if (name === "progGeneral") {
+                setForm({
+                    ...form,
+                    progGeneral: checked,
+                    progPastor: !checked ? form.progPastor : false
+                });
+                console.log(form.progGeneral)
             } else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
 
+            } else if (name === "detalleAlimentacion") {
+                setForm({ ...form, [name]: value });
+            } else if (name === "detalleMedicacion") {
+                setForm({ ...form, [name]: value });
+            } else if (name === "detalleAlergia") {
+                setForm({ ...form, [name]: value });
             } else {
                 setForm({ ...form, [name]: value });
             }
