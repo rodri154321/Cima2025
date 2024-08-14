@@ -92,8 +92,7 @@ function RegistroFormulario() {
         <div className={style.contenedorForm}>
             <img className={style.titulo} src="https://i.postimg.cc/nzT7MnVg/Recurso-1completa-Datod.png" alt="Completa tus Datos" />
             <form onSubmit={handleSubmit} className={style.Form}>
-            <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
-            <p className={style.descPrograma}>Seleccione la siguente casilla, si desea pertenecer al programa Pastores.</p>
+            <p className={style.descPrograma}>Seleccione la siguiente casilla, si desea pertenecer al programa Pastores.</p>
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
@@ -113,6 +112,7 @@ function RegistroFormulario() {
                     </div>
                     <p>Programa Pastores</p>
                 </div>
+            <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
                 <div className={style.inputGroup}>
                     <input
                         type="text"
