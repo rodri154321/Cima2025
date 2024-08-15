@@ -156,6 +156,16 @@ const useForm = (initialData, dataCountry) => {
             }else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === "participoCimaday" || name === "participoPrisma" || name === "participoEurovoluntariado" || name === "participoCima" || name === "participoSigue") {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });
+                if (name === "esAlergico" && !checked) {
+                    setForm({ ...form, ["detalleAlergia"]:"",[name]: isChecked ? true : false })
+                }
+                else if (name === "tieneMedicacion" && !checked) {
+                    setForm({ ...form, ["detalleMedicacion"]:"",[name]: isChecked ? true : false })  
+                }
+                else if (name === "Otra" && !checked) {
+                    setForm({ ...form, ["detalleAlimentacion"]:"",[name]: isChecked ? true : false }) 
+                }
+
             }else if(name === "progPastor") {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });

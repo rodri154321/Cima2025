@@ -388,7 +388,7 @@ function RegistroFormulario() {
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
-                        <label htmlFor="detalleAlergia">Detalla tus alergias:</label>
+                        
                         <input
                             className=''
                             type="text"
@@ -396,6 +396,7 @@ function RegistroFormulario() {
                             value={form.detalleAlergia}
                             onChange={handleChange}
                         />
+                        <label htmlFor="detalleAlergia">Detalla tus alergias:</label>
                     </div>
                 )}<br />
                 <div className={style.cont_Checkbox}>
