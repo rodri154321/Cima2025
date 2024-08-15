@@ -71,6 +71,199 @@
   width: 50%;
 }
 
+/*-------------------------------------------------------------BOTONES----------------------------------------------------------*/
+
+.fondoPortada {
+  /* background-image: url("https://i.postimg.cc/tJ62cFGL/Portada.png"); */
+  background-image: url("https://i.postimg.cc/KvGxj7mH/collage-2025.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textoInscripciones {
+  margin-top: 7%;
+  width: 65%;
+}
+
+.subTitulo {
+  color: #FEFFFA;
+  font-family: "Open Sans";
+  font-size: 3.70681rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.comentario {
+  color: #FEFFFA;
+  font-family: "Open Sans";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.78125rem;
+}
+
+.aStyle{
+  text-decoration: none;
+  text-align: center;
+}
+
+.botonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.boton1 {
+  border-radius: 1.97919rem;
+  background: #77b178;
+  display: flex;
+  width: 24.875rem;
+  height: 5.9375rem;
+  padding: 1.58331rem 4.94794rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.79169rem;
+}
+
+.rocket {
+  width: 1.97919rem;
+  height: 1.97919rem;
+  flex-shrink: 0;
+}
+
+.textboton1 {
+  color: var(--White, #FFF);
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  font-family: Poppins;
+  font-size: 1.58331rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.375rem;
+}
+
+.boton2 {
+  border-radius: 1.97919rem;
+  border: 1.583px solid #77B178;
+  background: #FFF;
+  display: flex;
+  width: 24.875rem;
+  height: 5.9375rem;
+  padding: 1.58331rem 4.94794rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.79169rem;
+}
+
+.textboton2 {
+  color: var(--Verde-Cima, #77b178);
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  font-family: Poppins;
+  font-size: 1.58331rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.375rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .fondoPortada {
+  background-image: url("https://i.postimg.cc/1zyW4z9N/collage-para-celu.jpg");
+  
+  }
+
+  .subTitulo {
+      font-size: 1.25rem;
+  }
+
+  .comentario {
+      font-size: 1.05931rem;
+  }
+
+  .botones {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.29744rem;
+  }
+
+  .boton1 {
+      border-radius: 1.41681rem;
+      display: flex;
+      width: 17.80725rem;
+      height: 4.2505rem;
+      padding: 1.13344rem 3.54206rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.56675rem;
+      margin: 5%;
+  }
+
+  .rocket {
+      width: 1.41681rem;
+      height: 1.41681rem;
+      flex-shrink: 0;
+  }
+
+  .textboton1 {
+      color: var(--White, #FFF);
+      text-align: center;
+      font-feature-settings: 'liga' off;
+      font-family: Poppins;
+      font-size: 1.13344rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.70019rem;
+  }
+
+  .boton2 {
+      border-radius: 1.41681rem;
+      border: 1.133px solid #77B178;
+      background: #FFF;
+      display: flex;
+      width: 17.80725rem;
+      height: 4.2505rem;
+      padding: 1.13344rem 3.54206rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.56675rem;
+  }
+
+  .textboton2 {
+      color: var(--Verde-Cima, #77B178);
+      text-align: center;
+      font-feature-settings: 'liga' off;
+      font-family: Poppins;
+      font-size: 1.13344rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.70019rem;
+  }
+
+}
 
 
 /*-------------------------------------------------------------secciones----------------------------------------------------------*/
@@ -773,54 +966,102 @@
   }
 }
 
-.preguntasFrecuentes {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+/*---------------------------------------------------------PREGUNTAS FRECUENTES----------------------------------------------------------*/
 
-.preguntasFrecuentes {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3%;
-}
 
-.pfTitulo {
-  width: 70%;
-  margin-top: 5%;
-}
-
-.pfCuadros {
-  width: 70%;
-  margin-top: 2%;
-}
-
-.botonPF {
-  margin-top: 3%;
-}
-
-.contBoton {
+.pfFondo {
+  background-image: url("https://i.postimg.cc/fRX3MNM8/portada-ultimo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.pfDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pfTitulo {
+  width: 50%;
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+
+.desplegable {
+  background-color: #FFF;
+  width: 70%;
+  height: 15vh;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  box-shadow: 30.259px 30.72px 41.967px 10px rgba(0, 0, 0, 0.05);
+}
+
+.textDesplegable {
+  color: var(--Verde-Cima, #77B178);
+  font-family: "Open Sans";
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid #0b7f67;
+  background-color: #77B178;
+  border-radius: 24px;
+  color:#FFF;
+  font-family: "Open Sans";
+  text-align: center;
+  width: 50%;
+}
+
+.masPreguntas {
+  background-color: #FFF;
+  width: 50%;
+  height: 15vh;
+  border-radius: 31.667px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonLink{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 70%;
+}
+
 @media screen and (max-width: 768px) {
-  .pfCuadros {
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 7%;
+
+  .pfTitulo {
+      width: 90%;
   }
 
-  .botonPF {
-    width: 50%;
+  .textDesplegable {
+      font-size: 2vh;
   }
+
+  .desplegable {
+      width: 80%;
+      height: 15vh;
+  }
+
+  .masPreguntas {
+      width: 100%;
+      height: 10vh;
+  }
+
 }
 
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/
