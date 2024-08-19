@@ -95,7 +95,6 @@ function RegistroFormulario() {
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
-                         required
                             type="checkbox"
                             name="progPastor"
                             id='progPastor'
