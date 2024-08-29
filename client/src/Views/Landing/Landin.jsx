@@ -95,7 +95,7 @@ const Landin = () => {
       <div className={style.contenedorvideo}>
         <ReactPlayer
           className={style.reactPlayer}
-          url='https://www.youtube.com/watch?v=TkWx2krzGYk'
+          url='https://youtu.be/P8ilm-t6Fl8'
           height="100vh"
           width="100%"
           controls
@@ -584,7 +584,7 @@ const Landin = () => {
           <div className={style.videoIns}>
             <ReactPlayer
               className={style.reactPlayer}
-              url='https://youtu.be/P8ilm-t6Fl8'
+              url='https://youtu.be/VY3yaF56A9A?si=l-4BsNumpgXxPUu2'
               width={'100%'}
               height={'100%'}
               controls
