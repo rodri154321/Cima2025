@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from "./card_Speakers.module.css"
 
 function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacionalidad,index) {
+  const [open,setOpen]=useState(false);
+
   let urlBandera = "";
   if (nacionalidad === "Argentina") {
     urlBandera = "https://i.postimg.cc/66zgxQQm/argentina.png"
@@ -30,6 +32,26 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
   } else if (nacionalidad === "Filipina") {
     urlBandera = "https://i.postimg.cc/j2SL3hxc/Pngtree-vector-realistic-illustration-of-philippines-8650382.png"
   }
+
+  function toggleDescription(index) {
+    const description = document.getElementById(`description-${index}`);
+    if (description.classList.contains(style.hidden)) {
+      description.classList.remove(style.hidden);
+      description.classList.add(style.visible);
+      setOpen(true)
+      
+    } else {
+      description.classList.remove(style.visible);
+      description.classList.add(style.hidden);
+      setOpen(false)
+    }
+  }
+
+  const getBackgroundColor = (index) => {
+    const colors = ['#018066', '#64B272', '#DE9204', '#0182AB'];
+    const colorIndex = index % colors.length;
+    return colors[colorIndex];
+  };
   return (
 
     <article className={style.card_speaker} style={{ background: getBackgroundColor(index) }}>
@@ -38,18 +60,20 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
         <img className={style.foto} src={foto} alt="perfil_orador" />
         <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad} />
       </div>
-      <h3>{ministerio}</h3>
-      <div className={style.description_speaker}>
-        <p>{descripcion}</p>
+      <div className={`${style.container_btn}`}>
+      <button className={`${style.btn_card_speaker}`} onClick={() => toggleDescription(index)}>{open?"-":"+"}</button>
       </div>
+      
+  <div id={`description-${index}`} className={`${style.description_speaker} ${style.hidden}`}>
+    <h3>{ministerio}</h3>
+    <p>{descripcion}</p>
+  </div>
     </article>
 
   )
 }
-const getBackgroundColor = (index) => {
-  const colors = ['#018066', '#64B272', '#DE9204', '#0182AB'];
-  const colorIndex = index % colors.length;
-  return colors[colorIndex];
-};
+
+
+
 
 export default card_Speakers
