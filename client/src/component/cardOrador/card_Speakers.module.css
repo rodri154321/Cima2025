@@ -21,7 +21,8 @@
     min-width: 100%;
     border-radius: 1.5em;
     min-height: 200px;
-    
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .presentaction_speaker {
@@ -64,14 +65,23 @@
 .container_btn{
     margin: 0;
     display: flex;
-    width: 90%;
-    justify-content: end;
+    width: 100%;
+    justify-content: center;
 }
 
 .btn_card_speaker{
     margin: 0;
     background: none;
-    
+    width: 30%;
+    height: 5%;
+}
+
+.btn_card_speaker img{
+width: 100%;
+opacity: 50%;
+}
+.btn_card_speaker img:hover{
+    opacity: 90%;
 }
 
 h3 {
@@ -88,6 +98,7 @@ h3 {
 }
 
 .description_speaker {
+   
     min-width: 100px;
 }
 
@@ -102,16 +113,17 @@ h3 {
 }
 
 
-
 .hidden {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
   }
   
   .visible {
-    display: block;
-    animation: slideDown 0.5s ease-out;
+    max-height: 500px; /* Ajusta este valor según sea necesario */
+    transition: max-height 0.5s ease-in;
   }
-  
+
   @keyframes slideDown {
     from {
       max-height: 0;

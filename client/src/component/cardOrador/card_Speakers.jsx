@@ -61,7 +61,8 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
         <img src={urlBandera} alt="bandera" className={style.flag} title={nacionalidad} />
       </div>
       <div className={`${style.container_btn}`}>
-      <button className={`${style.btn_card_speaker}`} onClick={() => toggleDescription(index)}>{open?"-":"+"}</button>
+      <button className={`${style.btn_card_speaker}`} onClick={() => toggleDescription(index)}> <img src={open?"https://i.postimg.cc/XNxdRcYT/arriba.png":"https://i.postimg.cc/3NHh9DP1/abajo.png"}/>
+        </button>
       </div>
       
   <div id={`description-${index}`} className={`${style.description_speaker} ${style.hidden}`}>
