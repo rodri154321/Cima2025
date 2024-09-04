@@ -15,7 +15,7 @@ function Speakers() {
     setPaginaActual(paginaActual-1)
   }
   function pagSiguiente(){
-    if(paginaActual <2)
+    if(paginaActual <3)
     setPaginaActual(paginaActual+1)
   }
   const oradoresPaginados = oradores.slice(
@@ -51,6 +51,7 @@ function Speakers() {
         <div className={style.container_pag_btn}>
           <button onClick={() => setPaginaActual(1)}>1</button>
           <button onClick={() => setPaginaActual(2)}>2</button>
+          <button onClick={() => setPaginaActual(3)}>3</button>
           {/* <button onClick={() => setPaginaActual(3)}>3</button>
           <button onClick={() => setPaginaActual(4)}>4</button> */}
         </div>
