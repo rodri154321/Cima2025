@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'MADE Dillan';
+  src: url('../../../public/fuentes/MADE-Dillan.otf') format('opentype');
+}
+
 .fondo1 {
   background-image: url("https://i.postimg.cc/KvGxj7mH/collage-2025.jpg");
   background-size: cover;
@@ -1082,12 +1087,28 @@
 }
 /*---------------------------------------------------------MAPA----------------------------------------------------------*/
 
+.tituloMaps{
+  color: #005b7b;
+    font-family: 'MADE Dillan', sans-serif;
+    font-size: 4.5rem;
+    z-index: 2;
+}
+
 .maps{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .tituloMaps{
+      font-size: 2.5rem;
+  }
 }
 
 /*---------------------------------------------------------FOOTER----------------------------------------------------------*/

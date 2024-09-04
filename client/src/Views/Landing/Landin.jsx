@@ -104,13 +104,18 @@ const Landin = () => {
       </div>
 
       <div className={style.fondoPortada}>
-        <img className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
-        <h1 className={style.subTitulo}>¿Estas listo para el Cima 2025?</h1>
+        <motion.img initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
+        <motion.h1 initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }} className={style.subTitulo}>¿Estas listo para el Cima 2025?</motion.h1>
 
         <div className={style.botones}>
           <div className={style.botonContainer}>
             <a href="/inscripciones" className={style.aStyle}>
-              <button className={style.boton1}>
+              <motion.button
+              whileHover={{ scale: 1.1 }} className={style.boton1}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                   <path d="M11.8066 23.5013C10.3965 27.6946 4.80533 27.6946 4.80533 27.6946C4.80533 27.6946 4.80533 22.1035 8.99869 20.6933" stroke="#F8F9FF" stroke-width="2.63889" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M24.3992 13.7044L16.0001 22.1035L10.3965 16.5L18.7956 8.10093C21.9747 4.92189 25.1537 4.959 26.5144 5.15692C26.7243 5.18493 26.9193 5.28126 27.069 5.43104C27.2188 5.58082 27.3151 5.77573 27.3432 5.98569C27.5411 7.34637 27.5782 10.5254 24.3992 13.7044Z" stroke="#F8F9FF" stroke-width="2.63889" stroke-linecap="round" stroke-linejoin="round" />
@@ -118,14 +123,14 @@ const Landin = () => {
                   <path d="M17.3978 9.49867H9.40695C9.14593 9.50238 8.89695 9.60909 8.71424 9.79554L4.70643 13.791C4.57982 13.9177 4.48999 14.0765 4.44654 14.2503C4.40309 14.4241 4.40763 14.6065 4.4597 14.7779C4.51176 14.9493 4.60939 15.1034 4.74216 15.2237C4.87493 15.344 5.03787 15.426 5.21359 15.4609L10.3965 16.5" stroke="#F8F9FF" stroke-width="2.63889" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h2 className={style.textboton1}>Registrate aquí</h2>
-              </button>
+              </motion.button>
             </a>
           </div>
           <div className={style.botonContainer}>
             <h1 className={style.comentario}>¿ya te inscribiste?</h1>
-            <button className={style.boton2} onClick={goToLogin}>
+            <motion.button whileHover={{ scale: 1.1 }} className={style.boton2} onClick={goToLogin}>
               <h2 className={style.textboton2}>Ingresa aquí</h2>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
@@ -359,6 +364,12 @@ const Landin = () => {
           </div>
         </div>
 
+        <div className={style.maps}>
+          <h1 className={style.tituloMaps}>EL LUGAR</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.267595775887!2d-64.25960239464817!3d-31.372632809543752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ec56e325f1f%3A0xb4166b54d074b369!2sComplejo%20Ferial%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1724943301434!5m2!1ses-419!2sar" 
+          width="100%" height="100%"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
         <div className={style.experimentaDiv} >
           <motion.img
             initial={{ scale: 0, opacity: 0 }}
@@ -535,7 +546,9 @@ const Landin = () => {
 
         </div>
 
-        <div className={style.pfFondo}>
+        <motion.div className={style.pfFondo}
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}>
           <img className={style.pfTitulo} src="https://i.postimg.cc/L56fs0xn/Preguntas-frecuentes-Preg-Frec.png" alt="Preguntas Frecuentes" />
 
           {items.map((item, index) => (
@@ -571,13 +584,8 @@ const Landin = () => {
               <h1 className={style.textDesplegable}>Mas preguntas frecuentes</h1>
             </button>
           </a>
-        </div>
+        </motion.div>
 
-
-        <div className={style.maps}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.267595775887!2d-64.25960239464817!3d-31.372632809543752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ec56e325f1f%3A0xb4166b54d074b369!2sComplejo%20Ferial%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1724943301434!5m2!1ses-419!2sar" 
-          width="100%" height="100%"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
         <div className={style.footer}>
           <motion.img
