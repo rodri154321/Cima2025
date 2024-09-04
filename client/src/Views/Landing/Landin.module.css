@@ -279,13 +279,30 @@
 .conteinerelative {
   position: relative;
 }
-
+@keyframes bounce {
+  0%, 33.33%, 100% {
+    transform: translateY(0);
+  }
+  38.33% {
+    transform: translateY(-30px);
+  }
+  43.33% {
+    transform: translateY(0);
+  }
+  48.33% {
+    transform: translateY(-15px);
+  }
+  53.33% {
+    transform: translateY(0);
+  }
+}
 
 .botonFlotante {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 40%;
+  animation: bounce 6s ease-in-out infinite;
 }
 
 @media screen and (max-width: 768px) {

@@ -246,7 +246,183 @@ const oradoresCristianos = [
         ministerio: "Pastor de misiones y director en Latinoamérica de Crossover Global",
         descripcion:"Pastor de Misiones en la Alianza Cristiana Y misionera de Miraflores. Entrenador acreditado del curso Perspectivas. Profesor de SEBAP. Pastor y capellán juvenil por muchos años. Casado con Martha y padre de tres hijos.",
         foto:"https://i.postimg.cc/nVwMx0MB/Alejandro-Taboada-Foto-removebg-preview.png"
-    }
+    },
+    {
+        nombre: "Alberto",
+        apellido:"Beltran",
+        nacionalidad: "",
+        ministerio: "Pastor, teólogo y embajador de Living Water en Colombia.",
+        descripcion:"Profesional en Ciencias Bíblicas, Teólogo, Maestría en liderazgo organizacional con énfasis en Misiones en curso. Casado con Olga Villalba y padre de tres hijos. Embajador para Colombia del ministerio Living Waters. Pastor principal de la Iglesia Cristiana el Olivar (Asambleas de Dios).",
+        foto:""
+    },
+    {
+        nombre: "Bashar ",
+        apellido:"",
+        nacionalidad: "Jordania",
+        ministerio: "Cristiano de Jordania, obligado a abandonar su país.",
+        descripcion:"Jordano. Vive en Córdoba. Llegó hace 6 años a Argentina después de ser obligado a abandonar su país. Sirve a obreros que tienen llamado al mundo árabe y musulmán, enseñando la cultura, el idioma y cómo compartir el Evangelio. Casado con Lina y con dos hijos.",
+        foto:""
+    },
+    {
+        nombre: "Cristian ",
+        apellido:"Castro",
+        nacionalidad: "",
+        ministerio: "Director Ejecutivo de COMIBAM Internacional.",
+        descripcion:"Costarricense. Director Ejecutivo de COMIBAM Internacional, una red de 25 cooperaciones misioneras nacionales. Fue director de la agencia misionera FEDEMEC y de PMI (Pueblos en Misión Internacional). Sirvió 10 años como pastor y misionero en Bolivia. Casado con Mariela y padre de dos hijos.",
+        foto:""
+    },
+    {
+        nombre: "Daniel",
+        apellido:"Bianchi",
+        nacionalidad: "Argentina",
+        ministerio: "Director de Lausana para América Latina y de Conexión Oriental.",
+        descripcion:"Director de Lausana para América Latina y Conexión Oriental. Ex vicepresidente de COMIBAM y miembro de la Red de Misiones Mundiales. Fue iniciador de LETRA (Latinoamericanos en Traducción y Alfabetización). Tiene un doctorado en Ministerio con especialidad en Estudios Interculturales en Brasil.",
+        foto:""
+    },
+    {
+        nombre: "Dario",
+        apellido:"Longo",
+        nacionalidad: "Argentina",
+        ministerio: "Misionero de Movida Argentina y pastor de niños.",
+        descripcion:"Profesor de Educación Física. Diplomado en misión. Anciano de la I.C.E.T. (Iglesia Cristiana Evangélica de Tupungato). Pastor de niños y de adolescentes. Realizó el curso de Movikid de OM y cursos de clown. Participa en eventos con su personaje Pepe Pelota.",
+        foto:""
+    },
+    {
+        nombre: "Diana",
+        apellido:"Benavides",
+        nacionalidad: "Colombia",
+        ministerio: "Psicóloga y teóloga. Misionera en Canadá.",
+        descripcion:"Trabajó más de 20 años en el área de Cuidado integral ofreciendo acompañamiento a pastores, misioneros y trabajadores humanitarios. Conferencista y profesora universitaria Actualmente es misionera junto con su esposo Santiago en Toronto, Canadá.",
+        foto:""
+    },
+    {
+        nombre: "Hebert",
+        apellido:"Bascur",
+        nacionalidad: "Chile",
+        ministerio: "Director de Movida en Latinoamérica.",
+        descripcion:"Director de MOVIDA Latinoamérica. Ingeniero civil industrial y especialista en gestión estratégica directiva. Bachiller en teología. Fue pastor de jóvenes por más de 10 años. Casado con Flavia y padre de Mylene y Luciano.",
+        foto:""
+    },
+    {
+        nombre: "Kyle",
+        apellido:"Winker",
+        nacionalidad: "EEUU",
+        ministerio: "Fundador de GGG (Goles. Gracia. Gloria). Misionero de Avant Ministries.",
+        descripcion:"Con su esposa Alissa son misioneros de Avant Ministries. Sirven con la Unión Misionera Evangélica Argentina (UME). En 2019 fundaron GGG, un ministerio de fútbol que busca proclamar el Evangelio y hacer discípulos de Jesucristo. Hacen Goles. Hablan de Su Gracia. Dan Gloria a Dios.",
+        foto:""
+    },
+    {
+        nombre: "La mesa",
+        apellido:"del reino",
+        nacionalidad: "Peru",
+        ministerio: "Ministerio enfocado en servir a tráves de personas con discapacidad.",
+        descripcion:"Ministerio enfocado en servir al Señor a través de personas que viven con alguna condición de discapacidad, impactando sus familias y comunidad. También entrenan a las iglesias para integrarlos en el cuerpo de Cristo. Buscan alcanzar a las personas con discapacidad y hacerlos parte activa de la iglesia local.",
+        foto:""
+    },
+    {
+        nombre: "Lianggi",
+        apellido:"Espinoza",
+        nacionalidad: "Chile",
+        ministerio: "Misionero urbano chileno enfocado en la acción social y la evangelización.",
+        descripcion:"Misionero urbano. Doctor en Matemática Educativa y profesor universitario. Fue misionero en México 7 años. Enseñó de misiones urbanas en diversos países de Latinoamérica. Lidera proyectos misioneros enfocados a la acción social y la evangelización a grupos no alcanzados en Chile.",
+        foto:""
+    },
+    {
+        nombre: "Marcos",
+        apellido:"Quevedo",
+        nacionalidad: "Argentina",
+        ministerio: "Pastor en ICE Ayacucho y movilizador juvenil",
+        descripcion:"Pastor de la ICE Ayacucho de la ciudad de Córdoba. Involucrado en la movilización de adolescentes y jóvenes, sirviendo en capacitaciones, campamentos y retiros. Colaborador de Movida. Magíster en Misiones y Liderazgo. Casado con Kary y papá de Eve y Nacho.",
+        foto:""
+    },
+    {
+        nombre: "Jonathan",
+        apellido:"Tigani",
+        nacionalidad: "",
+        ministerio: "Pastor en Cita con la Vida.",
+        descripcion:"Junto a su esposa pastorean enfocados en la evangelización global y en la plantación de nuevas iglesias. Pastor de Cita Kids. Master en Administración de Empresas y Negocios de profesión. Licenciado en administración de empresas y en Teología Ministerial.",
+        foto:""
+    },
+    {
+        nombre: "Joshua",
+        apellido:"Chang",
+        nacionalidad: "Corea",
+        ministerio: "Fundador y presidente de Green Window Ministries",
+        descripcion:"Vive en EEUU, en el estado de Florida. Misionero. Desde el año 2000 ha trabajado con liderazgos indígenas del Amazonas. Fundador y actualmente presidente de Green Window Ministries (Ministerio Ventana Verde), que busca llevar el Evangelio a la región tropical del planeta.",
+        foto:""
+    },
+    {
+        nombre: "Martin",
+        apellido:"Field",
+        nacionalidad: "Australia",
+        ministerio: "Misionero de ABUA, que busca alcanzar universitarios.",
+        descripcion:"Magíster en Bioética y en Teología. Más de 15 años como misionero de ABUA (Asociación Bíblica Universitaria Argentina). Inició el proyecto Año Puente, que consiste en el discipulado de jóvenes para prepararlos para conocer su vocación. Casado con Julia y padre de cuatro hijos.",
+        foto:""
+    },
+    {
+        nombre: "Meli",
+        apellido:"Duran",
+        nacionalidad: "Argentina",
+        ministerio: "Lider de jovenes",
+        descripcion:"Es Ingeniera Ambiental y trabajo actualmente en una consultora. Se congrego en la Iglesia de la Puerta Abierta y sirvo como líder de jóvenes, en acción social y en el ministerio de misiones.",
+        foto:""
+    },
+    {
+        nombre: "Meshuga",
+        apellido:"",
+        nacionalidad: "Bolivia",
+        ministerio: "Compañía de danza urbana.",
+        descripcion:"Meshuga busca anunciar el Evangelio usando como instrumento la danza urbana. La compañía inició en 2003 en una iglesia y en 2010 como escuela de danza. Participa en competencias cristianas y seculares con el fin de llegar a más jóvenes.",
+        foto:""
+    },
+    {
+        nombre: "Nelson",
+        apellido:"Lastiri",
+        nacionalidad: "Argentina",
+        ministerio: "Coordinador de Proyectos para Latinoamérica en Sociedades Bíblicas Unidas.",
+        descripcion:"Periodista especializado en comunicación digital y redes sociales. Coordinador de Proyectos para Latinoamérica en Sociedades Bíblicas Unidas. Magíster en Ministerio Bíblico en The Master's Seminary. Miembro de la Iglesia Jesucristo Rey donde sirve en el grupo de adolescentes. Casado con Dani y padre de tres hijos.",
+        foto:""
+    },
+    {
+        nombre: "Rodrigo",
+        apellido:"Oso Herrera",
+        nacionalidad: "",
+        ministerio: "Misionero de MOVIDA Chile",
+        descripcion:"Profesor de música y maestro de escuela dominical. Desarrolla actividades de cuentacuentos en distintos colegios de Santiago e imparte talleres de lectura y narración oral para niños y maestros de escuela dominical en Chile y otros países. Misionero de MOVIDA Chile. Casado con Margarita Medina.",
+        foto:""
+    },
+    {
+        nombre: "Santiago",
+        apellido:"Benavides",
+        nacionalidad: "Colombia",
+        ministerio: "Cantautor colombiano y misionero en Canadá.",
+        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
+        foto:""
+    },
+    {
+        nombre: "Shane",
+        apellido:"Claiborne",
+        nacionalidad: "EEUU",
+        ministerio: "Conferencista, activista y autor best seller.",
+        descripcion:"Conferencista, activista y autor best seller. Trabajó con la Madre Teresa y fundó The Simple Way en Filadelfia. Dirige Red Letter Christians, que se enfoca en vivir como si Jesús quisiera decir lo que dijo. Fue apresado varias veces por oponeres a la guerra de Irak y por ayudar a los sin hogar",
+        foto:""
+    },
+    {
+        nombre: "Stanley",
+        apellido:"Clark",
+        nacionalidad: "EEUU",
+        ministerio: "Pastor, movilizador y misionero. Director del CCMT.",
+        descripcion:"Sirvió como misionero en Uruguay, India, Nepal, Argentina, y el Reino Unido. Presidente de la Red de Misiones Mundiales (2006-2012). Desde 2018, Director del Centro de Capacitación Misionera Transcultural (CCMT). Casado con Leticia, con quien tiene tres hijos.",
+        foto:""
+    },
+    {
+        nombre: "Stanley",
+        apellido:"Clark",
+        nacionalidad: "EEUU",
+        ministerio: "Pastor, movilizador y misionero. Director del CCMT.",
+        descripcion:"Sirvió como misionero en Uruguay, India, Nepal, Argentina, y el Reino Unido. Presidente de la Red de Misiones Mundiales (2006-2012). Desde 2018, Director del Centro de Capacitación Misionera Transcultural (CCMT). Casado con Leticia, con quien tiene tres hijos.",
+        foto:""
+    },
 ];
 
 export default oradoresCristianos;
