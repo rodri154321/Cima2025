@@ -95,6 +95,8 @@ h3 {
     width: 90%;
     margin: auto;
     padding-block: 5%;
+    text-align: center;
+
 }
 
 .description_speaker {
@@ -110,6 +112,7 @@ h3 {
     min-height: 150px;
     width: 90%;
     padding-block: 5%;
+    text-align: center;
 }
 
 
@@ -157,5 +160,9 @@ h3 {
         left: 20%;
         top:8%;
         border-radius: 2.5em;
+    }
+    .btn_card_speaker{
+        width: 60%;
+        height: 5%;
     }
 }
