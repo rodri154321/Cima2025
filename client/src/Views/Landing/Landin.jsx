@@ -105,17 +105,17 @@ const Landin = () => {
 
       <div className={style.fondoPortada}>
         <motion.img initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
         <motion.h1 initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              whileHover={{ scale: 1.1 }} className={style.subTitulo}>¿Estas listo para el Cima 2025?</motion.h1>
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.1 }} className={style.subTitulo}>¿Estas listo para el Cima 2025?</motion.h1>
 
         <div className={style.botones}>
           <div className={style.botonContainer}>
             <a href="/inscripciones" className={style.aStyle}>
               <motion.button
-              whileHover={{ scale: 1.1 }} className={style.boton1}>
+                whileHover={{ scale: 1.1 }} className={style.boton1}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                   <path d="M11.8066 23.5013C10.3965 27.6946 4.80533 27.6946 4.80533 27.6946C4.80533 27.6946 4.80533 22.1035 8.99869 20.6933" stroke="#F8F9FF" stroke-width="2.63889" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M24.3992 13.7044L16.0001 22.1035L10.3965 16.5L18.7956 8.10093C21.9747 4.92189 25.1537 4.959 26.5144 5.15692C26.7243 5.18493 26.9193 5.28126 27.069 5.43104C27.2188 5.58082 27.3151 5.77573 27.3432 5.98569C27.5411 7.34637 27.5782 10.5254 24.3992 13.7044Z" stroke="#F8F9FF" stroke-width="2.63889" stroke-linecap="round" stroke-linejoin="round" />
@@ -364,11 +364,12 @@ const Landin = () => {
           </div>
         </div>
 
-        <div className={style.maps}>
-          <h1 className={style.tituloMaps}>EL LUGAR</h1>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.267595775887!2d-64.25960239464817!3d-31.372632809543752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ec56e325f1f%3A0xb4166b54d074b369!2sComplejo%20Ferial%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1724943301434!5m2!1ses-419!2sar" 
-          width="100%" height="100%"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <motion.div initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }} className={style.maps}>
+          <h1 className={style.tituloMaps}>COMPLEJO FERIAL</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.267595775887!2d-64.25960239464817!3d-31.372632809543752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ec56e325f1f%3A0xb4166b54d074b369!2sComplejo%20Ferial%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1724943301434!5m2!1ses-419!2sar"
+            width="100%" height="100%" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </motion.div>
 
         <div className={style.experimentaDiv} >
           <motion.img
@@ -547,8 +548,8 @@ const Landin = () => {
         </div>
 
         <motion.div className={style.pfFondo}
-        initial={{ scale: 0, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}>
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}>
           <img className={style.pfTitulo} src="https://i.postimg.cc/L56fs0xn/Preguntas-frecuentes-Preg-Frec.png" alt="Preguntas Frecuentes" />
 
           {items.map((item, index) => (
