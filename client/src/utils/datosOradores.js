@@ -1,19 +1,27 @@
 const oradoresCristianos = [
     {
-        nombre: "Zuli",
-        apellido:"Arias",
-        nacionalidad: "Argentina",
-        ministerio: " Psicóloga, Lic. en Teología y Filosofía, Coach Ontológica intercultural.",
-        descripcion:"Misionera en India por 15 años. Fundadora y directora del Instituto Online: “Neuroaprendizaje de idiomas” en donde se enseña diferentes idiomas para poder salir al campo.",
-        foto:"https://i.postimg.cc/rwGcw5cy/Zuli-Arias-Foto-removebg-preview.png"
+        nombre: "Thomas",
+        apellido:"Vögelin",
+        nacionalidad:"Suiza",
+        ministerio: "Fundador y director internacional de Movida.",
+        descripcion:" Desde hace más de 35 años sirve en la movilización de jóvenes latinos. Vivió en Chile, Argentina y Alemania, y hace 7 años están instalados en Walzenhausen, Suiza. Casado con Mechthild y tiene 4 hijos.",
+        foto:"https://i.postimg.cc/sxSm80Dp/Thomas-V-gelin-Foto-removebg-preview.png"
     },
     {
-        nombre: "Yonathan",
-        apellido:"Adamchuk",
+        nombre: "Andrew",
+        apellido:"Brunson",
+        nacionalidad: "Estados Unidos",
+        ministerio: "Pastor y misionero. Fue preso en Turquía por el Evangelio.",
+        descripcion:"Posee un doctorado en Nuevo Testamento. Involucrado en la plantación de iglesias y en la ayuda a refugiados en Turquía por 23 años hasta ser falsamente acusado de terrorista en 2016, por lo que estuvo dos años preso.",
+        foto:"https://i.postimg.cc/0NpcRzfK/Andrew-Brunson-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Matias",
+        apellido:"Kornetz",
         nacionalidad: "Argentina",
-        ministerio: "Fotógrafo documentalista",
-        descripcion:"Fotógrafo documentalista. Su obra ‘El Cristo de las favelas’ fue seleccionada por National Geographic y formó parte del equipo del documental ‘Misioneros’, ganador del premio Martín Fierro.",
-        foto:"https://i.postimg.cc/zD9yQ29P/Yonathan-Adamchuk-Foto-removebg-preview.png"
+        ministerio: "Director de la ONG Prevenir es Amar, escritor y conferencista",
+        descripcion:"Suicidólogo (UFLO). Técnico en drogradependencia (USAL). Diplomado en prevención integral de los consumos problemáticos (UNRE y Sedronar). Diplomado en primera infancia y familia (UCA). Diplomado en liderazgo y coaching (E625). Estudiante del SITB. Director y fundador de la ONG Prevenir es Amar. Escritor, conferencista y educador popular.",
+        foto:"https://i.postimg.cc/JnyTYRnG/Matias-Kornetz-Foto-removebg-preview.png"
     },
     {
         nombre: "Yassir",
@@ -24,28 +32,12 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/CLqS9WQq/Yassir-Eric-Foto-removebg-preview.png"
     },
     {
-        nombre: "Walter",
-        apellido:"Altare",
-        nacionalidad: "Argentina",
-        ministerio: "Pastor y conferencista. Miembro de Conexión Oriental.",
-        descripcion:"Pastor de la iglesia Brazos Abiertos en Santa Fe, Argentina. Forma parte del equipo de Conexión Oriental con el viejó a Medio Oriente. Casado con Fabiana y padre de dos hijos.",
-        foto:"https://i.postimg.cc/rpFVgBFt/Walter-Altare-removebg-preview.png"
-    },
-    {
-        nombre: "Vanesa",
-        apellido:"Cali de Leder",
-        nacionalidad: "Argentina",
-        ministerio: "Facilitadora de cuidado integral de OM Latino America.",
-        descripcion:"Facilitadora de cuidado integral de OM Latino America. Empezó en las misiones abordo del Logos 2 y sirvió en los Países Bajos. Es parte del equipo de cuidado de los hijos de misioneros de Comibam, donde sirve con CTC (chicos de la tercera cultura) latinos.",
-        foto:"https://i.postimg.cc/FzfNrqFw/Vanesa-Cali-de-Leder-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Thomas",
-        apellido:"Vögelin",
-        nacionalidad:"Suiza",
-        ministerio: "Fundador y director internacional de Movida.",
-        descripcion:" Desde hace más de 35 años sirve en la movilización de jóvenes latinos. Vivió en Chile, Argentina y Alemania, y hace 7 años están instalados en Walzenhausen, Suiza. Casado con Mechthild y tiene 4 hijos.",
-        foto:"https://i.postimg.cc/sxSm80Dp/Thomas-V-gelin-Foto-removebg-preview.png"
+        nombre: "Helder",
+        apellido:"Favarin",
+        nacionalidad: "Brazil",
+        ministerio: "CEO en Community Bible Study y Miembro de la junta de SEPAL.",
+        descripcion:"Misionero y cofundador de la Iglesia C29 Granada (España), de la RedTimoteo, un programa que nutre a jóvenes evangelistas en España, y de la Red EYE (Jóvenes Evangelistas Europeos). Doctor en predicación",
+        foto:"https://i.postimg.cc/MTqnGzgN/Helder-Favarin-Foto-removebg-preview.png"
     },
     {
         nombre: "Steve",
@@ -64,20 +56,12 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/hjZKqgn9/Soon-Im-Foto-removebg-preview.png"
     },
     {
-        nombre: "Samuel",
-        apellido:"Andrade",
-        nacionalidad: "Argentina",
-        ministerio: "Coordinador de la Escuela Misionera del IBRP y misionero en Cabo Verde.",
-        descripcion:". Misionero por 14 años en Cabo Verde, África Occidental. Trabajó en la fundación de iglesias y formación de obreros. Es ministro ordenado de la Unión de las Asambleas de Dios. Coordina la Escuela de Formación Misionera del Instituto Bíblico del Río de la Plata",
-        foto:"https://i.postimg.cc/Jhq1PZdY/Samuel-Andrade-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Roberto",
-        apellido:"Dominguez",
-        nacionalidad: "Argentina",
-        ministerio: "Pastor capellán y Técnico Superior en Ciencias Penales. ",
-        descripcion:"Técnico en Tratamiento Correlacional de Menores y Jóvenes Adultos. Técnico en Tratamiento Correccional de Droga-Dependencia. Técnico en Criminología. Coordinador regional de Perspectivas. Miembro de la Red de Apoyo Integral al Misionero (RAIM). Docente de Capellanías del Instituto FIET.",
-        foto:"https://i.postimg.cc/8zq5kK1F/Roberto-Dominguez-Foto-removebg-preview.png"
+        nombre: "Mika",
+        apellido:"Yrjola",
+        nacionalidad: "Finlandia",
+        ministerio: "Pastor misioneroen la iglesia Living Word International Church.",
+        descripcion:"Nacido en Singapur, nieto de misioneros en China. Estudió en el Instituto Bíblico Elim, Nueva York. Ha servido en Indonesia, Canadá y Australia. Lidera una iglesia con enfoque misionero llamada Living Word International Church, en Washington. Está casado y tiene seis hijos",
+        foto:"https://i.postimg.cc/RFgZVK7J/Mika-Yrjola-Foto-removebg-preview.png"
     },
     {
         nombre: "Ramiro",
@@ -96,6 +80,30 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/MKBR7Qvj/Rafael-Canada-Foto-removebg-preview.png"
     },
     {
+        nombre: "Jojie",
+        apellido:"Wong",
+        nacionalidad: "Filipina",
+        ministerio: "Coordinadora Internacional de Movilización de OMF.",
+        descripcion:"Coordinadora Internacional de Movilización de OMF. Sirvió como movilizadora de OMF en Filipinas por 19 años. Maestría en divinidad, en misiones globales y doctorado en ministerio. Mentora de misioneros y consultora de iglesias. Autora de múltiples libros de misiones para niños.",
+        foto:"https://i.postimg.cc/sXtwW5wX/Jojie-Wong-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Matzi",
+        apellido:"Vogelin",
+        nacionalidad: "Alemania",
+        ministerio: "Director de TeenStreet Europa.",
+        descripcion:"Creció en Chile y Argentina. Cursó sus estudios formales en el seminario bíblico Brake (Alemania). Director TeenStreet Europa. Casado y papá de cuatro hijos.",
+        foto:"https://i.postimg.cc/vmdBPQ8T/Matzi-Vogelin-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Markus",
+        apellido:"Leder",
+        nacionalidad: "Alemania",
+        ministerio: "Director asociado de OM Latinoamerica.",
+        descripcion:"Conoció a su esposa Vanesa, de Argentina, en el barco Logos 2. Pasó algunos años en Países Bajos trabajando en un Centro para Conferencias cristiano. Desde 2015 hasta 2023 fue director de OM Argentina. Moviliza a los cristianos a los menos alcanzados por medio de talleres y predicaciones.",
+        foto:"https://i.postimg.cc/7ZzhMCkj/Markus-Leder-Foto-removebg-preview-1.png"
+    },
+    {
         nombre: "Pedro",
         apellido:"Pinto ",
         nacionalidad: "Peru",
@@ -108,8 +116,24 @@ const oradoresCristianos = [
         apellido:"Hwang",
         nacionalidad: "Corea",
         ministerio: "Misionero de Negocio como Misión y Miembro de la Agencia Misionera Global Partners.",
-        descripcion:"Técnico de audio. Formado en el Seminario Bautista de São Paulo. Fundador de 3 empresas importadoras en Brasil. Misionero de Negocio como Misión y miembro de la Agencia Misionera Global Partners. Discipulado y mentoreo de jovenes empresarios de startups.",
+        descripcion:"Fundador de la ONG Manqui. Formado en el Seminario Bautista de São Paulo. Fundador de 3 empresas importadoras en Brasil. Misionero de Negocio como Misión y miembro de la Agencia Misionera Global Partners. Discipulado y mentoreo de jovenes empresarios de startups.",
         foto:"https://i.postimg.cc/y6r8Mh6w/Nio-Jong-Tae-Hwang-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Walter",
+        apellido:"Altare",
+        nacionalidad: "Argentina",
+        ministerio: "Pastor y conferencista. Miembro de Conexión Oriental.",
+        descripcion:"Pastor de la iglesia Brazos Abiertos en Santa Fe, Argentina. Forma parte del equipo de Conexión Oriental con el viejó a Medio Oriente. Casado con Fabiana y padre de dos hijos.",
+        foto:"https://i.postimg.cc/rpFVgBFt/Walter-Altare-removebg-preview.png"
+    },
+    {
+        nombre: "Vanesa",
+        apellido:"Cali de Leder",
+        nacionalidad: "Argentina",
+        ministerio: "Facilitadora de cuidado integral de OM Latino America.",
+        descripcion:"Facilitadora de cuidado integral de OM Latino America. Empezó en las misiones abordo del Logos 2 y sirvió en los Países Bajos. Es parte del equipo de cuidado de los hijos de misioneros de Comibam, donde sirve con CTC (chicos de la tercera cultura) latinos.",
+        foto:"https://i.postimg.cc/FzfNrqFw/Vanesa-Cali-de-Leder-Foto-removebg-preview.png"
     },
     {
         nombre: "Sara y",
@@ -119,38 +143,7 @@ const oradoresCristianos = [
         descripcion:"Sara y Emilio, un matrimonio que sirve a Dios a través de sus locuras (Arte). El ministerio se formó en 2019 con el objetivo de llevar el Evangelio a niños, jóvenes y adultos a través de payasos, títeres, magia, malabares, maquillaje, etc.",
         foto:"https://i.postimg.cc/hvhPJvsy/Ministerio-DCXM-removebg-preview.png"
     },
-    {
-        nombre: "Mika",
-        apellido:"Yrjola",
-        nacionalidad: "Finlandia",
-        ministerio: "Pastor misioneroen la iglesia Living Word International Church.",
-        descripcion:"Nacido en Singapur, nieto de misioneros en China. Estudió en el Instituto Bíblico Elim, Nueva York. Ha servido en Indonesia, Canadá y Australia. Lidera una iglesia con enfoque misionero llamada Living Word International Church, en Washington. Está casado y tiene seis hijos",
-        foto:"https://i.postimg.cc/RFgZVK7J/Mika-Yrjola-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Matzi",
-        apellido:"Vogelin",
-        nacionalidad: "Alemania",
-        ministerio: "Director de TeenStreet Europa.",
-        descripcion:"Creció en Chile y Argentina. Cursó sus estudios formales en el seminario bíblico Brake (Alemania). Director TeenStreet Europa. Casado y papá de cuatro hijos.",
-        foto:"https://i.postimg.cc/vmdBPQ8T/Matzi-Vogelin-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Matias",
-        apellido:"Kornetz",
-        nacionalidad: "Argentina",
-        ministerio: "Director de la ONG Prevenir es Amar, escritor y conferencista",
-        descripcion:"Suicidólogo (UFLO). Técnico en drogradependencia (USAL). Diplomado en prevención integral de los consumos problemáticos (UNRE y Sedronar). Diplomado en primera infancia y familia (UCA). Diplomado en liderazgo y coaching (E625). Estudiante del SITB. Director y fundador de la ONG Prevenir es Amar. Escritor, conferencista y educador popular.",
-        foto:"https://i.postimg.cc/JnyTYRnG/Matias-Kornetz-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Markus",
-        apellido:"Leder",
-        nacionalidad: "Alemania",
-        ministerio: "Director asociado de OM Latinoamerica.",
-        descripcion:"Conoció a su esposa Vanesa, de Argentina, en el barco Logos 2. Pasó algunos años en Países Bajos trabajando en un Centro para Conferencias cristiano. Desde 2015 hasta 2023 fue director de OM Argentina. Moviliza a los cristianos a los menos alcanzados por medio de talleres y predicaciones.",
-        foto:"https://i.postimg.cc/7ZzhMCkj/Markus-Leder-Foto-removebg-preview-1.png"
-    },
+    
     {
         nombre: "Lucas",
         apellido:"Magnin",
@@ -176,20 +169,28 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/vTSTXfDw/Julio-Rodriguez-removebg-preview.png"
     },
     {
-        nombre: "Jojie",
-        apellido:"Wong",
-        nacionalidad: "Filipina",
-        ministerio: "Coordinadora Internacional de Movilización de OMF.",
-        descripcion:"Coordinadora Internacional de Movilización de OMF. Sirvió como movilizadora de OMF en Filipinas por 19 años. Maestría en divinidad, en misiones globales y doctorado en ministerio. Mentora de misioneros y consultora de iglesias. Autora de múltiples libros de misiones para niños.",
-        foto:"https://i.postimg.cc/sXtwW5wX/Jojie-Wong-Foto-removebg-preview.png"
+        nombre: "Zuli",
+        apellido:"Arias",
+        nacionalidad: "Argentina",
+        ministerio: " Psicóloga, Lic. en Teología y Filosofía, Coach Ontológica intercultural.",
+        descripcion:"Misionera en India por 15 años. Fundadora y directora del Instituto Online: “Neuroaprendizaje de idiomas” en donde se enseña diferentes idiomas para poder salir al campo.",
+        foto:"https://i.postimg.cc/rwGcw5cy/Zuli-Arias-Foto-removebg-preview.png"
     },
     {
-        nombre: "Helder",
-        apellido:"Favarin",
-        nacionalidad: "Brazil",
-        ministerio: "CEO en Community Bible Study y Miembro de la junta de SEPAL.",
-        descripcion:"Misionero y cofundador de la Iglesia C29 Granada (España), de la RedTimoteo, un programa que nutre a jóvenes evangelistas en España, y de la Red EYE (Jóvenes Evangelistas Europeos). Doctor en predicación",
-        foto:"https://i.postimg.cc/MTqnGzgN/Helder-Favarin-Foto-removebg-preview.png"
+        nombre: "Samuel",
+        apellido:"Andrade",
+        nacionalidad: "Argentina",
+        ministerio: "Coordinador de la Escuela Misionera del IBRP y misionero en Cabo Verde.",
+        descripcion:". Misionero por 14 años en Cabo Verde, África Occidental. Trabajó en la fundación de iglesias y formación de obreros. Es ministro ordenado de la Unión de las Asambleas de Dios. Coordina la Escuela de Formación Misionera del Instituto Bíblico del Río de la Plata",
+        foto:"https://i.postimg.cc/Jhq1PZdY/Samuel-Andrade-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Roberto",
+        apellido:"Dominguez",
+        nacionalidad: "Argentina",
+        ministerio: "Pastor capellán y Técnico Superior en Ciencias Penales. ",
+        descripcion:"Técnico en Tratamiento Correlacional de Menores y Jóvenes Adultos. Técnico en Tratamiento Correccional de Droga-Dependencia. Técnico en Criminología. Coordinador regional de Perspectivas. Miembro de la Red de Apoyo Integral al Misionero (RAIM). Docente de Capellanías del Instituto FIET.",
+        foto:"https://i.postimg.cc/8zq5kK1F/Roberto-Dominguez-Foto-removebg-preview.png"
     },
     {
         nombre: "Fede",
@@ -198,6 +199,14 @@ const oradoresCristianos = [
         ministerio: "Director de Fronteras en Argentina.",
         descripcion:"Forma parte del equipo directivo de Fronteras Argentina, agencia misionera internacional que trabaja para alcanzar a los musulmanes. Sirvió en MAIN durante varios años. Trabajó con jóvenes y adolescentes y estudió en el Seminario Bíblico de Fe. Congrega en Centro Cristiano Ciudadela.",
         foto:"https://i.postimg.cc/q78t0ND2/Fede-Tempra-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Yonathan",
+        apellido:"Adamchuk",
+        nacionalidad: "Argentina",
+        ministerio: "Fotógrafo documentalista",
+        descripcion:"Fotógrafo documentalista. Su obra ‘El Cristo de las favelas’ fue seleccionada por National Geographic y formó parte del equipo del documental ‘Misioneros’, ganador del premio Martín Fierro.",
+        foto:"https://i.postimg.cc/zD9yQ29P/Yonathan-Adamchuk-Foto-removebg-preview.png"
     },
     {
         nombre: "David",
@@ -222,14 +231,6 @@ const oradoresCristianos = [
         ministerio: "Licenciado en enfermería y payaso de hospital.",
         descripcion:"Lic en enfermería y payaso de hospital. Lleva adelante la misión de Dios con su profesión en el hospital. Dicta cursos de payaso cristiano y de hospital. Es parte del equipo Selah Latinoamérica que evangeliza en hospitales a través de cartas evangelisticas.",
         foto:"https://i.postimg.cc/yYdS9YWz/Daniel-Velazquez-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Andrew",
-        apellido:"Brunson",
-        nacionalidad: "Argentina",
-        ministerio: "Pastor y misionero. Fue preso en Turquía por el Evangelio.",
-        descripcion:"Posee un doctorado en Nuevo Testamento. Involucrado en la plantación de iglesias y en la ayuda a refugiados en Turquía por 23 años hasta ser falsamente acusado de terrorista en 2016, por lo que estuvo dos años preso.",
-        foto:"https://i.postimg.cc/0NpcRzfK/Andrew-Brunson-Foto-removebg-preview.png"
     },
     {
         nombre: "Alex",
