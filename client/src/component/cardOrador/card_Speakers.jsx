@@ -31,7 +31,16 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
     urlBandera = "https://i.postimg.cc/0jrLBg7Q/uruguay.png"
   } else if (nacionalidad === "Filipina") {
     urlBandera = "https://i.postimg.cc/j2SL3hxc/Pngtree-vector-realistic-illustration-of-philippines-8650382.png"
+  }else if(nacionalidad === "Australia"){
+    urlBandera ="https://i.postimg.cc/PqJf1j2d/flag-australia-1f1e6-1f1fa.png"
+  }else if(nacionalidad === "Bolivia"){
+    urlBandera ="https://i.postimg.cc/t4C9Hb0F/Bolivia.png"
+  }else if(nacionalidad === "Jordania"){
+    urlBandera ="https://i.postimg.cc/Vvx0VNZ9/jordania.png"
+  }else if(nacionalidad === "Chile"){
+    urlBandera ="https://i.postimg.cc/YqcctmV6/chile.png"
   }
+  
 
   function toggleDescription(index) {
     const description = document.getElementById(`description-${index}`);

@@ -1,11 +1,27 @@
 const oradoresCristianos = [
     {
+        nombre: "Santiago",
+        apellido:"Benavides",
+        nacionalidad: "Colombia",
+        ministerio: "Cantautor colombiano y misionero en Canadá.",
+        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
+        foto:""
+    },
+    {
         nombre: "Zuli",
         apellido:"Arias",
         nacionalidad: "Argentina",
         ministerio: " Psicóloga, Lic. en Teología y Filosofía, Coach Ontológica intercultural.",
         descripcion:"Misionera en India por 15 años. Fundadora y directora del Instituto Online: “Neuroaprendizaje de idiomas” en donde se enseña diferentes idiomas para poder salir al campo.",
         foto:"https://i.postimg.cc/rwGcw5cy/Zuli-Arias-Foto-removebg-preview.png"
+    },
+    {
+        nombre: "Lucas",
+        apellido:"Magnin",
+        nacionalidad: "Argentina",
+        ministerio: "Editor de Clie. Escritor, teólogo, cantautor, gestor cultural y youtuber.",
+        descripcion:"Escritor, teólogo, cantautor y gestor cultural. Máster en Teología, Licenciado en Letras Modernas y en Ciencias de la Comunicación. Autor de varios libros como ‘95 tesis para la nueva generación’ (2022). Como cantautor, publicó dos discos. Editor de Editorial CLIE y publica videos en su canal YouTube (#TeologíaPop)",
+        foto:"https://i.postimg.cc/90FB318r/Lucas-Magnin-Foto-removebg-preview.png"
     },
     {
         nombre: "Yonathan",
@@ -150,14 +166,6 @@ const oradoresCristianos = [
         ministerio: "Director asociado de OM Latinoamerica.",
         descripcion:"Conoció a su esposa Vanesa, de Argentina, en el barco Logos 2. Pasó algunos años en Países Bajos trabajando en un Centro para Conferencias cristiano. Desde 2015 hasta 2023 fue director de OM Argentina. Moviliza a los cristianos a los menos alcanzados por medio de talleres y predicaciones.",
         foto:"https://i.postimg.cc/7ZzhMCkj/Markus-Leder-Foto-removebg-preview-1.png"
-    },
-    {
-        nombre: "Lucas",
-        apellido:"Magnin",
-        nacionalidad: "Argentina",
-        ministerio: "Editor de Clie. Escritor, teólogo, cantautor, gestor cultural y youtuber.",
-        descripcion:"Escritor, teólogo, cantautor y gestor cultural. Máster en Teología, Licenciado en Letras Modernas y en Ciencias de la Comunicación. Autor de varios libros como ‘95 tesis para la nueva generación’ (2022). Como cantautor, publicó dos discos. Editor de Editorial CLIE y publica videos en su canal YouTube (#TeologíaPop)",
-        foto:"https://i.postimg.cc/90FB318r/Lucas-Magnin-Foto-removebg-preview.png"
     },
     {
         nombre: "Leo",
@@ -306,7 +314,7 @@ const oradoresCristianos = [
     {
         nombre: "Kyle",
         apellido:"Winker",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Fundador de GGG (Goles. Gracia. Gloria). Misionero de Avant Ministries.",
         descripcion:"Con su esposa Alissa son misioneros de Avant Ministries. Sirven con la Unión Misionera Evangélica Argentina (UME). En 2019 fundaron GGG, un ministerio de fútbol que busca proclamar el Evangelio y hacer discípulos de Jesucristo. Hacen Goles. Hablan de Su Gracia. Dan Gloria a Dios.",
         foto:""
@@ -392,17 +400,9 @@ const oradoresCristianos = [
         foto:""
     },
     {
-        nombre: "Santiago",
-        apellido:"Benavides",
-        nacionalidad: "Colombia",
-        ministerio: "Cantautor colombiano y misionero en Canadá.",
-        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
-        foto:""
-    },
-    {
         nombre: "Shane",
         apellido:"Claiborne",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Conferencista, activista y autor best seller.",
         descripcion:"Conferencista, activista y autor best seller. Trabajó con la Madre Teresa y fundó The Simple Way en Filadelfia. Dirige Red Letter Christians, que se enfoca en vivir como si Jesús quisiera decir lo que dijo. Fue apresado varias veces por oponeres a la guerra de Irak y por ayudar a los sin hogar",
         foto:""
@@ -410,19 +410,36 @@ const oradoresCristianos = [
     {
         nombre: "Stanley",
         apellido:"Clark",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Pastor, movilizador y misionero. Director del CCMT.",
         descripcion:"Sirvió como misionero en Uruguay, India, Nepal, Argentina, y el Reino Unido. Presidente de la Red de Misiones Mundiales (2006-2012). Desde 2018, Director del Centro de Capacitación Misionera Transcultural (CCMT). Casado con Leticia, con quien tiene tres hijos.",
         foto:""
     },
     {
-        nombre: "Stanley",
-        apellido:"Clark",
-        nacionalidad: "EEUU",
-        ministerio: "Pastor, movilizador y misionero. Director del CCMT.",
-        descripcion:"Sirvió como misionero en Uruguay, India, Nepal, Argentina, y el Reino Unido. Presidente de la Red de Misiones Mundiales (2006-2012). Desde 2018, Director del Centro de Capacitación Misionera Transcultural (CCMT). Casado con Leticia, con quien tiene tres hijos.",
+        nombre: "A21",
+        apellido:"",
+        nacionalidad: "Argentina",
+        ministerio: "Equipo de abolicionistas comprometidos con acabar la trata de personas.",
+        descripcion:"Es una organización internacional que lucha para abolir la esclavitud en todo lugar y para siempre. Tiene una estrategia integral para luchar contra la trata: Alcanzar, Rescatar y Restaurar vidas. Esta estrategia tiene como objetivo reducir la vulnerabilidad, proporcionar asistencia a víctimas y empoderar a supervivientes.",
         foto:""
     },
+    {
+        nombre: "Bea Kasselian",
+        apellido:"Andrés Senrra",
+        nacionalidad: "Argentina",
+        ministerio: "Directores de Teenstreet Argentina.",
+        descripcion:" Sirvieron en CEC (actualmente Cima) muchos años. Son parte del equipo nacional de Samaritans Purse, Operación Niño de la navidad. Desde el 2019 sirven en OM Argentina y desde el 2023 como directores de Teenstreet Argentina.",
+        foto:""
+    },
+    {
+        nombre: "Jesica ",
+        apellido:"Belart",
+        nacionalidad: "Argentina",
+        ministerio: "Pastora en Cita con la Vida.",
+        descripcion:" Arquitecta de profesión y Licenciada en Teología Ministerial. Enfocada en la evangelización global, la formación de obreros, el envío de misioneros y la plantación de iglesias. Pastora Directora de Cita Kids. Casada con Jonathan y con dos hijos.",
+        foto:"",
+    }
+  
 ];
 
 export default oradoresCristianos;
