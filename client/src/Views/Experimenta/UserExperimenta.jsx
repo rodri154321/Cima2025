@@ -77,31 +77,14 @@ function UserExperimenta() {
                         className={style.textoExp}
                         src='https://i.postimg.cc/B6VVzCDz/Recurso-1conoce.png' alt='Conocelas' />
 
-                    <div className={style.conocelas}>
-                        <div className={style.divInfoPrac}>
-                            <img className={style.nombreLink} src="https://i.postimg.cc/9XY57j2T/Transoceanicas.png" alt="" />
-                            <Link to={"/infoexperimenta"} className={style.Link}>
+                            <Link to={"https://bit.ly/ExperimentaCIMA2025"} target="_blank" rel="noopener noreferrer" className={style.Link}>
                                 <motion.img
                                     initial={{ scale: 0, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
                                     whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
-                                    className={style.botones1}
+                                    className={style.botones}
                                     src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Conocelas Boton' />
                             </Link>
-                        </div>
-
-                        <div className={style.divInfoPrac}>
-                            <img className={style.nombreLink} src="https://i.postimg.cc/mkwvf7jV/Latinoamericanas.png" alt="" />
-                            <Link to={"https://bit.ly/ExperimentaCIMA2025"} className={style.Link}>
-                                <motion.img
-                                    initial={{ scale: 0, opacity: 0 }}
-                                    whileInView={{ scale: 1, opacity: 1 }}
-                                    whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}
-                                    className={style.botones1}
-                                    src='https://i.postimg.cc/j2nzSH1B/Recurso-1-Ingresa-Aqui.png' alt='Conocelas Boton' />
-                            </Link>
-                        </div>
-                    </div>
 
                     <motion.img
                         initial={{ scale: 0, opacity: 0 }}
