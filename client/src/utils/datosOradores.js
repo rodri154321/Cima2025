@@ -307,7 +307,7 @@ const oradoresCristianos = [
     {
         nombre: "Kyle",
         apellido:"Winker",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Fundador de GGG (Goles. Gracia. Gloria). Misionero de Avant Ministries.",
         descripcion:"Con su esposa Alissa son misioneros de Avant Ministries. Sirven con la Unión Misionera Evangélica Argentina (UME). En 2019 fundaron GGG, un ministerio de fútbol que busca proclamar el Evangelio y hacer discípulos de Jesucristo. Hacen Goles. Hablan de Su Gracia. Dan Gloria a Dios.",
         foto:"https://i.postimg.cc/3Jh35Nhj/Kyle-Winker-Foto.png"
@@ -339,7 +339,7 @@ const oradoresCristianos = [
     {
         nombre: "Jonathan",
         apellido:"Tigani",
-        nacionalidad: "",
+        nacionalidad: "Argentina",
         ministerio: "Pastor en Cita con la Vida.",
         descripcion:"Junto a su esposa pastorean enfocados en la evangelización global y en la plantación de nuevas iglesias. Pastor de Cita Kids. Master en Administración de Empresas y Negocios de profesión. Licenciado en administración de empresas y en Teología Ministerial.",
         foto:"https://i.postimg.cc/vTFbmHVs/Jonathan-Tigani-Foto-removebg-preview.png"
