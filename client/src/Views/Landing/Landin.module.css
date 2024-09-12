@@ -764,8 +764,14 @@
 .pointEcu {
   position: absolute;
   width: 2.5%;
-  top: 63%;
+  top: 61%;
   left: 27%;
+}
+.pointEEUU{
+  position: absolute;
+  width: 2.5%;
+  top: 45%;
+  left: 24%;
 }
 
 .pointCol {
@@ -942,6 +948,11 @@
     left: 19%;
   }
 
+  .pointEEUU{
+    width: 3%;
+    left: 15%;
+  }
+
   .pointCol {
     width: 3%;
     left: 20%;
@@ -1088,10 +1099,15 @@
 /*---------------------------------------------------------MAPA----------------------------------------------------------*/
 
 .tituloMaps{
+  width: 70%;
+}
+
+.subTituloMaps{
   color: #005b7b;
     font-family: 'MADE Dillan', sans-serif;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     z-index: 2;
+    text-align: left;
 }
 
 .maps{
@@ -1107,7 +1123,10 @@
 @media screen and (max-width: 768px) {
 
   .tituloMaps{
-      font-size: 2.5rem;
+    width: 90%;
+  }
+  .subTituloMaps{
+      font-size: 1.1rem;
   }
 }
 

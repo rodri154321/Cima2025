@@ -61,7 +61,7 @@ module.exports = (sequelize) => {
             allowNull: true
         },
         detalleAlergia: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
         },
         tieneMedicacion: {
@@ -69,7 +69,7 @@ module.exports = (sequelize) => {
             allowNull: true
         },
         detalleMedicacion: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
         },
         telefono: {
@@ -138,7 +138,7 @@ module.exports = (sequelize) => {
             allowNull: true
         },
         detalleAlimentacion: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
         },
         participoCimaday:{
@@ -174,7 +174,7 @@ module.exports = (sequelize) => {
             allowNull: true
         },
         detalleSalud: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
         },
         ocupacion: {

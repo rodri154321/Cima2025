@@ -366,7 +366,13 @@ const Landin = () => {
 
         <motion.div initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }} className={style.maps}>
-          <h1 className={style.tituloMaps}>COMPLEJO FERIAL</h1>
+
+            <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} className={style.tituloMaps} src="https://i.postimg.cc/501kvY19/COMPLEJO-FERIAL.png" alt="Programa de Pastores" />
+          
+          <h1 className={style.subTituloMaps}>Lugar donde se desarrollara CIMA 2025</h1>
+          
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.267595775887!2d-64.25960239464817!3d-31.372632809543752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ec56e325f1f%3A0xb4166b54d074b369!2sComplejo%20Ferial%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1724943301434!5m2!1ses-419!2sar"
             width="100%" height="100%" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </motion.div>
@@ -436,6 +442,13 @@ const Landin = () => {
               whileHover={{ scale: 1.1 }}
               className={style.pointEcu}
               src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="Ecuador"
+              onClick={() => handleClickImagen("https://i.postimg.cc/wTv2BQ9b/Recurso-2ps-Ecuador.png")} />
+              <motion.img
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.pointEEUU}
+              src="https://i.postimg.cc/pVD8Hr2J/Recurso-6point.png" alt="EEUU"
               onClick={() => handleClickImagen("https://i.postimg.cc/wTv2BQ9b/Recurso-2ps-Ecuador.png")} />
             <motion.img
               initial={{ scale: 0, opacity: 0 }}

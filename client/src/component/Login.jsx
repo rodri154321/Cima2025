@@ -10,7 +10,6 @@ const Login = () => {
   const [emailGoogle, setEmailGoogle] = useState(null)
   const [user, setUser] = useState(null)
   const navigate = useNavigate();
-  console.log(localStorage);
   const handleGoogleLogin = async (reponse) => {
     if (reponse.credential) {
       const { payload } = decodeJwt(reponse.credential)

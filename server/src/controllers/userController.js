@@ -4,6 +4,7 @@ const allUsers = async () => {
     const allusersDb = await users.findAll()
     if (allusersDb.length > 0) {
         return allusersDb;
+        
     }
     else {
         console.log(allusersDb);

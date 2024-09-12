@@ -203,6 +203,8 @@ function FormExperimenta() {
                                 <option value="UY - Treinta y Tres">UY - Treinta y Tres</option>
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
+                                <option value="BRA - San Pablo">BRA - San Pablo</option>
+                                
                             </select>
                         )}
                         {selectState.experimenta2Enabled && (
@@ -226,6 +228,8 @@ function FormExperimenta() {
                                 <option value="España">España</option>
                                 <option value="Macedonia">Macedonia</option>
                                 <option value="Senegal">Senegal</option>
+                                <option value="EEUU - Houston - Rohingya">EEUU - Houston - Rohingya</option>
+                                
                             </select>
                         )}
                     </div>
