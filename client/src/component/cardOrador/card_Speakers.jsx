@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from "./card_Speakers.module.css"
 
-function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacionalidad,index) {
+const CardSpeakers = ({ foto, nombre, apellido, descripcion, ministerio, nacionalidad, index }) => {
   const [open,setOpen]=useState(false);
 
   let urlBandera = "";
@@ -39,7 +39,10 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
     urlBandera ="https://i.postimg.cc/Vvx0VNZ9/jordania.png"
   }else if(nacionalidad === "Chile"){
     urlBandera ="https://i.postimg.cc/YqcctmV6/chile.png"
+  }else if(nacionalidad === "Costa Rica"){
+    urlBandera ="https://i.postimg.cc/BbkShRxM/costa-rica.png"
   }
+  
   
 
   function toggleDescription(index) {
@@ -87,4 +90,4 @@ function card_Speakers(foto, nombre, apellido, descripcion, ministerio, nacional
 
 
 
-export default card_Speakers
+export default CardSpeakers

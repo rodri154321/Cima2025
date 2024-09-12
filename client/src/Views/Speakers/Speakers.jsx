@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import style from "./Speakers.module.css"
 import oradores from "../../utils/datosOradores"
-import cardSpeakers from "../../component/cardOrador/card_Speakers"
+import CardSpeakers from "../../component/cardOrador/card_Speakers"
 
 function Speakers() {
   const oradoresPorPagina = 16;
@@ -43,7 +43,7 @@ function Speakers() {
       <div className={style.cards_speaker}>
         {oradoresPaginados.map((orador, index) => (
           <div key={index} className={style.orador_card}>
-            <cardSpeakers
+            <CardSpeakers
               foto={orador.foto}
               nombre={orador.nombre}
               apellido={orador.apellido}
