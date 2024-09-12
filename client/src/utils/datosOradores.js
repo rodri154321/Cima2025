@@ -16,6 +16,14 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/0NpcRzfK/Andrew-Brunson-Foto-removebg-preview.png"
     },
     {
+        nombre: "Santiago",
+        apellido:"Benavides",
+        nacionalidad: "Colombia",
+        ministerio: "Cantautor colombiano y misionero en Canadá.",
+        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
+        foto:"https://i.postimg.cc/90Y5FP2d/Santiago-Benavides-Foto-removebg-preview.png"
+    },
+    {
         nombre: "Matias",
         apellido:"Kornetz",
         nacionalidad: "Argentina",
@@ -251,7 +259,7 @@ const oradoresCristianos = [
     {
         nombre: "Alberto",
         apellido:"Beltran",
-        nacionalidad: "",
+        nacionalidad: "Colombia",
         ministerio: "Pastor, teólogo y embajador de Living Water en Colombia.",
         descripcion:"Profesional en Ciencias Bíblicas, Teólogo, Maestría en liderazgo organizacional con énfasis en Misiones en curso. Casado con Olga Villalba y padre de tres hijos. Embajador para Colombia del ministerio Living Waters. Pastor principal de la Iglesia Cristiana el Olivar (Asambleas de Dios).",
         foto:"https://i.postimg.cc/ncKcC72w/Alberto-Beltran-Foto-removebg-preview.png"
@@ -267,7 +275,7 @@ const oradoresCristianos = [
     {
         nombre: "Cristian ",
         apellido:"Castro",
-        nacionalidad: "",
+        nacionalidad: "Costa Rica",
         ministerio: "Director Ejecutivo de COMIBAM Internacional.",
         descripcion:"Costarricense. Director Ejecutivo de COMIBAM Internacional, una red de 25 cooperaciones misioneras nacionales. Fue director de la agencia misionera FEDEMEC y de PMI (Pueblos en Misión Internacional). Sirvió 10 años como pastor y misionero en Bolivia. Casado con Mariela y padre de dos hijos.",
         foto:"https://i.postimg.cc/VkDfF83q/Cristian-Castro-Foto2-removebg-preview.png"
@@ -302,7 +310,7 @@ const oradoresCristianos = [
         nacionalidad: "Chile",
         ministerio: "Director de Movida en Latinoamérica.",
         descripcion:"Director de MOVIDA Latinoamérica. Ingeniero civil industrial y especialista en gestión estratégica directiva. Bachiller en teología. Fue pastor de jóvenes por más de 10 años. Casado con Flavia y padre de Mylene y Luciano.",
-        foto:""
+        foto:"https://i.postimg.cc/bwdHMBKk/Hebert-Bascur-Foto-removebg-preview.png"
     },
     {
         nombre: "Kyle",
@@ -387,23 +395,15 @@ const oradoresCristianos = [
     {
         nombre: "Rodrigo",
         apellido:"Oso Herrera",
-        nacionalidad: "",
+        nacionalidad: "Chile",
         ministerio: "Misionero de MOVIDA Chile",
         descripcion:"Profesor de música y maestro de escuela dominical. Desarrolla actividades de cuentacuentos en distintos colegios de Santiago e imparte talleres de lectura y narración oral para niños y maestros de escuela dominical en Chile y otros países. Misionero de MOVIDA Chile. Casado con Margarita Medina.",
         foto:"https://i.postimg.cc/J0LCL6f7/Rodrigo-Oso-Herrera-Foto-removebg-preview.png"
     },
     {
-        nombre: "Santiago",
-        apellido:"Benavides",
-        nacionalidad: "Colombia",
-        ministerio: "Cantautor colombiano y misionero en Canadá.",
-        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
-        foto:"https://i.postimg.cc/90Y5FP2d/Santiago-Benavides-Foto-removebg-preview.png"
-    },
-    {
         nombre: "Shane",
         apellido:"Claiborne",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Conferencista, activista y autor best seller.",
         descripcion:"Conferencista, activista y autor best seller. Trabajó con la Madre Teresa y fundó The Simple Way en Filadelfia. Dirige Red Letter Christians, que se enfoca en vivir como si Jesús quisiera decir lo que dijo. Fue apresado varias veces por oponeres a la guerra de Irak y por ayudar a los sin hogar",
         foto:"https://i.postimg.cc/2jQfwYW1/Shane-Claiborne-Foto-removebg-preview.png"
@@ -411,11 +411,20 @@ const oradoresCristianos = [
     {
         nombre: "Stanley",
         apellido:"Clark",
-        nacionalidad: "EEUU",
+        nacionalidad: "Estados Unidos",
         ministerio: "Pastor, movilizador y misionero. Director del CCMT.",
         descripcion:"Sirvió como misionero en Uruguay, India, Nepal, Argentina, y el Reino Unido. Presidente de la Red de Misiones Mundiales (2006-2012). Desde 2018, Director del Centro de Capacitación Misionera Transcultural (CCMT). Casado con Leticia, con quien tiene tres hijos.",
         foto:"https://i.postimg.cc/rFq2ZHGQ/Stanley-Clark-Foto-removebg-preview.png"
     },
+    {
+        nombre: "Jesica ",
+        apellido:"Belart",
+        nacionalidad: "Argentina",
+        ministerio: "Pastora en Cita con la Vida.",
+        descripcion:" Arquitecta de profesión y Licenciada en Teología Ministerial. Enfocada en la evangelización global, la formación de obreros, el envío de misioneros y la plantación de iglesias. Pastora Directora de Cita Kids. Casada con Jonathan y con dos hijos.",
+        foto:"https://i.postimg.cc/8cD9T4TN/Jesica-Belart-Foto-removebg-preview.png",
+    }
+  
 ];
 
 export default oradoresCristianos;
