@@ -1,297 +1,5380 @@
-.conteiner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+html {
+  height: 100%;
+  width: 100%;
 }
-.logo {
-    margin-top: 5%;
-    max-width: 100%;
-    width: 80%;
-  }
 
-  .items1{
-    margin-top: 3%;
-    width: 80%;
-  }
-  .items{
-    margin-top: 3%;
-    width: 60%;
-  }
+body {
+  font-family: "Open Sans", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
 
-  .finalFooter {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-  }
+.web19201 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 1);
+  width: 1080px;
+  height: 1920px;
+  left: 0px;
+  top: 0px;
+}
 
-  .mundoLineas {
-    width: 70%;
-  }
-  .finalImg {
-    width: 100%;
-    margin-top: 5%;
-    margin-left: -20%;
-  }
-  
-  .movidaNet {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  
-  .linkmovidaNet {
-    width: 40%;
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
-  }
+.web19201 .componente11 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 1080px;
+  height: 834px;
+  left: 0px;
+  top: 0px;
+}
 
-  .infoArg {
-    width: 28%;
-    position: absolute;
-    left: 20%;
-    margin-top: 10%;
-  }
-  
-  .igArg {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 15%;
-  }
-  
-  .fcArg {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 15%;
-  }
-  
-  .infoBol {
-    width: 26%;
-    position: absolute;
-    left: 20%;
-    margin-top: 25%;
-  }
-  
-  .igBol {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 30.6%;
-  }
-  
-  .fcBol {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 30.6%;
-  }
-  
-  .infoPar {
-    width: 26%;
-    position: absolute;
-    left: 20%;
-    margin-top: 40%;
-  }
-  
-  .igPar {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 45%;
-  }
-  
-  .fcPar {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 45%;
-  }
-  
-  .infoUru {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 10%;
-  }
-  
-  .igUru {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 15%;
-  }
-  
-  .fcUru {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 15%;
-  }
-  
-  .infoPer {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 25%;
-  }
-  
-  .igPer {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 30.6%;
-  }
-  
-  .fcPer {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 30.6%;
-  }
-  
-  .infoChi {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 40%;
-  }
-  
-  .igChi {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 45.5%;
-  }
-  
-  .fcChi {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 45.5%;
-  }
-  
-  @media screen and (max-width: 768px) {
-  
-    .mundoLineas {
-      width: 100%;
-      margin-left: -10%;
-    }
-  
-    .finalImg {
-      width: 75%;
-      margin-top: 5%;
-      margin-left: -10%;
-    }
+.web19201 .componente11 .ae5b230d7cace6746a04af6865527bcb {
+  position: absolute;
+  box-sizing: border-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("https://s3-alpha-sig.figma.com/img/04de/28b6/ae5b230d7cace6746a04af6865527bcb?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b9Mvrdl2vU0JSW0aGSzoZPwX2Vk9Se8vBfn03GjK-bVRMX3mXMb78-jsjCe9huQwX~OYl2yRNeU-k0dLdkiDYfeMd~C5IYXPnFpG-jY13TEAdopEIG~KEIcOzdY5NVFSyWoJBqZow-AGQK9Wf2PrwyETAZOi1kiFz3VmMKvMwhePcIicwYs~1VVRwwGixnEwDKg5wnd-dBTof4uuDjDJjrE7aRKka6pOaLP9vHEHXZGD-I0BlM~IOjck1nWR8aRel7xEjV4GN212uKYU84kq4TSX2z0bwiZidS6JAqqBRUqEkfiZO5gh60nSFK~e5PcXhU3arGYkRtWK3XOD2OruGQ__");
+  mix-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: 1080px;
+  height: 833.54px;
+  left: 0px;
+  top: 0px;
+}
 
-    .linkmovidaNet {
-      margin-top: 3%;
-    }
-  
-    .infoArg {
-      width: 38%;
-      left: 11%;
-    }
-  
-    .igArg {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 17%;
-    }
-  
-    .fcArg {
-      width: 5%;
-      left: 9%;
-      margin-top: 17%;
-    }
-  
-    .infoBol {
-      width: 37%;
-      left: 11%;
-    }
-  
-    .igBol {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 32.6%;
-    }
-  
-    .fcBol {
-      width: 5%;
-      left: 9%;
-      margin-top: 32.6%;
-    }
-  
-    .infoPar {
-      width: 38%;
-      left: 11%;
-    }
-  
-    .igPar {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 47%;
-    }
-  
-    .fcPar {
-      width: 5%;
-      left: 9%;
-      margin-top: 47%;
-    }
-  
-    .infoUru {
-      width: 38%;
-      left: 55%;
-      margin-top: 10%;
-    }
-  
-    .igUru {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 17%;
-    }
-  
-    .fcUru {
-      width: 5%;
-      left: 53%;
-      margin-top: 17%;
-    }
-  
-    .infoPer {
-      width: 38%;
-      left: 55%;
-      margin-top: 25%;
-    }
-  
-    .igPer {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 32.6%;
-    }
-  
-    .fcPer {
-      width: 5%;
-      left: 53%;
-      margin-top: 32.6%;
-    }
-  
-    .infoChi {
-      width: 38%;
-      left: 55%;
-      margin-top: 40%;
-    }
-  
-    .igChi {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 47.5%;
-    }
-  
-    .fcChi {
-      width: 5%;
-      left: 53%;
-      margin-top: 47.5%;
-    }
-  
-  }
+.web19201 .componente11 .rectangulo1 {
+  mix-blend-mode: multiply;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.550000011920929;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: 1080px;
+  height: 834px;
+  left: 0px;
+  top: 0px;
+}
+
+.web19201 .componente11 .a424da88f75a3d81223c7351c3bb4c68 {
+  position: absolute;
+  box-sizing: content-box;
+  mix-blend-mode: multiply;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("https://www.figma.com/file/gmGxZ1TP5jzKttX0s9TrUS/image/d03eab5ea424da88f75a3d81223c7351c3bb4c68?fuid=1340345209561603987");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: 1080px;
+  height: 834px;
+  left: 0px;
+  top: 0px;
+}
+
+.web19201 .componente11 .rectangulo2 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.15000000596046448;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: 1080px;
+  height: 834px;
+  left: 0px;
+  top: 0px;
+}
+
+.web19201 .componente11 .b88af2d9b6011ea4416a19c90bceead6 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("https://s3-alpha-sig.figma.com/img/621e/b4aa/b88af2d9b6011ea4416a19c90bceead6?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gyP2bVQdNNwsD6i9fJQ4IUy8BKxeFYnNqPwtl-NxPBEngGoLjBv2Os60qfGdEzPtbvq14YU-8dYTQ2ZHxqarnC1aSgazwq78RYB7a8g7-bBVcPYQn5rzmcWW1Og-KNWkfmK8h-h5epLZd8y85FklfG082WdT4zIWtLc1gxob5R~yI9p4JQgqtekrTysjpo37bchVotf0FMMrIYE5gwVaFbKYD-01NzB5ga59pafS8Fkhqzt1VCWhcHuoMjhX1QwpOXoNawvw7Bs-yAAT7R9Go6S2ME9YlQH18IyQW0Db8r2xgv3dAib7AoyCK3TYnb2gaJkmC6dST2orTVL3qQKNEQ__");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: 256px;
+  height: 256px;
+  left: 104px;
+  top: 184px;
+}
+
+.web19201 .componente11 .preguntasYrespuestas {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 130px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 746px;
+  height: 337px;
+  left: 190px;
+  top: 210px;
+}
+
+.web19201 .componente11 .acercaDelPrecioYFechaspromocionales {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 722px;
+  height: 164px;
+  left: 202px;
+  top: 558px;
+}
+
+.web19201 .componente81 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 790px;
+  left: 90px;
+  top: 905px;
+}
+
+.web19201 .componente81 .rectangulo4 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente81 .cortesPromocionales {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 120px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 434px;
+  height: 48px;
+  left: 118px;
+  top: -3.5px;
+}
+
+.web19201 .componente81 .xIconNavArrowDown {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente81 .xIconNavArrowDown .vector9bbeed45 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente81 .rectangulo5 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 652px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201 .componente81 .senandoAbonandotuPrecioSeCongelaEn {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 492px;
+  height: 98px;
+  left: 42px;
+  top: 183.5px;
+}
+
+.web19201
+  .componente81
+  .senandoAbonandotuPrecioSeCongelaEn
+  .senandoAbonandotuPrecioSeCongelaEn-0 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente81
+  .senandoAbonandotuPrecioSeCongelaEn
+  .senandoAbonandotuPrecioSeCongelaEn-19 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201 .componente81 .x25Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(1, 130, 171, 1);
+  -webkit-text-stroke: unset;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 175px;
+  height: 65px;
+  left: 667px;
+  top: 198px;
+}
+
+.web19201 .componente81 .individual {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 136px;
+  height: 41px;
+  left: 65px;
+  top: 325px;
+}
+
+.web19201 .componente81 .x127Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(225, 147, 10, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 141px;
+  height: 47px;
+  left: 65px;
+  top: 388px;
+}
+
+.web19201 .componente81 .x140Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(225, 147, 10, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 144px;
+  height: 47px;
+  left: 65px;
+  top: 445px;
+}
+
+.web19201 .componente81 .x155Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(225, 147, 10, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 143px;
+  height: 47px;
+  left: 65px;
+  top: 502px;
+}
+
+.web19201 .componente81 .x165Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(225, 147, 10, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 144px;
+  height: 47px;
+  left: 65px;
+  top: 559px;
+}
+
+.web19201 .componente81 .grupal10Personas {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 96px;
+  height: 56px;
+  left: 300px;
+  top: 332.5px;
+}
+
+.web19201 .componente81 .grupal10Personas .grupal10Personas-0 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201 .componente81 .grupal10Personas .grupal10Personas-7 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201 .componente81 .x115Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(29, 128, 167, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 135px;
+  height: 47px;
+  left: 277px;
+  top: 388px;
+}
+
+.web19201 .componente81 .x130Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(29, 128, 167, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 144px;
+  height: 47px;
+  left: 277px;
+  top: 445px;
+}
+
+.web19201 .componente81 .x145Usd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(29, 128, 167, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 143px;
+  height: 47px;
+  left: 277px;
+  top: 502px;
+}
+
+.web19201 .componente81 .x165Usd533bc741 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(29, 128, 167, 1);
+  -webkit-text-stroke: unset;
+  font-size: 37px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "MADE Dillan", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 144px;
+  height: 47px;
+  left: 277px;
+  top: 559px;
+}
+
+.web19201 .componente81 .fechasLimite {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 182px;
+  height: 41px;
+  left: 495px;
+  top: 325px;
+}
+
+.web19201 .componente81 .hastaEl15DeJulio {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 265px;
+  height: 41px;
+  left: 495px;
+  top: 388px;
+}
+
+.web19201 .componente81 .hastaEl15DeSeptiembre {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 368px;
+  height: 41px;
+  left: 495px;
+  top: 445px;
+}
+
+.web19201 .componente81 .hastaEl15DeNoviembre {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 361px;
+  height: 41px;
+  left: 495px;
+  top: 502px;
+}
+
+.web19201 .componente81 .hastaEl15DeDiciembre {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 349px;
+  height: 41px;
+  left: 495px;
+  top: 559px;
+}
+
+.web19201
+  .componente81
+  .losQueAccedanAUnPrecioPromocionalDebencompletarSuPagoHastaEl151224SiNoLoHacenSuPrecioPasaraASerDe165 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 733px;
+  height: 111px;
+  left: 65px;
+  top: 648px;
+}
+
+/*Requisitos CIMA */
+
+.web19201 .componente61 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 687px;
+  left: 90px;
+  top: 1740px;
+}
+
+.web19201 .componente61 .rectangulo4cc2c7bc5 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201
+  .componente61
+  .cualesSonLosRequisitosParaParticiparDeCimaRegional2025 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 586px;
+  height: 87px;
+  left: 118px;
+  top: 13.5px;
+}
+
+.web19201 .componente61 .xIconNavArrowDown1ebfa2f9 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente61 .xIconNavArrowDown1ebfa2f9 .vector3c9aa97a {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente61 .rectangulo5773e5213 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 549px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201 .componente61 .paraParticiparEnUnCimaDebes {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 625px;
+  height: 55px;
+  left: 42px;
+  top: 201px;
+}
+
+.web19201 .componente61 .serMayorDe15Anos {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 344px;
+  height: 46px;
+  left: 118px;
+  top: 332.5px;
+}
+
+.web19201 .componente61 .vector567c6cac {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 65px;
+  top: 336px;
+}
+
+.web19201
+  .componente61
+  .caraDeRecomendacionFirmadaPorElPastoroLiderNosotrosTeBrindamosUnModelo {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 722px;
+  height: 81px;
+  left: 118px;
+  top: 399.5px;
+}
+
+.web19201 .componente61 .vectordf76fcb3 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 65px;
+  top: 420px;
+}
+
+.web19201 .componente61 .completarElFormularioDeInscripcion {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 610px;
+  height: 46px;
+  left: 118px;
+  top: 500.5px;
+}
+
+.web19201 .componente61 .vector9ea8a5d2 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 63px;
+  top: 504px;
+}
+
+.web19201 .componente61 .realizarLosPagosCorrespondientes {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 570px;
+  height: 46px;
+  left: 118px;
+  top: 571.5px;
+}
+
+.web19201 .componente61 .vectordd0ca12a {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 63px;
+  top: 575px;
+}
+
+/*Que incluye tu participcion en CIMA*/
+.web19201 .componente101 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 844px;
+  left: 90px;
+  top: 2472px;
+}
+
+.web19201 .componente101 .rectangulo4faa0576d {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente101 .queIncluyeTuParticipacionEncimaRegional2025 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 520px;
+  height: 87px;
+  left: 118px;
+  top: 13.5px;
+}
+
+.web19201 .componente101 .xIconNavArrowDowne844014f {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente101 .xIconNavArrowDowne844014f .vectorf7ad355e {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente101 .rectangulo5ef16c514 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 706px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201
+  .componente101
+  .accesoAPlenariasGeneralesPlenariasParalelastalleresYTodasLasInstanciasDeCapacitacionbrindadasPorElEvento {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 688px;
+  height: 111px;
+  left: 42px;
+  top: 188px;
+}
+
+.web19201 .componente101 .cena19DeEnero {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 205px;
+  height: 34px;
+  left: 100px;
+  top: 361.5px;
+}
+
+.web19201 .componente101 .comidas {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 122px;
+  height: 41px;
+  left: 47px;
+  top: 316px;
+}
+
+.web19201 .componente101 .vector9f6301ab {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 363.12px;
+}
+
+.web19201 .componente101 .desayunoAlmuerzoYCena20Al24Enero {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 492px;
+  height: 34px;
+  left: 99px;
+  top: 408.5px;
+}
+
+.web19201 .componente101 .vector57109782 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 410.12px;
+}
+
+.web19201 .componente101 .desayuno25DeEnero {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 262px;
+  height: 34px;
+  left: 101px;
+  top: 455.5px;
+}
+
+.web19201 .componente101 .vector0a222538 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 457.12px;
+}
+
+.web19201 .componente101 .desdeLaNocheDel19HastaLaMananaDel25DeEnero {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 643px;
+  height: 34px;
+  left: 102px;
+  top: 577.5px;
+}
+
+.web19201 .componente101 .alojamiento {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 168px;
+  height: 41px;
+  left: 49px;
+  top: 514px;
+}
+
+.web19201 .componente101 .vectore2a21c4c {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 49px;
+  top: 579.12px;
+}
+
+.web19201 .componente101 .libroDeRegalo {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 175px;
+  height: 34px;
+  left: 103px;
+  top: 671.5px;
+}
+
+.web19201 .componente101 .vectora254e3ff {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 673.12px;
+}
+
+.web19201 .componente101 .materiales {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 146px;
+  height: 41px;
+  left: 49px;
+  top: 628px;
+}
+
+.web19201 .componente101 .identificadorPulseraMemovida {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 384px;
+  height: 34px;
+  left: 103px;
+  top: 718.5px;
+}
+
+.web19201 .componente101 .vector2d92237a {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 720.12px;
+}
+
+.web19201 .componente101 .carpetaDelParticipante {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 281px;
+  height: 34px;
+  left: 103px;
+  top: 765.5px;
+}
+
+.web19201 .componente101 .vectorcf93c658 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 47px;
+  top: 767.12px;
+}
+
+/*Cuando empieza y finaliza CIMA*/
+.web19201 .componente111 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 562px;
+  left: 90px;
+  top: 3361px;
+}
+
+.web19201 .componente111 .rectangulo495f7a7cb {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente111 .cuandoEmpiezaYFinalizaCima {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 120px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 549px;
+  height: 47px;
+  left: 118px;
+  top: -2.5px;
+}
+
+.web19201 .componente111 .rectangulo52c54462b {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 424px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201
+  .componente111
+  .seHabilitaraElIngresoACimaRegional2025ElDomingo19DeEneroAPartirDeLas13hsParaRegistrarteEInstalarteenElLugarelProgramaIniciaALas1900hsConLaCenaeseDiaNoSeBrindaAlmuerzofinalizamosConElDesayunoElSabado25D {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 777px;
+  height: 318px;
+  left: 70px;
+  top: 193.5px;
+}
+
+.web19201 .componente111 .vector0fa9f166 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: 55.57px;
+  height: 38.5px;
+  left: 737.43px;
+  top: 35.75px;
+}
+
+.web19201 .componente111 .vectorf871063c {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 19px;
+  top: 228.12px;
+}
+
+.web19201 .componente111 .vector33156deb {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 19px;
+  top: 350.5px;
+}
+
+.web19201 .componente111 .vector3eb76b09 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 20px;
+  top: 458.5px;
+}
+
+/*Puedo entrar y salir de CIMA*/
+.web19201 .componente121 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 553px;
+  left: 90px;
+  top: 3968px;
+}
+
+.web19201 .componente121 .rectangulo441836409 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente121 .podreEntrarYSalirDelPredioDeCima {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 120px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 567px;
+  height: 41px;
+  left: 100px;
+  top: -4.5px;
+}
+
+.web19201 .componente121 .rectangulo5b2b37e79 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 415px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201
+  .componente121
+  .losAsistentesAEsteProgramaNoPodranSalirDelPredioSoloExcepcionalmentePorMotivosMedicosOCriticosQueDeberaInformarDebidamenteEnEleStandDeMovidaParadejarRegistradasTantOlasSalidasComoLosIngresos {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 776px;
+  height: 143px;
+  left: 76px;
+  top: 240.5px;
+}
+
+.web19201 .componente121 .vector0a28cf6c {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: 55.57px;
+  height: 38.5px;
+  left: 737.43px;
+  top: 35.75px;
+}
+
+.web19201 .componente121 .vector44d4fdcd {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 25px;
+  top: 275.12px;
+}
+
+.web19201 .componente121 .vectorff8cbac8 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 25px;
+  top: 456.12px;
+}
+
+.web19201 .componente121 .siTendranLaPosibilidadDeSalirDelPredio {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 555px;
+  height: 38px;
+  left: 70px;
+  top: 453.5px;
+}
+
+.web19201 .componente121 .programaGeneral {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 345px;
+  height: 55px;
+  left: 47px;
+  top: 186px;
+}
+
+.web19201 .componente121 .programaParaPastoresYLideres {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 618px;
+  height: 55px;
+  left: 47px;
+  top: 398px;
+}
+
+/*Donde se Realiza CIMA*/
+
+.web19201 .componente122 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 553px;
+  left: 90px;
+  top: 4566px;
+}
+
+.web19201 .componente122 .rectangulo4a67e0473 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente122 .dondeSeRealizaraElCimaRegional2025 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 120px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 604px;
+  height: 41px;
+  left: 100px;
+  top: -4.5px;
+}
+
+.web19201 .componente122 .rectangulo52f8410b9 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 415px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201
+  .componente122
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 722px;
+  height: 250px;
+  left: 81px;
+  top: 193px;
+}
+
+.web19201
+  .componente122
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano-0 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente122
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano-52 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente122
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano-53 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente122
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano
+  .laSedeDelCimaSeraEnLaCiudadDeCordobaEnElcentroDeConvencionesCordobaComplejoFerialCordobaramonCarcano-125 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201 .componente122 .vector371ffeba {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: 55.57px;
+  height: 38.5px;
+  left: 737.43px;
+  top: 35.75px;
+}
+
+.web19201 .componente122 .paperplaneSvgrepoCom {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("assets/paperplaneSvgrepoCom.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 104px;
+  height: 72px;
+  left: 398px;
+  top: 434px;
+}
+
+.web19201 .componente122 .paperplaneSvgrepoCom .trazado1 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(0, 0, 0, 1);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: 101.28px;
+  height: 71.79px;
+  left: 1.24px;
+  top: -0.05px;
+}
+
+.web19201 .componente122 .paperplaneSvgrepoCom .rectangulo6 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/*Que debes llevar a CIMA*/
+.web19201 .componente131 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 899px;
+  left: 90px;
+  top: 5164px;
+}
+
+.web19201 .componente131 .rectangulo4eec8956a {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente131 .queDebesLlevarACimaregional2025 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 412px;
+  height: 87px;
+  left: 244px;
+  top: 15.5px;
+}
+
+.web19201 .componente131 .xIconNavArrowDowne2d86f6c {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente131 .xIconNavArrowDowne2d86f6c .vector91f87b0b {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente131 .rectangulo591cde4fa {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 761px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201 .componente131 .biblia {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 64px;
+  height: 34px;
+  left: 95px;
+  top: 204.5px;
+}
+
+.web19201 .componente131 .vectord0864864 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 42px;
+  top: 206.12px;
+}
+
+.web19201 .componente131 .botellaDeAgua {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 180px;
+  height: 34px;
+  left: 95px;
+  top: 258.5px;
+}
+
+.web19201 .componente131 .vector06130766 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 42px;
+  top: 260.12px;
+}
+
+.web19201 .componente131 .ropaDeCamaOBolsaDeDormir {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 379px;
+  height: 34px;
+  left: 96px;
+  top: 312.5px;
+}
+
+.web19201 .componente131 .vectord708b217 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 43px;
+  top: 314.12px;
+}
+
+.web19201 .componente131 .elementosDeHigienePersonal {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 358px;
+  height: 34px;
+  left: 96px;
+  top: 366.5px;
+}
+
+.web19201 .componente131 .vectora2adae24 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 43px;
+  top: 368.12px;
+}
+
+.web19201 .componente131 .repelenteYBloqueadorSolarmuyImportante {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 547px;
+  height: 34px;
+  left: 96px;
+  top: 420.5px;
+}
+
+.web19201 .componente131 .vectorefee5e60 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 43px;
+  top: 422.12px;
+}
+
+.web19201
+  .componente131
+  .ropaComodaParaLosTiemposDeEsparcimientoQueNoIncomodeaLosDemasCuidaDeNoUsarShortspollerasMuyCortasORemerasmusculosasMuyDescubiertas {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 781px;
+  height: 104px;
+  left: 95px;
+  top: 474.5px;
+}
+
+.web19201 .componente131 .vectorfe011e3e {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 42px;
+  top: 512.56px;
+}
+
+.web19201 .componente131 .siTomasMedicamentosNoOlvidesLlevarlos {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 520px;
+  height: 34px;
+  left: 95px;
+  top: 601.5px;
+}
+
+.web19201 .componente131 .vector9e311584 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: rgba(225, 147, 10, 1);
+  box-shadow: none;
+  width: 22px;
+  height: 28.88px;
+  left: 42px;
+  top: 603.12px;
+}
+
+.web19201
+  .componente131
+  .teInformamosQueNosotrosTeProveemosDeUnaColchonetadeCampingPorElloSiQuieresDormirMasComodoaPuedestraerTuColchonetaInflableDe1Plaza {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 738px;
+  height: 104px;
+  left: 86px;
+  top: 655.5px;
+}
+
+.web19201
+  .componente131
+  .teInformamosQueNosotrosTeProveemosDeUnaColchonetadeCampingPorElloSiQuieresDormirMasComodoaPuedestraerTuColchonetaInflableDe1Plaza
+  .teInformamosQueNosotrosTeProveemosDeUnaColchonetadeCampingPorElloSiQuieresDormirMasComodoaPuedestraerTuColchonetaInflableDe1Plaza-0 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente131
+  .teInformamosQueNosotrosTeProveemosDeUnaColchonetadeCampingPorElloSiQuieresDormirMasComodoaPuedestraerTuColchonetaInflableDe1Plaza
+  .teInformamosQueNosotrosTeProveemosDeUnaColchonetadeCampingPorElloSiQuieresDormirMasComodoaPuedestraerTuColchonetaInflableDe1Plaza-13 {
+  color: rgba(254, 255, 250, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  font-family: "Open Sans", Arial;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.web19201
+  .componente131
+  .tenEnCuentaQueEnElStandDeMovidaTendremosMaterialmisioneroRemerasYOtrasCositasALaVentaparaTuTranquilidadVamosATenerUnKioscoADisposicion {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 740px;
+  height: 104px;
+  left: 80px;
+  top: 759.5px;
+}
+
+/*En que moneda debo pagar CIMA*/
+.web19201 .componente132 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 901px;
+  height: 434px;
+  left: 90px;
+  top: 6108px;
+}
+
+.web19201 .componente132 .rectangulo457e9ef3d {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente132 .enQueMonedaTengoQueRealizarElPago {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 456px;
+  height: 87px;
+  left: 214px;
+  top: 15.5px;
+}
+
+.web19201 .componente132 .xIconNavArrowDownd6450250 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente132 .xIconNavArrowDownd6450250 .vectorf330b934 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente132 .rectangulo5314e51d5 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: auto;
+  height: 296px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.web19201 .componente132 .elValorDeCimaRegional2024 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 546px;
+  height: 47px;
+  left: 169px;
+  top: 189px;
+}
+
+.web19201
+  .componente132
+  .estaEstablecidoEDolaresPeroLaMonedaDePagoPodesConcretarlaConLaOficinaDeMovidaDeTuPaisenLaMayoriaDeLosCasosPodrasRealizarTuPagoEnLaMonedanacionalAlTipoDeCambioVigenteAlDiaQueRealicesElPago {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 746px;
+  height: 139px;
+  left: 77px;
+  top: 235.5px;
+}
+
+/*Si pago y no puedo ir*/
+
+.web19201 .componente133 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 907px;
+  height: 526px;
+  left: 90px;
+  top: 6587px;
+}
+
+.web19201 .componente133 .rectangulo43289c0a7 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 20px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 20px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 20px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: none;
+  width: 800px;
+  height: 110px;
+  left: 42px;
+  top: 0px;
+}
+
+.web19201 .componente133 .siPagoYLuegoNoPuedoIrpuedoRecuperarLoQuePague {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 526px;
+  height: 87px;
+  left: 179px;
+  top: 15.5px;
+}
+
+.web19201 .componente133 .xIconNavArrowDown412a3c85 {
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow-x: unset;
+  overflow-y: unset;
+  background-color: transparent;
+  width: 39.57px;
+  height: 22.5px;
+  left: 745.43px;
+  top: 43.75px;
+}
+
+.web19201 .componente133 .xIconNavArrowDown412a3c85 .vector4df97b7e {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  fill: transparent;
+  stroke: rgba(254, 255, 250, 1);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  left: -8px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.web19201 .componente133 .rectangulo58427fa51 {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0.6499999761581421;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(119, 177, 120, 1);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 80px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 80px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 80px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  width: 901px;
+  height: 388px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.web19201 .componente133 .sena {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 92px;
+  height: 47px;
+  left: 42px;
+  top: 195px;
+}
+
+.web19201
+  .componente133
+  .laSenaNoEsReembolsablePeroSiSePermiteElTraspasoAOtraPersonaelCualSeDebeInformarAntesDel15122024ElTraspasoSoloPuederealizarseAUnaPersonaQueNoHayaAbonadoLaSena {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 865px;
+  height: 104px;
+  top: 235.5px;
+  right: 0px;
+}
+
+.web19201 .componente133 .valorExcedenteALaSena {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 35px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 440px;
+  height: 47px;
+  left: 42px;
+  top: 354px;
+}
+
+.web19201
+  .componente133
+  .siEsReembolsableElReembolsoSeRealizaraPosteriorAlEventoEntreel20YEl28DeFebreroDe2025SeAbonaraEnLaMonedaLocadeCadaPais {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: rgba(254, 255, 250, 1);
+  -webkit-text-stroke: unset;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 825px;
+  height: 104px;
+  left: 42px;
+  top: 394.5px;
+}
+
+/*Footer*/
+
+.web19201 .x70feaabea5248250ee1e329aaba602fc {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("assets/x70feaabea5248250ee1e329aaba602fc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  width: auto;
+  height: 580px;
+  left: 0px;
+  top: 7170px;
+  right: 0px;
+}
