@@ -16,6 +16,14 @@ const oradoresCristianos = [
         foto:"https://i.postimg.cc/0NpcRzfK/Andrew-Brunson-Foto-removebg-preview.png"
     },
     {
+        nombre: "Santiago",
+        apellido:"Benavides",
+        nacionalidad: "Colombia",
+        ministerio: "Cantautor colombiano y misionero en Canadá.",
+        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
+        foto:"https://i.postimg.cc/90Y5FP2d/Santiago-Benavides-Foto-removebg-preview.png"
+    },
+    {
         nombre: "Matias",
         apellido:"Kornetz",
         nacionalidad: "Argentina",
@@ -339,7 +347,7 @@ const oradoresCristianos = [
     {
         nombre: "Jonathan",
         apellido:"Tigani",
-        nacionalidad: "",
+        nacionalidad: "Argentina",
         ministerio: "Pastor en Cita con la Vida.",
         descripcion:"Junto a su esposa pastorean enfocados en la evangelización global y en la plantación de nuevas iglesias. Pastor de Cita Kids. Master en Administración de Empresas y Negocios de profesión. Licenciado en administración de empresas y en Teología Ministerial.",
         foto:"https://i.postimg.cc/vTFbmHVs/Jonathan-Tigani-Foto-removebg-preview.png"
@@ -391,14 +399,6 @@ const oradoresCristianos = [
         ministerio: "Misionero de MOVIDA Chile",
         descripcion:"Profesor de música y maestro de escuela dominical. Desarrolla actividades de cuentacuentos en distintos colegios de Santiago e imparte talleres de lectura y narración oral para niños y maestros de escuela dominical en Chile y otros países. Misionero de MOVIDA Chile. Casado con Margarita Medina.",
         foto:"https://i.postimg.cc/J0LCL6f7/Rodrigo-Oso-Herrera-Foto-removebg-preview.png"
-    },
-    {
-        nombre: "Santiago",
-        apellido:"Benavides",
-        nacionalidad: "Colombia",
-        ministerio: "Cantautor colombiano y misionero en Canadá.",
-        descripcion:"Ha servido a lo largo y ancho de América Latina y otras regiones del mundo desde hace más de quince años. Busca cantar canciones que lleven al encuentro con Jesús. Actualmente vive en Toronto, Canadá, donde sirve como pastor de la Alianza Cristiana y Misionera de Canadá.",
-        foto:"https://i.postimg.cc/90Y5FP2d/Santiago-Benavides-Foto-removebg-preview.png"
     },
     {
         nombre: "Shane",
