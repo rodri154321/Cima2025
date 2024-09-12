@@ -28,15 +28,11 @@ const useForm = (initialData, dataCountry) => {
         }
         else if (dato === "codAreaPastor" || dato === "codAreaUser" || dato === "codAreaEmergencia") {
             setForm({ ...form, [dato]: event })
-            console.log("-", form.codAreaPastor, "-pastor")
-            console.log("-", form.codAreaUser, "-user")
-            console.log("-", form.codAreaEmergencia, "-emer g")
         }
 
         else {
 
             const { name, value, checked } = event.target;
-            console.log(name, value, "valores")
             if (name == "nacionalidad" || name == "paisResidencia") {
 
                 setFilterCountry([]);
@@ -50,8 +46,6 @@ const useForm = (initialData, dataCountry) => {
                         return country.countryName.toLowerCase().startsWith(form.nacionalidad.toLowerCase());
                     }
                 });
-                console.log("searchCountry", searchCountry)
-
                 if (searchCountry.length > 0) {
                     let coutrys = []
 
@@ -81,78 +75,7 @@ const useForm = (initialData, dataCountry) => {
                     // Manejar el caso en que no se encuentren países que coincidan con el filtro
                     console.log("No se encontraron países que coincidan con el filtro.");
                 }
-            
-            // else if (name == "telefonoPastor") {
-            //     if (!errors.telefonoPastor && form.codAreaPastor && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
-            //         let finalPhone = form.codAreaPastor + " " + value;
-            //         setForm({ ...form, [name]: finalPhone })
-            //     }
-            //     else if(form.codAreaPastor){
-            //         if(form.telefonoPastor.includes("+")){
-            //            let tel= form.telefonoPastor.split(" ")[1];
-            //           let telPastor = "+"+form.codAreaPastor + " " + tel;
-            //           setForm({ ...form, [name]: telPastor })
-            //         }  
-            //     }
-            // }
-            // else if (name == "telefono") {
-            //     if (!errors.telefono && form.codAreaUser && /^\+(?:[0-9\s]){6,14}$/.test(value)) {
-            //         let finalPhone = form.codAreaUser + " " + value;
-            //         setForm({ ...form, [name]: finalPhone })
-            //     }
-            //     else if(form.codAreaUser){
-            //         if(form.telefono.includes("+")){
-            //            let tel= form.telefono.split(" ")[1];
-            //           let telUser = "+"+form.codAreaUser + " " + tel;
-            //           setForm({ ...form, [name]: telUser })
-            //         }  
-            //     }
-
-            // }
-            // else if (name == "telefonoEmergencia") {
-               
-            //      if(form.codAreaEmergencia){
-            //           if(form.telefonoEmergencia.includes("+"+form.codAreaEmergencia)){
-
-            //             setForm({ ...form, [name]: value })
-            //             console.log("www")
-            //           }else if(form.codAreaEmergencia ){
-            //             let tel = "+"+form.codAreaEmergencia +" "+value
-            //                 setForm({ ...form, [name]: tel })
-            //                 console.log("ww")
-                        
-                       
-                 
-            //         }if(form.telefonoEmergencia.includes("+")){
-            //             let tel= form.telefonoEmergencia.split(" ")[1];
-            //            let telEmerg = "+"+form.codAreaEmergencia + " " + tel;
-            //            setForm({ ...form, [name]: telEmerg })
-            //     }
-            // 
-                // }
-                //     else if (name == "provincia"){
-
-                //     setFilterProvinces([]);
-                //     setForm({ ...form, [name]: value })
-                //     if(filterCountry.length === 0 && form.paisResidencia){
-                //         const idCountry = await searchCountryId(form.paisResidencia)
-                //         console.log(idCountry,"id?")
-                //        const provinces= await getApiProvinces(idCountry)
-                //        console.log(provinces,"provincias")
-                //      const searchProvinces=  provinces.filter(prov =>{ "toponymName"
-                //         return prov.name.toLowerCase().startsWith(form.provincia.toLowerCase());
-                //        })
-
-
-                //     // if (searchProvinces.length > 0) {
-                //     //     let Prov = []
-
-                //     //     searchProvinces.forEach(element => {
-                //     //         Prov.push(element.name.toLowerCase())
-                //     //     });
-                //     //     setFilterProvinces(Prov)
-                //     // }
-                // }
+         
             }else if (name === "esAlergico" || name === "tieneMedicacion" || name === "esVegetariano" || name === "esDiabetico" || name === "esCeliaco" || name === "Otra" || name === "participoCimaday" || name === "participoPrisma" || name === "participoEurovoluntariado" || name === "participoCima" || name === "participoSigue") {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });
@@ -169,7 +92,6 @@ const useForm = (initialData, dataCountry) => {
             }else if(name === "progPastor") {
                 const isChecked = event.target.checked;
                 setForm({ ...form, [name]: isChecked ? true : false });
-                console.log(form.progPastor)
             }  else if (name === "fechaNacimiento") {
                 setForm({ ...form, [name]: value });
 
@@ -334,11 +256,9 @@ const useForm = (initialData, dataCountry) => {
 
         event.preventDefault();
         const err = onValidate(form)
-        console.log(err)
         if (err && Object.keys(err).length === 0) {
         }
         
-        console.log(form)
         if (err && Object.keys(err).length === 0) {
             // armarTelefono()
             setLoading(true)
@@ -354,7 +274,6 @@ const useForm = (initialData, dataCountry) => {
                 if (response.ok) {
                     setForm({})
                     setLoading(false)
-                    // console.log('Datos enviados correctamente');
                     Swal.fire({
                         icon: "success",
                         title: "User Created",
@@ -370,7 +289,6 @@ const useForm = (initialData, dataCountry) => {
                 }
             } catch (error) {
                 console.error('Error de red:', error);
-                console.log(error);
                 setLoading(false)
             }
 

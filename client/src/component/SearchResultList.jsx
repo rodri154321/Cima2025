@@ -5,7 +5,7 @@ function SerachResultList({ dataCountry,onSelect }) {
   
   const handleSelect =(data)=>{
     onSelect(data);
-    console.log(data)
+ 
   
   }
   return (     
