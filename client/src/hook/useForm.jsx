@@ -194,13 +194,7 @@ const useForm = (initialData, dataCountry) => {
                 errors.paisResidencia = "No debe tener caracteres especiales"
             }
         }
-        if (!form.provincia.trim()) {
-            errors.provincia = "Debe colocar un nombre";
-        } else if (form.provincia) {
-            if (!regexCaracterProv.test(form.provincia)) {
-                errors.provincia = "No debe tener caracteres especiales"
-            }
-        }
+        
         if (!form.ciudad.trim()) {
             errors.ciudad = "Debe colocar un nombre";
         } else if (form.ciudad) {
