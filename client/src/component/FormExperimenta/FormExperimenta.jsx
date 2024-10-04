@@ -186,25 +186,35 @@ function FormExperimenta() {
                                 <option value="ARG - Misiones - Comunidad Laosiana - Posadas">ARG - Misiones - Comunidad Laosiana - Posadas</option>
                                 {/* <option value="ARG - Misiones - Comunidad de Sordos - Posadas">ARG - Misiones - Comunidad de Sordos - Posadas</option> */}
                                 <option value="ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores">ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores</option>
+                                <option value="ARG - CORDOBA - ALTAMIRA">ARG - CORDOBA - ALTAMIRA</option>
+                                <option value="ARG - CORDOBA - PARQUE FUTURA">ARG - CORDOBA - PARQUE FUTURA</option>
+                                <option value="ARG - CORDOBA - RIO CUARTO">ARG - CORDOBA - RIO CUARTO</option>
                                 <option value="CHI - Llanquihue - Sector Las Cruces">CHI - Llanquihue - Sector Las Cruces</option>
                                 <option value="CHI - Región de Aysén - Patagonia">CHI - Región de Aysén - Patagonia</option>
+                                <option value="CHI - MAHUIDANCHE">CHI - MAHUIDANCHE</option>
+                                <option value="CHI - ARAUCANIA - CAUTIN">CHI - ARAUCANIA - CAUTIN</option>
                                 <option value="BO - Oruro - Zona Pumas Andinos">BO - Oruro - Zona Pumas Andinos</option>
                                 <option value="BO - Cochabamba - Prov. Punata">BO - Cochabamba - Prov. Punata</option>
                                 <option value="BO - Sucre - Barrio Bethel">BO - Sucre - Barrio Bethel</option>
                                 <option value="BO - Santa Cruz - Comunidad Betania">BO - Santa Cruz - Comunidad Betania</option>
                                 <option value="BO - Potosí - Localidad Uyuni">BO - Potosí - Localidad Uyuni</option>
+                                <option value="BO - COCHABAMBA - KEWIÑA">BO - COCHABAMBA - KEWIÑA</option>
                                 <option value="PE - Lima - Collique">PE - Lima - Collique</option>
+                                <option value="PE - TINGO MARIA">PE - TINGO MARIA</option>
+                                <option value="PE - CAJAMARCA">PE - CAJAMARCA</option>
+                                <option value="PE - YANESHA">PE - YANESHA</option>
                                 <option value="PRY - Asunción - Capital">PRY - Asunción - Capital</option>
                                 <option value="PRY - Central - Areguá">PRY - Central - Aregua</option>
                                 <option value="PRY - Caaguazú - Coronel">PRY - Caaguazú - Coronel</option>
                                 <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option>
                                 <option value="PRY - Itapúa - San Luis del Paraná">PRY - Itapúa - San Luis del Paraná</option>
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
+                                <option value="PY - CAPITAL - COME LORD">PY - CAPITAL - COME LORD</option>
                                 <option value="UY - Treinta y Tres">UY - Treinta y Tres</option>
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
-                                <option value="BRA - San Pablo">BRA - San Pablo</option>
-                                
+                                {/* <option value="BRA - San Pablo">BRA - San Pablo</option> */}
+
                             </select>
                         )}
                         {selectState.experimenta2Enabled && (
@@ -230,7 +240,7 @@ function FormExperimenta() {
                                 <option value="Kenia">Kenia</option>
                                 <option value="Senegal">Senegal</option>
                                 <option value="EEUU - Houston - Rohingya">EEUU - Houston - Rohingya</option>
-                                
+
                             </select>
                         )}
                     </div>
