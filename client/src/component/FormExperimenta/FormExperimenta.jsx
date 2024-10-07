@@ -237,7 +237,7 @@ function FormExperimenta() {
                                 <option value="Albania">Albania</option>
                                 <option value="España">España</option>
                                 <option value="Macedonia">Macedonia</option>
-                                <option value="Kenia">Kenia</option>
+                                {/* <option value="Kenia">Kenia</option> */}
                                 <option value="Senegal">Senegal</option>
                                 <option value="EEUU - Houston - Rohingya">EEUU - Houston - Rohingya</option>
 
