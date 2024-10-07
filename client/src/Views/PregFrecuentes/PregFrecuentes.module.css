@@ -1,297 +1,488 @@
-.conteiner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* nuevas inscripciones */
+
+.fondo {
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.logo {
-    margin-top: 5%;
-    max-width: 100%;
-    width: 80%;
-  }
 
-  .items1{
-    margin-top: 3%;
-    width: 80%;
-  }
-  .items{
-    margin-top: 3%;
-    width: 60%;
-  }
+.promos {
+  background-image: url("https://i.postimg.cc/pXhVqv56/Promos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .finalFooter {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-  }
+.precios {
+  width: 60%;
+  margin-bottom: 5%;
+}
 
-  .mundoLineas {
-    width: 70%;
-  }
-  .finalImg {
-    width: 100%;
-    margin-top: 5%;
-    margin-left: -20%;
-  }
-  
-  .movidaNet {
-    width: 100%;
+/* ------------------------------------------------------------------IMPORTANTE---------------------------------------------------------------------- */
+
+.importante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.tituloImportante {
+  width: 30%;
+  margin-bottom: 3%;
+}
+
+.detalles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.62781rem;
+  width: 100%;
+}
+
+.infoImoprtante {
+  border-radius: 17.363px;
+  border: 0.868px solid var(--CTA---Aqua-Squeeze, #E5F4F2);
+  background: #FFF;
+  box-shadow: 30.259px 25.72px 41.967px 0px rgba(51, 102, 255, 0.05);
+  display: flex;
+  width: 17%;
+  height: 29vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloII {
+  color: #2D2D2D;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 90%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.243px;
+  padding-top: 10%;
+}
+
+.descripcionII {
+  color: #2D2D2D;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 80%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 3%;
+}
+
+.fotoII {
+  width: 60%;
+  margin-bottom: 15%;
+  padding: 3%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .tituloImportante {
+    width: 50%;
     margin-bottom: 5%;
   }
-  
+
+  .infoImoprtante {
+    width: 60%;
+    height: 20vh;
+  }
+
+  .fotoII {
+    width: 70%;
+    margin-bottom: 20%;
+  }
+}
+
+.pfFondo {
+  /* background-image: url("https://i.postimg.cc/fRX3MNM8/portada-ultimo.png"); */
+  background-color: #0b7f67;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+
+.desplegable {
+  background-color: #FFF;
+  width: 70%;
+  height: 15vh;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  box-shadow: 30.259px 30.72px 41.967px 10px rgba(0, 0, 0, 0.05);
+}
+
+.textDesplegable {
+  color: var(--Verde-Cima, #77B178);
+  font-family: "Open Sans";
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid #0b7f67;
+  background-color: #77B178;
+  border-radius: 24px;
+  color: #FFF;
+  font-family: "Open Sans";
+  text-align: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .pfTitulo {
+      width: 90%;
+  }
+
+  .textDesplegable {
+      font-size: 2vh;
+  }
+
+  .desplegable {
+      width: 80%;
+      height: 15vh;
+  }
+
+
+}
+
+/* estilos viejos */
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 5%;
+  max-width: 100%;
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.items1 {
+  margin-top: 3%;
+  width: 80%;
+}
+
+.items {
+  margin-top: 3%;
+  width: 60%;
+}
+
+.finalFooter {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.mundoLineas {
+  width: 70%;
+}
+
+.finalImg {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: -20%;
+}
+
+.movidaNet {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.linkmovidaNet {
+  width: 40%;
+  margin-top: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.infoArg {
+  width: 28%;
+  position: absolute;
+  left: 20%;
+  margin-top: 10%;
+}
+
+.igArg {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 15%;
+}
+
+.fcArg {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 15%;
+}
+
+.infoBol {
+  width: 26%;
+  position: absolute;
+  left: 20%;
+  margin-top: 25%;
+}
+
+.igBol {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 30.6%;
+}
+
+.fcBol {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 30.6%;
+}
+
+.infoPar {
+  width: 26%;
+  position: absolute;
+  left: 20%;
+  margin-top: 40%;
+}
+
+.igPar {
+  width: 3%;
+  position: absolute;
+  left: 23.5%;
+  margin-top: 45%;
+}
+
+.fcPar {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  margin-top: 45%;
+}
+
+.infoUru {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 10%;
+}
+
+.igUru {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 15%;
+}
+
+.fcUru {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 15%;
+}
+
+.infoPer {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 25%;
+}
+
+.igPer {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 30.6%;
+}
+
+.fcPer {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 30.6%;
+}
+
+.infoChi {
+  width: 28%;
+  position: absolute;
+  left: 55%;
+  margin-top: 40%;
+}
+
+.igChi {
+  width: 3%;
+  position: absolute;
+  left: 58.5%;
+  margin-top: 45.5%;
+}
+
+.fcChi {
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  margin-top: 45.5%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .mundoLineas {
+    width: 100%;
+    margin-left: -10%;
+  }
+
+  .finalImg {
+    width: 75%;
+    margin-top: 5%;
+    margin-left: -10%;
+  }
+
   .linkmovidaNet {
-    width: 40%;
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
+    margin-top: 3%;
   }
 
   .infoArg {
-    width: 28%;
-    position: absolute;
-    left: 20%;
-    margin-top: 10%;
+    width: 38%;
+    left: 11%;
   }
-  
-  .igArg {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 15%;
-  }
-  
-  .fcArg {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 15%;
-  }
-  
-  .infoBol {
-    width: 26%;
-    position: absolute;
-    left: 20%;
-    margin-top: 25%;
-  }
-  
-  .igBol {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 30.6%;
-  }
-  
-  .fcBol {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 30.6%;
-  }
-  
-  .infoPar {
-    width: 26%;
-    position: absolute;
-    left: 20%;
-    margin-top: 40%;
-  }
-  
-  .igPar {
-    width: 3%;
-    position: absolute;
-    left: 23.5%;
-    margin-top: 45%;
-  }
-  
-  .fcPar {
-    width: 3%;
-    position: absolute;
-    left: 20%;
-    margin-top: 45%;
-  }
-  
-  .infoUru {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 10%;
-  }
-  
-  .igUru {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 15%;
-  }
-  
-  .fcUru {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 15%;
-  }
-  
-  .infoPer {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 25%;
-  }
-  
-  .igPer {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 30.6%;
-  }
-  
-  .fcPer {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 30.6%;
-  }
-  
-  .infoChi {
-    width: 28%;
-    position: absolute;
-    left: 55%;
-    margin-top: 40%;
-  }
-  
-  .igChi {
-    width: 3%;
-    position: absolute;
-    left: 58.5%;
-    margin-top: 45.5%;
-  }
-  
-  .fcChi {
-    width: 3%;
-    position: absolute;
-    left: 55%;
-    margin-top: 45.5%;
-  }
-  
-  @media screen and (max-width: 768px) {
-  
-    .mundoLineas {
-      width: 100%;
-      margin-left: -10%;
-    }
-  
-    .finalImg {
-      width: 75%;
-      margin-top: 5%;
-      margin-left: -10%;
-    }
 
-    .linkmovidaNet {
-      margin-top: 3%;
-    }
-  
-    .infoArg {
-      width: 38%;
-      left: 11%;
-    }
-  
-    .igArg {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 17%;
-    }
-  
-    .fcArg {
-      width: 5%;
-      left: 9%;
-      margin-top: 17%;
-    }
-  
-    .infoBol {
-      width: 37%;
-      left: 11%;
-    }
-  
-    .igBol {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 32.6%;
-    }
-  
-    .fcBol {
-      width: 5%;
-      left: 9%;
-      margin-top: 32.6%;
-    }
-  
-    .infoPar {
-      width: 38%;
-      left: 11%;
-    }
-  
-    .igPar {
-      width: 5%;
-      left: 14.5%;
-      margin-top: 47%;
-    }
-  
-    .fcPar {
-      width: 5%;
-      left: 9%;
-      margin-top: 47%;
-    }
-  
-    .infoUru {
-      width: 38%;
-      left: 55%;
-      margin-top: 10%;
-    }
-  
-    .igUru {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 17%;
-    }
-  
-    .fcUru {
-      width: 5%;
-      left: 53%;
-      margin-top: 17%;
-    }
-  
-    .infoPer {
-      width: 38%;
-      left: 55%;
-      margin-top: 25%;
-    }
-  
-    .igPer {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 32.6%;
-    }
-  
-    .fcPer {
-      width: 5%;
-      left: 53%;
-      margin-top: 32.6%;
-    }
-  
-    .infoChi {
-      width: 38%;
-      left: 55%;
-      margin-top: 40%;
-    }
-  
-    .igChi {
-      width: 5%;
-      left: 58.5%;
-      margin-top: 47.5%;
-    }
-  
-    .fcChi {
-      width: 5%;
-      left: 53%;
-      margin-top: 47.5%;
-    }
-  
+  .igArg {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 17%;
   }
+
+  .fcArg {
+    width: 5%;
+    left: 9%;
+    margin-top: 17%;
+  }
+
+  .infoBol {
+    width: 37%;
+    left: 11%;
+  }
+
+  .igBol {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcBol {
+    width: 5%;
+    left: 9%;
+    margin-top: 32.6%;
+  }
+
+  .infoPar {
+    width: 38%;
+    left: 11%;
+  }
+
+  .igPar {
+    width: 5%;
+    left: 14.5%;
+    margin-top: 47%;
+  }
+
+  .fcPar {
+    width: 5%;
+    left: 9%;
+    margin-top: 47%;
+  }
+
+  .infoUru {
+    width: 38%;
+    left: 55%;
+    margin-top: 10%;
+  }
+
+  .igUru {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 17%;
+  }
+
+  .fcUru {
+    width: 5%;
+    left: 53%;
+    margin-top: 17%;
+  }
+
+  .infoPer {
+    width: 38%;
+    left: 55%;
+    margin-top: 25%;
+  }
+
+  .igPer {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 32.6%;
+  }
+
+  .fcPer {
+    width: 5%;
+    left: 53%;
+    margin-top: 32.6%;
+  }
+
+  .infoChi {
+    width: 38%;
+    left: 55%;
+    margin-top: 40%;
+  }
+
+  .igChi {
+    width: 5%;
+    left: 58.5%;
+    margin-top: 47.5%;
+  }
+
+  .fcChi {
+    width: 5%;
+    left: 53%;
+    margin-top: 47.5%;
+  }
+
+}
