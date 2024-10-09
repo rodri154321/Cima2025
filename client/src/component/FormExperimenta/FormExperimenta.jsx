@@ -199,6 +199,7 @@ function FormExperimenta() {
                                 <option value="BO - Santa Cruz - Comunidad Betania">BO - Santa Cruz - Comunidad Betania</option>
                                 <option value="BO - Potosí - Localidad Uyuni">BO - Potosí - Localidad Uyuni</option>
                                 <option value="BO - COCHABAMBA - KEWIÑA">BO - COCHABAMBA - KEWIÑA</option>
+                                <option value="BRA - SAO PAULO - RIO GRANDE DA SERRA">BRA - SAO PAULO - RIO GRANDE DA SERRA</option>
                                 <option value="PE - Lima - Collique">PE - Lima - Collique</option>
                                 <option value="PE - TINGO MARIA">PE - TINGO MARIA</option>
                                 <option value="PE - CAJAMARCA">PE - CAJAMARCA</option>
