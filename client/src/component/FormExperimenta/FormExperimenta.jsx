@@ -199,7 +199,7 @@ function FormExperimenta() {
                                 <option value="BO - Santa Cruz - Comunidad Betania">BO - Santa Cruz - Comunidad Betania</option>
                                 <option value="BO - Potosí - Localidad Uyuni">BO - Potosí - Localidad Uyuni</option>
                                 <option value="BO - COCHABAMBA - KEWIÑA">BO - COCHABAMBA - KEWIÑA</option>
-                                <option value="BRA - SAO PAULO - RIO GRANDE DA SERRA">BRA - SAO PAULO - RIO GRANDE DA SERRA</option>
+                                {/* <option value="BRA - SAO PAULO - RIO GRANDE DA SERRA">BRA - SAO PAULO - RIO GRANDE DA SERRA</option> */}
                                 <option value="PE - Lima - Collique">PE - Lima - Collique</option>
                                 <option value="PE - TINGO MARIA">PE - TINGO MARIA</option>
                                 <option value="PE - CAJAMARCA">PE - CAJAMARCA</option>
@@ -236,7 +236,7 @@ function FormExperimenta() {
                                 <option value="Tailandia">Tailandia</option>
                                 <option value="Turquía">Turquía</option>
                                 <option value="Albania">Albania</option>
-                                <option value="España">España</option>
+                                {/* <option value="España">España</option> */}
                                 <option value="Macedonia">Macedonia</option>
                                 {/* <option value="Kenia">Kenia</option> */}
                                 <option value="Senegal">Senegal</option>
