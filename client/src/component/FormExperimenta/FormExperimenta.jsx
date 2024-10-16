@@ -210,7 +210,6 @@ function FormExperimenta() {
                                 <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option>
                                 <option value="PRY - Itapúa - San Luis del Paraná">PRY - Itapúa - San Luis del Paraná</option>
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
-                                <option value="PY - CAPITAL - COME LORD">PY - CAPITAL - COME LORD</option>
                                 <option value="UY - Treinta y Tres">UY - Treinta y Tres</option>
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
