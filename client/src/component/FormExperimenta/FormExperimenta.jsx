@@ -204,7 +204,7 @@ function FormExperimenta() {
                                 <option value="PE - Tingo Maria">PE - Tingo Maria</option>
                                 <option value="PE - Cajamarca">PE - Cajamarca</option>
                                 <option value="PE - Yanesha">PE - Yanesha</option>
-                                <option value="PRY - Asunción - Capital">PRY - Asunción - Capital</option>
+                                <option value="PRY - Capital - Come Lord ">PRY - Capital - Come Lord</option>
                                 <option value="PRY - Central - Areguá">PRY - Central - Aregua</option>
                                 <option value="PRY - Caaguazú - Coronel">PRY - Caaguazú - Coronel</option>
                                 <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option>
