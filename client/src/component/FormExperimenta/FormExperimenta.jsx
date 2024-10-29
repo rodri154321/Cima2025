@@ -177,13 +177,13 @@ function FormExperimenta() {
                             >
                                 <option value="" disabled>Elige una opción</option>
                                 <option value="ARG - Río Negro - Cinco Saltos y Junín de los Andes">ARG - Río Negro - Cinco Saltos y Junín de los Andes</option>
-                                <option value="ARG - Córdoba - Bell Ville">ARG - Córdoba - Bell Ville</option>
+                                {/* <option value="ARG - Córdoba - Bell Ville">ARG - Córdoba - Bell Ville</option> */}
                                 <option value="ARG - Córdoba - San José de las Salinas">ARG - Córdoba - San José de las Salinas</option>
                                 <option value="ARG - Entre Ríos - Libaros">ARG - Entre Ríos - Libaros</option>
-                                <option value="ARG - Salta - Cachi">ARG - Salta - Cachi</option>
+                                {/* <option value="ARG - Salta - Cachi">ARG - Salta - Cachi</option> */}
                                 <option value="ARG - Chaco - Las Breñas">ARG - Chaco - Las Breñas</option>
                                 <option value="ARG - San Juan - Valle Fertil">ARG - San Juan - Valle Fertil</option>
-                                <option value="ARG - Misiones - Comunidad Laosiana - Posadas">ARG - Misiones - Comunidad Laosiana - Posadas</option>
+                                {/* <option value="ARG - Misiones - Comunidad Laosiana - Posadas">ARG - Misiones - Comunidad Laosiana - Posadas</option> */}
                                 {/* <option value="ARG - Misiones - Comunidad de Sordos - Posadas">ARG - Misiones - Comunidad de Sordos - Posadas</option> */}
                                 <option value="ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores">ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores</option>
                                 <option value="ARG - Cordoba - Altamira">ARG - Cordoba - Altamira</option>
@@ -199,7 +199,7 @@ function FormExperimenta() {
                                 <option value="BO - Santa Cruz - Comunidad Betania">BO - Santa Cruz - Comunidad Betania</option>
                                 <option value="BO - Potosí - Localidad Uyuni">BO - Potosí - Localidad Uyuni</option>
                                 <option value="BO - Cochabamba - Kewiña">BO - Cochabamba - Kewiña</option>
-                                {/* <option value="BRA - SAO PAULO - RIO GRANDE DA SERRA">BRA - SAO PAULO - RIO GRANDE DA SERRA</option> */}
+                                {/* <option value="BRA - Sao Paulo - Rio Grande da Serra">BRA - Sao Paulo - Rio Grande da Serra</option> */}
                                 <option value="PE - Lima - Collique">PE - Lima - Collique</option>
                                 <option value="PE - Tingo Maria">PE - Tingo Maria</option>
                                 <option value="PE - Cajamarca">PE - Cajamarca</option>
@@ -238,7 +238,7 @@ function FormExperimenta() {
                                 {/* <option value="España">España</option> */}
                                 <option value="Macedonia">Macedonia</option>
                                 {/* <option value="Kenia">Kenia</option> */}
-                                <option value="Senegal">Senegal</option>
+                                {/* <option value="Senegal">Senegal</option> */}
                                 <option value="EEUU - Houston - Rohingya">EEUU - Houston - Rohingya</option>
 
                             </select>
