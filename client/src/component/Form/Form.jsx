@@ -21,8 +21,8 @@ function RegistroFormulario() {
         apellido: "",
         emailGoogle: "",
         email: "",
-        areaMinisterio:"",
-        ocupacion:"",
+        areaMinisterio: "",
+        ocupacion: "",
         telefono: "",
         codAreaUser: "",
         fechaNacimiento: "",
@@ -48,13 +48,14 @@ function RegistroFormulario() {
         esCeliaco: false,
         esVegetariano: false,
         Otra: false,
-        detalleAlimentacion:"",
+        detalleAlimentacion: "",
         participoCimaday: false,
         participoPrisma: false,
         participoEurovoluntariado: false,
         participoCima: false,
         participoSigue: false,
-        progPastor:false
+        progPastor: false,
+        referido: ""
     };
 
 
@@ -91,7 +92,7 @@ function RegistroFormulario() {
         <div className={style.contenedorForm}>
             <img className={style.titulo} src="https://i.postimg.cc/nzT7MnVg/Recurso-1completa-Datod.png" alt="Completa tus Datos" />
             <form onSubmit={handleSubmit} className={style.Form}>
-            <p className={style.descPrograma}>Seleccione la siguiente casilla, si desea participar del programa Pastores. En caso contrario si desea participar del programa convencional no seleccione la casilla</p>
+                <p className={style.descPrograma}>Seleccione la siguiente casilla, si desea participar del programa Pastores. En caso contrario si desea participar del programa convencional NO seleccione la casilla</p>
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
@@ -110,7 +111,22 @@ function RegistroFormulario() {
                     </div>
                     <p>Programa Pastores</p>
                 </div>
-            <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
+
+                <h1 className={style.ref}>REFERIDO</h1>
+                <p className={style.descPrograma}>Si llegaste a CIMA REGIONAL 2025 referido por alguien, <br /> déjanos su nombre completo aquí. <br /> En caso contrario puedes obviar este campo.</p>
+                <div className={style.inputGroup}>
+                    <input
+                        type="text"
+                        id="referido"
+                        name="referido"
+                        value={form.referido}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="REFERIDO" >Referido: </label>
+                </div>
+                <br />
+
+                <img className={style.subTitulo} src="https://i.postimg.cc/sxqMZXk6/Recurso-3datos-Personales.png" alt="Dato Personales" />
                 <div className={style.inputGroup}>
                     <input
                         type="text"
@@ -387,7 +403,7 @@ function RegistroFormulario() {
                 </div>
                 {form.esAlergico && (
                     <div className={style.inputGroup}>
-                        
+
                         <input
                             className=''
                             type="text"
@@ -470,7 +486,7 @@ function RegistroFormulario() {
                             name="telefonoEmergencia"
                             value={form.telefonoEmergencia}
                             onChange={handleChange}
-                            
+
                             required />
                         <label htmlFor="telefonoEmergencia">Teléfono Emergencia (ej: +56 299334344 )</label>
                         {errors.telefonoEmergencia && <div className={style.error}>{errors.telefonoEmergencia}</div>}
@@ -480,7 +496,7 @@ function RegistroFormulario() {
 
                 <img className={style.tituloAlimentacion} src="https://i.postimg.cc/wBwLj6jP/Recurso-10alimentacion.png" alt="" />
                 <img className={style.subTituloAlimentacion} src="https://i.postimg.cc/pT7jKq8J/Recurso-11una-Opcion.png" alt="" />
-                
+
                 <div className={style.cont_Checkbox}>
                     <div className={style.checkbox}>
                         <input
@@ -665,7 +681,7 @@ function RegistroFormulario() {
                 </div>
                 <br />
                 {errors.aviso && <div className={style.error}>{errors.aviso}</div>}
-                
+
                 <button type="submit" disabled={loading}>
                     <div class={style.svg_wrapper}>
                         <div class={style.svg_wrapper}>
@@ -685,7 +701,7 @@ function RegistroFormulario() {
                     </div>
                     <span>{loading ? "Enviando...." : "Enviar"}</span>
                 </button>
-                
+
             </form>
         </div>
     );

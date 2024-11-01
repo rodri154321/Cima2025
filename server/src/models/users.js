@@ -208,6 +208,10 @@ module.exports = (sequelize) => {
         progPastor:{
             type: DataTypes.BOOLEAN,
             allowNull: true
+        },
+        referido:{
+            type: DataTypes.STRING,
+            allowNull: true
         }
     }, 
     );

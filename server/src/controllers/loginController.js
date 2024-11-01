@@ -21,7 +21,7 @@ const postRegisterUser = async (emailGoogle, password) => {
 
 }
 
-const addInfoUser = async (progPastor, nombre, apellido, emailGoogle, email, fechaNacimiento, documento,
+const addInfoUser = async (referido,progPastor, nombre, apellido, emailGoogle, email, fechaNacimiento, documento,
   sexo, nacionalidad, paisResidencia, provincia, ciudad, iglesia, pastor, telefonoPastor,
   esAlergico, detalleAlergia, tieneMedicacion, detalleMedicacion, telefono, telefonoEmergencia,
   nombreEmergencia, esDiabetico, esCeliaco, esVegetariano, detalleAlimentacion, participoCimaday,
@@ -69,7 +69,8 @@ const addInfoUser = async (progPastor, nombre, apellido, emailGoogle, email, fec
         ocupacion, 
         areaMinisterio,
         fechaAlta: new Date(),
-        progPastor: progPastor
+        progPastor: progPastor,
+        referido: referido
       },
         {
           where: {

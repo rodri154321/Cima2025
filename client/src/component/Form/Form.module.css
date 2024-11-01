@@ -6,6 +6,13 @@
   width: 90%;
   margin-top: 60px;
   margin-bottom: 0;
+  font-family: "Gotham Medium";
+}
+.ref{
+  width: 100%;
+  margin-top: 0px;
+  color:#0b7f67;
+  font-family: "Telor Bistik";
 }
 .subTitulo{
   width: 35%;
@@ -30,7 +37,7 @@
   margin-right: 50%;
 }
 .contenedorForm h1{
-  margin-top: 25%;
+  /* margin-top: 25%; */
   font-size: 3rem;
     text-align: center;
 }
