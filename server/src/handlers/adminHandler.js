@@ -12,10 +12,10 @@ const registerAdminHandler = async (req, res) => {
 };
 
 const loginAdminHandler = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password } = req.query;
   try {
     const response = await loginAdmin(email, password);
-    if (response) return res.status(200).json({ message: "Ingreso Exitoso", admin: response, homeURL: "/" });
+    if (response) return res.status(200).json({ message: "Ingreso Exitoso",exist});
 
   } catch (error) {
     return res.status(500).json({ error: error.message });
