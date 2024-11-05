@@ -42,7 +42,7 @@ function LoginAdmin() {
             if (response.ok) {
                 navigate('/dashboardadminsregional25');
                 Swal.fire({
-                    title: "¡Bienvenido a Experimenta!",
+                    title: "¡Bienvenido al administrador!",
                     text: "HOLA",
                     icon: "success",
                     customClass: {

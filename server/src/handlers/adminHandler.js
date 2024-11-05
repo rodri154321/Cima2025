@@ -13,12 +13,32 @@ const registerAdminHandler = async (req, res) => {
 
 const loginAdminHandler = async (req, res) => {
   const { email, password } = req.query;
+
+  // Validación de entrada
+  if (!email || !password) {
+    return res.status(400).json({ message: "Email y contraseña son requeridos." });
+  }
+
   try {
-    const response = await loginAdmin(email, password);
-    if (response) return res.status(200).json({ message: "Ingreso Exitoso",exist});
+    const admin = await loginAdmin(email, password);
+    
+    return res.status(200).json({
+      message: "Ingreso Exitoso",
+      admin: {
+        id: admin.id,
+        email: admin.email
+      },
+      homeURL: "/"
+    });
 
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    // Manejo de errores según el tipo de fallo
+    if (error.message === "Credenciales inválidas") {
+      return res.status(401).json({ message: "Email o contraseña incorrectos." });
+    } else {
+      console.error("Error en loginAdminHandler:", error);
+      return res.status(500).json({ message: "Error en el servidor, intenta más tarde." });
+    }
   }
 };
 
