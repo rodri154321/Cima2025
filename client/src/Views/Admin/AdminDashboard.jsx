@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import style from "./AdminDashboard.module.css";
 
 function LoginAdmin() {
-    //onClick={logOutHandler}
+
+    const navigate = useNavigate();
+    const userString = localStorage.getItem('admin');
+    const userObject = JSON.parse(userString);
+
+    
+    useEffect(() => {
+        if (userObject) {
+        } else {
+            navigate('/')
+        }
+    }, [navigate]);
+
     return (
         <>
             <div className={style.logOut}>

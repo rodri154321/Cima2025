@@ -232,7 +232,7 @@ function FormExperimenta() {
                                 {/*  */}
 
                                 <option value="" disabled>Elige una opción</option>
-                                <option value="Tailandia">Tailandia</option>
+                                {/* <option value="Tailandia">Tailandia</option> */}
                                 <option value="Turquía">Turquía</option>
                                 <option value="Albania">Albania</option>
                                 {/* <option value="España">España</option> */}
