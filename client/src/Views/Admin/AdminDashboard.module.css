@@ -1,8 +1,14 @@
+.grande{
+    width: 100vw;
+    
+}
+
 .logOut {
     width: 100%;
     background-color: #005d7e;
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 3%;
 }
 
 .imglogOut {
@@ -14,9 +20,9 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #77b178;
+    /* background-color: #77b178; */
     overflow: hidden;
-    
+    min-height: 100vh;
 }
 
 .contenedorLogo{
@@ -37,8 +43,12 @@
     padding: 1%;
 }
 .informacion{
-    width: 80%;
+    width: 100%;
     background-color: #d9c7a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -51,3 +61,4 @@
     }
 
 }
+

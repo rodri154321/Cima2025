@@ -54,8 +54,23 @@ const getAdminEmailHandler = async (req, res) => {
   }
 };
 
+const changeExperimentaHandler = async (req, res) =>{
+
+  const {email, practica} = req.body;
+
+  try {
+    const response = await cambiopractica(email, practica);
+    if (response) return res.status(200).json({ message: "Cambio de practica realizado"});
+
+  } catch (error) {
+    return res.status(400).json({ message: "Error en el servidor, intenta más tarde." });
+  }
+
+}
+
 module.exports = {
   registerAdminHandler,
   loginAdminHandler,
-  getAdminEmailHandler
+  getAdminEmailHandler,
+  changeExperimentaHandler
 }
