@@ -5,6 +5,6 @@ const { registerAdminHandler, loginAdminHandler, getAdminEmailHandler, changeExp
 adminRoutes.post("/registerAdmin", registerAdminHandler)
 adminRoutes.get("/loginAdmin", loginAdminHandler)
 adminRoutes.get("/getAdminEmail", getAdminEmailHandler)
-adminRoutes.put("cambiarExpeimenta", changeExperimentaHandler)
+adminRoutes.put("/cambiarExpeimenta", changeExperimentaHandler)
 
 module.exports = adminRoutes;
