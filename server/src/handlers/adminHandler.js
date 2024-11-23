@@ -1,4 +1,4 @@
-const { registerAdmin, loginAdmin, findAdminEmail } = require('../controllers/adminController')
+const { registerAdmin, loginAdmin, findAdminEmail, cambiopractica } = require('../controllers/adminController')
 
 const registerAdminHandler = async (req, res) => {
   const { email, password } = req.body;
@@ -21,7 +21,7 @@ const loginAdminHandler = async (req, res) => {
 
   try {
     const admin = await loginAdmin(email, password);
-    
+
     return res.status(200).json({
       message: "Ingreso Exitoso",
       admin: {
@@ -45,28 +45,33 @@ const loginAdminHandler = async (req, res) => {
 const getAdminEmailHandler = async (req, res) => {
   const { email } = req.method === 'GET' ? req.body : req.body;
   try {
-      const isAuthenticated = await findAdminEmail(email);
-      if (isAuthenticated) {
-          res.status(200).json(isAuthenticated);
-      } 
+    const isAuthenticated = await findAdminEmail(email);
+    if (isAuthenticated) {
+      res.status(200).json(isAuthenticated);
+    }
   } catch (error) {
-      res.status(401).json({ authenticated: false, error: error.message });
+    res.status(401).json({ authenticated: false, error: error.message });
   }
 };
 
-const changeExperimentaHandler = async (req, res) =>{
 
-  const {email, practica} = req.body;
+const changeExperimentaHandler = async (req, res) => {
+  const { email, practica } = req.body;
+
+  if (!email || !practica) {
+    return res.status(400).json({ message: "Email y práctica son requeridos." });
+  }
 
   try {
     const response = await cambiopractica(email, practica);
-    if (response) return res.status(200).json({ message: "Cambio de practica realizado"});
 
+    return res.status(200).json({ message: response });
   } catch (error) {
-    return res.status(400).json({ message: "Error en el servidor, intenta más tarde." });
-  }
+    console.error("Error en changeExperimentaHandler:", error);
 
-}
+    return res.status(500).json({ message: "Error en el servidor, intenta más tarde." });
+  }
+};
 
 module.exports = {
   registerAdminHandler,

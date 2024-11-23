@@ -32,27 +32,23 @@ const findAdminEmail = async (email) => {
 };
 
 const cambiopractica = async (email, practica) => {
-
     try {
-        const exist = await users.findOne({ where: { email: email } });
-        if (!exist) {
-            throw Error('no se encontro el email');
-        }
-        await users.update({
-            experimenta: practica
-        },
-            {
-                where: {
-                    id: exist.dataValues.id,
-                },
-            },
-        )
-        return 'Practica actualizada correctamente';
-        
-    } catch (error) {
-        throw Error('Error al actualizar la práctica:', error);
-    }
 
-}
+        const user = await users.findOne({ where: { email } });
+        if (!user) {
+            throw new Error('No se encontró un usuario con el email proporcionado.');
+        }
+
+        await users.update(
+            { experimenta: practica },
+            { where: { id: user.id } }
+        );
+
+        return `La práctica se actualizó correctamente para el usuario con email: ${email}.`;
+    } catch (error) {
+
+        throw new Error(`Error al actualizar la práctica: ${error.message}`);
+    }
+};
 
 module.exports = { registerAdmin, loginAdmin, findAdminEmail, cambiopractica }
