@@ -34,7 +34,7 @@ const findAdminEmail = async (email) => {
 const cambiopractica = async (email, practica) => {
     try {
 
-        const user = await users.findOne({ where: { email } });
+        const user = await users.findOne({ where: { emailGoogle: email } });
         if (!user) {
             throw new Error('No se encontró un usuario con el email proporcionado.');
         }
