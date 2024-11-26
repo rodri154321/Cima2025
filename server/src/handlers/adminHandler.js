@@ -65,7 +65,7 @@ const changeExperimentaHandler = async (req, res) => {
   try {
     const response = await cambiopractica(email, practica);
 
-    return res.status(200).json({ message: response });
+    if (response) return res.status(200).json({ message: response });
   } catch (error) {
     console.error("Error en changeExperimentaHandler:", error);
 
