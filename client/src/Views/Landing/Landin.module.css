@@ -94,6 +94,10 @@
 }
 
 .textoInscripciones {
+  text-align: center;
+  font-family: "MADE Dillan";
+  color: #FFF;
+  font-size: 100px;
   margin-top: 7%;
   width: 65%;
 }
@@ -199,9 +203,15 @@
   
   }
 
+  .textoInscripciones {
+    font-size: 60px;
+    text-align: center;
+  }
+
   .subTitulo {
       font-size: 1.25rem;
-  }
+    }
+    
 
   .comentario {
       font-size: 1.05931rem;
@@ -232,6 +242,7 @@
       height: 1.41681rem;
       flex-shrink: 0;
   }
+
 
   .textboton1 {
       color: var(--White, #FFF);

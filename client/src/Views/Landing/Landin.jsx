@@ -70,7 +70,7 @@ const Landin = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
-            <img className={style.logo} src="https://i.postimg.cc/63Lcpms0/Recurso-1-Logo2025.png" alt="Logo" />
+             <img className={style.logo} src="https://i.postimg.cc/63Lcpms0/Recurso-1-Logo2025.png" alt="Logo" />
           </motion.div>
 
           <motion.div
@@ -104,9 +104,14 @@ const Landin = () => {
       </div>
 
       <div className={style.fondoPortada}>
-        <motion.img initial={{ scale: 0, opacity: 0 }}
+        {/* <motion.img initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
+         whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" /> */}
+        
+        <motion.h1 initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.1 }} className={style.textoInscripciones}>Inscripciones</motion.h1>
+
         <motion.h1 initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{ scale: 1.1 }} className={style.subTitulo}>¿Estas listo para el Cima 2025?</motion.h1>
