@@ -94,12 +94,11 @@
 }
 
 .textoInscripciones {
-  text-align: center;
+  /* text-align: center; */
   font-family: "MADE Dillan";
-  color: #FFF;
-  font-size: 100px;
+  color: #FEFFFA;
+  font-size: 50px;
   margin-top: 7%;
-  width: 65%;
 }
 
 .subTitulo {
