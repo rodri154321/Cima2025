@@ -23,9 +23,12 @@ body {
 }
 
 .textoInscripciones {
+    text-align: center;
+    font-family: "MADE Dillan";
+    color: #FEFFFA;
+    font-size: 120px;
     margin-top: 7%;
-    width: 65%;
-}
+  }
 
 .subTitulo {
     color: #FEFFFA;
@@ -118,6 +121,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .textoInscripciones {
+        font-size: 3rem;
+        text-align: center;
+      }
 
     .subTitulo {
         font-size: 1.25rem;

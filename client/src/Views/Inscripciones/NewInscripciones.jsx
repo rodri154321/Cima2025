@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion, useScroll, useTransform } from 'framer-motion';
 import style from "./NewInscripciones.module.css"
 
 
@@ -21,16 +22,19 @@ const NewInscripciones = () => {
 
     const goToRegister = () => {
         navigate('/register');
-      };
+    };
 
-      const goToLogin = () => {
+    const goToLogin = () => {
         navigate('/login');
-      };
+    };
 
     return (
         <div className={style.fondo}>
             <div className={style.fondoPortada}>
-                <img className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" />
+                {/* <img className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" /> */}
+                <motion.h1 initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    whileHover={{ scale: 1.1 }} className={style.textoInscripciones}>Inscripciones</motion.h1>
                 <h1 className={style.subTitulo}>¿Estas listo para el Cima 2025?</h1>
 
                 <div className={style.botones}>

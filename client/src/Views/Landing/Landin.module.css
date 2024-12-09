@@ -80,7 +80,7 @@
 
 .fondoPortada {
   /* background-image: url("https://i.postimg.cc/tJ62cFGL/Portada.png"); */
-  background-image: url("https://i.postimg.cc/KvGxj7mH/collage-2025.jpg");
+  background: url("https://i.postimg.cc/KvGxj7mH/collage-2025.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -97,7 +97,7 @@
   /* text-align: center; */
   font-family: "MADE Dillan";
   color: #FEFFFA;
-  font-size: 50px;
+  font-size: 120px;
   margin-top: 7%;
 }
 
@@ -199,11 +199,11 @@
 
   .fondoPortada {
   background-image: url("https://i.postimg.cc/1zyW4z9N/collage-para-celu.jpg");
-  
+  background-attachment: initial;
   }
 
   .textoInscripciones {
-    font-size: 60px;
+    font-size: 3rem;
     text-align: center;
   }
 

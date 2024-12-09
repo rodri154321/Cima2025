@@ -11,7 +11,7 @@ const Inscripciones = () => {
     return (
         <div className={style.fondolin}>
             <div className={style.registro}>
-                <img className={style.imgRa} src="https://i.postimg.cc/Vk2tp75r/Recurso-5titulo-Inscripciones.png" alt="Inscripciones" />
+                {/* <img className={style.imgRa} src="https://i.postimg.cc/Vk2tp75r/Recurso-5titulo-Inscripciones.png" alt="Inscripciones" /> */}
                 <Link to='/register'>
                     <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={style.imgInscripciones} src="https://i.postimg.cc/cCDgmhVJ/Recurso-6registrate-Aqui.png" alt="inscripciones" />
                 </Link>

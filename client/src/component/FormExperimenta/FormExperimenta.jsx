@@ -189,9 +189,15 @@ function FormExperimenta() {
                                 <option value="ARG - Cordoba - Altamira">ARG - Cordoba - Altamira</option>
                                 <option value="ARG - Cordoba - Parque Futura">ARG - Cordoba - Parque Futura</option>
                                 <option value="ARG - Cordoba - Rio cuarto">ARG - Cordoba - Rio cuarto</option>
+                                <option value="⁠⁠ARG - Gral Deheza - Córdoba">⁠⁠ARG - Gral Deheza - Córdoba</option>
+                                <option value="ARG - ⁠⁠Barrancas - Neuquén">ARG - ⁠⁠Barrancas - Neuquén</option>
+                                <option value="ARG - Luis Guillón - Buenos Aires">ARG - Luis Guillón - Buenos Aires</option>
+                                <option value=" ⁠⁠ARG - San Nicolás - Buenos Aires"> ⁠⁠ARG - San Nicolás - Buenos Aires</option>
+                                <option value=" ⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
                                 <option value="CHI - Llanquihue - Sector Las Cruces">CHI - Llanquihue - Sector Las Cruces</option>
                                 <option value="CHI - Región de Aysén - Patagonia">CHI - Región de Aysén - Patagonia</option>
                                 <option value="CHI - Mahuidanche">CHI - Mahuidanche</option>
+                                <option value="CHI - Colina - Santiago de Chile">CHI - Colina - Santiago de Chile</option>
                                 <option value="CHI - Araucania - Cautin">CHI - Araucania - Cautin</option>
                                 <option value="BO - Oruro - Zona Pumas Andinos">BO - Oruro - Zona Pumas Andinos</option>
                                 <option value="BO - Cochabamba - Prov. Punata">BO - Cochabamba - Prov. Punata</option>
@@ -210,7 +216,7 @@ function FormExperimenta() {
                                 <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option>
                                 <option value="PRY - Itapúa - San Luis del Paraná">PRY - Itapúa - San Luis del Paraná</option>
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
-                                <option value="UY - Treinta y Tres">UY - Treinta y Tres</option>
+                                {/* <option value="UY - Treinta y Tres">UY - Treinta y Tres</option> */}
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
                                 {/* <option value="BRA - San Pablo">BRA - San Pablo</option> */}
