@@ -6,6 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Tilt } from '@jdion/tilt-react';
 import { Link, useNavigate } from 'react-router-dom';
+import LogoCima from '../../assets/LogoCima.webp';
+import seisP from '../../assets/seisP.webp';
 import { Fab, Action } from 'react-tiny-fab';
 import 'react-tiny-fab/dist/styles.css';
 import style from './Landin.module.css';
@@ -70,7 +72,7 @@ const Landin = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
-             <img className={style.logo} src="https://i.postimg.cc/63Lcpms0/Recurso-1-Logo2025.png" alt="Logo" />
+             <img className={style.logo} src={LogoCima} alt="Logo" />
           </motion.div>
 
           <motion.div
@@ -78,7 +80,7 @@ const Landin = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.5 }}
             whileTap={{ scale: 0.9 }}>
-            <img className={style.sublogo} src="https://i.postimg.cc/KzyQFyWj/Recurso-26-P1-M.png" alt="6 paises 1 mision" />
+            <img className={style.sublogo} src={seisP} alt="6 paises 1 mision" />
           </motion.div>
 
           <div className={style.banderas}>
