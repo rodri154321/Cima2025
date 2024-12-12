@@ -1,12 +1,5 @@
 const oradoresCristianos = [
-    {
-        nombre: "Thomas",
-        apellido:"Vögelin",
-        nacionalidad:"Suiza",
-        ministerio: "Fundador y director internacional de Movida.",
-        descripcion:" Desde hace más de 35 años sirve en la movilización de jóvenes latinos. Vivió en Chile, Argentina y Alemania, y hace 7 años están instalados en Walzenhausen, Suiza. Casado con Mechthild y tiene 4 hijos.",
-        foto:"https://i.postimg.cc/sxSm80Dp/Thomas-V-gelin-Foto-removebg-preview.png"
-    },
+   
     {
         nombre: "Andrew",
         apellido:"Brunson",

@@ -8,6 +8,7 @@ import { Tilt } from '@jdion/tilt-react';
 import { Link, useNavigate } from 'react-router-dom';
 import LogoCima from '../../assets/LogoCima.webp';
 import seisP from '../../assets/seisP.webp';
+import collageImage from '../../assets/collage-2025.webp';
 import { Fab, Action } from 'react-tiny-fab';
 import 'react-tiny-fab/dist/styles.css';
 import style from './Landin.module.css';
@@ -23,7 +24,7 @@ const Landin = () => {
   let y = useTransform(scrollYProgress, [0, 3], ["0%", "-400%"]);
 
   const [oradoresData, setOradoresData] = useState([
-    { id: 1, src: 'https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png', cartelito: 'https://i.postimg.cc/QM3vHh3J/thomas.png', nombre: 'Thomas', showCartelito: false },
+    // { id: 1, src: 'https://i.postimg.cc/13gjQFP3/Recurso-2-Thomas.png', cartelito: 'https://i.postimg.cc/QM3vHh3J/thomas.png', nombre: 'Thomas', showCartelito: false },
     { id: 2, src: 'https://i.postimg.cc/L5HWK04c/Recurso-3-Helder.png', cartelito: 'https://i.postimg.cc/cJ05dhRD/helder-farvin.png', nombre: 'Helder', showCartelito: false },
     { id: 3, src: 'https://i.postimg.cc/dQBXmv4w/Recurso-4-Mika.png', cartelito: 'https://i.postimg.cc/s2TMBZsy/mika.png', nombre: 'Mika', showCartelito: false },
     { id: 4, src: 'https://i.postimg.cc/4yBSJbmm/Recurso-5-Soon.png', cartelito: 'https://i.postimg.cc/K8JsvL0x/soon-im.png', nombre: 'Soon', showCartelito: false },
@@ -63,7 +64,7 @@ const Landin = () => {
   return (
     <>
 
-      <div className={style.fondo1}>
+      <div className={style.fondo1} >
 
         <motion.div className={style.fondoplx}
           style={{ y }}>
@@ -106,9 +107,6 @@ const Landin = () => {
       </div>
 
       <div className={style.fondoPortada}>
-        {/* <motion.img initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-         whileHover={{ scale: 1.1 }} className={style.textoInscripciones} src="https://i.postimg.cc/6pzmr5QN/Inscripcionestex-Inscrip.png" alt="Inscripciones" /> */}
         
         <motion.h1 initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
