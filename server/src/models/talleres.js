@@ -6,16 +6,23 @@ module.exports = (sequelize) => {
             type: DataTypes.UUID, 
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
-            unique: true
+            unique: true,
         },
         nombreTaller: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true,
         },
-        cantPersonas: {
-            type: DataTypes.STRING,
+        cupo: {
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
+        cantidadInscriptos: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0,
+            allowNull: true,
+        },
+
     }, 
     );
 }; 

@@ -16,6 +16,8 @@ import InfoImportanteExperimenta from './Views/Experimenta/InfoImportanteExperim
 import FormExperimenta from './component/FormExperimenta/FormExperimenta';
 import NewInscripciones from './Views/Inscripciones/NewInscripciones';
 import Speakers from './Views//Speakers/Speakers'
+import Talleres from './Views/InscripcionTalleres/InscTalleres';
+import DiaUno from './Views/CimaNews/DiaUno/DiaUno';
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
             <Route path='/infoimportanteexperimenta' element={<InfoImportanteExperimenta/>}/>
             <Route path='/formexperimenta' element={<FormExperimenta/>}/>
             <Route path='/oradores' element={<Speakers/>}/>
+            <Route path='/taller' element={<Talleres/>}/>
+            <Route path='/cimanews' element={<DiaUno/>}/>
          </Routes>
     </div>
   )

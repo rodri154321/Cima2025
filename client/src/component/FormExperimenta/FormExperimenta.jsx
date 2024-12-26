@@ -89,7 +89,6 @@ function FormExperimenta() {
         };
 
         try {
-            console.log(formData);
             // Enviar los datos del formulario a un endpoint
             const response = await fetch('https://cima2025.up.railway.app/login/addExperimenta', {
                 method: 'PUT',

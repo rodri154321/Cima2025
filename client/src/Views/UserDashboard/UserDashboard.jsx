@@ -14,7 +14,6 @@ function UserDashboard() {
 
   let pictureGoogle = localStorage.getItem('pictureGoogle');
   const foto = pictureGoogle.slice(0, -7);
-  console.log(foto, "aa")
   useEffect(() => {
     const userString = localStorage.getItem('user');
     const userObject = JSON.parse(userString);
