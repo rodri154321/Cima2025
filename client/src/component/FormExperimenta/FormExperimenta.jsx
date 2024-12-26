@@ -186,7 +186,7 @@ function FormExperimenta() {
                                 {/* <option value="ARG - Misiones - Comunidad de Sordos - Posadas">ARG - Misiones - Comunidad de Sordos - Posadas</option> */}
                                 {/* <option value="ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores">ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores</option> */}
                                 <option value="ARG - Cordoba - Altamira">ARG - Cordoba - Altamira</option>
-                                <option value="ARG - Cordoba - Parque Futura">ARG - Cordoba - Parque Futura</option>
+                                {/* <option value="ARG - Cordoba - Parque Futura">ARG - Cordoba - Parque Futura</option> */}
                                 <option value="ARG - Cordoba - Rio cuarto">ARG - Cordoba - Rio cuarto</option>
                                 <option value="⁠⁠ARG - Gral Deheza - Córdoba">⁠⁠ARG - Gral Deheza - Córdoba</option>
                                 <option value="ARG - ⁠⁠Barrancas - Neuquén">ARG - ⁠⁠Barrancas - Neuquén</option>
