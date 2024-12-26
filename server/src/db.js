@@ -49,7 +49,7 @@ plenarias.belongsToMany(users, {
   through: 'UsuariosXPlenarias'
 });
 
-// 1. Relación uno a muchos: users -> nfts
+// 1. Relación uno a muchos: users -> taller
 //users.belongsTo(taller, { as: "taller" });
 //taller.hasMany(users, { as: "users", foreignKey: 'idUser' });
 

@@ -25,7 +25,6 @@ const findUserEmail = async (emailGoogle) => {
 
 const findUsername = async (nombre) => {
     const exist = await users.findOne({ where: { nombre: nombre } });
-    console.log(exist);
 
     if (exist) {
         return exist;

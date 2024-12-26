@@ -13,23 +13,23 @@ const Login = () => {
   const handleGoogleLogin = async (reponse) => {
     if (reponse.credential) {
       const { payload } = decodeJwt(reponse.credential)
-     const pictureGoogle = payload.picture
+      const pictureGoogle = payload.picture
       try {
         const loginResponse = await serviceLogin.login({
           emailGoogle: payload.email,
           password: payload.sub
-        },pictureGoogle);
+        }, pictureGoogle);
         if (loginResponse.user) {
           setUser(loginResponse.user);
           setEmailGoogle(payload.email);
           const userPreinscripto = localStorage.getItem('user');
           const userObject = JSON.parse(userPreinscripto);
-          if(userObject.preinscripto){
+          if (userObject.preinscripto) {
             navigate('/dashboard');
-          }else{
+          } else {
             navigate('/user');
           }
-          
+
         } else {
           console.error('Inicio de sesión fallido: no se pudo obtener el usuario');
           Swal.fire({
