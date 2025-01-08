@@ -193,6 +193,10 @@ function FormExperimenta() {
                                 <option value="ARG - Luis Guillón - Buenos Aires">ARG - Luis Guillón - Buenos Aires</option>
                                 <option value=" ⁠⁠ARG - San Nicolás - Buenos Aires"> ⁠⁠ARG - San Nicolás - Buenos Aires</option>
                                 <option value=" ⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
+                                <option value="ARG - San Salvador de Jujuy - La puna">ARG - San Salvador de Jujuy - La puna</option>
+                                <option value="ARG - Buenos Aires - Miramar">ARG - Buenos Aires - Miramar</option>
+                                <option value="ARG - Córdoba - Mina Clavero">ARG - Córdoba - Mina Clavero</option>
+                                <option value="ARG - Catamarca - Manantiales">ARG - Catamarca - Manantiales</option>
                                 <option value="CHI - Llanquihue - Sector Las Cruces">CHI - Llanquihue - Sector Las Cruces</option>
                                 <option value="CHI - Región de Aysén - Patagonia">CHI - Región de Aysén - Patagonia</option>
                                 <option value="CHI - Mahuidanche">CHI - Mahuidanche</option>
@@ -212,7 +216,7 @@ function FormExperimenta() {
                                 <option value="PRY - Capital - Come Lord ">PRY - Capital - Come Lord</option>
                                 <option value="PRY - Central - Areguá">PRY - Central - Aregua</option>
                                 <option value="PRY - Caaguazú - Coronel">PRY - Caaguazú - Coronel</option>
-                                <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option>
+                                {/* <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option> */}
                                 <option value="PRY - Itapúa - San Luis del Paraná">PRY - Itapúa - San Luis del Paraná</option>
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
                                 {/* <option value="UY - Treinta y Tres">UY - Treinta y Tres</option> */}

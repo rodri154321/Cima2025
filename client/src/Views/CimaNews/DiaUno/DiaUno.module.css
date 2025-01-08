@@ -37,7 +37,8 @@
 .svgmap{
     position: absolute;
     left: 0%;
-    top: 75%;
+    top: 25%;
+    z-index: 3;
 }
 
 .SpoilerContainer{
@@ -46,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 
@@ -57,11 +59,91 @@
     font-family: "Gotham Black";
 }
 
+.devocionalContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.libro{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+.textoDevo{
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    z-index: 3;
+}
+.devo1er{
+    font-family:"Gotham Black";
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: #00536E;
+    margin-bottom: 0%;
+}
+.devoCional{
+    font-family:"Gotham Medium";
+    color: black;
+    font-size: 2rem;
+    margin-top: -3%;
+    
+}
+
+.cristianoGlobalContainer{
+    margin-top: 10%;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+}
+
+.cristianoGlobal{
+    margin-left: 5%;
+    z-index: 2;
+}
+
+/* .svgOracion{
+    z-index: 1;
+} */
+
+.svgCG{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+}
+
+.divTextoCG{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloCG{
+    font-family: "Gotham Black";
+    font-weight: bold;
+    font-size: 0.909rem;
+    color: #000000;
+    margin-bottom: 0%;
+}
+
+.textoCG{
+    font-family: "Gotham Medium";
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 0%;
+}
+
+
 @media screen and (max-width: 768px) {
-    .videoContainer{
-        width: 100vw;
-        height: auto;
-    }
     .video{
         width: 100%;
         height: 100%;
@@ -69,4 +151,34 @@
     .spoilerTitle{
         font-size: 4.6rem;
     }
+  }
+
+
+  .simVideo{
+    width: 80%;
+    height: 30vh;
+    background-color: #F2F2F2;
+    margin-top: 20%;
+    z-index: 2;
+  }
+
+
+  /* -------------------------------------------------------------COLORES------------------------------------------------------------------ */
+
+.colorLetra{
+    color: #00536E;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+  .colorAzul{
+    background: #00536E;
+    color: white;
+  }
+
+  .subrrallado{
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #E98900;
+    text-decoration-thickness: 0.2rem;
   }

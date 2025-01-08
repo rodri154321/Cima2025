@@ -3,11 +3,10 @@
     align-items: center;
     /* justify-content: center; */
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: #00536E;
     border-bottom: 2px solid #ddd;
-    padding: 0 20px;
   }
   
   /* Logo styling */
