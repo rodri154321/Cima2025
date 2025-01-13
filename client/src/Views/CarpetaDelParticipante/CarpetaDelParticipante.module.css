@@ -1,0 +1,9 @@
+.conteiner{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.imgCarpeta{
+    width: 100%;
+}

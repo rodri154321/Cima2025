@@ -101,11 +101,23 @@
     width: 100%;
     position: relative;
     background-color: transparent;
+    margin-left: -20%;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.textoCGContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .cristianoGlobal{
     margin-left: 5%;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* .svgOracion{
