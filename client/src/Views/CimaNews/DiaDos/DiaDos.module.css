@@ -1,5 +1,3 @@
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -12,16 +10,8 @@
 
 @media screen and (min-width: 768px) {
 
-    .global{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #005B7B;
-    }
-
     .container {
         width: 40vw;
-        overflow: hidden;
     }
 }
 
@@ -30,8 +20,7 @@
 /* -----------------------------------------------------------PORTADA----------------------------------------------------------- */
 
 .videoContainer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
@@ -39,8 +28,8 @@
 }
 
 .video {
-    width: 80%;
-    height: 60vh;
+    width: 70%;
+    height: 100%;
 }
 
 /* -----------------------------------------------------------MAPA----------------------------------------------------------- */
@@ -96,7 +85,7 @@
 
 .libro {
     position: absolute;
-    left: -10%;
+    left: 0%;
     top: 0%;
     z-index: 1;
 }
@@ -240,7 +229,7 @@
 
 .simVideo {
     width: 80%;
-    height: 60vh;
+    height: 30vh;
     background-color: #F2F2F2;
     margin-top: 20%;
     z-index: 2;
