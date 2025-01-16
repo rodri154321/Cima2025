@@ -19,6 +19,7 @@ import Speakers from './Views//Speakers/Speakers'
 import Talleres from './Views/InscripcionTalleres/InscTalleres';
 import DiaUno from './Views/CimaNews/DiaUno/DiaUno';
 import Spoiler from "./Views/Spoiler/Spoiler"
+import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
             <Route path='/taller' element={<Talleres/>}/>
             <Route path='/cimanews' element={<DiaUno/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
+            <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
          </Routes>
     </div>
   )
