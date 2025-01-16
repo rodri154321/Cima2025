@@ -1,12 +1,33 @@
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("../../assets/fondo1.webp");
 }
 
-.titulo{
+.titulo {
     width: 80%;
+    margin-top: 10%;
+}
+
+button {
+    --width: 60%;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1em;
+    background: #DE9304;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Mulish";
+
+}
+
+button:hover {
+    transform: scale(1.1) translateY(-1px);
 }

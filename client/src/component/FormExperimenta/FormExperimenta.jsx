@@ -222,6 +222,7 @@ function FormExperimenta() {
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
                                 {/* <option value="UY - Treinta y Tres">UY - Treinta y Tres</option> */}
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
+                                <option value="UY - Canelones - La piedra">UY - Canelones - La piedra</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
                                 {/* <option value="BRA - San Pablo">BRA - San Pablo</option> */}
 
