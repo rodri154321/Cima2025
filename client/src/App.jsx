@@ -18,7 +18,10 @@ import NewInscripciones from './Views/Inscripciones/NewInscripciones';
 import Speakers from './Views//Speakers/Speakers'
 import Talleres from './Views/InscripcionTalleres/InscTalleres';
 import DiaUno from './Views/CimaNews/DiaUno/DiaUno';
+import DiaDos from './Views/CimaNews/DiaDos/DiaDos';
 import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
+import CarpetaParticipante from './Views/CarpetaDelParticipante/CarpetaParticipante';
+import LoaderCimanews from './component/Loaders/LoaderCimanews';
 
 
 function App() {
@@ -49,8 +52,10 @@ function App() {
             <Route path='/formexperimenta' element={<FormExperimenta/>}/>
             <Route path='/oradores' element={<Speakers/>}/>
             <Route path='/taller' element={<Talleres/>}/>
-            <Route path='/cimanews' element={<DiaUno/>}/>
+            <Route path='/cimanews' element={<LoaderCimanews/>}/>
             <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
+            <Route path='/carpetaparticipante' element={<CarpetaParticipante/>}/>
+            <Route path='/cimanews2' element={<DiaDos/>}/>
          </Routes>
     </div>
   )
