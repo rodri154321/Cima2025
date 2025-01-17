@@ -5,71 +5,94 @@ import CardSpoiler from "../../component/cardSpoiler/cardSpoiler";
 import style from "./Spoiler.module.css";
 
 const Spoiler = () => {
-  const [activeVideo, setActiveVideo] = useState(null); // Estado para controlar el video activo
-  const sliderRef = useRef(null); // Referencia al contenedor del slider
-  const controls = useAnimation(); // Controlador para la animación del slider
-  const earthControls = useAnimation(); // Controlador para la animación de la tierra
+  const [activeVideo, setActiveVideo] = useState(null); 
+  const sliderRef = useRef(null); 
+  const controls = useAnimation(); 
+  const earthControls = useAnimation(); 
 
+  // Ángulos para cada uno de los 7 ítems distribuidos en 360 grados
+  const directions = [
+    0,        // Item 0 -> Norte
+    51.43,    // Item 1 -> Primera dirección
+    102.86,   // Item 2 -> Segunda dirección
+    154.29,   // Item 3 -> Tercera dirección
+    205.72,   // Item 4 -> Cuarta dirección
+    257.15,   // Item 5 -> Quinta dirección
+    308.58,   // Item 6 -> Sexta dirección
+  ];
+
+  // Función para manejar el arrastre y actualizar la rotación del planeta
   const handleDrag = (event, info) => {
     const deltaX = info.delta.x; // Cambio en la posición horizontal
-    const rotationChange = deltaX * 0.1; // Ajusta el valor para controlar la rotación
+    const sliderWidth = sliderRef.current.scrollWidth;
+    const rotationChange = (deltaX / sliderWidth) * 360; // Rotación proporcional al desplazamiento
+
+    // Actualizar la rotación de la imagen (planeta) en función del movimiento
     earthControls.start({
-      rotate: `+=${rotationChange}`, // Incrementa o decrementa la rotación
-      transition: { duration: 0.1 }, // Suavidad en la animación
+      rotate: rotationChange, 
+      transition: { duration: 0.1 }, 
     });
   };
 
+  // Función para manejar la selección de un ítem
   const handleItemClick = (index) => {
     if (!sliderRef.current) return;
 
-    const slider = sliderRef.current; // Contenedor del slider
-    const itemWidth = slider.scrollWidth / cardSpoilerData.length; // Ancho de un ítem
-    const newScrollPosition =
-      -(index * itemWidth - slider.offsetWidth / 2 + itemWidth / 2);
+    const slider = sliderRef.current;
+    const itemWidth = slider.scrollWidth / cardSpoilerData.length; // Ancho de cada ítem
+    const newScrollPosition = -(index * itemWidth - slider.offsetWidth / 2 + itemWidth / 2);
 
-    // Animar la posición del slider
+    // Animar el slider
     controls.start({
       x: newScrollPosition,
       transition: { duration: 0.5, ease: "easeOut" },
     });
 
+    // Animar la rotación de la imagen a la dirección correspondiente
+    earthControls.start({
+      rotate: directions[index], 
+      transition: { duration: 0.5, ease: "easeOut" },
+    });
+
     // Cambiar el video activo
-    setActiveVideo(index); // Actualiza el estado para indicar qué video se está reproduciendo
+    setActiveVideo(index);
   };
 
   return (
     <motion.div className={style.slider_container}>
-      {/* <motion.div
+      {/* Contenedor de la imagen (globo) que rota */}
+      <motion.div
         className={style.circulo}
-        animate={earthControls} // Vincula la animación de rotación
-        style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
+        animate={earthControls} // Animación de la rotación
       >
-        <img src="../../../earth.svg" alt="Earth" />
-      </motion.div> */}
+        <img src="/earth.svg" alt="Earth" />
+      </motion.div>
+
+      {/* Contenedor del slider */}
       <motion.div
         ref={sliderRef}
         className={style.slider}
-        drag="x"
+        drag="x" // Habilitar el arrastre horizontal
         dragConstraints={{
-          right: 600,
-          left: -(cardSpoilerData.length - 1) * 200,
+          right: 0,
+          left: -(cardSpoilerData.length - 1) * 200, // El slider podrá moverse libremente
         }}
-        animate={controls}
-        onDrag={handleDrag} // Maneja el evento de arrastre
+        animate={controls} // Animación del slider
+        onDrag={handleDrag} // Actualizar la rotación del planeta mientras se arrastra
       >
         {cardSpoilerData.map((spoiler, index) => (
           <motion.div
             key={index}
             className={style.item}
-            onClick={() => handleItemClick(index)}
+            onClick={() => handleItemClick(index)} // Cambiar la dirección al hacer clic
           >
             <CardSpoiler
               nombre={spoiler.nombre}
               descripcion={spoiler.descripcion}
               url={spoiler.url}
               videoId={index}
-              isActive={activeVideo === index} // Indica si este video es el activo
-              onPlay={setActiveVideo} // Función para actualizar el video activo
+              isActive={activeVideo === index}
+              onPlay={setActiveVideo}
             />
           </motion.div>
         ))}
