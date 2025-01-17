@@ -26,12 +26,12 @@
         url: "/videoSpoiler.mp4",
       },
       {
-        nombre: "Viernes",
+        nombre: "Sabado",
         descripcion: "Descripción extendida para la cuarta tarjeta.",
         url: "/videoSpoiler.mp4",
       },
       {
-        nombre: "Sabado",
+        nombre: "Domingo",
         descripcion: "Un texto más breve para la tercera tarjeta.",
         url: "/videoSpoiler.mp4",
       }
