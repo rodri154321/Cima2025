@@ -11,8 +11,7 @@
 
 .circulo {
   position: absolute;
-  transform: translate(-50%, -50%);
-  
+  /* transform: translate(-50%, -50%); */
   height: 80vh;
   z-index: -1;
 }
@@ -31,31 +30,39 @@
 }
 
 .item {
+  display: flex;
+    justify-content: center;
   height: 100%;
-  width: 100%;
-  margin: 10px;
+  width: 400px;
+  
 }
 
 
 @media (max-width: 768px) {
+  .slider{
+    
+  }
   .circulo {
     width: 70vw;
     height: 70vw;
   }
 
   .item {
-    margin: 5px;
-    width: 250px;
+
+    width: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .circulo {
-    width: 80vw;
+    width: 100vw;
     height: 80vw;
+   
   }
 
   .item {
-    width: 200px;
+    
+    width: 300px;
+   border:solid red 1px;
   }
 }
