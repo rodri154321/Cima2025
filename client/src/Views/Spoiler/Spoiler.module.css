@@ -31,71 +31,11 @@ height: 140vh;
   text-align: center;
 }
 
-.circulo img {
 
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  transform-origin: center;
-  /* Asegura que la imagen gire desde su centro */
-  pointer-events: none;
-  z-index: 0;
-}
 .cont_s{
   position: absolute;
   height: 100%;
   width: 100%;
-}
-
-.s_uno {
-  position: absolute;
-  top: 5%;
-  right: 40%;
-  color: red;
-  padding: 0;
-  margin: 0%;
-  width: 100px;
-  
-}
-.s_dos {
-  transform: rotate(-72deg);
-  position: absolute;
-  top: 32%;
-  left: 2%;
-  color: red;
-  padding: 0;
-  margin: 0%;
-  width: 100px;
-}
-.s_tres {
-  transform: rotate(-144deg);
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
-  color: rgb(0, 4, 255);
-  padding: 0;
-  margin: 0%;
-  width: 100px;
-}
-.s_cuatro {
-  transform: rotate(-215deg);
-  position: absolute;
-  bottom:11%;
-  left: 67%;
-  color: rgb(0, 4, 255);
-  padding: 0;
-  margin: 0%;
-  width: 100px;
-}
-.s_cinco {
-  transform: rotate(-288deg);
-  position: absolute;
-  bottom:60%;
-  left: 85%;
-  color: rgb(0, 4, 255);
-  padding: 0;
-  margin: 0%;
-  width: 100px;
 }
 
 .slider {
