@@ -92,12 +92,23 @@ const Spoiler = () => {
   }, []);
 
   return (
+    <div className={style.cont_S}>
+      <h1 className={style.title_Spoiler}>Spoiler Dia 1</h1>
     <motion.div className={style.slider_container}>
       {/* Contenedor de la imagen (globo) que rota */}
+      
       <motion.div
         className={style.circulo}
         animate={earthControls} // Animación de la rotación
       >
+        <div className={style.cont_s}>
+        <h3 className={style.s_uno}>Spoiler 1</h3>
+        <h3 className={style.s_dos}>Spoiler 2</h3>
+        <h3 className={style.s_tres}>Spoiler 3</h3>
+        <h3 className={style.s_cuatro}>Spoiler 4</h3>
+        <h3 className={style.s_cinco}>Spoiler 5</h3>
+        </div>
+        
         <img src="/earth.svg" alt="Earth" />
       </motion.div>
 
@@ -131,6 +142,7 @@ const Spoiler = () => {
         ))}
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 

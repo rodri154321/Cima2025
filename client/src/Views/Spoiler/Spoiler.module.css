@@ -1,27 +1,101 @@
+.cont_S{
+height: 140vh;
+ background-image: url("../../assets/fondo1.webp");
+}
 .slider_container {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
   height: 100vh;
+ 
 }
-.h_lunes{
-
+.title_Spoiler {
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  z-index: 10;
 }
 
 .circulo {
+  display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   /* transform: translate(-50%, -50%); */
-  height: 80vh;
-  z-index: -1;
+  height: 100vh;
+  width: 100vh;
+  z-index: 0;
+  text-align: center;
 }
 
 .circulo img {
-  width: 100%;
-  height: 100%;
+
+  width: 80%;
+  height: 80%;
   object-fit: cover;
-  transform-origin: center; /* Asegura que la imagen gire desde su centro */
+  transform-origin: center;
+  /* Asegura que la imagen gire desde su centro */
   pointer-events: none;
+  z-index: 0;
+}
+.cont_s{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.s_uno {
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  color: red;
+  padding: 0;
+  margin: 0%;
+  width: 100px;
+  
+}
+.s_dos {
+  transform: rotate(-72deg);
+  position: absolute;
+  top: 32%;
+  left: 2%;
+  color: red;
+  padding: 0;
+  margin: 0%;
+  width: 100px;
+}
+.s_tres {
+  transform: rotate(-144deg);
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  color: rgb(0, 4, 255);
+  padding: 0;
+  margin: 0%;
+  width: 100px;
+}
+.s_cuatro {
+  transform: rotate(-215deg);
+  position: absolute;
+  bottom:11%;
+  left: 67%;
+  color: rgb(0, 4, 255);
+  padding: 0;
+  margin: 0%;
+  width: 100px;
+}
+.s_cinco {
+  transform: rotate(-288deg);
+  position: absolute;
+  bottom:60%;
+  left: 85%;
+  color: rgb(0, 4, 255);
+  padding: 0;
+  margin: 0%;
+  width: 100px;
 }
 
 .slider {
@@ -31,20 +105,19 @@
 
 .item {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   height: 100%;
   width: 400px;
-  
+  z-index: 1;
 }
 
 
 @media (max-width: 768px) {
-  .slider{
-    
-  }
+  .slider {}
+
   .circulo {
-    width: 70vw;
-    height: 70vw;
+    width: 100vw;
+    height: 100vh;
   }
 
   .item {
@@ -55,14 +128,16 @@
 
 @media (max-width: 480px) {
   .circulo {
-    width: 100vw;
-    height: 80vw;
    
+    height: 100vh;
+
+  }
+  .circulo img {
+    width: 100%;
   }
 
   .item {
-    
+
     width: 300px;
-   border:solid red 1px;
   }
 }
