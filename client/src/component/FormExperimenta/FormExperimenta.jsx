@@ -187,12 +187,12 @@ function FormExperimenta() {
                                 {/* <option value="ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores">ARG - Santa Fe - Comunidad Mocoví - Colonia Dolores</option> */}
                                 {/* <option value="ARG - Cordoba - Altamira">ARG - Cordoba - Altamira</option> */}
                                 {/* <option value="ARG - Cordoba - Parque Futura">ARG - Cordoba - Parque Futura</option> */}
-                                <option value="ARG - Cordoba - Rio cuarto">ARG - Cordoba - Rio cuarto</option>
+                                {/* <option value="ARG - Cordoba - Rio cuarto">ARG - Cordoba - Rio cuarto</option> */}
                                 <option value="⁠⁠ARG - Gral Deheza - Córdoba">⁠⁠ARG - Gral Deheza - Córdoba</option>
                                 <option value="ARG - ⁠⁠Barrancas - Neuquén">ARG - ⁠⁠Barrancas - Neuquén</option>
                                 <option value="ARG - Luis Guillón - Buenos Aires">ARG - Luis Guillón - Buenos Aires</option>
-                                <option value=" ⁠⁠ARG - San Nicolás - Buenos Aires"> ⁠⁠ARG - San Nicolás - Buenos Aires</option>
-                                <option value=" ⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
+                                <option value="⁠⁠ARG - San Nicolás - Buenos Aires"> ⁠⁠ARG - San Nicolás - Buenos Aires</option>
+                                <option value="⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
                                 <option value="ARG - San Salvador de Jujuy - La puna">ARG - San Salvador de Jujuy - La puna</option>
                                 <option value="ARG - Buenos Aires - Miramar">ARG - Buenos Aires - Miramar</option>
                                 <option value="ARG - Córdoba - Mina Clavero">ARG - Córdoba - Mina Clavero</option>
@@ -222,6 +222,7 @@ function FormExperimenta() {
                                 <option value="PRY - Boquerón - Loma Plata">PRY - Boquerón - Loma Plata</option>
                                 {/* <option value="UY - Treinta y Tres">UY - Treinta y Tres</option> */}
                                 <option value="UY - Cerro Largo - Melo">UY - Cerro Largo - Melo</option>
+                                <option value="UY - Canelones - Las piedras">UY - Canelones - Las piedras</option>
                                 <option value="ECU - Selva amazónica">ECU - Selva amazónica</option>
                                 {/* <option value="BRA - San Pablo">BRA - San Pablo</option> */}
 

@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("../../assets/fondo1.webp");
+}
+
+.titulo {
+    width: 40%;
+    margin-top: 4%;
+}
+
+button {
+    width: 25%;
+    border: 0;
+    padding-block: 1em;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1em;
+    background: #DE9304;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Mulish";
+    margin-bottom: 2%;
+}
+
+button:hover {
+    transform: scale(1.1) translateY(-1px);
+}
+
+.containerDescargas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 7%;
+}
+
+.buttonDescarga{
+    width: 45%;
+    border: 0;
+    padding-block: 1em;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1em;
+    background: #63B772;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Mulish";
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .titulo {
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+
+    button {
+        --width: 60%;
+        border: 0;
+        width: var(--width);
+        padding-block: 1em;
+        color: #fff;
+        font-weight: 900;
+        font-size: 1em;
+        background: #DE9304;
+        border-radius: 100px;
+        cursor: pointer;
+        font-family: "Mulish";
+    }
+  }
