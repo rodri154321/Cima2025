@@ -26,6 +26,8 @@ import LoaderCimanews from './component/Loaders/LoaderCimanews';
 import DescProgAct from './Views/CarpetaDelParticipante/visoresCarpeta/descprogact';
 import OperacionCima from './Views/CarpetaDelParticipante/visoresCarpeta/operacionCima';
 import AtencionMedica from './Views/CarpetaDelParticipante/visoresCarpeta/atencionMedica';
+import Movida from './Views/CarpetaDelParticipante/visoresCarpeta/movida';
+import TiendaMovida from './Views/CarpetaDelParticipante/visoresCarpeta/tiendamovida';
 
 
 function App() {
@@ -67,7 +69,14 @@ function App() {
             <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
             <Route path='/carpetaparticipante' element={<CarpetaParticipante/>}/>
             <Route path='/carpetaparticipante/descprogact' element={<DescProgAct/>}/>
+            <Route path='/carpetaparticipante/movida' element={<Movida/>}/>
             <Route path='/carpetaparticipante/operacioncima' element={<OperacionCima/>}/>
+            <Route path='/carpetaparticipante/tiendamovida' element={<TiendaMovida/>}/>
+            <Route path='/carpetaparticipante/experimenta' element={<DescProgAct/>}/>
+            <Route path='/carpetaparticipante/progpastores' element={<OperacionCima/>}/>
+            <Route path='/carpetaparticipante/oradores' element={<AtencionMedica/>}/>
+            <Route path='/carpetaparticipante/plenariasgenerales' element={<DescProgAct/>}/>
+            <Route path='/carpetaparticipante/vueltaacasa' element={<OperacionCima/>}/>
             <Route path='/carpetaparticipante/atencionmedica' element={<AtencionMedica/>}/>
             
          </Routes>

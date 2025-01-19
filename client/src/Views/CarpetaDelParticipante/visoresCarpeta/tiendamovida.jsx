@@ -1,8 +1,8 @@
 import React from 'react';
 
-import imae from "../pdfs/OPCIMA.webp";
+import imae from "../pdfs/TIENDAMOVIDA.webp";
 
-const OperacionCima = () => {
+const TiendaMovida = () => {
     return (
         <div style={{ width: "100vw", overflow: "hidden" }}>
             <img style={{ width: "100%"}} src={imae} alt="atencion" />
@@ -10,4 +10,4 @@ const OperacionCima = () => {
     );
 };
 
-export default OperacionCima;
+export default TiendaMovida;

@@ -47,6 +47,10 @@ const CarpetaParticipante = () => {
         navigate('/carpetaparticipante/atencionmedica');
     };
 
+    const route11 = () => {
+        navigate('/carpetaparticipante/movida');
+    };
+
 
     return (
         <div className={style.container}>
@@ -54,6 +58,7 @@ const CarpetaParticipante = () => {
 
             <button onClick={route1} className={style.button}>DESCRIPCIONES,
                 PROGAMAS Y ACTIVIDADES</button>
+            <button onClick={route11} className={style.button}>MOVIDA</button>
             <button onClick={route2} className={style.button}>OPERACIÓN CIMA</button>
             <button onClick={route3} className={style.button}>TIENDA MOVIDA</button>
             <button onClick={route4} className={style.button}>EXPERIMENTA</button>
