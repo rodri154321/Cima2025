@@ -23,6 +23,9 @@ import Spoiler from "./Views/Spoiler/Spoiler"
 import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
 import CarpetaParticipante from './Views/CarpetaDelParticipante/CarpetaParticipante';
 import LoaderCimanews from './component/Loaders/LoaderCimanews';
+import DescProgAct from './Views/CarpetaDelParticipante/visoresCarpeta/descprogact';
+import OperacionCima from './Views/CarpetaDelParticipante/visoresCarpeta/operacionCima';
+import AtencionMedica from './Views/CarpetaDelParticipante/visoresCarpeta/atencionMedica';
 
 
 function App() {
@@ -54,10 +57,19 @@ function App() {
             <Route path='/oradores' element={<Speakers/>}/>
             <Route path='/taller' element={<Talleres/>}/>
             <Route path='/cimanews' element={<LoaderCimanews/>}/>
+            <Route path='/cimanews1' element={<DiaUno/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
+            <Route path='/cimanews2' element={<DiaDos/>}/>
+
+
+            {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
+
             <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
             <Route path='/carpetaparticipante' element={<CarpetaParticipante/>}/>
-            <Route path='/cimanews2' element={<DiaDos/>}/>
+            <Route path='/carpetaparticipante/descprogact' element={<DescProgAct/>}/>
+            <Route path='/carpetaparticipante/operacioncima' element={<OperacionCima/>}/>
+            <Route path='/carpetaparticipante/atencionmedica' element={<AtencionMedica/>}/>
+            
          </Routes>
     </div>
   )
