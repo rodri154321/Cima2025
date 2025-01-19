@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import cardSpoilerData from "../../utils/datosSpoiler";
 import CardSpoiler from "../../component/cardSpoiler/cardSpoiler";
@@ -10,29 +10,6 @@ const Spoiler = () => {
   const controls = useAnimation(); 
   const earthControls = useAnimation(); 
 
-  // Ángulos para cada uno de los 7 ítems distribuidos en 360 grados
-  const directions = [
-    0,        // Item 0 -> Norte
-    51.43,    // Item 1 -> Primera dirección
-    102.86,   // Item 2 -> Segunda dirección
-    154.29,   // Item 3 -> Tercera dirección
-    205.72,   // Item 4 -> Cuarta dirección
-    257.15,   // Item 5 -> Quinta dirección
-    308.58,   // Item 6 -> Sexta dirección
-  ];
-
-  // Función para manejar el arrastre y actualizar la rotación del planeta
-  const handleDrag = (event, info) => {
-    const deltaX = info.delta.x; // Cambio en la posición horizontal
-    const sliderWidth = sliderRef.current.scrollWidth;
-    const rotationChange = (deltaX / sliderWidth) * 360; // Rotación proporcional al desplazamiento
-
-    // Actualizar la rotación de la imagen (planeta) en función del movimiento
-    earthControls.start({
-      rotate: rotationChange, 
-      transition: { duration: 0.1 }, 
-    });
-  };
 
   // Función para manejar la selección de un ítem
   const handleItemClick = (index) => {
@@ -48,39 +25,64 @@ const Spoiler = () => {
       transition: { duration: 0.5, ease: "easeOut" },
     });
 
-    // Animar la rotación de la imagen a la dirección correspondiente
-    earthControls.start({
-      rotate: directions[index], 
-      transition: { duration: 0.5, ease: "easeOut" },
-    });
+ 
 
     // Cambiar el video activo
     setActiveVideo(index);
   };
 
-  return (
-    <motion.div className={style.slider_container}>
-      {/* Contenedor de la imagen (globo) que rota */}
-      <motion.div
-        className={style.circulo}
-        animate={earthControls} // Animación de la rotación
-      >
-        <img src="/earth.svg" alt="Earth" />
-      </motion.div>
+  // Función para manejar el desplazamiento con la ruedita del ratón
+  const handleWheel = (event) => {
+    const sliderWidth = sliderRef.current.scrollWidth;
+    const delta = event.deltaY; // Cantidad de desplazamiento de la ruedita
 
-      {/* Contenedor del slider */}
+    // Determinar el movimiento proporcional al desplazamiento vertical
+    const scrollAmount = delta * 0.1;  // Ajusta este valor para que el movimiento sea más suave
+    controls.start({
+      x: scrollAmount,
+      transition: { duration: 0.1 },
+    });
+
+    // Actualizar la rotación del planeta de acuerdo al movimiento
+    const rotationChange = (scrollAmount / sliderWidth) * 360; // Convertir desplazamiento horizontal
+    earthControls.start({
+      rotate: rotationChange,
+      transition: { duration: 0.9 },
+    });
+
+    event.preventDefault();  // Prevenir el comportamiento predeterminado (desplazamiento de página)
+  };
+
+  // Agregar el evento `wheel` al montar el componente
+  useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.addEventListener("wheel", handleWheel);
+    }
+
+    return () => {
+      if (sliderRef.current) {
+        sliderRef.current.removeEventListener("wheel", handleWheel);
+      }
+    };
+  }, []);
+
+  return (
+    <div className={style.cont_S}>
+      <h1 className={style.title_Spoiler}>Spoiler Dia 1</h1>
+    <motion.div className={style.slider_container}>
+    
       <motion.div
         ref={sliderRef}
         className={style.slider}
         drag="x" // Habilitar el arrastre horizontal
         dragConstraints={{
-          right: 0,
-          left: -(cardSpoilerData.length - 1) * 200, // El slider podrá moverse libremente
+          right: 500,
+          left: -(cardSpoilerData.length - 1) * 100, // El slider podrá moverse libremente
         }}
         animate={controls} // Animación del slider
-        onDrag={handleDrag} // Actualizar la rotación del planeta mientras se arrastra
+   
       >
-        {cardSpoilerData.map((spoiler, index) => (
+        {cardSpoilerData.slice(0, 5).map((spoiler, index) => (
           <motion.div
             key={index}
             className={style.item}
@@ -98,6 +100,7 @@ const Spoiler = () => {
         ))}
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 
