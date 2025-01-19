@@ -8,7 +8,7 @@ import style from './DiaUno.module.css';
 import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
 import FotoMerch from "../../../assets/Merch.webp"
 import EuroVol from "../../../assets/EuroVol.webp"
-import VideoFabri from "../../../assets/videos/videoeditado.mp4"
+//import VideoFabri from "../../../assets/videos/videoeditado.mp4"
 
 const DiaUno = () => {
 
@@ -32,7 +32,7 @@ const DiaUno = () => {
                 <div className={style.container}>
                     {/* -----------------------------------------------------------PORTADA----------------------------------------------------------- */}
                     <div className={style.videoContainer}>
-                        <video className={style.video} controls><source src={VideoFabri} type="video/mp4" /> </video>
+                        {/* <video className={style.video} controls><source src={VideoFabri} type="video/mp4" /> </video> */}
                     </div>
 
                     {/* -----------------------------------------------------------MAPA----------------------------------------------------------- */}
