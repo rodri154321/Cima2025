@@ -32,11 +32,11 @@ const CarpetaParticipante = () => {
     };
 
     const route7 = () => {
-        navigate('/carpetaparticipante/devocionales');
+        navigate('/carpetaparticipante/devocionalesygrupospequeños');
     };
 
     const route8 = () => {
-        navigate('/carpetaparticipante/plenarias');
+        navigate('/carpetaparticipante/plenariasgenerales');
     };
 
     const route9 = () => {
@@ -49,6 +49,10 @@ const CarpetaParticipante = () => {
 
     const route11 = () => {
         navigate('/carpetaparticipante/movida');
+    };
+
+    const route12 = () => {
+        navigate('/carpetaparticipante/devocionalesexperimenta');
     };
 
 
@@ -70,6 +74,7 @@ const CarpetaParticipante = () => {
                 TALLERES Y CIMA TALKS</button>
             <button onClick={route9} className={style.button}>VUELTA A CASA</button>
             <button onClick={route10} className={style.button}>ATENCION MÉDICA</button>
+            <button onClick={route12} className={style.button}>DEVOCIONALES EXPERIMENTA</button>
 
             <div className={style.containerDescargas}>
                 <button className={style.buttonDescarga}><svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">

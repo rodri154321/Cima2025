@@ -28,6 +28,13 @@ import OperacionCima from './Views/CarpetaDelParticipante/visoresCarpeta/operaci
 import AtencionMedica from './Views/CarpetaDelParticipante/visoresCarpeta/atencionMedica';
 import Movida from './Views/CarpetaDelParticipante/visoresCarpeta/movida';
 import TiendaMovida from './Views/CarpetaDelParticipante/visoresCarpeta/tiendamovida';
+import ExperimentaCarpeta from './Views/CarpetaDelParticipante/visoresCarpeta/experimentacarpeta';
+import Progpastores from './Views/CarpetaDelParticipante/visoresCarpeta/ProgPastores';
+import OradoresCarpeta from './Views/CarpetaDelParticipante/visoresCarpeta/oradores';
+import DevoGrup from './Views/CarpetaDelParticipante/visoresCarpeta/devocionalesCarpeta';
+import Plenarias from './Views/CarpetaDelParticipante/visoresCarpeta/plenarias';
+import Vueltaacasa from './Views/CarpetaDelParticipante/visoresCarpeta/vueltaacasa';
+import DevoExperimenta from './Views/CarpetaDelParticipante/visoresCarpeta/devoexpe';
 
 
 function App() {
@@ -72,12 +79,14 @@ function App() {
             <Route path='/carpetaparticipante/movida' element={<Movida/>}/>
             <Route path='/carpetaparticipante/operacioncima' element={<OperacionCima/>}/>
             <Route path='/carpetaparticipante/tiendamovida' element={<TiendaMovida/>}/>
-            <Route path='/carpetaparticipante/experimenta' element={<DescProgAct/>}/>
-            <Route path='/carpetaparticipante/progpastores' element={<OperacionCima/>}/>
-            <Route path='/carpetaparticipante/oradores' element={<AtencionMedica/>}/>
-            <Route path='/carpetaparticipante/plenariasgenerales' element={<DescProgAct/>}/>
-            <Route path='/carpetaparticipante/vueltaacasa' element={<OperacionCima/>}/>
+            <Route path='/carpetaparticipante/experimenta' element={<ExperimentaCarpeta/>}/>
+            <Route path='/carpetaparticipante/programapastores' element={<Progpastores/>}/>
+            <Route path='/carpetaparticipante/oradores' element={<OradoresCarpeta/>}/>
+            <Route path='/carpetaparticipante/devocionalesygrupospequeños' element={<DevoGrup/>}/>
+            <Route path='/carpetaparticipante/plenariasgenerales' element={<Plenarias/>}/>
+            <Route path='/carpetaparticipante/vueltaacasa' element={<Vueltaacasa/>}/>
             <Route path='/carpetaparticipante/atencionmedica' element={<AtencionMedica/>}/>
+            <Route path='/carpetaparticipante/devocionalesexperimenta' element={<DevoExperimenta/>}/>
             
          </Routes>
     </div>
