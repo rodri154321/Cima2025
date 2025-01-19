@@ -13,6 +13,7 @@
     "@jdion/tilt-react": "^1.0.0",
     "@react-oauth/google": "^0.12.1",
     "framer-motion": "^11.0.12",
+    "git-filter-repo": "^0.0.30",
     "react": "^18.2.0",
     "react-datepicker": "^6.9.0",
     "react-dom": "^18.2.0",
