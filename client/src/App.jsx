@@ -73,8 +73,8 @@ function App() {
 
             {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
 
-            <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
-            <Route path='/carpetaparticipante' element={<CarpetaParticipante/>}/>
+            <Route path='/carpetadelparticipante' element={<CarpetaParticipante/>}/>
+            <Route path='/carpetaparticipante' element={<CarpetaDelParticipante/>}/>
             <Route path='/carpetaparticipante/descprogact' element={<DescProgAct/>}/>
             <Route path='/carpetaparticipante/movida' element={<Movida/>}/>
             <Route path='/carpetaparticipante/operacioncima' element={<OperacionCima/>}/>
