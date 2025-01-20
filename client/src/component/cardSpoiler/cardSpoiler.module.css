@@ -16,6 +16,16 @@
   font-family: 'Mulish', sans-serif;
 }
 
+.invisibleArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Establecer un z-index alto para que quede por encima del video */
+  cursor: pointer; /* Se ve como un área clickeable */
+}
+
 .video {
   width: 100%;
   border-radius: 3%;
@@ -36,7 +46,7 @@
 }
 
 .video_container h1 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: black;
   margin: 5%;
   line-height: 1.5;

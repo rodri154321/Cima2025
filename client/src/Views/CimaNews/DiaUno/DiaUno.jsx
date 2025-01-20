@@ -9,6 +9,8 @@ import Spoiler from '../../../Views/Spoiler/Spoiler';
 import Quiz from '../../../component/JuegoQuiz/Quiz';
 import portadita from "../../../assets/portadita.webp";
 import ReactPlayer from 'react-player';
+import InstagramPost from '../../../component/InstagramPost/InstagramPost';
+import EuroVol from '../../../Views/EuroVol/EuroVol';
 
 const DiaUno = () => {
 
@@ -126,10 +128,10 @@ const DiaUno = () => {
                         <h2 className={style.fechaDevo}> DIA 1 .  LUNES 20 DE ENERO 2025</h2>
                         <h2 className={style.hechopor}>POR: JOEL BRIZI</h2>
 
-                        <ReactPlayer url='https://vimeo.com/1048559581/09f37ff7e9' 
-                        width='100%'
-                        height='90vh'
-                        controls
+                        <ReactPlayer url='https://vimeo.com/1048559581/09f37ff7e9'
+                            width='100%'
+                            height='90vh'
+                            controls
                         />
                     </div>
 
@@ -272,7 +274,7 @@ const DiaUno = () => {
                                 Una experiencia intercultural, colaborando con diferentes países, aprendiendo a trabajar en la unidad por medio de Cristo. Sé parte de esta experiencia que te acercará al corazón de Dios por las naciones.
 
                                 ¡Hay una práctica para ti! Visítanos en la feria cimática, allí podrás inscribirte, descubrir todos los destinos disponibles y conversar con nuestro equipo para resolver tus dudas.
-                                También puedes realizar tu inscripción por medio de la web www.cimaregional2025.com
+                                También puedes realizar tu inscripción por medio de la web <br /> <a href='www.cimaregional2025.com' className={style.linkCima}>www.cimaregional2025.com</a>
                             </p>
                         </div>
 
@@ -326,7 +328,7 @@ const DiaUno = () => {
 
                     {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
 
-                    {/* <div className={style.euroVolContainer}>
+                    <div className={style.euroVolContainer}>
                         <div>
                             <svg width="213" height="61" viewBox="0 0 213 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M58.0426 54.2611C58.4413 58.9985 60.2334 60.293 63.1797 60.1729C93.7339 58.9185 124.284 59.2521 154.905 59.2343C164.403 59.2298 173.905 59.2209 183.403 59.2165C191.726 59.212 200.342 59.4211 208.442 58.358C210.646 58.0688 211.762 56.9434 212.194 53.5405C213.097 46.4544 213.218 41.3433 212.673 31.1923C212.492 27.8739 211.334 26.7618 209.047 26.5706C191.574 25.0893 173.28 26.5172 155.69 26.8508C138.457 27.1755 120.767 27.2645 103.353 27.3846C94.5145 27.4469 85.6798 27.518 76.8451 27.6337C72.1739 27.696 67.2718 27.1444 62.6677 27.7227C57.8159 28.3321 56.8884 30.6852 57.0101 32.7492C57.1528 35.1335 57.199 37.5178 57.2619 39.911C57.3878 44.6929 57.6396 49.4792 58.0426 54.2611Z" fill="#E8CA16" />
@@ -361,13 +363,16 @@ const DiaUno = () => {
                             </svg>
 
                         </div>
-                        <Spoiler id='1' />
-                        
-                    </div> */}
+                        <EuroVol id='1' />
+                        <div className={style.StellaEuroImg}>
+                            <img src='/StellaEuro.png'/>
+                        </div>
+
+                    </div>
 
                     {/* -----------------------------------------------------------INSTAGRAM----------------------------------------------------------- */}
                     <div className={style.instagramContainer}>
-                        {/* <InstagramPost /> */}
+                        <InstagramPost />
                     </div>
                 </div>
             </div>

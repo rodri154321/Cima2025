@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import cardSpoilerData from "../../utils/datosSpoiler";
 import CardSpoiler from "../../component/cardSpoiler/cardSpoiler";
 import ReactPlayer from "react-player";  // Asegúrate de tener ReactPlayer importado
-import style from "./Spoiler.module.css";
+import style from "./EuroVol.module.css";
 
 const Spoiler = ({ id }) => {
   const filteredCardSpoilerData = cardSpoilerData
@@ -68,7 +68,7 @@ const Spoiler = ({ id }) => {
   return (
     <div className={style.cont_S} onClick={handleUserInteraction}>
       <motion.div className={style.slider_container}
-        style={{ transform: 'translateX(225%)' }}>
+        style={{ transform: 'translateX(87%)' }}>
         <motion.div
           ref={sliderRef}
           className={style.slider}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import style from "./cardSpoiler.module.css";
 import ReactPlayer from "react-player";
 
@@ -31,17 +31,19 @@ function CardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
   };
 
   return (
-    <div className={style.video_container}>
+    <div className={style.video_container} onClick={handleClick}>
       <div className={style.titleSpoilerContainer}>
         <h1>{nombre}</h1>
       </div>
+
       <ReactPlayer
-                                              className={style.video}
-                                              url={url}
-                                              width="100%"
-                                              height="60vh"
-                                              playing
-                                              />
+        className={style.video}
+        url={url}
+        width="100%"
+        height="60vh"
+        style={{ paddingTop: "10%" }}
+        controls
+      />
       <p>{descripcion}</p>
     </div>
   );
