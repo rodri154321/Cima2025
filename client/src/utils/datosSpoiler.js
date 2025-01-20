@@ -10,11 +10,11 @@
         descripcion: "Logistica",
         url: "/SpoilerDia1/2.mp4",
       },
-      {
-        nombre: "El llamado que comenzó todo",
-        descripcion: "",
-        url: "/SpoilerDia1/3.mp4",
-      },
+      // {
+      //   nombre: "El llamado que comenzó todo",
+      //   descripcion: "",
+      //   url: "/SpoilerDia1/3.mp4",
+      // },
       {
         nombre:"El deporte, un idioma Universal",
         descripcion: "Kyle Winker",
