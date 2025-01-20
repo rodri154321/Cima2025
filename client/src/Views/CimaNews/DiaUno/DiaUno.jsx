@@ -87,8 +87,6 @@ const DiaUno = () => {
                             </defs>
                         </svg>
 
-
-
                         <div className={style.simVideo}>
                             <Spoiler />
                         </div>

@@ -150,3 +150,12 @@ svg {
     text-align: center;
     font-family: 'Gotham', sans-serif;
 }
+
+.videoModalContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.videoModal{
+    width: 50%;
+}
