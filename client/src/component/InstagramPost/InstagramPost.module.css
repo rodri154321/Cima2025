@@ -1,0 +1,41 @@
+.InstagramPost iframe{
+    pointer-events: none !important; /* Deshabilita la interacción con el iframe */
+}
+.CarouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;  /* Ocultar los posts que no se están mostrando */
+}
+
+.InstagramPosts {
+    position: relative;
+    width: 100%;
+}
+
+.InstagramPost {
+    display: none; /* Por defecto, ocultar todas las publicaciones */
+    width: 100%;
+}
+
+.Buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.Buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+

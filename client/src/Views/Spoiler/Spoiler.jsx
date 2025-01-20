@@ -5,101 +5,102 @@ import CardSpoiler from "../../component/cardSpoiler/cardSpoiler";
 import style from "./Spoiler.module.css";
 
 const Spoiler = () => {
-  const [activeVideo, setActiveVideo] = useState(null); 
-  const sliderRef = useRef(null); 
-  const controls = useAnimation(); 
-  const earthControls = useAnimation(); 
+  const numCards = cardSpoilerData.length;
+  const initialActiveVideo = Math.floor(numCards / 2); // Centro inicial basado en el número de tarjetas
 
+  const [activeVideo, setActiveVideo] = useState(initialActiveVideo);
+  const [userInteracted, setUserInteracted] = useState(false);
+  const sliderRef = useRef(null);
+  const controls = useAnimation();
 
-  // Función para manejar la selección de un ítem
-  const handleItemClick = (index) => {
+  const centerItem = (index) => {
     if (!sliderRef.current) return;
 
     const slider = sliderRef.current;
-    const itemWidth = slider.scrollWidth / cardSpoilerData.length; // Ancho de cada ítem
+    const itemWidth = slider.scrollWidth / numCards;  // Asegura que el cálculo se haga dinámicamente
     const newScrollPosition = -(index * itemWidth - slider.offsetWidth / 2 + itemWidth / 2);
 
-    // Animar el slider
     controls.start({
       x: newScrollPosition,
       transition: { duration: 0.5, ease: "easeOut" },
     });
-
- 
-
-    // Cambiar el video activo
-    setActiveVideo(index);
   };
 
-  // Función para manejar el desplazamiento con la ruedita del ratón
-  const handleWheel = (event) => {
-    const sliderWidth = sliderRef.current.scrollWidth;
-    const delta = event.deltaY; // Cantidad de desplazamiento de la ruedita
+  const handleDragEnd = (event, info) => {
+    const offset = info.offset.x;
+    const threshold = 100;
 
-    // Determinar el movimiento proporcional al desplazamiento vertical
-    const scrollAmount = delta * 0.1;  // Ajusta este valor para que el movimiento sea más suave
-    controls.start({
-      x: scrollAmount,
-      transition: { duration: 0.1 },
-    });
-
-    // Actualizar la rotación del planeta de acuerdo al movimiento
-    const rotationChange = (scrollAmount / sliderWidth) * 360; // Convertir desplazamiento horizontal
-    earthControls.start({
-      rotate: rotationChange,
-      transition: { duration: 0.9 },
-    });
-
-    event.preventDefault();  // Prevenir el comportamiento predeterminado (desplazamiento de página)
-  };
-
-  // Agregar el evento `wheel` al montar el componente
-  useEffect(() => {
-    if (sliderRef.current) {
-      sliderRef.current.addEventListener("wheel", handleWheel);
+    if (offset < -threshold) {
+      handleNext();
+    } else if (offset > threshold) {
+      handlePrev();
+    } else {
+      centerItem(activeVideo);
     }
+  };
 
-    return () => {
-      if (sliderRef.current) {
-        sliderRef.current.removeEventListener("wheel", handleWheel);
+  const handlePrev = () => {
+    const newIndex = activeVideo > 0 ? activeVideo - 1 : numCards - 1;
+    setActiveVideo(newIndex);
+    centerItem(newIndex);
+  };
+
+  const handleNext = () => {
+    const newIndex = activeVideo < numCards - 1 ? activeVideo + 1 : 0;
+    setActiveVideo(newIndex);
+    centerItem(newIndex);
+  };
+
+  const handleUserInteraction = () => {
+    if (!userInteracted) {
+      setUserInteracted(true);
+    }
+  };
+
+  useEffect(() => {
+    centerItem(activeVideo);
+    if (userInteracted && sliderRef.current) {
+      const videoElement = sliderRef.current.children[activeVideo].querySelector("video");
+      if (videoElement) {
+        videoElement.play().catch((error) => {});
       }
-    };
-  }, []);
+    }
+  }, [activeVideo, userInteracted]);
+
+  useEffect(() => {
+    if (userInteracted) {
+      const videoElement = sliderRef.current.children[activeVideo].querySelector("video");
+      if (videoElement) {
+        videoElement.play().catch((error) => {});
+      }
+    }
+  }, [userInteracted, activeVideo]);
 
   return (
-    <div className={style.cont_S}>
-      <h1 className={style.title_Spoiler}>Spoiler Dia 1</h1>
-    <motion.div className={style.slider_container}>
-    
-      <motion.div
-        ref={sliderRef}
-        className={style.slider}
-        drag="x" // Habilitar el arrastre horizontal
-        dragConstraints={{
-          right: 500,
-          left: -(cardSpoilerData.length - 1) * 100, // El slider podrá moverse libremente
-        }}
-        animate={controls} // Animación del slider
-   
-      >
-        {cardSpoilerData.slice(0, 5).map((spoiler, index) => (
-          <motion.div
-            key={index}
-            className={style.item}
-            onClick={() => handleItemClick(index)} // Cambiar la dirección al hacer clic
-          >
-            <CardSpoiler
-              nombre={spoiler.nombre}
-              descripcion={spoiler.descripcion}
-              url={spoiler.url}
-              videoId={index}
-              isActive={activeVideo === index}
-              onPlay={setActiveVideo}
-            />
-          </motion.div>
-        ))}
+    <div className={style.cont_S} onClick={handleUserInteraction}>
+      <motion.div className={style.slider_container}>
+        <motion.div
+          ref={sliderRef}
+          className={style.slider}
+          animate={controls}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragEnd={handleDragEnd}
+        >
+          {cardSpoilerData.map((spoiler, index) => (
+            <motion.div key={index} className={style.item}>
+              <CardSpoiler
+                nombre={spoiler.nombre}
+                descripcion={spoiler.descripcion}
+                url={spoiler.url}
+                videoId={index}
+                isActive={activeVideo === index}
+                onPlay={setActiveVideo}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </motion.div>
-    </motion.div>
     </div>
   );
 };
