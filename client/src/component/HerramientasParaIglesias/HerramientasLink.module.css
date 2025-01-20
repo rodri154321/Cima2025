@@ -1,0 +1,13 @@
+.HerramientasLinkContainer{
+    width: 100%;
+    height: 10%;
+    background-color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.HerramientasLinkContainer h1{
+    font-family: 'Inter' , sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}

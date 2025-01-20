@@ -1,30 +1,35 @@
 
     const dataSpoiler = [
       {
-        nombre: "spoiler 1",
-        descripcion: "Esta es la descripción de la primera tarjeta.",
-        url: "/videoSpoiler.mp4",
+        nombre: "Mi destino y la familia en la fe",
+        descripcion: "Orador:Mika Yrjölä",
+        url: "/SpoilerDia1/1.mp4",
       },
       {
-        nombre: "spoiler 2",
-        descripcion: "Descripción detallada de la segunda tarjeta.",
-        url: "/videoSpoiler.mp4",
+        nombre: "Consejo Importante",
+        descripcion: "Logistica",
+        url: "/SpoilerDia1/2.mp4",
       },
       {
-        nombre: "spoiler 3",
-        descripcion: "Un texto más breve para la tercera tarjeta.",
-        url: "/videoSpoiler.mp4",
+        nombre: "El llamado que comenzó todo",
+        descripcion: "",
+        url: "/SpoilerDia1/3.mp4",
       },
       {
-        nombre:"spoiler 4",
-        descripcion: "Descripción extendida para la cuarta tarjeta.",
-        url: "/videoSpoiler.mp4",
+        nombre:"El deporte, un idioma Universal",
+        descripcion: "Kyle Winker",
+        url: "/SpoilerDia1/4.mp4",
       },
       {
-        nombre: "spoiler 5",
-        descripcion: "Un texto más breve para la tercera tarjeta.",
-        url: "/videoSpoiler.mp4",
+        nombre: "Yo y nadie más",
+        descripcion: "",
+        url: "/SpoilerDia1/5.mp4",
       },
+      {
+        nombre: "La gracia de Cristo",
+        descripcion: "Mika Yrjola",
+        url: "/SpoilerDia1/5.mp4",
+      }
     ];
 
     export default dataSpoiler;

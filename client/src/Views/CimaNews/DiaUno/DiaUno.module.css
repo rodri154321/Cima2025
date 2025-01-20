@@ -311,13 +311,32 @@
 
 
 .simVideo {
-    width: 80%;
-    height: 60vh;
-    background-color: #F2F2F2;
-    margin-top: 20%;
+    width: 100%;
+    height: auto;
     z-index: 2;
 }
 
+.intervencionesContainer{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.herramientasLinkContainer{
+    width: 87%;
+    height: 87%;
+    z-index: 2;
+}
+
+.imageHerramientas{
+    width: 100%;
+    height: 100%;
+}
+
+.instagramContainer{
+    width: 87%;
+    height: 87%;
+}
 
 /* -------------------------------------------------------------COLORES------------------------------------------------------------------ */
 

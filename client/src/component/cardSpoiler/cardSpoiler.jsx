@@ -1,30 +1,46 @@
-import React, { useRef, useEffect } from 'react'
-import style from "./cardSpoiler.module.css"
+import React, { useState, useEffect, useRef } from "react";
+import style from "./cardSpoiler.module.css";
 
-function cardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
+function CardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  // Pausa el video si no está activo
   useEffect(() => {
-    if (!isActive && videoRef.current) {
+    if (isActive && videoRef.current && !isPlaying) {
+      videoRef.current.play().catch((error) => {
+        console.log("Reproducción automática fallida:", error);
+      });
+      setIsPlaying(true);
+    } else if (!isActive && videoRef.current && isPlaying) {
       videoRef.current.pause();
+      setIsPlaying(false);
     }
-  }, [isActive]); // Dependiendo de si el video está activo
+  }, [isActive, isPlaying]);
 
-  // Maneja el evento de reproducción
-  const handlePlay = () => {
-    onPlay(videoId); // Notifica al padre que este video se está reproduciendo
+  const handleClick = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      videoRef.current.play().catch((error) => {
+        console.log("Reproducción manual fallida:", error);
+      });
+      setIsPlaying(true);
+    }
   };
 
   return (
     <div className={style.video_container}>
-      <h1>{nombre}</h1>
+      <div className={style.titleSpoilerContainer}>
+        <h1>{nombre}</h1>
+      </div>
       <video
         ref={videoRef}
         className={style.video}
         controls
-        onPlay={handlePlay} // Llama al padre cuando el video comienza a reproducirse
-        autoPlay={isActive} // Reproduce solo si está activo
+        controlsList="nodownload"
+        onClick={handleClick}
+        onTouchStart={handleClick}
       >
         <source src={url} type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
@@ -34,4 +50,4 @@ function cardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
   );
 }
 
-export default cardSpoiler;
+export default CardSpoiler;
