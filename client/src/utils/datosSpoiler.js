@@ -20,16 +20,11 @@
         descripcion: "Kyle Winker",
         url: "/SpoilerDia1/4.mp4",
       },
-      {
-        nombre: "Yo y nadie más",
-        descripcion: "",
-        url: "/SpoilerDia1/5.mp4",
-      },
-      {
-        nombre: "La gracia de Cristo",
-        descripcion: "Mika Yrjola",
-        url: "/SpoilerDia1/5.mp4",
-      }
+      // {
+      //   nombre: "Yo y nadie más",
+      //   descripcion: "",
+      //   url: "/SpoilerDia1/5.mp4",
+      // },
     ];
 
     export default dataSpoiler;

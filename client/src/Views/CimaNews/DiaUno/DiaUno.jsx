@@ -7,7 +7,6 @@ import style from './DiaUno.module.css';
 import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
 import Spoiler from '../../../Views/Spoiler/Spoiler';
 import Quiz from '../../../component/JuegoQuiz/Quiz';
-import InstagramPost from '../../../component/InstagramPost/InstagramPost';
 import VideoFabri from "../../../assets/videos/videoeditado.mp4";
 import VideoDevo from "../../../assets/videos/DiA1.mp4";
 import videoMerch from "../../../assets/videos/MERCHDIA1.mp4";
@@ -316,9 +315,7 @@ const DiaUno = () => {
                     {/* <img src={EuroVol} alt="Euro voluntariado" /> */}
 
                     {/* -----------------------------------------------------------INSTAGRAM----------------------------------------------------------- */}
-                    {/* <div className={style.instagramContainer}>
-                        <InstagramPost/>
-                    </div> */}
+                
                 </div>
             </div>
         );
