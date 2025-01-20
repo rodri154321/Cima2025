@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import style from "./Mapa.module.css";
-import auditorio from "../../assets/videos/AUDITORIOPRINCIPAL.mp4";
+
 
 const Hexagon = ({ isVisible }) => {
     const [visible, setVisible] = useState(isVisible);
