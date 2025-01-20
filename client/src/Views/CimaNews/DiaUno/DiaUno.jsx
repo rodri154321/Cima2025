@@ -316,9 +316,9 @@ const DiaUno = () => {
                     {/* <img src={EuroVol} alt="Euro voluntariado" /> */}
 
                     {/* -----------------------------------------------------------INSTAGRAM----------------------------------------------------------- */}
-                    <div className={style.instagramContainer}>
+                    {/* <div className={style.instagramContainer}>
                         <InstagramPost/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
