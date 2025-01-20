@@ -3,7 +3,6 @@ import Menu from '../../../component/Menu/Menu';
 import { useState, useEffect } from 'react';
 import LoaderCimanews from '../../../component/Loaders/LoaderCimanews';
 import Mapa from "../../../component/MapaCima/Mapa.jsx"
-import Spoiler from "../../Spoiler/Spoiler.jsx"
 import style from './DiaUno.module.css';
 import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
 import Spoiler from '../../../Views/Spoiler/Spoiler';
@@ -87,9 +86,7 @@ const DiaUno = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        {/* <div className={style.simVideo}></div> */}
-                        
-                        <Spoiler/>
+
 
 
                         <div className={style.simVideo}>
