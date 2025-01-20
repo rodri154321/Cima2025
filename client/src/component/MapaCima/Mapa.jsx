@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import style from "./Mapa.module.css";
 
+
 const Hexagon = ({ isVisible }) => {
     const [visible, setVisible] = useState(isVisible);
 
@@ -116,7 +117,7 @@ const MapaCima = () => {
     const [modalOpen, setModalOpen] = useState(false);
 
     const lugares = {
-        lugar2: { nombre: 'Auditorio Principal', video:'/MapaVideos/AUDITORIO_PRINCIPAL.mp4', coords: { x: '15.7%', y: '19%' }, area: { width: '17.3%', height: '63%' }, shape: null },
+        lugar2: { nombre: 'Auditorio Principal', video: undefined, coords: { x: '15.7%', y: '19%' }, area: { width: '17.3%', height: '63%' }, shape: null },
         lugar4: { nombre: 'Kiosco', video: undefined, coords: { x: '36%', y: '40.4%' }, area: { width: '4.623%', height: '4.25%' }, shape: null },
         lugar6: { nombre: 'Enfermeria', video: undefined, coords: { x: '12%', y: '48.7%' }, area: { width: '1.9%', height: '4%' }, shape: null },
         lugar8: { nombre: 'Feria Cimatica', video:'/MapaVideos/FERIA_CIMATICA.mp4', coords: { x: '50.23%', y: '50.6%' }, area: { width: '8.77%', height: '16.6%' }, shape: <Hexagon isVisible={hoveredArea === 'lugar8'} /> },
