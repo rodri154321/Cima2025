@@ -86,9 +86,7 @@ const DiaUno = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        {/* <div className={style.simVideo}></div> */}
-                        
-                        <Spoiler/>
+
 
 
                         <div className={style.simVideo}>
