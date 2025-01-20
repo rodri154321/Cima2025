@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import style from "./cardSpoiler.module.css";
+import ReactPlayer from "react-player";
 
 function CardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
   const videoRef = useRef(null);
@@ -34,17 +35,13 @@ function CardSpoiler({ descripcion, nombre, url, videoId, isActive, onPlay }) {
       <div className={style.titleSpoilerContainer}>
         <h1>{nombre}</h1>
       </div>
-      <video
-        ref={videoRef}
-        className={style.video}
-        controls
-        controlsList="nodownload"
-        onClick={handleClick}
-        onTouchStart={handleClick}
-      >
-        <source src={url} type="video/mp4" />
-        Tu navegador no soporta la etiqueta de video.
-      </video>
+      <ReactPlayer
+                                              className={style.video}
+                                              url={url}
+                                              width="100%"
+                                              height="60vh"
+                                              playing
+                                              />
       <p>{descripcion}</p>
     </div>
   );

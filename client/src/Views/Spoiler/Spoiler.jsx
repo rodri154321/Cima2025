@@ -4,8 +4,11 @@ import cardSpoilerData from "../../utils/datosSpoiler";
 import CardSpoiler from "../../component/cardSpoiler/cardSpoiler";
 import style from "./Spoiler.module.css";
 
-const Spoiler = () => {
-  const numCards = cardSpoilerData.length;
+const Spoiler = ({ id }) => {
+  // Filtrar los videos que coincidan con el id recibido
+  const filteredCardSpoilerData = cardSpoilerData.filter((spoiler) => spoiler.id == id);
+
+  const numCards = filteredCardSpoilerData.length;
   const initialActiveVideo = Math.floor(numCards / 2); // Centro inicial basado en el número de tarjetas
 
   const [activeVideo, setActiveVideo] = useState(initialActiveVideo);
@@ -87,18 +90,22 @@ const Spoiler = () => {
           dragConstraints={{ left: 0, right: 0 }}
           onDragEnd={handleDragEnd}
         >
-          {cardSpoilerData.map((spoiler, index) => (
-            <motion.div key={index} className={style.item}>
-              <CardSpoiler
-                nombre={spoiler.nombre}
-                descripcion={spoiler.descripcion}
-                url={spoiler.url}
-                videoId={index}
-                isActive={activeVideo === index}
-                onPlay={setActiveVideo}
-              />
-            </motion.div>
-          ))}
+          {filteredCardSpoilerData.length > 0 ? (
+            filteredCardSpoilerData.map((spoiler, index) => (
+              <motion.div key={index} className={style.item}>
+                <CardSpoiler
+                  nombre={spoiler.nombre}
+                  descripcion={spoiler.descripcion}
+                  url={spoiler.url}
+                  videoId={index}
+                  isActive={activeVideo === index}
+                  onPlay={setActiveVideo}
+                />
+              </motion.div>
+            ))
+          ) : (
+            <p>No se encontraron videos con el id: {id}</p>
+          )}
         </motion.div>
       </motion.div>
     </div>
