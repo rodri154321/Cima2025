@@ -7,10 +7,8 @@ import style from './DiaUno.module.css';
 import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
 import Spoiler from '../../../Views/Spoiler/Spoiler';
 import Quiz from '../../../component/JuegoQuiz/Quiz';
-import VideoFabri from "../../../assets/videos/videoeditado.mp4";
-import VideoDevo from "../../../assets/videos/DiA1.mp4";
-import videoMerch from "../../../assets/videos/MERCHDIA1.mp4";
 import portadita from "../../../assets/portadita.webp";
+import ReactPlayer from 'react-player';
 
 const DiaUno = () => {
 
@@ -35,7 +33,13 @@ const DiaUno = () => {
                     {/* -----------------------------------------------------------PORTADA----------------------------------------------------------- */}
                     <div className={style.videoContainer}>
                         <img className={style.portadita} src={portadita} alt="Bienvenidos" />
-                        <video className={style.video} controls><source src={VideoFabri} type="video/mp4" /> </video>
+                        <ReactPlayer
+                            className={style.video}
+                            url='https://vimeo.com/1048559523/01e298e3aa'
+                            width='100%'
+                            height='90vh'
+                            controls
+                        />
                     </div>
 
                     {/* -----------------------------------------------------------MAPA----------------------------------------------------------- */}
@@ -93,7 +97,7 @@ const DiaUno = () => {
                         </div>
                         {/* <div className={style.simVideo}></div> */}
 
-                       
+
 
                     </div>
 
@@ -122,7 +126,11 @@ const DiaUno = () => {
                         <h2 className={style.fechaDevo}> DIA 1 .  LUNES 20 DE ENERO 2025</h2>
                         <h2 className={style.hechopor}>POR: JOEL BRIZI</h2>
 
-                        <video className={style.video} controls><source src={VideoDevo} type="video/mp4" /> </video>
+                        <ReactPlayer url='https://vimeo.com/1048559581/09f37ff7e9' 
+                        width='100%'
+                        height='90vh'
+                        controls
+                        />
                     </div>
 
                     {/* -----------------------------------------------------------CRISTIANO GLOBAL----------------------------------------------------------- */}
@@ -305,9 +313,15 @@ const DiaUno = () => {
                     {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
 
                     <div className={style.divMerch}>
-                        <video className={style.video} controls><source src={videoMerch} type="video/mp4" /> </video>
+                        <ReactPlayer
+                            className={style.video}
+                            url='https://vimeo.com/1048559610/cf4151134d'
+                            width='100%'
+                            height='90vh'
+                            controls
+                        />
                         {/* <img className={style.fotomerch} src={FotoMerch} alt="Merch"/> */}
-                        
+
                     </div>
 
                     {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
@@ -315,7 +329,7 @@ const DiaUno = () => {
                     {/* <img src={EuroVol} alt="Euro voluntariado" /> */}
 
                     {/* -----------------------------------------------------------INSTAGRAM----------------------------------------------------------- */}
-                
+
                 </div>
             </div>
         );
