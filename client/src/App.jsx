@@ -23,6 +23,18 @@ import Spoiler from "./Views/Spoiler/Spoiler"
 import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
 import CarpetaParticipante from './Views/CarpetaDelParticipante/CarpetaParticipante';
 import LoaderCimanews from './component/Loaders/LoaderCimanews';
+import DescProgAct from './Views/CarpetaDelParticipante/visoresCarpeta/descprogact';
+import OperacionCima from './Views/CarpetaDelParticipante/visoresCarpeta/operacionCima';
+import AtencionMedica from './Views/CarpetaDelParticipante/visoresCarpeta/atencionMedica';
+import Movida from './Views/CarpetaDelParticipante/visoresCarpeta/movida';
+import TiendaMovida from './Views/CarpetaDelParticipante/visoresCarpeta/tiendamovida';
+import ExperimentaCarpeta from './Views/CarpetaDelParticipante/visoresCarpeta/experimentacarpeta';
+import Progpastores from './Views/CarpetaDelParticipante/visoresCarpeta/ProgPastores';
+import OradoresCarpeta from './Views/CarpetaDelParticipante/visoresCarpeta/oradores';
+import DevoGrup from './Views/CarpetaDelParticipante/visoresCarpeta/devocionalesCarpeta';
+import Plenarias from './Views/CarpetaDelParticipante/visoresCarpeta/plenarias';
+import Vueltaacasa from './Views/CarpetaDelParticipante/visoresCarpeta/vueltaacasa';
+import DevoExperimenta from './Views/CarpetaDelParticipante/visoresCarpeta/devoexpe';
 
 
 function App() {
@@ -54,10 +66,28 @@ function App() {
             <Route path='/oradores' element={<Speakers/>}/>
             <Route path='/taller' element={<Talleres/>}/>
             <Route path='/cimanews' element={<LoaderCimanews/>}/>
+            <Route path='/cimanews1' element={<DiaUno/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
-            <Route path='/carpetadelparticipante' element={<CarpetaDelParticipante/>}/>
-            <Route path='/carpetaparticipante' element={<CarpetaParticipante/>}/>
             <Route path='/cimanews2' element={<DiaDos/>}/>
+
+
+            {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
+
+            <Route path='/carpetadelparticipante' element={<CarpetaParticipante/>}/>
+            <Route path='/carpetaparticipante' element={<CarpetaDelParticipante/>}/>
+            <Route path='/carpetaparticipante/descprogact' element={<DescProgAct/>}/>
+            <Route path='/carpetaparticipante/movida' element={<Movida/>}/>
+            <Route path='/carpetaparticipante/operacioncima' element={<OperacionCima/>}/>
+            <Route path='/carpetaparticipante/tiendamovida' element={<TiendaMovida/>}/>
+            <Route path='/carpetaparticipante/experimenta' element={<ExperimentaCarpeta/>}/>
+            <Route path='/carpetaparticipante/programapastores' element={<Progpastores/>}/>
+            <Route path='/carpetaparticipante/oradores' element={<OradoresCarpeta/>}/>
+            <Route path='/carpetaparticipante/devocionalesygrupospequeños' element={<DevoGrup/>}/>
+            <Route path='/carpetaparticipante/plenariasgenerales' element={<Plenarias/>}/>
+            <Route path='/carpetaparticipante/vueltaacasa' element={<Vueltaacasa/>}/>
+            <Route path='/carpetaparticipante/atencionmedica' element={<AtencionMedica/>}/>
+            <Route path='/carpetaparticipante/devocionalesexperimenta' element={<DevoExperimenta/>}/>
+            
          </Routes>
     </div>
   )
