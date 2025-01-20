@@ -6,9 +6,12 @@ import Mapa from "../../../component/MapaCima/Mapa.jsx"
 import Spoiler from "../../Spoiler/Spoiler.jsx"
 import style from './DiaUno.module.css';
 import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
-import FotoMerch from "../../../assets/Merch.webp"
-import EuroVol from "../../../assets/EuroVol.webp"
-//import VideoFabri from "../../../assets/videos/videoeditado.mp4"
+import FotoMerch from "../../../assets/Merch.webp";
+import EuroVol from "../../../assets/EuroVol.webp";
+import VideoFabri from "../../../assets/videos/videoeditado.mp4";
+import VideoDevo from "../../../assets/videos/DiA1.mp4";
+import videoMerch from "../../../assets/videos/MERCHDIA1.mp4";
+import portadita from "../../../assets/portadita.webp";
 
 const DiaUno = () => {
 
@@ -32,7 +35,8 @@ const DiaUno = () => {
                 <div className={style.container}>
                     {/* -----------------------------------------------------------PORTADA----------------------------------------------------------- */}
                     <div className={style.videoContainer}>
-                        {/* <video className={style.video} controls><source src={VideoFabri} type="video/mp4" /> </video> */}
+                        <img className={style.portadita} src={portadita} alt="Bienvenidos" />
+                        <video className={style.video} controls><source src={VideoFabri} type="video/mp4" /> </video>
                     </div>
 
                     {/* -----------------------------------------------------------MAPA----------------------------------------------------------- */}
@@ -85,8 +89,8 @@ const DiaUno = () => {
                             </defs>
                         </svg>
                         {/* <div className={style.simVideo}></div> */}
-                        
-                        <Spoiler/>
+
+                        <Spoiler />
 
                     </div>
 
@@ -115,7 +119,7 @@ const DiaUno = () => {
                         <h2 className={style.fechaDevo}> DIA 1 .  LUNES 20 DE ENERO 2025</h2>
                         <h2 className={style.hechopor}>POR: JOEL BRIZI</h2>
 
-                        <div className={style.simVideo}></div>
+                        <video className={style.video} controls><source src={VideoDevo} type="video/mp4" /> </video>
                     </div>
 
                     {/* -----------------------------------------------------------CRISTIANO GLOBAL----------------------------------------------------------- */}
@@ -211,14 +215,14 @@ const DiaUno = () => {
                     {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
 
                     <div className={style.divMerch}>
-                        <img src={FotoMerch} alt="Merch" />
-
-
+                        <video className={style.video} controls><source src={videoMerch} type="video/mp4" /> </video>
+                        {/* <img className={style.fotomerch} src={FotoMerch} alt="Merch"/> */}
+                        
                     </div>
 
                     {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
 
-                    <img src={EuroVol} alt="Euro voluntariado" />
+                    {/* <img src={EuroVol} alt="Euro voluntariado" /> */}
 
 
                 </div>
