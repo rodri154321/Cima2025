@@ -1,83 +1,30 @@
-.cont_S{
-height: 140vh;
- background-image: url("../../assets/fondo1.webp");
+.cont_S {
+  position: relative;
+  height: 100vh;
 }
+
 .slider_container {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
   height: 100vh;
- 
-}
-.title_Spoiler {
-  margin: 0;
-  padding-top: 50px;
-  text-align: center;
-  color: blue;
-  font-size: 40px;
-  z-index: 10;
-}
-
-.circulo {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  /* transform: translate(-50%, -50%); */
-  height: 100vh;
-  width: 100vh;
-  z-index: 0;
-  text-align: center;
-}
-
-
-.cont_s{
-  position: absolute;
-  height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .slider {
   display: flex;
   cursor: grab;
+  transition: transform 0.3s ease;
 }
 
 .item {
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 400px;
-  z-index: 1;
-}
-
-
-@media (max-width: 768px) {
-  .slider {}
-
-  .circulo {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .item {
-
-    width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .circulo {
-   
-    height: 100vh;
-
-  }
-  .circulo img {
-    width: 100%;
-  }
-
-  .item {
-
-    width: 300px;
-  }
+  width: 70vw;
+  max-width: 400px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
 }

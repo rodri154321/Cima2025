@@ -116,17 +116,13 @@ const MapaCima = () => {
     const [modalOpen, setModalOpen] = useState(false);
 
     const lugares = {
-        lugar1: { nombre: '1er Nivel', descripcion: 'En este primer nivel va a haber tales cosas', coords: { x: '4.2%', y: '3.5%' }, area: { width: '36.7%', height: '8%' }, shape: null },
-        lugar2: { nombre: 'Auditorio Principal', descripcion: 'Descripcion del auditorio principal', coords: { x: '15.7%', y: '19%' }, area: { width: '17.3%', height: '63%' }, shape: null },
-        lugar3: { nombre: 'S29', descripcion: 'En este segundo nivel va a haber tales cosas', coords: { x: '36.5%', y: '17.8%' }, area: { width: '5.4%', height: '5.6%' }, shape: null },
-        lugar4: { nombre: 'Kiosco', descripcion: 'En este tercer nivel va a haber tales cosas', coords: { x: '36%', y: '40.4%' }, area: { width: '4.623%', height: '4.25%' }, shape: null },
-        lugar5: { nombre: 'S30', descripcion: 'En este cuarto nivel va a haber tales cosas', coords: { x: '35%', y:'63%' }, area: { width: '3.7%', height: '8.8%' }, shape: null },
-        lugar6: { nombre: 'Enfermeria', descripcion: 'En este quinto nivel va a haber tales cosas', coords: { x: '12%', y: '48.7%' }, area: { width: '1.9%', height: '4%' }, shape: null },
-        lugar7: { nombre: 'S3', descripcion: 'En este sexto nivel va a haber tales cosas', coords: { x: '5.8%', y: '51.8%' }, area: { width: '2.85%', height: '9.4%' }, shape: null },
-        lugar8: { nombre: 'Feria Cimatica', descripcion: 'En este septimo nivel va a haber tales cosas', coords: { x: '50.23%', y: '50.6%' }, area: { width: '8.77%', height: '16.6%' }, shape: <Hexagon isVisible={hoveredArea === 'lugar8'} /> },
-        lugar9: { nombre: 'Sala de Profesores', descripcion: 'En este octavo nivel va a haber tales cosas', coords: { x: '49.4%', y: '31%' }, area: { width: '10.5%', height: '12.8%' }, shape: null },
-        lugar10: { nombre: 'Sala de Computo', descripcion: 'En este noveno nivel va a haber tales cosas', coords: { x: '61.5%', y: '31.2%' }, area: { width: '11.8%', height: '13.2%' }, shape: <ComedorShape isVisible={hoveredArea === 'lugar10'} /> },
-        lugar11: { nombre: 'Habitaciones', descripcion: 'En este decimo nivel va a haber tales cosas', coords: { x: '70.1%', y: '61.2%' }, area: { width: '20.6%', height: '10%' }, shape: <HabitacionesShape isVisible={hoveredArea === 'lugar11'} /> },
+        lugar2: { nombre: 'Auditorio Principal', video:'/MapaVideos/AUDITORIO_PRINCIPAL.mp4', coords: { x: '15.7%', y: '19%' }, area: { width: '17.3%', height: '63%' }, shape: null },
+        lugar4: { nombre: 'Kiosco', video: undefined, coords: { x: '36%', y: '40.4%' }, area: { width: '4.623%', height: '4.25%' }, shape: null },
+        lugar6: { nombre: 'Enfermeria', video: undefined, coords: { x: '12%', y: '48.7%' }, area: { width: '1.9%', height: '4%' }, shape: null },
+        lugar8: { nombre: 'Feria Cimatica', video:'/MapaVideos/FERIA_CIMATICA.mp4', coords: { x: '50.23%', y: '50.6%' }, area: { width: '8.77%', height: '16.6%' }, shape: <Hexagon isVisible={hoveredArea === 'lugar8'} /> },
+        lugar9: { nombre: 'Sala de Profesores', video:'/MapaVideos/SALON_AMARILLO.mp4', coords: { x: '49.4%', y: '31%' }, area: { width: '10.5%', height: '12.8%' }, shape: null },
+        lugar10: { nombre: 'Comedor', video:'/MapaVideos/COMEDOR.mp4', coords: { x: '61.5%', y: '31.2%' }, area: { width: '11.8%', height: '13.2%' }, shape: <ComedorShape isVisible={hoveredArea === 'lugar10'} /> },
+        lugar11: { nombre: 'Habitaciones', video:'/MapaVideos/DORMITORIOS.mp4', coords: { x: '70.1%', y: '61.2%' }, area: { width: '20.6%', height: '10%' }, shape: <HabitacionesShape isVisible={hoveredArea === 'lugar11'} /> },
     };
 
     const closeModal = () => {
@@ -187,7 +183,21 @@ const MapaCima = () => {
                         >
                             <span className={style.modalClose} onClick={closeModal}>&times;</span>
                             <h2 className={style.titleModal}>{info.nombre}</h2>
-                            <p className={style.textModal}>{info.descripcion}</p>
+
+                            <div className={style.videoModalContainer}> 
+                                {info.video ? (
+                                    <video
+                                        controls
+                                        controlsList="nodownload"
+                                        className={style.videoModal} // Añade estilos aquí para el video
+                                    >
+                                        <source src={info.video} type="video/mp4" />
+                                        Tu navegador no soporta la etiqueta de video.
+                                    </video>
+                                ) : (
+                                    <p></p>
+                                )}
+                            </div>
                         </motion.div>
                     </motion.div>
                 )}
