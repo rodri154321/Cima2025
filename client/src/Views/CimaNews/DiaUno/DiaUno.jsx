@@ -8,10 +8,6 @@ import CristianoGlobal from '../../../component/svgs/CristianoGlobal';
 import Spoiler from '../../../Views/Spoiler/Spoiler';
 import Quiz from '../../../component/JuegoQuiz/Quiz';
 import InstagramPost from '../../../component/InstagramPost/InstagramPost';
-import FotoMerch from "../../../assets/Merch.webp"
-import EuroVol from "../../../assets/EuroVol.webp"
-import FotoMerch from "../../../assets/Merch.webp";
-import EuroVol from "../../../assets/EuroVol.webp";
 import VideoFabri from "../../../assets/videos/videoeditado.mp4";
 import VideoDevo from "../../../assets/videos/DiA1.mp4";
 import videoMerch from "../../../assets/videos/MERCHDIA1.mp4";
