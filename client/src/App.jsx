@@ -35,6 +35,9 @@ import DevoGrup from './Views/CarpetaDelParticipante/visoresCarpeta/devocionales
 import Plenarias from './Views/CarpetaDelParticipante/visoresCarpeta/plenarias';
 import Vueltaacasa from './Views/CarpetaDelParticipante/visoresCarpeta/vueltaacasa';
 import DevoExperimenta from './Views/CarpetaDelParticipante/visoresCarpeta/devoexpe';
+import Articulo1 from './Views/Articulos/Articulos';
+import Articulo2 from './Views/Articulos2/Articulos';
+import Articulo3 from './Views/Articulos3/Articulos';
 
 
 function App() {
@@ -69,7 +72,9 @@ function App() {
             <Route path='/cimanews1' element={<LoaderCimanews/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
             <Route path='/cimanews2' element={<DiaDos/>}/>
-
+            <Route path='/Articulo1' element={<Articulo1/>}/>
+            <Route path='/Articulo2' element={<Articulo2/>}/>
+            <Route path='/Articulo3' element={<Articulo3/>}/>
 
             {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
 

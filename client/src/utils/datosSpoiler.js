@@ -69,6 +69,41 @@
         url: "https://vimeo.com/1048589533/31ff115bad",
         id:1,
         pos:2
+      },
+      {
+        nombre: "Mi destino y la fe",
+        descripcion: "Subtitulo: Yassir Eric",
+        url: "https://vimeo.com/1048866993/39ac7b2df6",
+        id:2,
+        pos:0
+      },
+      {
+        nombre: "Una mañana de fiesta",
+        descripcion: "",
+        url: "https://vimeo.com/1048867032/ac8e9a9ab0",
+        id:2,
+        pos:1
+      },
+      {
+        nombre: "Experimenta",
+        descripcion: "",
+        url: "https://vimeo.com/1048867095/9ba6c85223",
+        id:2,
+        pos:2
+      },
+      {
+        nombre: "El barco",
+        descripcion: "",
+        url: "https://vimeo.com/1048866943/0d61a50b63",
+        id:2,
+        pos:3
+      },
+      {
+        nombre: "Plenaria noche “La gloria de Cristo”",
+        descripcion: "Subtitulo: Santiago Benavides",
+        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        id:2,
+        pos:5
       }
     ];
 

@@ -1,0 +1,113 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gameContainer h1 {
+  font-family: 'Mulish', sans-serif;
+}
+
+.option {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.optionUp {
+  margin-bottom: 20px;
+}
+
+.optionDown {
+  transform: translateY(-72%);
+  z-index: 0;
+}
+
+.option img {
+  width: 320px;
+  height: 180px;
+  /* Mantiene el formato 16:9 */
+  object-fit: cover;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente sobre la imagen */
+  font-family: 'Mulish', sans-serif;
+}
+
+.selected {
+  background-color: #fff;
+  opacity: 50%;
+}
+
+.circleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 15vh;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(-70%);
+  z-index: 1;
+  color: white;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 16px;
+  background-color: #d49634;
+  border-radius: 50px;
+  border-style: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
