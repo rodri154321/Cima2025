@@ -79,6 +79,12 @@
     transform: translateY(-40%);
 }
 
+.cimaDayText{
+    font-family: 'Mulish';
+    font-weight: medium;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+}
+
 .experimentaContainer{
     width: 100%;
 }

@@ -31,30 +31,12 @@ const Articulo = () => {
                         <p>
                             Esto nos demuestra que <span style={{fontWeight:'1000'}}>la misión de Dios fue global desde un principio,</span> y que las naciones siempre fueron su objetivo. Y si nos quedaba alguna duda, en Gálatas 3:8 Pablo cita este pacto como la raíz de la misión. Y este fue siempre el propósito de Israel: ser <span style={{color:'white', backgroundColor: '#E98900', fontWeight:'1000'}}>testimonio del poder y la gloria de Dios</span> (Éxodo 19:6). Incluso los profetas reiteran el llamado a ser luz para las naciones (Isaías 49:6). Luego, tenemos los salmos. Uno no suele pensar en los salmos cuando piensa en misiones, pero hay más de 175 referencias allí que muestran el deseo de Dios de que todas las naciones lo alaben (Salmo 67, 96, 117, etc.).</p>
                         <p>
-                            Por último, llegamos al Nuevo Testamento: Jesús, los apóstoles y nosotros hoy. Por un lado, Jesús es el cumplimiento de la misión. Desde su nacimiento, se lo reconoce como la salvación para todas las naciones (Lucas 2:30-32). Después, con su ministerio, que predicó y envió a otros a predicar, con un enfoque claro en alcanzar a todas las ciudades y pueblos (Lucas 4:43). Por otro, están los apóstoles, quienes debían predicar hasta los confines de la Tierra (Hechos 1:8). Y Pablo, la fuerza impulsora de las misiones en el Nuevo Testamento, fundamentado en Génesis 12 (Gálatas 3:8-14). Al final, la meta de Dios siempre fue que todas las naciones, tribus pueblos e idiomas adoraran Su nombre (Apocalipsis 7:9-10). Su plan es reconciliar al mundo consigo mismo, luego del pecado original de Adán y Eva que mencionábamos al principio.</p>
+                            Por último, llegamos al Nuevo Testamento: <span style={{fontWeight:'1000'}}>Jesús, los apóstoles y nosotros hoy.</span> Por un lado, Jesús es el cumplimiento de la misión. Desde su nacimiento, se lo reconoce como la salvación para todas las naciones (Lucas 2:30-32). Después, con su ministerio, que predicó y envió a otros a predicar, con un enfoque claro en alcanzar a todas las ciudades y pueblos (Lucas 4:43). Por otro, están los apóstoles, quienes debían predicar hasta los confines de la Tierra (Hechos 1:8). Y Pablo, la fuerza impulsora de las misiones en el Nuevo Testamento, fundamentado en Génesis 12 (Gálatas 3:8-14).<span style={{fontWeight:'1000'}}> Al final, la meta de Dios siempre fue que todas las naciones,</span> tribus pueblos e idiomas adoraran Su nombre (Apocalipsis 7:9-10). Su plan es reconciliar al mundo consigo mismo, luego del pecado original de Adán y Eva que mencionábamos al principio.</p>
                         <p>
                             Desde Abraham hasta los discípulos, Dios ha elegido personas para cumplir Su misión. Y si tú eres Su hijo, este llamado no es opcional para ti, ya que todos somos enviados (Juan 20:21). Toma para ti la Gran Comisión mencionada en diferentes partes de la Biblia, específicamente, estas cinco versiones en el Nuevo Testamento: hacer discípulos (Mateo 28:18-20), Predicar el evangelio a toda criatura (Marcos 16:15), ser testigos de Cristo (Lucas 24:46-48), ser enviados como Jesús fue enviado (Juan 20:21) y ser testigos en Jerusalén, Judea, Samaria y hasta lo último de la Tierra (Hechos 1:8).</p>
-                        <p> ¿Te unirás a este plan eterno para alcanzar las naciones? </p>
+                        <p> <span style={{fontWeight:'1000'}}>¿Te unirás a este plan eterno para alcanzar las naciones?</span> </p>
 
                         <p>  “¡Quédense quietos y sepan que yo soy Dios! Toda nación me honrará. Seré honrado en el mundo entero.” Salmo 46:10</p>
-                    </h2>
-
-                    <h2 className={style.generalText}>
-                        <p><span style={{ fontWeight: 1000 }}>¿Por qué tengo que predicar yo si no tengo el don de evangelizar?</span> Esta es una pregunta muy común, ya que muchas veces el hecho de acercarse a un desconocido para hablarle de Jesús puede dar miedo o vergüenza. Pero, ¿por qué pasa eso? </p>
-
-                        <p><span style={{ fontWeight: 1000 }}>¿Te ha pasado alguna vez de tener la posibilidad de predicar y no hacerlo por miedo al qué dirán?</span> Si es así, primero tienes que saber que no eres el único. Pero no debería ser así, ya que al cristiano tendría salirle natural hablar de Jesús si es algo cotidiano en su vida. Y ahí está la clave: <span style={{ fontWeight: 1000, backgroundColor: '#00536E', color: "white" }}>que Jesús sea parte de tu vida.</span> </p>
-
-                        <p>
-                            Obvio que se pueden utilizar métodos de evangelismo y hay muchas formas de predicar, pero la forma en la que Jesús o sus discípulos lo hacían era muy sencilla, sólo contaban lo que vivían y la verdad que sabían: Jesús era el Mesías y había venido para salvar a todos del pecado que los llevaba al infierno. Por eso, antes de irse, Jesús les dio el mandato a los discípulos (y a todos los que vendrían después) de ir y hacer discípulos en todas las naciones (Mateo 28:19-20), predicando el evangelio a todos (Marcos 16:15).</p>
-                        <p>
-                            Por eso, hay que dejar el miedo atrás y pensar más allá de uno mismo. <span style={{ fontWeight: '1000' }}>Cuando eliges no hablar de Jesús, luego deberás rendir cuentas con Dios por cada persona a la que no le has predicado</span> (Ezequiel 3:18 - Hechos 20:26 - 1 Corintios 9:16). Así que debes superar tus miedos y confiar en el poder del Espíritu Santo dentro tuyo que te dará las palabras justas para cada persona. Además, <span style={{ fontWeight: 1000, backgroundColor: '#00536E', color: "white" }}>vive tu vida cerca de Jesús para poder hablar desde la experiencia y no sólo desde la teoría.</span></p>
-                        <p>
-                            Empieza a salir de tu zona de confort y háblale a otros de Jesús. Lee estos pasajes y ora para que el Espíritu Santo te dé palabra.</p>
-                        <p>
-                            “No tengas miedo, porque yo estoy contigo; no te desalientes, porque yo soy tu Dios. Te daré fuerzas y te ayudaré; te sostendré con mi mano derecha victoriosa.” Isaías 41:10 (NTV)</p>
-                        <p>
-                            “Dios les dará las palabras apropiadas en el momento preciso. Pues no serán ustedes los que hablen, sino que el Espíritu de su Padre hablará por medio de ustedes.” Mateo 10:19-20 (NTV) </p>
-                        <p> Para profundizar sobre evangelio accedé a este link donde encontrarás más contenido:</p>
                     </h2>
 
                     <ReactPlayer url='https://vimeo.com/1048894470/094dfa9182'
@@ -64,13 +46,13 @@ const Articulo = () => {
                     />
 
                     <div className={style.linkContainer}>
-                        <a style={{ visibility: 'hidden' }} href="./articulo5">
+                        <a href="./articulo4">
                             <h2 className={style.greyLeftText}>ARTÍCULO ANTERIOR</h2>
-                            <h2 className={style.secondLeftText}>EL PROPÓSITO DE DIOS EN LA CREACIÓN</h2>
+                            <h2 className={style.secondLeftText}>¡QUÉ PREDIQUE OTRO!</h2>
                         </a>
-                        <a href="./articulo5">
+                        <a href="./articulo6">
                             <h2 className={style.greyRightText}>ARTÍCULO SIGUIENTE</h2>
-                            <h2 className={style.secondRightText}>LA MISIÓN DE DIOS EN LA BIBLIA</h2>
+                            <h2 className={style.secondRightText}>LA CRUZ</h2>
                         </a>
                     </div>
 

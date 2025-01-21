@@ -104,6 +104,45 @@
         url: "https://vimeo.com/1048867071/95b9a3ccc9",
         id:2,
         pos:5
+      },
+      {
+        nombre: "Mi destino y la fe",
+        descripcion: "Yassir Eric",
+        url: "https://vimeo.com/1049097990/4d5325598e",
+        id:3,
+        pos:0
+      }
+      ,
+      {
+        nombre: "Una mañana de fiesta”",
+        descripcion: "",
+        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        id:3,
+        pos:1
+      }
+      ,
+      {
+        nombre: "Plenaria noche “La gloria de Cristo”",
+        descripcion: "Subtitulo: Santiago Benavides",
+        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        id:3,
+        pos:2
+      }
+      ,
+      {
+        nombre: "Plenaria noche “La gloria de Cristo”",
+        descripcion: "Subtitulo: Santiago Benavides",
+        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        id:3,
+        pos:3
+      }
+      ,
+      {
+        nombre: "Plenaria noche “La gloria de Cristo”",
+        descripcion: "Subtitulo: Santiago Benavides",
+        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        id:3,
+        pos:4
       }
     ];
 
