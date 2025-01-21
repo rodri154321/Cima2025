@@ -19,6 +19,7 @@ import Speakers from './Views//Speakers/Speakers'
 import Talleres from './Views/InscripcionTalleres/InscTalleres';
 import DiaUno from './Views/CimaNews/DiaUno/DiaUno';
 import DiaDos from './Views/CimaNews/DiaDos/DiaDos';
+import DiaTres from './Views/CimaNews/DiaTres/DiaTres';
 import Spoiler from "./Views/Spoiler/Spoiler"
 import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
 import CarpetaParticipante from './Views/CarpetaDelParticipante/CarpetaParticipante';
@@ -38,6 +39,9 @@ import DevoExperimenta from './Views/CarpetaDelParticipante/visoresCarpeta/devoe
 import Articulo1 from './Views/Articulos/Articulos';
 import Articulo2 from './Views/Articulos2/Articulos';
 import Articulo3 from './Views/Articulos3/Articulos';
+import Articulo4 from './Views/ArtDiarios/Articulo4/Articulos';
+import Articulo5 from './Views/ArtDiarios/Articulo5/Articulos';
+import Articulo6 from './Views/ArtDiarios/Articulo6/Articulos';
 
 
 function App() {
@@ -72,9 +76,16 @@ function App() {
             <Route path='/cimanews1' element={<LoaderCimanews/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
             <Route path='/cimanews2' element={<DiaDos/>}/>
+            <Route path='/cimanews3' element={<DiaTres/>}/>
+
+            {/* ------------------------ARTICULOS---------------------------------- */}
+
             <Route path='/Articulo1' element={<Articulo1/>}/>
             <Route path='/Articulo2' element={<Articulo2/>}/>
             <Route path='/Articulo3' element={<Articulo3/>}/>
+            <Route path='/Articulo4' element={<Articulo4/>}/>
+            <Route path='/Articulo5' element={<Articulo5/>}/>
+            <Route path='/Articulo6' element={<Articulo6/>}/>
 
             {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
 
