@@ -10,6 +10,7 @@
     font-family: "Mulish";
     font-weight: 900;
     font-size: 1rem;
+    margin-top: 20%;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,6 +29,9 @@
     }
 }
 
+.articulosContainer{
+    width: 87%;
+}
 
 
 /* -----------------------------------------------------------PORTADA----------------------------------------------------------- */
