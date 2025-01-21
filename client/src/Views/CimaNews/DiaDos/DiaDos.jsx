@@ -175,6 +175,8 @@ const DiaDos = () => {
                 </a>
             </div>
 
+            <img className={style.imgmerch} src="https://i.postimg.cc/5NsB2ywF/MERCH-DIA-2-page-0001-1.png" alt="merch" />
+
 
         </div>
     );

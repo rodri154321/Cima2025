@@ -316,6 +316,11 @@
     margin-top: 0%;
 }
 
+.imgmerch{
+    width: 100%;
+    margin-top: 15%;
+}
+
 @media screen and (max-width: 768px) {
     .video {
         width: 100%;
