@@ -74,7 +74,9 @@ const DiaDos = () => {
                 <QuePreferiz />
             </div>
 
-
+            <a href="https://drive.google.com/drive/folders/1cCtqoL_FcVZRJ7rEUFvdVnSY3TA9Qg2V?usp=sharing">
+                <img className={style.imgmerch} src="https://i.postimg.cc/Jn7J8WGQ/Frame-11.webp" alt="" />
+            </a>
 
             {/* -----------------------------------------------------------EXPERIMENTA----------------------------------------------------------- */}
 
