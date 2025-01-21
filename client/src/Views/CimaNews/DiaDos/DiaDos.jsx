@@ -78,6 +78,10 @@ const DiaDos = () => {
                 <img className={style.imgmerch} src="https://i.postimg.cc/Jn7J8WGQ/Frame-11.webp" alt="" />
             </a>
 
+
+            {/* -----------------------------------------------------------SIGUE----------------------------------------------------------- */}
+
+                <img className={style.imgmerch} src="https://i.postimg.cc/Rh8F6kGK/Frame-16.webp" alt="" />
             {/* -----------------------------------------------------------EXPERIMENTA----------------------------------------------------------- */}
 
             <div className={style.seccionExperimenta}>
