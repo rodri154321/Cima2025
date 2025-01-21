@@ -195,7 +195,7 @@ function FormExperimenta() {
                                 <option value="⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
                                 <option value="ARG - San Salvador de Jujuy - La puna">ARG - San Salvador de Jujuy - La puna</option>
                                 <option value="ARG - Buenos Aires - Miramar">ARG - Buenos Aires - Miramar</option>
-                                <option value="ARG - Córdoba - Mina Clavero">ARG - Córdoba - Mina Clavero</option>
+                                {/* <option value="ARG - Córdoba - Mina Clavero">ARG - Córdoba - Mina Clavero</option> */}
                                 <option value="ARG - Catamarca - Manantiales">ARG - Catamarca - Manantiales</option>
                                 <option value="ARG - Salta - San Antonio de los cobres">ARG - Salta - San Antonio de los cobres</option>
                                 <option value="CHI - Llanquihue - Sector Las Cruces">CHI - Llanquihue - Sector Las Cruces</option>

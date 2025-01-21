@@ -67,22 +67,72 @@
 
 /* -----------------------------------------------------------SPOILER----------------------------------------------------------- */
 
-.SpoilerContainer {
-    width: 100vw;
+.devocionalContainer {
+    width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-top: 20px;
 }
 
-.spoilerTitle {
-    font-size: 8.5rem;
-    font-weight: bold;
+.libro {
+    position: absolute;
+    left: -20%;
+    top: 0%;
+    z-index: 1;
+}
+
+.devocionalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.devoTitle{
+    margin-left: -5%;
+}
+
+.devo2er {
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #E98900;
+    margin-bottom: 0%;
+}
+
+.devoCional {
+    font-family: "Mulish";
+    font-weight: 900;
     color: black;
-    margin: 0;
-    font-family: "Gotham Black";
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.nombreDevo {
+    font-family: "Mulish";
+    font-weight: 900;
+    color: #E98900;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.fechaDevo {
+    font-family: "Mulish";
+    font-weight: 700;
+    color: #B1B1B1;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.hechopor {
+    font-family: "Mulish";
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.2rem;
+    margin-top: 0;
 }
 
 
@@ -95,6 +145,18 @@
     justify-content: center;
     margin-top: 20px;
     position: relative;
+}
+
+.devocionalTitle2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.imgdevo{
+    width: 100%;
+    margin-left: -10%;
 }
 
 .libro {
@@ -150,6 +212,14 @@
     flex-direction: column;
 }
 
+.tituloh1cg{
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
 .cristianoGlobal {
     margin-left: 5%;
     z-index: 1;
@@ -184,11 +254,12 @@
 
 .tituloCGdiv {
     display: flex;
-    align-items: left;
+    align-items: center;
+    justify-content: left;
 }
 
 .textoCG {
-    font-family: "Gotham Medium";
+    font-family: "Mulish";
     font-size: 1rem;
     color: #000000;
     margin-top: 0%;
@@ -218,6 +289,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+}
+
+.tituloh1expe{
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .textoExpe {
