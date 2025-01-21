@@ -18,8 +18,8 @@ const DiaDos = () => {
 
             {/* -----------------------------------------------------------SPOILER----------------------------------------------------------- */}
 
+            <img className={style.imgspoiler} src="https://i.postimg.cc/CxJQYwKv/SPOILER-6.webp" alt="" />
             <div className={style.SpoilerContainer}>
-                <img style={{ width: '110%' }} src="/SPOILER_Dia2.png" alt="" />
                 <Spoiler2 id='2' />
             </div>
 
@@ -35,7 +35,7 @@ const DiaDos = () => {
                 <h2 className={style.fechaDevo}> DIA 2 .  MARTES 21 DE ENERO, 2025</h2>
                 <h2 className={style.hechopor}>POR: CARLOS MENDOZA</h2>
 
-                <ReactPlayer url='https://vimeo.com/1048559581/09f37ff7e9'
+                <ReactPlayer url='https://vimeo.com/1048894470/094dfa9182'
                     width='100%'
                     height='90vh'
                     controls
@@ -61,7 +61,11 @@ const DiaDos = () => {
             {/* -----------------------------------------------------------FOTOS DIA ANTERIOR----------------------------------------------------------- */}
 
             <div className={style.fotosdiaanteriorcontainer}>
-                <div className={style.simVideo}></div>
+                <ReactPlayer url='https://vimeo.com/1048897342/461c8ec598'
+                    width='100%'
+                    height='90vh'
+                    controls
+                />
             </div>
 
             {/* ENCUESTA */}
@@ -69,6 +73,8 @@ const DiaDos = () => {
             <div className={style.EncuestaContainer}>
                 <QuePreferiz />
             </div>
+
+
 
             {/* -----------------------------------------------------------EXPERIMENTA----------------------------------------------------------- */}
 
@@ -135,16 +141,16 @@ const DiaDos = () => {
                         Consejos de finanzas para la Misión.<br />
                         1. Fe: El fundamento más importante:<br />
                         La fe es esencial para hacer las cosas de Dios. Como decía William Carey, “Espera grandes cosas de Dios, intenta grandes cosas para Dios". Si falta fe, este desafío puede ser una oportunidad para que Dios desarrolle este don en ti.
-                        
+
                         <br />2. Fe en la provisión de Dios:<br />
                         Volvemos a mencionar la FE porque Él suple todo, como dice el principio: "El que invita, paga" entonces si Dios te llama, Él proveerá. Da el primer paso confiando en que Dios te dará los recursos necesarios.
-                        
+
                         <br />3. Fe, acción y administración:<br />
                         Es necesario mirar el dinero como un recurso y no temerle. La fe sin acción no funciona. Si te toca emprender, no tengas miedo. Recuerda que Dios es dueño de todo y puede proveer en Su tiempo. Además, se nos dio potestad como administradores de los recursos que Dios ha creado.
-                        
+
                         <br />4. Compartir la visión con otros:<br />
                         Si Dios puso en tu corazón un lugar específico a donde ir, comunica tu proyecto misionero a familiares, amigos y la comunidad cercana, muchas personas están dispuestas a invertir en aquellos llamados por Dios. Compartir tu anhelo puede abrir puertas de apoyo.
-                        
+
                         <br />5. Administración y preparación:<br />
                         Sé buen administrador de los recursos que tienes, incluyendo el tiempo. Si Dios está llamando, prepárate y capacítate para potenciar los dones y talentos que Él te ha dado. Si tienes habilidades o emprendimientos que generen ingresos, úsalos para recaudar fondos. Aprovecha el tiempo; actúa hoy.
                     </p>

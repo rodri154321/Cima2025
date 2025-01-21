@@ -81,6 +81,10 @@
     margin-top: 20px;
 }
 
+.imgspoiler{
+    width: 100%;
+}
+
 .libro {
     position: absolute;
     left: -20%;
