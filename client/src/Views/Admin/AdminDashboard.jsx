@@ -11,13 +11,13 @@ function LoginAdmin() {
     const userObject = JSON.parse(userString);
 
     
-    // useEffect(() => {
-    //     if (userObject) {
+    useEffect(() => {
+        if (userObject) {
             
-    //     } else {
-    //         navigate('/')
-    //     }
-    // }, [navigate]);
+        } else {
+            navigate('/')
+        }
+    }, [navigate]);
 
     return (
         <div className={style.grande}>
