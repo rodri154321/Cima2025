@@ -91,6 +91,12 @@ const DiaTres = () => {
                 </h2>
             </div>
 
+            {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
+
+                    <img className={style.imgPomo} src="https://i.postimg.cc/1zTp3n63/Imagen-de-Whats-App-2025-01-22-a-las-10-36-35-dc853ff6.jpg" alt="PROMO" />
+                    <img className={style.imgPomo} src="https://i.postimg.cc/nzDqjFYY/Imagen-de-Whats-App-2025-01-22-a-las-10-36-36-aa466cdb.jpg" alt="PROMO" />
+                    <img className={style.imgPomo} src="https://i.postimg.cc/0j1D7TVg/Imagen-de-Whats-App-2025-01-22-a-las-10-36-37-319f5c29.jpg" alt="PROMO" />
+
             {/* -----------------------------------------------------------ARTICULOS----------------------------------------------------------- */}
 
             <div className={style.articulosContainer} style={{marginBottom:'10%'}}>
