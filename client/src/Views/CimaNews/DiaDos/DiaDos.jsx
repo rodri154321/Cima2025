@@ -44,17 +44,17 @@ const DiaDos = () => {
             {/* -----------------------------------------------------------CRISTIANO GLOBAL----------------------------------------------------------- */}
 
 
-            <div style={{margin: '0 auto', width: '87%'}}>
+            <div style={{ margin: '0 auto', width: '87%' }}>
                 <div className={style.tituloCGdiv}>
                     <img src="https://i.postimg.cc/VLHpxYHz/INVITAR-1wp.webp" alt="" />
                 </div>
                 <div className={style.textoCGContainer}>
                     <h1 className={style.tituloh1cg}>“Invitar puede cambiarlo todo”</h1>
                     <div className={style.divTextoCG}>
-                        <p className={style.textoCG} style={{fontFamily: 'Mulish', fontWeight: '400'}}>
-                            El <span style={{fontWeight:'800'}}>que invita es quien acoge a las naciones que Dios ama,</span> presentes en nuestras comunidades, como estudiantes internacionales, inmigrantes, refugiados y viajeros. <br />
-                            A través de la hospitalidad y el servicio, <span style={{fontWeight:'800'}}>busca construir relaciones para compartir el amor de Cristo.</span> Siguiendo el mandato de Levítico 19:33-34, trata a los extranjeros como iguales. Al hacer amigos y adaptarse a la nueva cultura, "el que invita" también ora para que, si regresan a sus países, lleven consigo el mensaje de Jesús. <br />
-                            <span style={{color:'white', backgroundColor:'#66B072', fontWeight:'800'}}>Soy desafiado a:</span> abrir tu hogar o tu vida. ¿Cómo puedes hacer eso esta semana (y cuando vuelvas a casa) para mostrar hospitalidad a alguien de una cultura diferente a la tuya? No estás solo en esto, anima a tu iglesia y busca la manera de darles la bienvenida.
+                        <p className={style.textoCG} style={{ fontFamily: 'Mulish', fontWeight: '400' }}>
+                            El <span style={{ fontWeight: '800' }}>que invita es quien acoge a las naciones que Dios ama,</span> presentes en nuestras comunidades, como estudiantes internacionales, inmigrantes, refugiados y viajeros. <br />
+                            A través de la hospitalidad y el servicio, <span style={{ fontWeight: '800' }}>busca construir relaciones para compartir el amor de Cristo.</span> Siguiendo el mandato de Levítico 19:33-34, trata a los extranjeros como iguales. Al hacer amigos y adaptarse a la nueva cultura, "el que invita" también ora para que, si regresan a sus países, lleven consigo el mensaje de Jesús. <br />
+                            <span style={{ color: 'white', backgroundColor: '#66B072', fontWeight: '800' }}>Soy desafiado a:</span> abrir tu hogar o tu vida. ¿Cómo puedes hacer eso esta semana (y cuando vuelvas a casa) para mostrar hospitalidad a alguien de una cultura diferente a la tuya? No estás solo en esto, anima a tu iglesia y busca la manera de darles la bienvenida.
                         </p>
                     </div>
                 </div>

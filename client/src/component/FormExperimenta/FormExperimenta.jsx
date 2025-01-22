@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss';
 import style from "./FormExperimenta.module.css";
-import getInfo from "../../utils/getInfo"
+import getInfo from "../../utils/getInfo";
 
 
 function FormExperimenta() {
