@@ -13,7 +13,7 @@ const DiaTres = () => {
             <Menu />
             {/* -----------------------------------------------------------PORTADA----------------------------------------------------------- */}
             <div className={style.videoContainer}>
-                <img src="/PortadaCimaNewsDia2.png" alt="" />
+                <img src="/Dia3/PortadaD3.png" alt="" />
             </div>
 
             {/* -----------------------------------------------------------SPOILER----------------------------------------------------------- */}
@@ -56,8 +56,20 @@ const DiaTres = () => {
 
             <div className={style.EncuestaContainer}>
                 <img className={style.retoImg} src="/RetoCimeno.png" alt="" />
-                <QuePreferiz />
+                <ReactPlayer url='https://vimeo.com/1049266700/0154500231'
+
+                    width='100%'
+                    height='90vh'
+                    controls
+                />
                 <img className={style.rexReto} src="/CimaRex.png" alt="" />
+            </div>
+
+            {/* -----------------------------------------------------------CIMAMOMENT----------------------------------------------------------- */}
+            <div className={style.experimentaContainer}>
+                <a href="https://drive.google.com/drive/folders/1WUKOSC7NFsX7Pszpw1gAXlwMgiGhuvnG?usp=drive_link">
+                    <img className={style.imgmerch} src="/Dia3/CimaMoment.png" alt="" />
+                </a>
             </div>
 
             {/* -----------------------------------------------------------SIGUE----------------------------------------------------------- */}
@@ -81,17 +93,22 @@ const DiaTres = () => {
 
             {/* -----------------------------------------------------------ARTICULOS----------------------------------------------------------- */}
 
-            <div className={style.articulosContainer}>
+            <div className={style.articulosContainer} style={{marginBottom:'10%'}}>
                 <h1>VER ÁRTICULOS</h1>
                 <a href="./Articulo1">
-                    <img className={style.imgArt} src="/ArtLink.png" alt="" />
+                    <img className={style.imgArt} src="/Dia3/ArtLink.png" alt="" />
                 </a>
             </div>
 
 
 
             {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
-            <img className={style.imgmerch} src="https://i.postimg.cc/5NsB2ywF/MERCH-DIA-2-page-0001-1.png" alt="merch" />
+            <ReactPlayer url='https://vimeo.com/1049263759/72303d68ba'
+
+                    width='100%'
+                    height='90vh'
+                    controls
+                />
 
             {/* -----------------------------------------------------------CIMA DAYS----------------------------------------------------------- */}
             <div style={{ width: '87%' }}>
@@ -102,6 +119,12 @@ const DiaTres = () => {
                         Durante el año Movida brinda la posibilidad a las iglesias de vivir un día de CIMA. Con ese objetivo en mente, hay dos propuestas de programas que <span style={{ fontWeight: '1000' }}>se pueden realizar en tu iglesia.</span> Aquí en los videos te contamos cuáles.
                     </p>
                 </h2>
+                <ReactPlayer url='https://vimeo.com/1049263868/d32b6536e0'
+
+                    width='100%'
+                    height='90vh'
+                    controls
+                />
             </div>
             <div style={{ width: '100%' }}>
                 <img src="/Footer.png" alt="" />

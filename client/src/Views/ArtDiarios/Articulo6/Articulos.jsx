@@ -8,7 +8,13 @@ const Articulo = () => {
         <div>
             <Menu />
             <div style={{ width: '87%', margin: '0 auto', marginTop: '20%' }}>
-                <img src="/Dia3/Art4.png" alt="" />
+                
+                <ReactPlayer url='https://vimeo.com/1049265313/a5f8913780'
+                
+                                    width='100%'
+                                    height='30vh'
+                                    controls
+                                />
                 <div style={{ fontFamily: 'Mulish' }}>
                     <h1 style={{ fontFamily: 'Mulish', fontSize: '1.8rem', fontWeight: '800' }}>LA CRUZ</h1>
                     <svg width="307" height="19" viewBox="0 0 307 19" fill="none" xmlns="http://www.w3.org/2000/svg">

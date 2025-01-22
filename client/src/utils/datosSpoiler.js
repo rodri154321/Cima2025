@@ -106,8 +106,8 @@
         pos:5
       },
       {
-        nombre: "Mi destino y la fe",
-        descripcion: "Yassir Eric",
+        nombre: 'Plenaria mañana "Mi destino y el mundo"',
+        descripcion: 'Atrapados',
         url: "https://vimeo.com/1049097990/4d5325598e",
         id:3,
         pos:0
@@ -116,31 +116,31 @@
       {
         nombre: "Una mañana de fiesta”",
         descripcion: "",
-        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        url: "https://vimeo.com/1049261390/5a1f9b7933",
         id:3,
         pos:1
       }
       ,
       {
-        nombre: "Plenaria noche “La gloria de Cristo”",
-        descripcion: "Subtitulo: Santiago Benavides",
-        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        nombre: "Experimenta",
+        descripcion: "",
+        url: "https://vimeo.com/1049098040/371171ddcc",
         id:3,
         pos:2
       }
       ,
       {
-        nombre: "Plenaria noche “La gloria de Cristo”",
-        descripcion: "Subtitulo: Santiago Benavides",
-        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        nombre: 'Plenaria noche “La pasión de Cristo”',
+        descripcion: "Andrew Brunson",
+        url: "https://vimeo.com/1049098147/5d55113d27",
         id:3,
         pos:3
       }
       ,
       {
-        nombre: "Plenaria noche “La gloria de Cristo”",
-        descripcion: "Subtitulo: Santiago Benavides",
-        url: "https://vimeo.com/1048867071/95b9a3ccc9",
+        nombre: "Homicidios por doquier",
+        descripcion: " Santiago Benavides",
+        url: "https://vimeo.com/1049098179/af6e2dbd44",
         id:3,
         pos:4
       }
