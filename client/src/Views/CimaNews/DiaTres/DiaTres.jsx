@@ -95,7 +95,7 @@ const DiaTres = () => {
 
             <div className={style.articulosContainer} style={{marginBottom:'10%'}}>
                 <h1>VER ÁRTICULOS</h1>
-                <a href="./Articulo1">
+                <a href="./Articulo4">
                     <img className={style.imgArt} src="/Dia3/ArtLink.png" alt="" />
                 </a>
             </div>
