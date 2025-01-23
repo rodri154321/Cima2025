@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
+    overflow: hidden;
     background-color: white;
     font-family: "Mulish";
     font-weight: 900;
