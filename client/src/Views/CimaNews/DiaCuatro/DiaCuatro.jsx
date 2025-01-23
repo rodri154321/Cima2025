@@ -108,6 +108,9 @@ const DiaCuatro = () => {
                         controls
                     />
                 </div>
+
+                <img className={style.imgPomo} src="https://i.postimg.cc/7hxh3sHB/TIENDA-MOVIDA-04.jpg" alt="PROMO" />
+                <img className={style.imgPomo} src="https://i.postimg.cc/BbM6MTtJ/TIENDA-MOVIDA-05.jpg" alt="PROMO" />
             </div>
 
             {/* -----------------------------------------------------------ARTICULOS----------------------------------------------------------- */}
