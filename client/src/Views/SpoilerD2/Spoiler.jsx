@@ -68,7 +68,7 @@ const Spoiler = ({ id }) => {
   return (
     <div className={style.cont_S} onClick={handleUserInteraction}>
       <motion.div className={style.slider_container}
-        style={{ transform: 'translateX(40%)' }}>
+        style={{ transform: 'translateX(25%)' }}>
         <motion.div
           ref={sliderRef}
           className={style.slider}

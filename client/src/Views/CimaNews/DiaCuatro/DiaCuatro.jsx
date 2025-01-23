@@ -30,7 +30,7 @@ const DiaCuatro = () => {
                     <img className={style.imgdevo} src="https://i.postimg.cc/CLnywNLf/Devocional.png" alt="titulo" />
                 </div>
 
-                <ReactPlayer url='https://vimeo.com/1049101636/d565a11ad1'
+                <ReactPlayer url='https://vimeo.com/1049629414/74f2568a1c'
 
                     width='100%'
                     height='90vh'
@@ -45,15 +45,15 @@ const DiaCuatro = () => {
 
             <img className={style.imgspoiler} src="/SPOILER_Dia2.png" alt="" />
             <div className={style.SpoilerContainer}>
-                <Spoiler2 id='3' />
+                <Spoiler2 id='4' />
             </div>
 
             {/* -----------------------------------------------------------CIMAMOMENT----------------------------------------------------------- */}
-                        <div className={style.experimentaContainer}>
-                            <a href="https://drive.google.com/drive/folders/1WUKOSC7NFsX7Pszpw1gAXlwMgiGhuvnG?usp=drive_link">
-                                <img className={style.imgmerch} src="https://i.postimg.cc/P5j6Fncq/image-3504.png" alt="" />
-                            </a>
-                        </div>
+            <div className={style.experimentaContainer}>
+                <a href="https://drive.google.com/drive/folders/1WUKOSC7NFsX7Pszpw1gAXlwMgiGhuvnG?usp=drive_link">
+                    <img className={style.imgmerch} src="https://i.postimg.cc/P5j6Fncq/image-3504.png" alt="" />
+                </a>
+            </div>
 
             {/* -----------------------------------------------------------RETO CIMEÑO----------------------------------------------------------- */}
 
@@ -88,6 +88,10 @@ const DiaCuatro = () => {
                             </clipPath>
                         </defs>
                     </svg>
+                </div>
+
+                <div style={{transform:'translateY(-230%)', fontFamily:'Inter', backgroundColor:'#0B7F67',borderRadius:'10px'}}>
+                    <a style={{textDecoration:'none'}} href="https://iglesiascba.com.ar/recursos/"><h2 style={{fontSize:'1.3rem', textAlign:'center', color:'white'}}>Accede a recursos evangelisticos aquí</h2></a>
                 </div>
             </div>
 
