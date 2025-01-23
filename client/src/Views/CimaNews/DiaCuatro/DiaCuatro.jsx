@@ -59,7 +59,7 @@ const DiaCuatro = () => {
 
             <div className={style.EncuestaContainer}>
                 <img className={style.retoImg} src="/RetoCimeno.png" alt="" />
-                <ReactPlayer url='https://vimeo.com/1049266700/0154500231'
+                <ReactPlayer url='https://vimeo.com/1049644807/4105adc644'
 
                     width='100%'
                     height='90vh'
@@ -90,8 +90,8 @@ const DiaCuatro = () => {
                     </svg>
                 </div>
 
-                <div style={{transform:'translateY(-230%)', fontFamily:'Inter', backgroundColor:'#0B7F67',borderRadius:'10px'}}>
-                    <a style={{textDecoration:'none'}} href="https://iglesiascba.com.ar/recursos/"><h2 style={{fontSize:'1.3rem', textAlign:'center', color:'white'}}>Accede a recursos evangelisticos aquí</h2></a>
+                <div style={{ transform: 'translateY(-230%)', fontFamily: 'Inter', backgroundColor: '#0B7F67', borderRadius: '10px' }}>
+                    <a style={{ textDecoration: 'none' }} href="https://iglesiascba.com.ar/recursos/"><h2 style={{ fontSize: '1.3rem', textAlign: 'center', color: 'white' }}>Accede a recursos evangelisticos aquí</h2></a>
                 </div>
             </div>
 
@@ -102,9 +102,11 @@ const DiaCuatro = () => {
                 </a>
                 <img style={{ transform: 'translateY(50%) translateX(7%)' }} src="https://i.postimg.cc/vT3mMvQK/Merch.png" alt="PROMO" />
                 <div>
-                    <img className={style.imgPomo} src="https://i.postimg.cc/1zTp3n63/Imagen-de-Whats-App-2025-01-22-a-las-10-36-35-dc853ff6.jpg" alt="PROMO" />
-                    <img className={style.imgPomo} src="https://i.postimg.cc/nzDqjFYY/Imagen-de-Whats-App-2025-01-22-a-las-10-36-36-aa466cdb.jpg" alt="PROMO" />
-                    <img className={style.imgPomo} src="https://i.postimg.cc/0j1D7TVg/Imagen-de-Whats-App-2025-01-22-a-las-10-36-37-319f5c29.jpg" alt="PROMO" />
+                    <ReactPlayer url='https://vimeo.com/1049643228/fe362598e0'
+                        width='100%'
+                        height='90vh'
+                        controls
+                    />
                 </div>
             </div>
 
