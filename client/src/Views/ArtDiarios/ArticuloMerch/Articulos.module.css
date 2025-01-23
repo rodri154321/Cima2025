@@ -1,0 +1,43 @@
+.generalText{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between; /* Alinea los enlaces a izquierda y derecha */
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.linkContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkContainer h2, .linkContainer h3 {
+    margin: 0;
+}
+
+.greyLeftText{
+    text-align: left;
+    color: #B1B1B1;
+    font-size: .8rem;
+}
+
+.secondLeftText{
+    text-align: left;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+}
+
+.greyRightText{
+    text-align: right;
+    color: #B1B1B1;
+    font-size: .8rem;
+}
+
+.secondRightText{
+    text-align: right;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+}

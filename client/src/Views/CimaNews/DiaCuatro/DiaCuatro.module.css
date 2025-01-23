@@ -1,0 +1,445 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: white;
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 20%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .global{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #005B7B;
+    }
+
+    .container {
+        width: 40vw;
+        overflow: hidden;
+    }
+}
+
+.articulosContainer{
+    width: 87%;
+    padding: 0;
+}
+
+.articulosContainer h1 {
+    font-family: 'Inter';
+    width: 100%;
+    position: relative;
+}
+
+.articulosContainer h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+
+.operacionCimaContainer{
+    width: 87%;
+    height: 90vh;
+}
+
+.imgOperacionCima{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    left: -1%;
+}
+
+.movilizaContainer{
+    padding-top: 5%;
+    width: 87%;
+    height: 75vh;
+    font-family: 'Inter';
+}
+
+.movilizarImg{
+    transform: translateY(-4%) translateX(-7%);
+    width: 130%;
+}
+
+.movilizarText{
+    font-family: 'Mulish';
+    font-weight: medium;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+    transform: translateY(-40%);
+}
+
+.cimaDayText{
+    font-family: 'Mulish';
+    font-weight: medium;
+    font-size: clamp(.7rem, 1rem, 1.2rem);
+}
+
+.experimentaContainer{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+
+/* -----------------------------------------------------------PORTADA----------------------------------------------------------- */
+
+.videoContainer {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 80%;
+    height: 60vh;
+}
+
+/* -----------------------------------------------------------MAPA----------------------------------------------------------- */
+.mapContainer {
+    width: 100vw;
+    height: 50vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.svgmap {
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    z-index: 3;
+}
+
+/* -----------------------------------------------------------SPOILER----------------------------------------------------------- */
+
+.devocionalContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imgspoiler{
+    width: 100%;
+}
+
+.libro {
+    position: absolute;
+    left: -20%;
+    top: 0%;
+    z-index: 1;
+}
+
+.devocionalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.devoTitle{
+    margin-left: -5%;
+}
+
+.devo2er {
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #E98900;
+    margin-bottom: 0%;
+}
+
+.devoCional {
+    font-family: "Mulish";
+    font-weight: 900;
+    color: black;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.nombreDevo {
+    font-family: "Mulish";
+    font-weight: 900;
+    color: #E98900;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.fechaDevo {
+    font-family: "Mulish";
+    font-weight: 700;
+    color: #B1B1B1;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.hechopor {
+    font-family: "Mulish";
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.devocionalTitle2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.coheteDevocional{
+    position: absolute;
+    transform: translateY(180%) translateX(-100%) rotate(60deg);
+}
+
+.circulosDevocional{
+    position: absolute;
+    transform: translateY(-130%) translateX(160%);
+}
+
+.EncuestaContainer{
+    margin-top: 10%;
+    width: 100%;
+    height: 90vh;
+}
+
+.retoImg{
+    position: absolute;
+    transform: translateX(25%);
+}
+
+.rexReto{
+    transform: translateY(-200%) translateX(240%);
+}
+
+.imgdevo{
+    width: 100%;
+    margin-left: -10%;
+    margin-bottom: 5%;
+}
+
+.libro {
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    z-index: 1;
+}
+
+.textoDevo {
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    z-index: 3;
+}
+
+.devo1er {
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #00536E;
+    margin-bottom: 0%;
+}
+
+.devoCional {
+    font-family: "Mulish";
+    font-weight: 900;
+    color: black;
+    font-size: 2rem;
+    margin-top: -3%;
+    letter-spacing: -1;
+
+}
+
+
+/* -----------------------------------------------------------CRISTIANO GLOBAL----------------------------------------------------------- */
+
+.cristianoGlobalContainer {
+    margin-top: 10%;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    margin-left: -20%;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.textoCGContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloh1cg{
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.cristianoGlobal {
+    margin-left: 5%;
+    z-index: 1;
+}
+
+/* .svgOracion{
+    z-index: 1;
+} */
+
+.svgCG {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+}
+
+.divTextoCG {
+    width: 100%;
+    display: flex;
+}
+
+.tituloCG {
+    font-family: "Gotham Black";
+    font-weight: bold;
+    font-size: 0.909rem;
+    color: #000000;
+    margin-bottom: 0%;
+}
+
+.tituloCGdiv {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.textoCG {
+    font-family: "Mulish";
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 0%;
+}
+
+/* -----------------------------------------------------------FOTOS DIA ANTERIOR----------------------------------------------------------- */
+
+.fotosdiaanteriorcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* -----------------------------------------------------------EXPERIMENTA----------------------------------------------------------- */
+
+.seccionExperimenta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divTextoExpe {
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Mulish';
+    font-weight: 400;
+}
+
+.tituloh1expe{
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.textoExpe {
+    width: 80%;
+    font-family: "Gotham Medium";
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 0%;
+}
+
+.imgmerch{
+    width: 100%;
+    margin-top: 15%;
+}
+
+.imgArt{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .spoilerTitle {
+        font-size: 4.6rem;
+    }
+}
+
+
+.simVideo {
+    width: 80%;
+    height: 60vh;
+    background-color: #F2F2F2;
+    margin-top: 20%;
+    z-index: 2;
+}
+
+
+
+.imgPomo{
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------COLORES------------------------------------------------------------------ */
+
+.colorLetra {
+    color: #00536E;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.colorAzul {
+    background: #00536E;
+    color: white;
+}
+
+.subrrallado {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #E98900;
+    text-decoration-thickness: 0.2rem;
+}
