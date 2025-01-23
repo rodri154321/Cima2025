@@ -9,7 +9,7 @@ const Articulo = () => {
             <Menu />
             <div style={{ width: '87%', margin: '0 auto', marginTop: '20%' }}>
 
-                <ReactPlayer url='https://vimeo.com/1049265313/a5f8913780'
+                <ReactPlayer url='https://vimeo.com/1049646728/c78520a118'
 
                     width='100%'
                     height='30vh'
@@ -34,7 +34,7 @@ const Articulo = () => {
                     <h2 className={style.generalText}>
                         <p> <span style={{ fontWeight: '1000' }}>La venda que te aleja de Dios</span></p>
                     </h2>
-                    <a href="https://drive.google.com/drive/folders/1juP6WoWBQMRozM5VJUZEywcvRZ3rn3lR?usp=drive_link"><img src="/Dia3/HerraD3.png" alt="" /></a>
+                    <a href="https://iglesiascba.com.ar/recursos/"><img src="/Dia3/HerraD3.png" alt="" /></a>
                     <div className={style.linkContainer}>
                         <a href="./articulo8">
                             <h2 className={style.greyLeftText}>ARTÍCULO ANTERIOR</h2>
