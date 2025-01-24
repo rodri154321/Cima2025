@@ -188,13 +188,13 @@ function FormExperimenta() {
                                 {/* <option value="ARG - Cordoba - Altamira">ARG - Cordoba - Altamira</option> */}
                                 {/* <option value="ARG - Cordoba - Parque Futura">ARG - Cordoba - Parque Futura</option> */}
                                 {/* <option value="ARG - Cordoba - Rio cuarto">ARG - Cordoba - Rio cuarto</option> */}
-                                <option value="⁠⁠ARG - Gral Deheza - Córdoba">⁠⁠ARG - Gral Deheza - Córdoba</option>
+                                {/* <option value="⁠⁠ARG - Gral Deheza - Córdoba">⁠⁠ARG - Gral Deheza - Córdoba</option> */}
                                 <option value="ARG - ⁠⁠Barrancas - Neuquén">ARG - ⁠⁠Barrancas - Neuquén</option>
                                 <option value="ARG - Luis Guillón - Buenos Aires">ARG - Luis Guillón - Buenos Aires</option>
                                 <option value="⁠⁠ARG - San Nicolás - Buenos Aires"> ⁠⁠ARG - San Nicolás - Buenos Aires</option>
-                                <option value="⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option>
+                                {/* <option value="⁠ARG - La Rinconada - Córdoba"> ⁠ARG - La Rinconada - Córdoba</option> */}
                                 <option value="ARG - San Salvador de Jujuy - La puna">ARG - San Salvador de Jujuy - La puna</option>
-                                <option value="ARG - Buenos Aires - Miramar">ARG - Buenos Aires - Miramar</option>
+                                {/* <option value="ARG - Buenos Aires - Miramar">ARG - Buenos Aires - Miramar</option> */}
                                 {/* <option value="ARG - Córdoba - Mina Clavero">ARG - Córdoba - Mina Clavero</option> */}
                                 <option value="ARG - Catamarca - Manantiales">ARG - Catamarca - Manantiales</option>
                                 <option value="ARG - Salta - San Antonio de los cobres">ARG - Salta - San Antonio de los cobres</option>
@@ -214,7 +214,7 @@ function FormExperimenta() {
                                 <option value="PE - Tingo Maria">PE - Tingo Maria</option>
                                 <option value="PE - Cajamarca">PE - Cajamarca</option>
                                 <option value="PE - Yanesha">PE - Yanesha</option>
-                                <option value="PRY - Capital - Come Lord ">PRY - Capital - Come Lord</option>
+                                {/* <option value="PRY - Capital - Come Lord ">PRY - Capital - Come Lord</option> */}
                                 <option value="PRY - Central - Areguá">PRY - Central - Aregua</option>
                                 <option value="PRY - Caaguazú - Coronel">PRY - Caaguazú - Coronel</option>
                                 {/* <option value="PRY - San Pedro - Puerto Antequera">PRY - San Pedro - Puerto Antequera</option> */}
