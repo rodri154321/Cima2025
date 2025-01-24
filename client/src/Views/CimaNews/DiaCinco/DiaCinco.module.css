@@ -73,14 +73,13 @@
 
 .movilizarImg{
     transform: translateY(-4%) translateX(-7%);
-    width: 130%;
+    width: 50%;
 }
 
 .movilizarText{
     font-family: 'Mulish';
     font-weight: medium;
     font-size: clamp(.7rem, 1rem, 1.2rem);
-    transform: translateY(-40%);
 }
 
 .cimaDayText{
@@ -91,8 +90,7 @@
 
 .experimentaContainer{
     width: 100%;
-    margin:0;
-    padding: 0;
+    margin-top: 50%;
 }
 
 

@@ -47,6 +47,9 @@ import Articulo6 from './Views/ArtDiarios/Articulo6/Articulos';
 import Articulo7 from './Views/ArtDiarios/Articulo7/Articulos';
 import Articulo8 from './Views/ArtDiarios/Articulo8/Articulos';
 import Articulo9 from './Views/ArtDiarios/Articulo9/Articulos';
+import Articulo10 from './Views/ArtDiarios/Articulo10/Articulos';
+import Articulo11 from './Views/ArtDiarios/Articulo11/Articulos';
+import Articulo12 from './Views/ArtDiarios/Articulo12/Articulos';
 import MerchD4 from './Views/ArtDiarios/ArticuloMerch/Articulos';
 
 
@@ -97,6 +100,9 @@ function App() {
             <Route path='/Articulo7' element={<Articulo7/>}/>
             <Route path='/Articulo8' element={<Articulo8/>}/>
             <Route path='/Articulo9' element={<Articulo9/>}/>
+            <Route path='/Articulo10' element={<Articulo10/>}/>
+            <Route path='/Articulo11' element={<Articulo11/>}/>
+            <Route path='/Articulo12' element={<Articulo12/>}/>
             <Route path='/Merch' element={<MerchD4/>}/>
 
             {/* ------------------------CARPETA PARTICIPANTE------------------------ */}
