@@ -161,7 +161,7 @@ const DiaCuatro = () => {
             </div>
             {/* -----------------------------------------------------------MERCH----------------------------------------------------------- */}
             <div className={style.experimentaContainer}>
-                <img className={style.imgPomo} src="https://i.postimg.cc/Prwj7Y6X/CUPONES-ESCONDIDOS-1.png" alt="PROMO" />
+                <img className={style.imgPomo} src="https://i.postimg.cc/Pf8XggJn/Imagen-de-Whats-App-2025-01-24-a-las-09-19-42-ae26f938.jpg" alt="PROMO" />
             </div>
 
             {/* -----------------------------------------------------------ARTICULOS----------------------------------------------------------- */}
