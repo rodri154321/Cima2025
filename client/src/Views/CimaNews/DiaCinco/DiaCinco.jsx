@@ -54,7 +54,7 @@ const DiaCuatro = () => {
             <div className={style.devocionalContainer}>
 
                 <div className={style.devocionalTitle2}>
-                    <img className={style.imgdevo} src="https://i.postimg.cc/8zNzB7ty/Frame-20-2.png" alt="titulo" />
+                    <img className={style.imgdevo} src="https://i.postimg.cc/kgW72K81/Frame-20.png" alt="titulo" />
                 </div>
 
                 <ReactPlayer url='https://vimeo.com/1050021611/184f039781'
