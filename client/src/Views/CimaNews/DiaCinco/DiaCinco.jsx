@@ -149,8 +149,8 @@ const DiaCuatro = () => {
                         Esta semana, <span style={{ fontWeight: '1000', color: 'white', backgroundColor: '#66B072' }}>el Señor te llamó a IR.</span> Tal vez reafirmó un llamado anterior o despertó tu interés al conocer nuevas realidades. Recuerda, <span style={{ fontWeight: '1000' }}>¡no estás solo!</span> Comparte esto con tus líderes en tu iglesia local al regresar a casa, o conversa con el equipo de Movida. <span style={{ fontWeight: '1000' }}>¡Estamos aquí para apoyarte y acompañarte en este camino!</span></p>
                 </h2>
             </div>
-            <div className={style.movilizaContainer} style={{marginTop:'10%'}}>
-                <img style={{width:'100%'}} src="https://i.postimg.cc/1t7ftyS9/PRISMA-1.png" alt="" />
+            <div className={style.movilizaContainer} style={{ marginTop: '10%' }}>
+                <img style={{ width: '100%' }} src="https://i.postimg.cc/1t7ftyS9/PRISMA-1.png" alt="" />
                 <div>
                     <ReactPlayer url='https://vimeo.com/1049643228/fe362598e0'
                         width='100%'
@@ -163,6 +163,9 @@ const DiaCuatro = () => {
             <div className={style.experimentaContainer}>
                 <img className={style.imgPomo} src="https://i.postimg.cc/Pf8XggJn/Imagen-de-Whats-App-2025-01-24-a-las-09-19-42-ae26f938.jpg" alt="PROMO" />
             </div>
+
+            <img className={style.imgPomo} src="https://i.postimg.cc/7hxh3sHB/TIENDA-MOVIDA-04.jpg" alt="PROMO" />
+            <img className={style.imgPomo} src="https://i.postimg.cc/BbM6MTtJ/TIENDA-MOVIDA-05.jpg" alt="PROMO" />
 
             {/* -----------------------------------------------------------ARTICULOS----------------------------------------------------------- */}
 
