@@ -8,8 +8,13 @@ const Articulo = () => {
         <div>
             <Menu />
             <div style={{ width: '87%', margin: '0 auto', marginTop: '20%' }}>
+                
+                <ReactPlayer url='https://vimeo.com/1050014516/0e3cfd219c'
 
-                <img src="https://i.postimg.cc/bwZXphg9/image-3505.png" alt="" />
+                    width='100%'
+                    height='30vh'
+                    controls
+                />
                 <div style={{ fontFamily: 'Inter' }}>
                     <h1 style={{ fontFamily: 'Inter', fontSize: '1.7rem', fontWeight: '1000' }}>NO ESTÁS A LA ALTURA</h1>
                     <div style={{ width: '80%' }}><svg width="230" height="15" viewBox="0 0 230 15" fill="none" xmlns="http://www.w3.org/2000/svg">
