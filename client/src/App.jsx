@@ -81,7 +81,7 @@ function App() {
             <Route path='/formexperimenta' element={<FormExperimenta/>}/>
             <Route path='/oradores' element={<Speakers/>}/>
             <Route path='/taller' element={<Talleres/>}/>
-            <Route path='/cimanews' element={<DiaCuatro/>}/>
+            <Route path='/cimanews' element={<DiaCinco/>}/>
             <Route path='/cimanews1' element={<LoaderCimanews/>}/>
             <Route path='/spoiler' element={<Spoiler/>}/>
             <Route path='/cimanews2' element={<DiaDos/>}/>

@@ -57,7 +57,7 @@ const DiaCuatro = () => {
                     <img className={style.imgdevo} src="https://i.postimg.cc/8zNzB7ty/Frame-20-2.png" alt="titulo" />
                 </div>
 
-                <ReactPlayer url='https://vimeo.com/1049629414/74f2568a1c'
+                <ReactPlayer url='https://vimeo.com/1050021611/184f039781'
 
                     width='100%'
                     height='90vh'
