@@ -21,6 +21,7 @@ import DiaUno from './Views/CimaNews/DiaUno/DiaUno';
 import DiaDos from './Views/CimaNews/DiaDos/DiaDos';
 import DiaTres from './Views/CimaNews/DiaTres/DiaTres';
 import DiaCuatro from './Views/CimaNews/DiaCuatro/DiaCuatro';
+import DiaCinco from './Views/CimaNews/DiaCinco/DiaCinco';
 import Spoiler from "./Views/Spoiler/Spoiler"
 import CarpetaDelParticipante from './Views/CarpetaDelParticipante/CarpetaDelParticipante';
 import CarpetaParticipante from './Views/CarpetaDelParticipante/CarpetaParticipante';
@@ -83,6 +84,7 @@ function App() {
             <Route path='/cimanews2' element={<DiaDos/>}/>
             <Route path='/cimanews3' element={<DiaTres/>}/>
             <Route path='/cimanews4' element={<DiaCuatro/>}/>
+            <Route path='/cimanews5' element={<DiaCinco/>}/>
 
             {/* ------------------------ARTICULOS---------------------------------- */}
 

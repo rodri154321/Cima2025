@@ -22,6 +22,12 @@ const DiaCuatro = () => {
                 />
             </div>
 
+            <div className={style.encuestaContainer2} style={{width:'150%', display:'flex', justifyContent:'center'}}>
+                <a href='https://survey.hsforms.com/1U6rpSo-5QO2lXdH89dl1sw5ji9a'>
+                    <img src="https://i.postimg.cc/zDxzdLWv/CIMA-NEWS-GP-ENCUESTARecurso-1-1.png" alt="" />
+                </a>
+            </div>
+
             {/* -----------------------------------------------------------DEVOCIONAL----------------------------------------------------------- */}
 
             <div className={style.devocionalContainer}>
